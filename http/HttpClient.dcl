@@ -21,3 +21,4 @@ import StdMaybe
 executeHttpRequest :: String Int SimpleHttpRequest *World -> (Maybe SimpleHttpResponse, *World)
 
 
+instance toString SimpleHttpRequest

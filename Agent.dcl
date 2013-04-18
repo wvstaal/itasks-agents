@@ -11,14 +11,14 @@ import SystemTypes, Task, Monad, JSON
 :: AgentActivity s :== s [AgentTask] -> Maybe (s, [AgentAction])
 
 :: AgentTask = 
-	{ taskId :: TaskId
-	, tag    :: String
-	, value  :: JSONNode
-	, repValue :: JSONNode
-	, enabled :: Bool
+	{ taskId 	:: TaskId 
+	, tag    	:: String
+	, value  	:: Maybe JSONNode
+	, repValue 	:: Maybe JSONNode
+	, enabled 	:: Bool
 	}
 
-:: AgentAction = EditAction TaskId JSONNode | ActAction TaskId String
+:: AgentAction = EditAction TaskId JSONNode | ActAction TaskId String | WaitAction Int Int
 
 :: Pattern s a = Pattern (s [AgentTask] -> Maybe a)
  
@@ -42,4 +42,8 @@ value :: AgentTask -> a | JSONDecode{|*|} a
 
 edit :: AgentTask a -> AgentAction | JSONEncode{|*|} a
 
+enabled :: AgentTask -> Bool
+
 act :: AgentTask -> AgentAction
+
+wait :: Int Int -> AgentAction

@@ -12,19 +12,20 @@ from Time				import :: Timestamp
 	, lastTime	:: Timestamp
 	}
 	
-:: *TaskSenderState = 
-	{ world 	:: *World
-	, sessionId :: SessionId
-	, agentId	:: String
+:: *ActionHandlerState = 
+	{ world 	 :: *World
+	, sessionId  :: SessionId
+	, agentId	 :: String
+	, startTime  :: Timestamp 
 	}
 		
-:: TaskReceiver   a = TaskReceiver  (*TaskReceiverState -> *(a, *TaskReceiverState))
-:: ActionHandler  a = ActionHandler ([AgentAction] *TaskSenderState -> *(a, *TaskSenderState))
+:: TaskReceiver   a = TaskReceiver  (*TaskReceiverState -> *(a, TaskReceiverState))
+:: ActionHandler  a = ActionHandler ([AgentAction] *ActionHandlerState -> *(a, ActionHandlerState))
 
 instance Monad TaskReceiver
 instance Monad ActionHandler
 
-run :: (Agent s) (TaskReceiver [AgentTask]) (ActionHandler a) *World -> *World
+run :: (Agent s) (TaskReceiver (Maybe [AgentTask])) (ActionHandler a) *World -> *World
 
 delayTaskReceiver 		:: Int -> TaskReceiver Timestamp
 

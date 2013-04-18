@@ -1,0 +1,3821 @@
+.comp 920 000111010
+.start _nostart_
+.depend "WorkflowAdmin" "20130225161824"
+.depend "UserAdmin" "20130225161824"
+.depend "CommonCombinators" "20130313142812"
+.depend "CoreCombinators" "20130225161825"
+.depend "IntegrationTasks" "20130225161825"
+.depend "ExportTasks" "20130225161824"
+.depend "ImportTasks" "20130225161824"
+.depend "DBTasks" "20130225161825"
+.depend "InteractionTasks" "20130313142812"
+.depend "CoreTasks" "20130313142813"
+.depend "SystemData" "20130311130301"
+.depend "SerializationGraphCopy" "20130311130302"
+.depend "EngineWrapperStandalone" "20130225161815"
+.depend "Engine" "20130311130302"
+.depend "iTasks" "20130311130300"
+.depend "List" "20130311130303"
+.depend "Shared" "20130225161816"
+.depend "OS" "20130225161913"
+.depend "OSError" "20130225161913"
+.depend "File" "20130225161913"
+.depend "TCPStringChannelsInternal" "20130222144316"
+.depend "TCPStringChannels" "20130222144316"
+.depend "TCPEvent" "20130222144316"
+.depend "tcp_bytestreams" "20130222144316"
+.depend "TCPDef" "20130222144316"
+.depend "TCPChannels" "20130225161829"
+.depend "tcp" "20130222144316"
+.depend "TCPChannelClass" "20130222144316"
+.depend "TCPIP" "20130222144316"
+.depend "HttpServer" "20130418143907"
+.depend "_SharedDataSourceTypes" "20130225161916"
+.depend "Error" "20130225161916"
+.depend "SharedDataSource" "20130225161916"
+.depend "GenRecord" "20130225161816"
+.depend "iTaskClass" "20130225161816"
+.depend "LayoutCombinators" "20130311153144"
+.depend "GenVerify" "20130225161816"
+.depend "GenUpdate" "20130416101727"
+.depend "Either" "20130225161916"
+.depend "HTML" "20130225161915"
+.depend "GenVisualize" "20130412160727"
+.depend "HTTP" "20130225161915"
+.depend "Task" "20130417153220"
+.depend "UIDefinition" "20130412160814"
+.depend "Void" "20130225161916"
+.depend "FilePath" "20130319171155"
+.depend "IWorld" "20130418143908"
+.depend "Time" "20130225161913"
+.depend "Store" "20130311130302"
+.depend "JSON" "20130311130303"
+.depend "StdGeneric" "20130311130302"
+.depend "GenEq" "20130311130302"
+.depend "SystemTypes" "20130412155741"
+.depend "Map" "20130225161916"
+.depend "_SystemEnum" "20130222144314"
+.depend "StdEnum" "20130222144313"
+.depend "StdFunc" "20130222144313"
+.depend "StdTuple" "20130222144314"
+.depend "StdOrdList" "20130222144313"
+.depend "StdList" "20130222144313"
+.depend "StdClass" "20130222144313"
+.depend "StdFile" "20130222144313"
+.depend "StdString" "20130222144314"
+.depend "StdChar" "20130222144313"
+.depend "StdReal" "20130222144314"
+.depend "StdInt" "20130222144313"
+.depend "StdBool" "20130222144313"
+.depend "Functor" "20130308112748"
+.depend "Maybe" "20130225161916"
+.depend "StdMaybe" "20130225161819"
+.depend "StdOverloaded" "20130222144313"
+.depend "_SystemDynamic" "20130311130303"
+.depend "TaskState" "20130411121712"
+.module m_TaskState "TaskState" "20130416144400"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.impdesc e_SerializationGraphCopy_dJSONEncode_Dynamic;9
+.impdesc e_SerializationGraphCopy_dJSONDecode_Dynamic;11
+.impdesc e_Task_dJSONEncode_Task;5
+.impdesc e_Task_dJSONDecode_Task;6
+.impdesc e_JSON_dJSONEncode_Int;9
+.impdesc e_JSON_dJSONEncode_Bool;12
+.impdesc e_JSON_dJSONEncode__String;13
+.impdesc e_JSON_dJSONEncode_UNIT;14
+.impdesc e_JSON_dJSONEncode_PAIR;15
+.impdesc e_JSON_dJSONEncode_EITHER;16
+.implab e_JSON_sJSONEncode_RECORD;17
+.impdesc e_JSON_dJSONEncode_FIELD;18
+.impdesc e_JSON_dJSONEncode_CONS;19
+.implab e_JSON_sJSONEncode_OBJECT;20
+.impdesc e_JSON_dJSONEncode__List;21
+.impdesc e_JSON_dJSONEncode__Tuple3;23
+.impdesc e_JSON_dJSONEncode_Maybe;28
+.impdesc e_JSON_dJSONEncode_JSONNode;29
+.impdesc e_JSON_dJSONDecode_Int;30
+.impdesc e_JSON_dJSONDecode_Bool;33
+.impdesc e_JSON_dJSONDecode__String;34
+.impdesc e_JSON_dJSONDecode_UNIT;35
+.impdesc e_JSON_dJSONDecode_PAIR;36
+.impdesc e_JSON_dJSONDecode_EITHER;37
+.implab e_JSON_sJSONDecode_RECORD;38
+.impdesc e_JSON_dJSONDecode_FIELD;39
+.impdesc e_JSON_dJSONDecode_CONS;40
+.implab e_JSON_sJSONDecode_OBJECT;41
+.impdesc e_JSON_dJSONDecode__List;42
+.impdesc e_JSON_dJSONDecode__Tuple3;44
+.impdesc e_JSON_dJSONDecode_Maybe;49
+.impdesc e_JSON_dJSONDecode_JSONNode;50
+.impdesc e_SystemTypes_dJSONEncode_InteractionMask;774
+.impdesc e_SystemTypes_dJSONDecode_InteractionMask;775
+.impdesc e_SystemTypes_dJSONEncode_TaskValue;776
+.impdesc e_SystemTypes_dJSONEncode_ManagementMeta;778
+.impdesc e_SystemTypes_dJSONEncode_ProgressMeta;779
+.impdesc e_SystemTypes_dJSONEncode_User;781
+.impdesc e_SystemTypes_dJSONDecode_TaskValue;786
+.impdesc e_SystemTypes_dJSONDecode_ManagementMeta;788
+.impdesc e_SystemTypes_dJSONDecode_ProgressMeta;789
+.impdesc e_SystemTypes_dJSONDecode_User;791
+.impdesc e_SystemTypes_dJSONEncode_TaskId;883
+.impdesc e_SystemTypes_dJSONDecode_TaskId;884
+.impdesc e_SystemTypes_dJSONEncode_Map;907
+.impdesc e_SystemTypes_dJSONEncode_Either;909
+.impdesc e_SystemTypes_dJSONDecode_Map;912
+.impdesc e_SystemTypes_dJSONDecode_Either;914
+.export e_TaskState_rTIMeta
+.record e_TaskState_rTIMeta iaiaaaaa 6 2 "TIMeta"
+.descexp e_TaskState_tTIMeta e_TaskState_cTIMeta _hnf 8 1 "TIMeta"
+.n 8 e_TaskState_tTIMeta
+.o 1 0
+e_TaskState_cTIMeta
+	push_node _cycle_in_spine 8
+	jsr_eval 7
+	jsr_eval 6
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 2
+	pushI_a 0
+	update_a 1 2
+	pop_a 2
+	fill_r e_TaskState_rTIMeta 6 2 6 0 0
+	pop_a 6
+	pop_b 2
+.d 1 0
+	rtn
+.export e_TaskState_dTIMeta.instanceNo
+.export e_TaskState_nTIMeta.instanceNo
+.descs e_TaskState_dTIMeta.instanceNo e_TaskState_nTIMeta.instanceNo INT 8 0 "TIMeta.instanceNo"
+.n -3 e_TaskState_dTIMeta.instanceNo
+.o 1 0
+e_TaskState_nTIMeta.instanceNo
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 6 2 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIMeta.sessionId
+.export e_TaskState_nTIMeta.sessionId
+.export e_TaskState_eaTIMeta.sessionId
+.descs e_TaskState_dTIMeta.sessionId e_TaskState_nTIMeta.sessionId _ 1 0 "TIMeta.sessionId"
+.n -4 e_TaskState_dTIMeta.sessionId e_TaskState_eaTIMeta.sessionId
+.o 1 0
+e_TaskState_nTIMeta.sessionId
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTIMeta.sessionId
+	jsr_eval 0
+	repl_r_args_a 6 2 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIMeta.parent
+.export e_TaskState_nTIMeta.parent
+.descs e_TaskState_dTIMeta.parent e_TaskState_nTIMeta.parent INT 9 0 "TIMeta.parent"
+.n -3 e_TaskState_dTIMeta.parent
+.o 1 0
+e_TaskState_nTIMeta.parent
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 6 2 2 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIMeta.observes
+.export e_TaskState_nTIMeta.observes
+.export e_TaskState_eaTIMeta.observes
+.descs e_TaskState_dTIMeta.observes e_TaskState_nTIMeta.observes _ 3 0 "TIMeta.observes"
+.n -4 e_TaskState_dTIMeta.observes e_TaskState_eaTIMeta.observes
+.o 1 0
+e_TaskState_nTIMeta.observes
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTIMeta.observes
+	jsr_eval 0
+	repl_r_args_a 6 2 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIMeta.observedBy
+.export e_TaskState_nTIMeta.observedBy
+.export e_TaskState_eaTIMeta.observedBy
+.descs e_TaskState_dTIMeta.observedBy e_TaskState_nTIMeta.observedBy _ 4 0 "TIMeta.observedBy"
+.n -4 e_TaskState_dTIMeta.observedBy e_TaskState_eaTIMeta.observedBy
+.o 1 0
+e_TaskState_nTIMeta.observedBy
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTIMeta.observedBy
+	jsr_eval 0
+	repl_r_args_a 6 2 3 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIMeta.worker
+.export e_TaskState_nTIMeta.worker
+.export e_TaskState_eaTIMeta.worker
+.descs e_TaskState_dTIMeta.worker e_TaskState_nTIMeta.worker _ 5 0 "TIMeta.worker"
+.n -4 e_TaskState_dTIMeta.worker e_TaskState_eaTIMeta.worker
+.o 1 0
+e_TaskState_nTIMeta.worker
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTIMeta.worker
+	jsr_eval 0
+	repl_r_args_a 6 2 4 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIMeta.progress
+.export e_TaskState_nTIMeta.progress
+.descs e_TaskState_dTIMeta.progress e_TaskState_nTIMeta.progress _ 6 0 "TIMeta.progress"
+.n -4 e_TaskState_dTIMeta.progress
+.o 1 0
+e_TaskState_nTIMeta.progress
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 6 2 5 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIMeta.management
+.export e_TaskState_nTIMeta.management
+.descs e_TaskState_dTIMeta.management e_TaskState_nTIMeta.management _ 7 0 "TIMeta.management"
+.n -4 e_TaskState_dTIMeta.management
+.o 1 0
+e_TaskState_nTIMeta.management
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 6 2 6 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_rTIReduct
+.record e_TaskState_rTIReduct aiiaaa 4 2 "TIReduct"
+.descexp e_TaskState_tTIReduct e_TaskState_cTIReduct _hnf 6 1 "TIReduct"
+.n 6 e_TaskState_tTIReduct
+.o 1 0
+e_TaskState_cTIReduct
+	push_node _cycle_in_spine 6
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 2
+	pushI_a 1
+	update_a 0 2
+	pop_a 2
+	fill_r e_TaskState_rTIReduct 4 2 4 0 0
+	pop_a 4
+	pop_b 2
+.d 1 0
+	rtn
+.export e_TaskState_dTIReduct.task
+.export e_TaskState_nTIReduct.task
+.export e_TaskState_eaTIReduct.task
+.descs e_TaskState_dTIReduct.task e_TaskState_nTIReduct.task _ 1 0 "TIReduct.task"
+.n -4 e_TaskState_dTIReduct.task e_TaskState_eaTIReduct.task
+.o 1 0
+e_TaskState_nTIReduct.task
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTIReduct.task
+	jsr_eval 0
+	repl_r_args_a 4 2 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIReduct.nextTaskNo
+.export e_TaskState_nTIReduct.nextTaskNo
+.descs e_TaskState_dTIReduct.nextTaskNo e_TaskState_nTIReduct.nextTaskNo INT 6 0 "TIReduct.nextTaskNo"
+.n -3 e_TaskState_dTIReduct.nextTaskNo
+.o 1 0
+e_TaskState_nTIReduct.nextTaskNo
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 4 2 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIReduct.nextTaskTime
+.export e_TaskState_nTIReduct.nextTaskTime
+.descs e_TaskState_dTIReduct.nextTaskTime e_TaskState_nTIReduct.nextTaskTime INT 7 0 "TIReduct.nextTaskTime"
+.n -3 e_TaskState_dTIReduct.nextTaskTime
+.o 1 0
+e_TaskState_nTIReduct.nextTaskTime
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 4 2 2 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIReduct.tree
+.export e_TaskState_nTIReduct.tree
+.export e_TaskState_eaTIReduct.tree
+.descs e_TaskState_dTIReduct.tree e_TaskState_nTIReduct.tree _ 3 0 "TIReduct.tree"
+.n -4 e_TaskState_dTIReduct.tree e_TaskState_eaTIReduct.tree
+.o 1 0
+e_TaskState_nTIReduct.tree
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTIReduct.tree
+	jsr_eval 0
+	repl_r_args_a 4 2 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIReduct.shares
+.export e_TaskState_nTIReduct.shares
+.export e_TaskState_eaTIReduct.shares
+.descs e_TaskState_dTIReduct.shares e_TaskState_nTIReduct.shares _ 4 0 "TIReduct.shares"
+.n -4 e_TaskState_dTIReduct.shares e_TaskState_eaTIReduct.shares
+.o 1 0
+e_TaskState_nTIReduct.shares
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTIReduct.shares
+	jsr_eval 0
+	repl_r_args_a 4 2 3 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTIReduct.lists
+.export e_TaskState_nTIReduct.lists
+.export e_TaskState_eaTIReduct.lists
+.descs e_TaskState_dTIReduct.lists e_TaskState_nTIReduct.lists _ 5 0 "TIReduct.lists"
+.n -4 e_TaskState_dTIReduct.lists e_TaskState_eaTIReduct.lists
+.o 1 0
+e_TaskState_nTIReduct.lists
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTIReduct.lists
+	jsr_eval 0
+	repl_r_args_a 4 2 4 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_kTIValue
+.record e_TaskState_kTIValue dai 1 1 "TIValue"
+.export e_TaskState_eaTIValue
+.descexp e_TaskState_dTIValue e_TaskState_nTIValue e_TaskState_lTIValue 2 0 "TIValue"
+.a 2 e_TaskState_eaTIValue
+.o 2 0
+e_TaskState_lTIValue
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_TaskState_eaTIValue
+.n 2 e_TaskState_dTIValue e_TaskState_eaTIValue
+.o 1 0
+e_TaskState_nTIValue
+	push_node _cycle_in_spine 2
+.o 3 0
+e_TaskState_eaTIValue
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTIValue 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kTIException
+.record e_TaskState_kTIException daa 2 0 "TIException"
+.export e_TaskState_eaTIException
+.descexp e_TaskState_dTIException e_TaskState_nTIException e_TaskState_lTIException 2 0 "TIException"
+.a 2 e_TaskState_eaTIException
+.o 2 0
+e_TaskState_lTIException
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_TaskState_eaTIException
+.n 2 e_TaskState_dTIException e_TaskState_eaTIException
+.o 1 0
+e_TaskState_nTIException
+	push_node _cycle_in_spine 2
+.o 3 0
+e_TaskState_eaTIException
+	jsr_eval 1
+	jsr_eval 0
+	push_array 1
+	update_a 0 2
+	pop_a 1
+	fill_r e_TaskState_kTIException 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_TaskState_kTCInit
+.record e_TaskState_kTCInit dai 1 1 "TCInit"
+.export e_TaskState_eaTCInit
+.descexp e_TaskState_dTCInit e_TaskState_nTCInit e_TaskState_lTCInit 2 0 "TCInit"
+.a 2 e_TaskState_eaTCInit
+.o 2 0
+e_TaskState_lTCInit
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_TaskState_eaTCInit
+.n 2 e_TaskState_dTCInit e_TaskState_eaTCInit
+.o 1 0
+e_TaskState_nTCInit
+	push_node _cycle_in_spine 2
+.o 3 0
+e_TaskState_eaTCInit
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTCInit 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kTCBasic
+.record e_TaskState_kTCBasic daiab 2 2 "TCBasic"
+.export e_TaskState_eaTCBasic
+.descexp e_TaskState_dTCBasic e_TaskState_nTCBasic e_TaskState_lTCBasic 4 0 "TCBasic"
+.a 4 e_TaskState_eaTCBasic
+.o 2 0
+e_TaskState_lTCBasic
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.d 5 0
+	jmp e_TaskState_eaTCBasic
+.n 4 e_TaskState_dTCBasic e_TaskState_eaTCBasic
+.o 1 0
+e_TaskState_nTCBasic
+	push_node _cycle_in_spine 4
+.o 5 0
+e_TaskState_eaTCBasic
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushB_a 3
+	pushI_a 1
+	update_a 2 3
+	update_a 0 2
+	pop_a 2
+	fill_r e_TaskState_kTCBasic 2 2 2 0 0
+	pop_a 2
+	pop_b 2
+.d 1 0
+	rtn
+.export e_TaskState_kTCInteract
+.record e_TaskState_kTCInteract daiaaaa 5 1 "TCInteract"
+.export e_TaskState_eaTCInteract
+.descexp e_TaskState_dTCInteract e_TaskState_nTCInteract e_TaskState_lTCInteract 6 0 "TCInteract"
+.a 6 e_TaskState_eaTCInteract
+.o 2 0
+e_TaskState_lTCInteract
+	push_args 0 5 5
+	update_a 6 5
+	create
+	update_a 0 7
+	pop_a 1
+.d 7 0
+	jmp e_TaskState_eaTCInteract
+.n 6 e_TaskState_dTCInteract e_TaskState_eaTCInteract
+.o 1 0
+e_TaskState_nTCInteract
+	push_node _cycle_in_spine 6
+.o 7 0
+e_TaskState_eaTCInteract
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTCInteract 5 1 5 0 0
+	pop_a 5
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kTCInteract1
+.record e_TaskState_kTCInteract1 daiaa 3 1 "TCInteract1"
+.export e_TaskState_eaTCInteract1
+.descexp e_TaskState_dTCInteract1 e_TaskState_nTCInteract1 e_TaskState_lTCInteract1 4 0 "TCInteract1"
+.a 4 e_TaskState_eaTCInteract1
+.o 2 0
+e_TaskState_lTCInteract1
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.d 5 0
+	jmp e_TaskState_eaTCInteract1
+.n 4 e_TaskState_dTCInteract1 e_TaskState_eaTCInteract1
+.o 1 0
+e_TaskState_nTCInteract1
+	push_node _cycle_in_spine 4
+.o 5 0
+e_TaskState_eaTCInteract1
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTCInteract1 3 1 3 0 0
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kTCInteract2
+.record e_TaskState_kTCInteract2 daiaaa 4 1 "TCInteract2"
+.export e_TaskState_eaTCInteract2
+.descexp e_TaskState_dTCInteract2 e_TaskState_nTCInteract2 e_TaskState_lTCInteract2 5 0 "TCInteract2"
+.a 5 e_TaskState_eaTCInteract2
+.o 2 0
+e_TaskState_lTCInteract2
+	push_args 0 4 4
+	update_a 5 4
+	create
+	update_a 0 6
+	pop_a 1
+.d 6 0
+	jmp e_TaskState_eaTCInteract2
+.n 5 e_TaskState_dTCInteract2 e_TaskState_eaTCInteract2
+.o 1 0
+e_TaskState_nTCInteract2
+	push_node _cycle_in_spine 5
+.o 6 0
+e_TaskState_eaTCInteract2
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTCInteract2 4 1 4 0 0
+	pop_a 4
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kTCProject
+.record e_TaskState_kTCProject daaa 3 0 "TCProject"
+.export e_TaskState_eaTCProject
+.descexp e_TaskState_dTCProject e_TaskState_nTCProject e_TaskState_lTCProject 3 0 "TCProject"
+.a 3 e_TaskState_eaTCProject
+.o 2 0
+e_TaskState_lTCProject
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_TaskState_eaTCProject
+.n 3 e_TaskState_dTCProject e_TaskState_eaTCProject
+.o 1 0
+e_TaskState_nTCProject
+	push_node _cycle_in_spine 3
+.o 4 0
+e_TaskState_eaTCProject
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_TaskState_kTCProject 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.export e_TaskState_kTCStep
+.record e_TaskState_kTCStep daia 2 1 "TCStep"
+.export e_TaskState_eaTCStep
+.descexp e_TaskState_dTCStep e_TaskState_nTCStep e_TaskState_lTCStep 3 0 "TCStep"
+.a 3 e_TaskState_eaTCStep
+.o 2 0
+e_TaskState_lTCStep
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_TaskState_eaTCStep
+.n 3 e_TaskState_dTCStep e_TaskState_eaTCStep
+.o 1 0
+e_TaskState_nTCStep
+	push_node _cycle_in_spine 3
+.o 4 0
+e_TaskState_eaTCStep
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTCStep 2 1 2 0 0
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kTCParallel
+.record e_TaskState_kTCParallel dai 1 1 "TCParallel"
+.export e_TaskState_eaTCParallel
+.descexp e_TaskState_dTCParallel e_TaskState_nTCParallel e_TaskState_lTCParallel 2 0 "TCParallel"
+.a 2 e_TaskState_eaTCParallel
+.o 2 0
+e_TaskState_lTCParallel
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_TaskState_eaTCParallel
+.n 2 e_TaskState_dTCParallel e_TaskState_eaTCParallel
+.o 1 0
+e_TaskState_nTCParallel
+	push_node _cycle_in_spine 2
+.o 3 0
+e_TaskState_eaTCParallel
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTCParallel 1 1 1 0 0
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kTCShared
+.record e_TaskState_kTCShared daia 2 1 "TCShared"
+.export e_TaskState_eaTCShared
+.descexp e_TaskState_dTCShared e_TaskState_nTCShared e_TaskState_lTCShared 3 0 "TCShared"
+.a 3 e_TaskState_eaTCShared
+.o 2 0
+e_TaskState_lTCShared
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_TaskState_eaTCShared
+.n 3 e_TaskState_dTCShared e_TaskState_eaTCShared
+.o 1 0
+e_TaskState_nTCShared
+	push_node _cycle_in_spine 3
+.o 4 0
+e_TaskState_eaTCShared
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTCShared 2 1 2 0 0
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kTCStable
+.record e_TaskState_kTCStable daia 2 1 "TCStable"
+.export e_TaskState_eaTCStable
+.descexp e_TaskState_dTCStable e_TaskState_nTCStable e_TaskState_lTCStable 3 0 "TCStable"
+.a 3 e_TaskState_eaTCStable
+.o 2 0
+e_TaskState_lTCStable
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_TaskState_eaTCStable
+.n 3 e_TaskState_dTCStable e_TaskState_eaTCStable
+.o 1 0
+e_TaskState_nTCStable
+	push_node _cycle_in_spine 3
+.o 4 0
+e_TaskState_eaTCStable
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	update_a 0 1
+	pop_a 1
+	fill_r e_TaskState_kTCStable 2 1 2 0 0
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_dTCNop
+.desc e_TaskState_dTCNop _hnf _hnf 0 0 "TCNop"
+.export e_TaskState_kTCDestroy
+.record e_TaskState_kTCDestroy da 1 0 "TCDestroy"
+.export e_TaskState_eaTCDestroy
+.descexp e_TaskState_dTCDestroy e_TaskState_nTCDestroy e_TaskState_lTCDestroy 1 0 "TCDestroy"
+.o 2 0
+e_TaskState_lTCDestroy
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTCDestroy
+.n 1 e_TaskState_dTCDestroy e_TaskState_eaTCDestroy
+.o 1 0
+e_TaskState_nTCDestroy
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTCDestroy
+	jsr_eval 0
+	fill_r e_TaskState_kTCDestroy 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_kDeferredJSON
+.record e_TaskState_kDeferredJSON da(a)a 3 0 "DeferredJSON"
+.export e_TaskState_eaDeferredJSON
+.descexp e_TaskState_dDeferredJSON e_TaskState_nDeferredJSON e_TaskState_lDeferredJSON 3 0 "DeferredJSON"
+.a 3 e_TaskState_eaDeferredJSON
+.o 2 0
+e_TaskState_lDeferredJSON
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_TaskState_eaDeferredJSON
+.n 3 e_TaskState_dDeferredJSON e_TaskState_eaDeferredJSON
+.o 1 0
+e_TaskState_nDeferredJSON
+	push_node _cycle_in_spine 3
+.o 4 0
+e_TaskState_eaDeferredJSON
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 1 0
+	update_a 0 2
+	pop_a 1
+	fill_r e_TaskState_kDeferredJSON 3 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.export e_TaskState_kDeferredJSONNode
+.record e_TaskState_kDeferredJSONNode da 1 0 "DeferredJSONNode"
+.export e_TaskState_eaDeferredJSONNode
+.descexp e_TaskState_dDeferredJSONNode e_TaskState_nDeferredJSONNode e_TaskState_lDeferredJSONNode 1 0 "DeferredJSONNode"
+.o 2 0
+e_TaskState_lDeferredJSONNode
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaDeferredJSONNode
+.n 1 e_TaskState_dDeferredJSONNode e_TaskState_eaDeferredJSONNode
+.o 1 0
+e_TaskState_nDeferredJSONNode
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaDeferredJSONNode
+	jsr_eval 0
+	fill_r e_TaskState_kDeferredJSONNode 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_rTaskListEntry
+.record e_TaskState_rTaskListEntry aaaaiib 4 3 "TaskListEntry"
+.descexp e_TaskState_tTaskListEntry e_TaskState_cTaskListEntry _hnf 7 1 "TaskListEntry"
+.n 7 e_TaskState_tTaskListEntry
+.o 1 0
+e_TaskState_cTaskListEntry
+	push_node _cycle_in_spine 7
+	jsr_eval 6
+	jsr_eval 5
+	jsr_eval 4
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushB_a 6
+	pushI_a 5
+	pushI_a 4
+	update_a 3 6
+	update_a 0 3
+	update_a 2 5
+	update_a 1 4
+	pop_a 3
+	fill_r e_TaskState_rTaskListEntry 4 3 4 0 0
+	pop_a 4
+	pop_b 3
+.d 1 0
+	rtn
+.export e_TaskState_dTaskListEntry.entryId
+.export e_TaskState_nTaskListEntry.entryId
+.export e_TaskState_eaTaskListEntry.entryId
+.descs e_TaskState_dTaskListEntry.entryId e_TaskState_nTaskListEntry.entryId _ 1 0 "TaskListEntry.entryId"
+.n -4 e_TaskState_dTaskListEntry.entryId e_TaskState_eaTaskListEntry.entryId
+.o 1 0
+e_TaskState_nTaskListEntry.entryId
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTaskListEntry.entryId
+	jsr_eval 0
+	repl_r_args_a 4 3 1 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTaskListEntry.state
+.export e_TaskState_nTaskListEntry.state
+.export e_TaskState_eaTaskListEntry.state
+.descs e_TaskState_dTaskListEntry.state e_TaskState_nTaskListEntry.state _ 3 0 "TaskListEntry.state"
+.n -4 e_TaskState_dTaskListEntry.state e_TaskState_eaTaskListEntry.state
+.o 1 0
+e_TaskState_nTaskListEntry.state
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTaskListEntry.state
+	jsr_eval 0
+	repl_r_args_a 4 3 2 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTaskListEntry.result
+.export e_TaskState_nTaskListEntry.result
+.export e_TaskState_eaTaskListEntry.result
+.descs e_TaskState_dTaskListEntry.result e_TaskState_nTaskListEntry.result _ 4 0 "TaskListEntry.result"
+.n -4 e_TaskState_dTaskListEntry.result e_TaskState_eaTaskListEntry.result
+.o 1 0
+e_TaskState_nTaskListEntry.result
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTaskListEntry.result
+	jsr_eval 0
+	repl_r_args_a 4 3 3 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTaskListEntry.attributes
+.export e_TaskState_nTaskListEntry.attributes
+.export e_TaskState_eaTaskListEntry.attributes
+.descs e_TaskState_dTaskListEntry.attributes e_TaskState_nTaskListEntry.attributes _ 5 0 "TaskListEntry.attributes"
+.n -4 e_TaskState_dTaskListEntry.attributes e_TaskState_eaTaskListEntry.attributes
+.o 1 0
+e_TaskState_nTaskListEntry.attributes
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTaskListEntry.attributes
+	jsr_eval 0
+	repl_r_args_a 4 3 4 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_dTaskListEntry.createdAt
+.export e_TaskState_nTaskListEntry.createdAt
+.descs e_TaskState_dTaskListEntry.createdAt e_TaskState_nTaskListEntry.createdAt INT 6 0 "TaskListEntry.createdAt"
+.n -3 e_TaskState_dTaskListEntry.createdAt
+.o 1 0
+e_TaskState_nTaskListEntry.createdAt
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 4 3 1 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_dTaskListEntry.lastEvent
+.export e_TaskState_nTaskListEntry.lastEvent
+.descs e_TaskState_dTaskListEntry.lastEvent e_TaskState_nTaskListEntry.lastEvent INT 7 0 "TaskListEntry.lastEvent"
+.n -3 e_TaskState_dTaskListEntry.lastEvent
+.o 1 0
+e_TaskState_nTaskListEntry.lastEvent
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 4 3 2 1
+	pop_a 1
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_dTaskListEntry.removed
+.export e_TaskState_nTaskListEntry.removed
+.descs e_TaskState_dTaskListEntry.removed e_TaskState_nTaskListEntry.removed BOOL 8 0 "TaskListEntry.removed"
+.n -3 e_TaskState_dTaskListEntry.removed
+.o 1 0
+e_TaskState_nTaskListEntry.removed
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	push_r_args_b 0 4 3 3 1
+	pop_a 1
+	fillB_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_kEmbeddedState
+.record e_TaskState_kEmbeddedState daa 2 0 "EmbeddedState"
+.export e_TaskState_eaEmbeddedState
+.descexp e_TaskState_dEmbeddedState e_TaskState_nEmbeddedState e_TaskState_lEmbeddedState 2 0 "EmbeddedState"
+.a 2 e_TaskState_eaEmbeddedState
+.o 2 0
+e_TaskState_lEmbeddedState
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_TaskState_eaEmbeddedState
+.n 2 e_TaskState_dEmbeddedState e_TaskState_eaEmbeddedState
+.o 1 0
+e_TaskState_nEmbeddedState
+	push_node _cycle_in_spine 2
+.o 3 0
+e_TaskState_eaEmbeddedState
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_TaskState_kEmbeddedState 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_TaskState_kDetachedState
+.record e_TaskState_kDetachedState diaa 2 1 "DetachedState"
+.export e_TaskState_eaDetachedState
+.descexp e_TaskState_dDetachedState e_TaskState_nDetachedState e_TaskState_lDetachedState 3 0 "DetachedState"
+.a 3 e_TaskState_eaDetachedState
+.o 2 0
+e_TaskState_lDetachedState
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_TaskState_eaDetachedState
+.n 3 e_TaskState_dDetachedState e_TaskState_eaDetachedState
+.o 1 0
+e_TaskState_nDetachedState
+	push_node _cycle_in_spine 3
+.o 4 0
+e_TaskState_eaDetachedState
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	fill_r e_TaskState_kDetachedState 2 1 2 0 0
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.record r524 a 1 0 "JSONEncode_s;"
+.export e_TaskState_sTD;TaskListEntryState
+.export e_TaskState_eaTD;TaskListEntryState
+.descexp e_TaskState_dTD;TaskListEntryState e_TaskState_nTD;TaskListEntryState e_TaskState_lTD;TaskListEntryState 1 0 "TD;TaskListEntryState"
+.o 2 0
+e_TaskState_lTD;TaskListEntryState
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;TaskListEntryState
+.n 1 e_TaskState_dTD;TaskListEntryState e_TaskState_eaTD;TaskListEntryState
+.o 1 0
+e_TaskState_nTD;TaskListEntryState
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;TaskListEntryState
+.o 2 0
+e_TaskState_sTD;TaskListEntryState
+.o 2 0
+s19
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sTD;TaskListEntry
+.export e_TaskState_eaTD;TaskListEntry
+.descexp e_TaskState_dTD;TaskListEntry e_TaskState_nTD;TaskListEntry e_TaskState_lTD;TaskListEntry 1 0 "TD;TaskListEntry"
+.o 2 0
+e_TaskState_lTD;TaskListEntry
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;TaskListEntry
+.n 1 e_TaskState_dTD;TaskListEntry e_TaskState_eaTD;TaskListEntry
+.o 1 0
+e_TaskState_nTD;TaskListEntry
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;TaskListEntry
+.o 2 0
+e_TaskState_sTD;TaskListEntry
+.o 2 0
+s18
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sTD;DeferredJSON
+.export e_TaskState_eaTD;DeferredJSON
+.descexp e_TaskState_dTD;DeferredJSON e_TaskState_nTD;DeferredJSON e_TaskState_lTD;DeferredJSON 1 0 "TD;DeferredJSON"
+.o 2 0
+e_TaskState_lTD;DeferredJSON
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;DeferredJSON
+.n 1 e_TaskState_dTD;DeferredJSON e_TaskState_eaTD;DeferredJSON
+.o 1 0
+e_TaskState_nTD;DeferredJSON
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;DeferredJSON
+.o 2 0
+e_TaskState_sTD;DeferredJSON
+.o 2 0
+s17
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sTD;TaskTree
+.export e_TaskState_eaTD;TaskTree
+.descexp e_TaskState_dTD;TaskTree e_TaskState_nTD;TaskTree e_TaskState_lTD;TaskTree 1 0 "TD;TaskTree"
+.o 2 0
+e_TaskState_lTD;TaskTree
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;TaskTree
+.n 1 e_TaskState_dTD;TaskTree e_TaskState_eaTD;TaskTree
+.o 1 0
+e_TaskState_nTD;TaskTree
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;TaskTree
+.o 2 0
+e_TaskState_sTD;TaskTree
+.o 2 0
+s16
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sTD;TIRep
+.export e_TaskState_eaTD;TIRep
+.descexp e_TaskState_dTD;TIRep e_TaskState_nTD;TIRep e_TaskState_lTD;TIRep 1 0 "TD;TIRep"
+.o 2 0
+e_TaskState_lTD;TIRep
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;TIRep
+.n 1 e_TaskState_dTD;TIRep e_TaskState_eaTD;TIRep
+.o 1 0
+e_TaskState_nTD;TIRep
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;TIRep
+.o 2 0
+e_TaskState_sTD;TIRep
+.o 2 0
+s15
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sTD;TIResult
+.export e_TaskState_eaTD;TIResult
+.descexp e_TaskState_dTD;TIResult e_TaskState_nTD;TIResult e_TaskState_lTD;TIResult 1 0 "TD;TIResult"
+.o 2 0
+e_TaskState_lTD;TIResult
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;TIResult
+.n 1 e_TaskState_dTD;TIResult e_TaskState_eaTD;TIResult
+.o 1 0
+e_TaskState_nTD;TIResult
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;TIResult
+.o 2 0
+e_TaskState_sTD;TIResult
+.o 2 0
+s14
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sTD;TIReduct
+.export e_TaskState_eaTD;TIReduct
+.descexp e_TaskState_dTD;TIReduct e_TaskState_nTD;TIReduct e_TaskState_lTD;TIReduct 1 0 "TD;TIReduct"
+.o 2 0
+e_TaskState_lTD;TIReduct
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;TIReduct
+.n 1 e_TaskState_dTD;TIReduct e_TaskState_eaTD;TIReduct
+.o 1 0
+e_TaskState_nTD;TIReduct
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;TIReduct
+.o 2 0
+e_TaskState_sTD;TIReduct
+.o 2 0
+s13
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sTD;TIMeta
+.export e_TaskState_eaTD;TIMeta
+.descexp e_TaskState_dTD;TIMeta e_TaskState_nTD;TIMeta e_TaskState_lTD;TIMeta 1 0 "TD;TIMeta"
+.o 2 0
+e_TaskState_lTD;TIMeta
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;TIMeta
+.n 1 e_TaskState_dTD;TIMeta e_TaskState_eaTD;TIMeta
+.o 1 0
+e_TaskState_nTD;TIMeta
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;TIMeta
+.o 2 0
+e_TaskState_sTD;TIMeta
+.o 2 0
+s12
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sTD;TaskInstance
+.export e_TaskState_eaTD;TaskInstance
+.descexp e_TaskState_dTD;TaskInstance e_TaskState_nTD;TaskInstance e_TaskState_lTD;TaskInstance 1 0 "TD;TaskInstance"
+.o 2 0
+e_TaskState_lTD;TaskInstance
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaTD;TaskInstance
+.n 1 e_TaskState_dTD;TaskInstance e_TaskState_eaTD;TaskInstance
+.o 1 0
+e_TaskState_nTD;TaskInstance
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaTD;TaskInstance
+.o 2 0
+e_TaskState_sTD;TaskInstance
+.o 2 0
+s11
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_TaskState_sJSONDecode_TIReduct;5
+.descexp e_TaskState_dJSONDecode_TIReduct;5 e_TaskState_nJSONDecode_TIReduct;5 e_TaskState_lJSONDecode_TIReduct;5 1 0 "JSONDecode_TIReduct;5"
+.o 2 0
+e_TaskState_lJSONDecode_TIReduct;5
+	pop_a 1
+.d 1 0
+	jsr ea6
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_TaskState_dJSONDecode_TIReduct;5
+.o 1 0
+e_TaskState_nJSONDecode_TIReduct;5
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea6
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea6
+	jsr_eval 0
+.o 1 0
+e_TaskState_sJSONDecode_TIReduct;5
+.o 1 0
+s6
+	buildh d22 0
+	buildh e_JSON_dJSONDecode__List;42 1
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_SystemTypes_dJSONDecode_Map;912 2
+	buildAC "lists"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_SystemTypes_dJSONDecode_Map;912 2
+	buildAC "shares"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_TaskState_dJSONDecode_TaskTree;7 0
+	buildAC "tree"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildAC "nextTaskTime"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildAC "nextTaskNo"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_Task_dJSONDecode_Task;6 1
+	buildAC "task"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_JSON_sJSONDecode_RECORD;38
+.o 2 0
+.d 2 0
+	jmp s685
+.desc d22 _hnf l22 1 0 "JSONDecode_TaskListEntry;21"
+.o 2 0
+l22
+	pop_a 1
+.d 1 0
+	jsr ea22
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 1 0
+ea22
+	jsr_eval 0
+.o 1 0
+s22
+	buildh e_JSON_dJSONDecode_Bool;33 0
+	buildAC "removed"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildAC "lastEvent"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildAC "createdAt"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode__String;34 0
+	buildh e_JSON_dJSONDecode__String;34 0
+	buildh e_SystemTypes_dJSONDecode_Map;912 2
+	buildAC "attributes"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_TaskState_dJSONDecode_TIResult;6 0
+	buildAC "result"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh d23 0
+	buildAC "state"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildAC "entryId"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_JSON_sJSONDecode_RECORD;38
+.o 2 0
+.d 2 0
+	jmp s684
+.desc d23 _hnf l23 1 0 "JSONDecode_TaskListEntryState;22"
+.o 2 0
+l23
+	pop_a 1
+.d 1 0
+	jsr ea23
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 1 0
+ea23
+	jsr_eval 0
+.o 1 0
+s23
+	buildh e_SystemTypes_dJSONDecode_ManagementMeta;788 0
+	buildh e_SystemTypes_dJSONDecode_ProgressMeta;789 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 3
+	buildAC "DetachedState"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_TaskState_dJSONDecode_TaskTree;7 0
+	buildh e_SerializationGraphCopy_dJSONDecode_Dynamic;11 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 2
+	buildAC "EmbeddedState"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_JSON_sJSONDecode_OBJECT;41
+.o 2 0
+.d 2 0
+	jmp s683
+.o 2 0
+s280
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s392
+.o 2 0
+s392
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	fillh e_Maybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.2
+	repl_args 1 1
+	push_a 0
+	build _ 1 n134
+	fillh e_Maybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea134
+.o 1 0
+n134
+	push_node _cycle_in_spine 1
+.o 2 0
+ea134
+	jsr_eval 0
+.o 2 0
+s134
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.3
+	jmp case.4
+case.3
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	fill_r e_TaskState_kEmbeddedState 2 0 4 0 0
+	pop_a 4
+.d 1 0
+	rtn
+case.4
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	jsr_eval 0
+	pushI_a 5
+	pop_a 1
+	fill_r e_TaskState_kDetachedState 2 1 6 0 0
+	pop_a 6
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_sJSONDecode_TIResult;6
+.descexp e_TaskState_dJSONDecode_TIResult;6 e_TaskState_nJSONDecode_TIResult;6 e_TaskState_lJSONDecode_TIResult;6 1 0 "JSONDecode_TIResult;6"
+.o 2 0
+e_TaskState_lJSONDecode_TIResult;6
+	pop_a 1
+.d 1 0
+	jsr ea7
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_TaskState_dJSONDecode_TIResult;6
+.o 1 0
+e_TaskState_nJSONDecode_TIResult;6
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea7
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea7
+	jsr_eval 0
+.o 1 0
+e_TaskState_sJSONDecode_TIResult;6
+.o 1 0
+s7
+	buildh e_JSON_dJSONDecode__String;34 0
+	buildh e_SerializationGraphCopy_dJSONDecode_Dynamic;11 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 2
+	buildAC "TIException"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_SystemTypes_dJSONDecode_TaskValue;786 1
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 2
+	buildAC "TIValue"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_JSON_sJSONDecode_OBJECT;41
+.o 2 0
+.d 2 0
+	jmp s682
+.o 2 0
+s274
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s390
+.o 2 0
+s390
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.5
+	jmp case.6
+case.5
+	fillh e_Maybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.6
+	repl_args 1 1
+	push_a 0
+	build _ 1 n127
+	fillh e_Maybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea127
+.o 1 0
+n127
+	push_node _cycle_in_spine 1
+.o 2 0
+ea127
+	jsr_eval 0
+.o 2 0
+s127
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.7
+	jmp case.8
+case.7
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	fill_r e_TaskState_kTIValue 1 1 3 0 0
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+case.8
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	fill_r e_TaskState_kTIException 2 0 4 0 0
+	pop_a 4
+.d 1 0
+	rtn
+.o 2 0
+s278
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s388
+.o 2 0
+s388
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.9
+	jmp case.10
+case.9
+	fillh e_Maybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.10
+	repl_args 1 1
+	push_a 0
+	build _ 1 n132
+	fillh e_Maybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _
+.o 1 0
+n132
+	push_node _cycle_in_spine 1
+.o 1 0
+ea132
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	jsr_eval 5
+	push_args 5 2 2
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	jsr_eval 3
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	pushB_a 1
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 3
+	jsr_eval 0
+	pushI_a 4
+	pop_a 1
+	push_a 4
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	push_a 10
+	jsr_eval 0
+	push_a 13
+	jsr_eval 0
+	update_a 3 16
+	update_a 2 15
+	update_a 1 14
+	updatepop_a 0 13
+	fill_r e_TaskState_rTaskListEntry 4 3 4 0 0
+	pop_a 4
+	pop_b 3
+.d 1 0
+	rtn
+.export e_TaskState_sJSONDecode_TaskTree;7
+.descexp e_TaskState_dJSONDecode_TaskTree;7 e_TaskState_nJSONDecode_TaskTree;7 e_TaskState_lJSONDecode_TaskTree;7 1 0 "JSONDecode_TaskTree;7"
+.o 2 0
+e_TaskState_lJSONDecode_TaskTree;7
+	pop_a 1
+.d 1 0
+	jsr ea8
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_TaskState_dJSONDecode_TaskTree;7
+.o 1 0
+e_TaskState_nJSONDecode_TaskTree;7
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea8
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea8
+	jsr_eval 0
+.o 1 0
+e_TaskState_sJSONDecode_TaskTree;7
+.o 1 0
+s8
+	buildh e_TaskState_dJSONDecode_TaskTree;7 0
+	buildI 1
+	buildAC "TCDestroy"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_UNIT;35 0
+	buildI 0
+	buildAC "TCNop"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_TaskState_dJSONDecode_DeferredJSON;9 0
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 3
+	buildAC "TCStable"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_TaskState_dJSONDecode_TaskTree;7 0
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 3
+	buildAC "TCShared"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 2
+	buildAC "TCParallel"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_TaskState_dJSONDecode_TaskTree;7 0
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_TaskState_dJSONDecode_DeferredJSON;9 0
+	buildh e_JSON_dJSONDecode__Tuple3;44 3
+	buildh e_TaskState_dJSONDecode_TaskTree;7 0
+	buildh e_SystemTypes_dJSONDecode_Either;914 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 3
+	buildAC "TCStep"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_TaskState_dJSONDecode_TaskTree;7 0
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 3
+	buildAC "TCProject"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_SystemTypes_dJSONDecode_InteractionMask;775 0
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 5
+	buildAC "TCInteract2"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_SystemTypes_dJSONDecode_InteractionMask;775 0
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 4
+	buildAC "TCInteract1"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_SystemTypes_dJSONDecode_InteractionMask;775 0
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 6
+	buildAC "TCInteract"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_Bool;33 0
+	buildh e_JSON_dJSONDecode_JSONNode;50 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 4
+	buildAC "TCBasic"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 2
+	buildAC "TCInit"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	buildh e_JSON_dJSONDecode_EITHER;37 2
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_JSON_sJSONDecode_OBJECT;41
+.o 2 0
+.d 2 0
+	jmp s681
+.export e_TaskState_sJSONDecode_DeferredJSON;9
+.descexp e_TaskState_dJSONDecode_DeferredJSON;9 e_TaskState_nJSONDecode_DeferredJSON;9 e_TaskState_lJSONDecode_DeferredJSON;9 1 0 "JSONDecode_DeferredJSON;9"
+.o 2 0
+e_TaskState_lJSONDecode_DeferredJSON;9
+	pop_a 1
+.d 1 0
+	jsr ea10
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_TaskState_dJSONDecode_DeferredJSON;9
+.o 1 0
+e_TaskState_nJSONDecode_DeferredJSON;9
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea10
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea10
+	jsr_eval 0
+.o 1 0
+e_TaskState_sJSONDecode_DeferredJSON;9
+.o 1 0
+s10
+	eq_desc _Nil 0 0
+	jmp_true case.11
+	jmp case.12
+case.11
+	buildh _Nil 0
+	buildh e_JSON_dJSONNull 0
+	build_r e_TaskState_kDeferredJSONNode 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	buildh e_Maybe_dJust 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+case.12
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	build e_TaskState_dDeferredJSONNode 1 e_TaskState_nDeferredJSONNode
+	buildh e_Maybe_dJust 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	rtn
+case.13
+	buildh e_Maybe_dNothing 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.o 2 0
+s276
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s386
+.o 2 0
+s386
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.14
+	jmp case.15
+case.14
+	fillh e_Maybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.15
+	repl_args 1 1
+	push_a 0
+	build _ 1 n129
+	fillh e_Maybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea129
+.o 1 0
+n129
+	push_node _cycle_in_spine 1
+.o 2 0
+ea129
+	jsr_eval 0
+.o 2 0
+s129
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.16
+	jmp case.17
+case.16
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.18
+	jmp case.19
+case.18
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.20
+	jmp case.21
+case.20
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	fill_r e_TaskState_kTCInit 1 1 3 0 0
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+case.21
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.22
+	jmp case.23
+case.22
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 2
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	pushB_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	push_a 4
+	jsr_eval 0
+	pushI_a 5
+	pop_a 1
+	push_a 3
+	jsr_eval 0
+	fill_r e_TaskState_kTCBasic 2 2 7 0 0
+	pop_a 7
+	pop_b 2
+.d 1 0
+	rtn
+case.23
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 4
+	push_args 4 2 2
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	pushI_a 9
+	pop_a 1
+	push_a 10
+	jsr_eval 0
+	fill_r e_TaskState_kTCInteract 5 1 14 0 0
+	pop_a 14
+	pop_b 1
+.d 1 0
+	rtn
+case.19
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.24
+	jmp case.25
+case.24
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 2
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 5
+	jsr_eval 0
+	pushI_a 6
+	pop_a 1
+	push_a 4
+	jsr_eval 0
+	fill_r e_TaskState_kTCInteract1 3 1 8 0 0
+	pop_a 8
+	pop_b 1
+.d 1 0
+	rtn
+case.25
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.26
+	jmp case.27
+case.26
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 2
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	pushI_a 9
+	pop_a 1
+	push_a 7
+	jsr_eval 0
+	fill_r e_TaskState_kTCInteract2 4 1 11 0 0
+	pop_a 11
+	pop_b 1
+.d 1 0
+	rtn
+case.27
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	jsr_eval 0
+	fill_r e_TaskState_kTCProject 3 0 7 0 0
+	pop_a 7
+.d 1 0
+	rtn
+case.17
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.28
+	jmp case.29
+case.28
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.30
+	jmp case.31
+case.30
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 3
+	jsr_eval 0
+	fill_r e_TaskState_kTCStep 2 1 6 0 0
+	pop_a 6
+	pop_b 1
+.d 1 0
+	rtn
+case.31
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.32
+	jmp case.33
+case.32
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	fill_r e_TaskState_kTCParallel 1 1 3 0 0
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+case.33
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 3
+	jsr_eval 0
+	fill_r e_TaskState_kTCShared 2 1 6 0 0
+	pop_a 6
+	pop_b 1
+.d 1 0
+	rtn
+case.29
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.34
+	jmp case.35
+case.34
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 3
+	jsr_eval 0
+	fill_r e_TaskState_kTCStable 2 1 6 0 0
+	pop_a 6
+	pop_b 1
+.d 1 0
+	rtn
+case.35
+	repl_args 1 1
+	jsr_eval 0
+	eq_desc e_StdGeneric_dLEFT 1 0
+	jmp_true case.36
+	jmp case.37
+case.36
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	fillh e_TaskState_dTCNop 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.37
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	push_a 0
+	jsr_eval 0
+	fill_r e_TaskState_kTCDestroy 1 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.o 2 0
+s272
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s384
+.o 2 0
+s384
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.38
+	jmp case.39
+case.38
+	fillh e_Maybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.39
+	repl_args 1 1
+	push_a 0
+	build _ 1 n125
+	fillh e_Maybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _
+.o 1 0
+n125
+	push_node _cycle_in_spine 1
+.o 1 0
+ea125
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	jsr_eval 5
+	push_args 5 2 2
+	buildh _Nil 0
+	update_a 0 8
+	pop_a 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	push_a 5
+	jsr_eval 0
+	push_a 8
+	jsr_eval 0
+	pushI_a 9
+	pop_a 1
+	push_a 9
+	jsr_eval 0
+	pushI_a 10
+	pop_a 1
+	push_a 11
+	jsr_eval 0
+	update_a 3 14
+	update_a 2 13
+	update_a 1 12
+	updatepop_a 0 11
+	fill_r e_TaskState_rTIReduct 4 2 4 0 0
+	pop_a 4
+	pop_b 2
+.d 1 0
+	rtn
+.export e_TaskState_sJSONDecode_TIMeta;4
+.descexp e_TaskState_dJSONDecode_TIMeta;4 e_TaskState_nJSONDecode_TIMeta;4 e_TaskState_lJSONDecode_TIMeta;4 1 0 "JSONDecode_TIMeta;4"
+.o 2 0
+e_TaskState_lJSONDecode_TIMeta;4
+	pop_a 1
+.d 1 0
+	jsr ea5
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.n 1 e_TaskState_dJSONDecode_TIMeta;4
+.o 1 0
+e_TaskState_nJSONDecode_TIMeta;4
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea5
+.o 2 0
+	push_a 1
+	push_a 1
+	fillh _Tuple 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.o 1 0
+ea5
+	jsr_eval 0
+.o 1 0
+e_TaskState_sJSONDecode_TIMeta;4
+.o 1 0
+s5
+	buildh e_SystemTypes_dJSONDecode_ManagementMeta;788 0
+	buildAC "management"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_SystemTypes_dJSONDecode_ProgressMeta;789 0
+	buildAC "progress"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_SystemTypes_dJSONDecode_User;791 0
+	buildh e_JSON_dJSONDecode_Maybe;49 1
+	buildAC "worker"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode__List;42 1
+	buildAC "observedBy"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode__List;42 1
+	buildAC "observes"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildAC "parent"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode__String;34 0
+	buildh e_JSON_dJSONDecode_Maybe;49 1
+	buildAC "sessionId"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildAC "instanceNo"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_FIELD;39 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_JSON_sJSONDecode_RECORD;38
+.o 2 0
+.d 2 0
+	jmp s680
+.o 2 0
+s270
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s382
+.o 2 0
+s382
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.40
+	jmp case.41
+case.40
+	fillh e_Maybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.41
+	repl_args 1 1
+	push_a 0
+	build _ 1 n122
+	fillh e_Maybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _
+.o 1 0
+n122
+	push_node _cycle_in_spine 1
+.o 1 0
+ea122
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	jsr_eval 3
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	jsr_eval 7
+	push_args 7 2 2
+	buildh _Nil 0
+	update_a 0 10
+	pop_a 1
+	jsr_eval 0
+	repl_args 2 2
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	jsr_eval 3
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	push_a 2
+	jsr_eval 0
+	push_a 5
+	jsr_eval 0
+	push_a 7
+	jsr_eval 0
+	push_a 11
+	jsr_eval 0
+	push_a 13
+	jsr_eval 0
+	pushI_a 14
+	pop_a 1
+	push_a 15
+	jsr_eval 0
+	push_a 17
+	jsr_eval 0
+	pushI_a 18
+	pop_a 1
+	update_a 5 20
+	update_a 4 19
+	update_a 3 18
+	update_a 2 17
+	update_a 1 16
+	updatepop_a 0 15
+	fill_r e_TaskState_rTIMeta 6 2 6 0 0
+	pop_a 6
+	pop_b 2
+.d 1 0
+	rtn
+.export e_TaskState_sJSONEncode_TIReduct;1
+.export e_TaskState_eaJSONEncode_TIReduct;1
+.descexp e_TaskState_dJSONEncode_TIReduct;1 e_TaskState_nJSONEncode_TIReduct;1 e_TaskState_lJSONEncode_TIReduct;1 1 0 "JSONEncode_TIReduct;1"
+.o 2 0
+e_TaskState_lJSONEncode_TIReduct;1
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaJSONEncode_TIReduct;1
+.n 1 e_TaskState_dJSONEncode_TIReduct;1 e_TaskState_eaJSONEncode_TIReduct;1
+.o 1 0
+e_TaskState_nJSONEncode_TIReduct;1
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaJSONEncode_TIReduct;1
+	jsr_eval 0
+	repl_r_args 4 2
+.o 5 2 ii
+e_TaskState_sJSONEncode_TIReduct;1
+.o 5 2 ii
+s2
+	create
+	push_a 4
+	push_a 4
+	push_a 4
+	push_b 1
+	push_b 1
+	push_a 4
+	update_b 1 3
+	updatepop_b 0 2
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 2 ii
+	jsr s126
+.o 1 0
+	buildh d20 0
+	buildh e_JSON_dJSONEncode__List;21 1
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_SystemTypes_dJSONEncode_Map;907 2
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_SystemTypes_dJSONEncode_Map;907 2
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_TaskState_dJSONEncode_TaskTree;3 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_Task_dJSONEncode_Task;5 1
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	build _ 0 n124
+.d 4 0
+	jmp e_JSON_sJSONEncode_RECORD;17
+.desc d20 _hnf l20 1 0 "JSONEncode_TaskListEntry;19"
+.o 2 0
+l20
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea20
+	jsr_eval 0
+	repl_r_args 4 3
+.o 5 3 iib
+s20
+	create
+	push_b 2
+	push_b 2
+	push_b 2
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 3 iib
+	jsr s133
+.o 1 0
+	buildh e_JSON_dJSONEncode_Bool;12 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode__String;13 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	buildh e_SystemTypes_dJSONEncode_Map;907 2
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_TaskState_dJSONEncode_TIResult;2 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh d21 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	build _ 0 n131
+.d 4 0
+	jmp e_JSON_sJSONEncode_RECORD;17
+.desc d21 _hnf l21 1 0 "JSONEncode_TaskListEntryState;20"
+.o 2 0
+l21
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea21
+	jsr_eval 0
+.o 2 0
+s21
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s135
+.o 1 0
+	buildh e_SystemTypes_dJSONEncode_ManagementMeta;778 0
+	buildh e_SystemTypes_dJSONEncode_ProgressMeta;779 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 3
+	buildAC "DetachedState"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_TaskState_dJSONEncode_TaskTree;3 0
+	buildh e_SerializationGraphCopy_dJSONEncode_Dynamic;9 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 2
+	buildAC "EmbeddedState"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+.d 3 0
+	jmp e_JSON_sJSONEncode_OBJECT;20
+.o 2 0
+s135
+	eq_desc e_TaskState_kEmbeddedState 0 0
+	jmp_true case.42
+	jmp case.43
+case.42
+	repl_args 2 2
+	push_a 1
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 3
+	pop_a 2
+.d 1 0
+	rtn
+case.43
+	repl_r_args 2 1
+	push_a 1
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildI_b 0
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 3
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.export e_TaskState_sJSONEncode_TIResult;2
+.export e_TaskState_eaJSONEncode_TIResult;2
+.descexp e_TaskState_dJSONEncode_TIResult;2 e_TaskState_nJSONEncode_TIResult;2 e_TaskState_lJSONEncode_TIResult;2 1 0 "JSONEncode_TIResult;2"
+.o 2 0
+e_TaskState_lJSONEncode_TIResult;2
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaJSONEncode_TIResult;2
+.n 1 e_TaskState_dJSONEncode_TIResult;2 e_TaskState_eaJSONEncode_TIResult;2
+.o 1 0
+e_TaskState_nJSONEncode_TIResult;2
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaJSONEncode_TIResult;2
+	jsr_eval 0
+.o 2 0
+e_TaskState_sJSONEncode_TIResult;2
+.o 2 0
+s3
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s128
+.o 1 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	buildh e_SerializationGraphCopy_dJSONEncode_Dynamic;9 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 2
+	buildAC "TIException"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_SystemTypes_dJSONEncode_TaskValue;776 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 2
+	buildAC "TIValue"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+.d 3 0
+	jmp e_JSON_sJSONEncode_OBJECT;20
+.o 2 0
+s128
+	eq_desc e_TaskState_kTIValue 0 0
+	jmp_true case.44
+	jmp case.45
+case.44
+	repl_r_args 1 1
+	buildI_b 0
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.45
+	repl_args 2 2
+	push_a 1
+	buildh ARRAY 1
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.n 0 _ ea131
+.o 1 0
+n131
+	push_node _cycle_in_spine 0
+.o 1 0
+ea131
+.o 1 0
+s131
+	buildh _Nil 0
+	buildAC "removed"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "lastEvent"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "createdAt"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "attributes"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "result"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "state"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "entryId"
+	buildh ARRAY 1
+	fillh _Cons 2 2
+.d 1 0
+	rtn
+.o 5 3 iib
+s133
+	buildB_b 2
+	buildh e_StdGeneric_dFIELD 1
+	buildI_b 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildI_b 0
+	buildh e_StdGeneric_dFIELD 1
+	push_a 5
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 5
+	pop_a 4
+	pop_b 3
+.d 1 0
+	rtn
+.export e_TaskState_sJSONEncode_TaskTree;3
+.export e_TaskState_eaJSONEncode_TaskTree;3
+.descexp e_TaskState_dJSONEncode_TaskTree;3 e_TaskState_nJSONEncode_TaskTree;3 e_TaskState_lJSONEncode_TaskTree;3 1 0 "JSONEncode_TaskTree;3"
+.o 2 0
+e_TaskState_lJSONEncode_TaskTree;3
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaJSONEncode_TaskTree;3
+.n 1 e_TaskState_dJSONEncode_TaskTree;3 e_TaskState_eaJSONEncode_TaskTree;3
+.o 1 0
+e_TaskState_nJSONEncode_TaskTree;3
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaJSONEncode_TaskTree;3
+	jsr_eval 0
+.o 2 0
+e_TaskState_sJSONEncode_TaskTree;3
+.o 2 0
+s4
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s130
+.o 1 0
+	buildh e_TaskState_dJSONEncode_TaskTree;3 0
+	buildI 1
+	buildAC "TCDestroy"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_UNIT;14 0
+	buildI 0
+	buildAC "TCNop"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_TaskState_dJSONEncode_DeferredJSON;8 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 3
+	buildAC "TCStable"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_TaskState_dJSONEncode_TaskTree;3 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 3
+	buildAC "TCShared"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 2
+	buildAC "TCParallel"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_TaskState_dJSONEncode_TaskTree;3 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_TaskState_dJSONEncode_DeferredJSON;8 0
+	buildh e_JSON_dJSONEncode__Tuple3;23 3
+	buildh e_TaskState_dJSONEncode_TaskTree;3 0
+	buildh e_SystemTypes_dJSONEncode_Either;909 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 3
+	buildAC "TCStep"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_TaskState_dJSONEncode_TaskTree;3 0
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 3
+	buildAC "TCProject"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_SystemTypes_dJSONEncode_InteractionMask;774 0
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 5
+	buildAC "TCInteract2"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_SystemTypes_dJSONEncode_InteractionMask;774 0
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 4
+	buildAC "TCInteract1"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_SystemTypes_dJSONEncode_InteractionMask;774 0
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 6
+	buildAC "TCInteract"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_Bool;12 0
+	buildh e_JSON_dJSONEncode_JSONNode;29 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 4
+	buildAC "TCBasic"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_SystemTypes_dJSONEncode_TaskId;883 0
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildI 2
+	buildAC "TCInit"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONEncode_CONS;19 3
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+	buildh e_JSON_dJSONEncode_EITHER;16 2
+.d 3 0
+	jmp e_JSON_sJSONEncode_OBJECT;20
+.export e_TaskState_sJSONEncode_DeferredJSON;8
+.export e_TaskState_eaJSONEncode_DeferredJSON;8
+.descexp e_TaskState_dJSONEncode_DeferredJSON;8 e_TaskState_nJSONEncode_DeferredJSON;8 e_TaskState_lJSONEncode_DeferredJSON;8 1 0 "JSONEncode_DeferredJSON;8"
+.o 2 0
+e_TaskState_lJSONEncode_DeferredJSON;8
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaJSONEncode_DeferredJSON;8
+.n 1 e_TaskState_dJSONEncode_DeferredJSON;8 e_TaskState_eaJSONEncode_DeferredJSON;8
+.o 1 0
+e_TaskState_nJSONEncode_DeferredJSON;8
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaJSONEncode_DeferredJSON;8
+	jsr_eval 0
+.o 2 0
+e_TaskState_sJSONEncode_DeferredJSON;8
+.o 2 0
+s9
+	eq_desc e_TaskState_kDeferredJSON 0 0
+	jmp_true case.46
+	jmp case.47
+case.46
+	repl_args 3 3
+	pop_a 1
+	push_a 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 1
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.47
+	repl_args 1 1
+	buildh _Nil 0
+	push_a 1
+	fillh _Cons 2 3
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+s130
+	pushD_a 0
+	eqD_b e_TaskState_kTCInit 0
+	jmp_true case.48
+	eqD_b e_TaskState_kTCBasic 0
+	jmp_true case.49
+	eqD_b e_TaskState_kTCInteract 0
+	jmp_true case.50
+	eqD_b e_TaskState_kTCInteract1 0
+	jmp_true case.51
+	eqD_b e_TaskState_kTCInteract2 0
+	jmp_true case.52
+	eqD_b e_TaskState_kTCProject 0
+	jmp_true case.53
+	eqD_b e_TaskState_kTCStep 0
+	jmp_true case.54
+	eqD_b e_TaskState_kTCParallel 0
+	jmp_true case.55
+	eqD_b e_TaskState_kTCShared 0
+	jmp_true case.56
+	eqD_b e_TaskState_kTCStable 0
+	jmp_true case.57
+	eqD_b e_TaskState_dTCNop 0
+	jmp_true case.58
+	jmp case.59
+case.48
+	pop_b 1
+	repl_r_args 1 1
+	buildI_b 0
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.49
+	pop_b 1
+	repl_r_args 2 2
+	buildB_b 1
+	push_a 2
+	buildh e_StdGeneric_dPAIR 2
+	buildI_b 0
+	push_a 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 3
+	pop_a 2
+	pop_b 2
+.d 1 0
+	rtn
+case.50
+	pop_b 1
+	repl_r_args 5 1
+	push_a 4
+	push_a 4
+	buildh e_StdGeneric_dPAIR 2
+	push_a 3
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildI_b 0
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 6
+	pop_a 5
+	pop_b 1
+.d 1 0
+	rtn
+case.51
+	pop_b 1
+	repl_r_args 3 1
+	push_a 2
+	push_a 2
+	buildh e_StdGeneric_dPAIR 2
+	buildI_b 0
+	push_a 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 4
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+case.52
+	pop_b 1
+	repl_r_args 4 1
+	push_a 3
+	push_a 3
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dPAIR 2
+	buildI_b 0
+	push_a 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 5
+	pop_a 4
+	pop_b 1
+.d 1 0
+	rtn
+case.53
+	pop_b 1
+	repl_args 3 3
+	push_a 2
+	push_a 2
+	buildh e_StdGeneric_dPAIR 2
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 4
+	pop_a 3
+.d 1 0
+	rtn
+case.54
+	pop_b 1
+	repl_r_args 2 1
+	push_a 1
+	buildI_b 0
+	buildh e_StdGeneric_dPAIR 2
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 3
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.55
+	pop_b 1
+	repl_r_args 1 1
+	buildI_b 0
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.56
+	pop_b 1
+	repl_r_args 2 1
+	push_a 1
+	buildI_b 0
+	buildh e_StdGeneric_dPAIR 2
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 3
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.57
+	pop_b 1
+	repl_r_args 2 1
+	push_a 1
+	buildI_b 0
+	buildh e_StdGeneric_dPAIR 2
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 3
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.58
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.59
+	pop_b 1
+	repl_args 1 1
+	push_a 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 0 _ ea124
+.o 1 0
+n124
+	push_node _cycle_in_spine 0
+.o 1 0
+ea124
+.o 1 0
+s124
+	buildh _Nil 0
+	buildAC "lists"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "shares"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "tree"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "nextTaskTime"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "nextTaskNo"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "task"
+	buildh ARRAY 1
+	fillh _Cons 2 2
+.d 1 0
+	rtn
+.o 5 2 ii
+s126
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildI_b 1
+	buildh e_StdGeneric_dFIELD 1
+	buildI_b 0
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 5
+	pop_a 4
+	pop_b 2
+.d 1 0
+	rtn
+.export e_TaskState_sJSONEncode_TIMeta;0
+.export e_TaskState_eaJSONEncode_TIMeta;0
+.descexp e_TaskState_dJSONEncode_TIMeta;0 e_TaskState_nJSONEncode_TIMeta;0 e_TaskState_lJSONEncode_TIMeta;0 1 0 "JSONEncode_TIMeta;0"
+.o 2 0
+e_TaskState_lJSONEncode_TIMeta;0
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_TaskState_eaJSONEncode_TIMeta;0
+.n 1 e_TaskState_dJSONEncode_TIMeta;0 e_TaskState_eaJSONEncode_TIMeta;0
+.o 1 0
+e_TaskState_nJSONEncode_TIMeta;0
+	push_node _cycle_in_spine 1
+.o 2 0
+e_TaskState_eaJSONEncode_TIMeta;0
+	jsr_eval 0
+	repl_r_args 6 2
+.o 7 2 ii
+e_TaskState_sJSONEncode_TIMeta;0
+.o 7 2 ii
+s1
+	create
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_a 6
+	push_b 1
+	push_a 6
+	push_b 1
+	update_b 1 3
+	updatepop_b 0 2
+	update_a 6 12
+	update_a 5 11
+	update_a 4 10
+	update_a 3 9
+	update_a 2 8
+	update_a 1 7
+	updatepop_a 0 6
+.d 7 2 ii
+	jsr s123
+.o 1 0
+	buildh e_SystemTypes_dJSONEncode_ManagementMeta;778 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_SystemTypes_dJSONEncode_ProgressMeta;779 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_SystemTypes_dJSONEncode_User;781 0
+	buildh e_JSON_dJSONEncode_Maybe;28 1
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode__List;21 1
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode__List;21 1
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode__String;13 0
+	buildh e_JSON_dJSONEncode_Maybe;28 1
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	build _ 0 n121
+.d 4 0
+	jmp e_JSON_sJSONEncode_RECORD;17
+.n 0 _ ea121
+.o 1 0
+n121
+	push_node _cycle_in_spine 0
+.o 1 0
+ea121
+.o 1 0
+s121
+	buildh _Nil 0
+	buildAC "management"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "progress"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "worker"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "observedBy"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "observes"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "parent"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "sessionId"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "instanceNo"
+	buildh ARRAY 1
+	fillh _Cons 2 2
+.d 1 0
+	rtn
+.o 7 2 ii
+s123
+	push_a 5
+	buildh e_StdGeneric_dFIELD 1
+	push_a 5
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 4
+	buildh e_StdGeneric_dFIELD 1
+	push_a 4
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildI_b 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildI_b 0
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 7
+	pop_a 6
+	pop_b 2
+.d 1 0
+	rtn
+.o 2 0
+s680
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s791
+.o 2 0
+s681
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s790
+.o 2 0
+s682
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s789
+.o 2 0
+s683
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s788
+.o 2 0
+s684
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s787
+.o 2 0
+s685
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s786
+.o 2 0
+s786
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s272
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.o 2 0
+s787
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s278
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.o 2 0
+s788
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s280
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.o 2 0
+s789
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s274
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.o 2 0
+s790
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s276
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.o 2 0
+s791
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s270
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn

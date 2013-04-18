@@ -4,15 +4,20 @@ import StdList, StdBool, StdTuple
 import Time, JSON
 import SystemTypes, Task, TaskState, TaskEval, TaskStore, UIDiff, Util, HtmlUtil, Map
 import Engine, IWorld
+import StdDebug
 
 //The representation of the JSON service
-:: ServiceResponse :== [ServiceResponsePart]
+/*:: ServiceResponse :== [ServiceResponsePart]
 :: ServiceResponsePart =
 	{ taskId	:: !String
 	, value		:: !JSONNode
-	}
+	}*/
 	
-derive JSONEncode ServiceResponsePart, TaskServiceRep
+:: ServiceResponse = 
+	{ sessionId :: String
+	, task		:: TaskServiceRep
+	}
+derive JSONEncode ServiceResponse, TaskServiceRep
 
 //TODO: The upload and download mechanism used here is inherently insecure!!!
 // A smarter scheme that checks up and downloads, based on the current session/task is needed to prevent
@@ -20,6 +25,7 @@ derive JSONEncode ServiceResponsePart, TaskServiceRep
 
 webService :: !(HTTPRequest -> Task a) !ServiceFormat !HTTPRequest !*IWorld -> (!HTTPResponse, !*IWorld) | iTask a
 webService task defaultFormat req iworld=:{IWorld|timestamp,application}
+	
 	//Check for uploads
 	| hasParam "upload" req
 		# uploads = toList req.arg_uploads
@@ -97,14 +103,14 @@ webService task defaultFormat req iworld=:{IWorld|timestamp,application}
 			# (mbResult,iworld)	= case sessionParam of
 				""	= createSessionTaskInstance (task req) RefreshEvent iworld
 				sessionId
-					= evalSessionTaskInstance sessionId RefreshEvent iworld
+					= (evalSessionTaskInstance sessionId event iworld)
 			= case mbResult of
 				Ok (ExceptionResult _ err,_,_)
 					= (errorResponse err, iworld)
 				Ok (ValueResult (Value val True) _ _ _,_,_)
 					= (jsonResponse (serviceDoneResponse val), iworld)
-				Ok (ValueResult _ _ (TaskRep def rep) tt,_,_)
-					= (jsonResponse (serviceBusyResponse rep (uiDefActions def) (toList (uiDefAttributes def))), iworld)
+				Ok (ValueResult _ _ (TaskRep def rep) tt,_,sessionId)
+					= (jsonResponse (serviceBusyResponse rep (uiDefActions def) (toList (uiDefAttributes def)) sessionId), iworld)
 		//Serve the task in a minimal JSON representation (only possible for non-parallel instantly completing tasks)
 		JSONPlain
 			# (mbResult,iworld) = createSessionTaskInstance (task req) RefreshEvent iworld
@@ -153,8 +159,8 @@ where
 		= {HTTPResponse | rsp_headers = fromList [("Status", "500 Internal Server Error")], rsp_data = msg}
 	
 
-	serviceBusyResponse rep actions attributes
-		=toJSON rep //= JSONObject [("status",JSONString "busy"),("task",toJSON rep),("attributes",JSONObject [(k,JSONString v) \\ (k,v) <- attributes])]
+	serviceBusyResponse rep actions attributes sessionId
+		= toJSON {ServiceResponse| task = rep, sessionId = sessionId } //= JSONObject [("status",JSONString "busy"),("task",toJSON rep),("attributes",JSONObject [(k,JSONString v) \\ (k,v) <- attributes])]
 	//where
 		//parts = toJSON [{ServiceResponsePart|taskId = toString taskId, value = value} \\ (taskId,value) <- rep]
 		//findActions match actions

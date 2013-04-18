@@ -3,8 +3,10 @@ import StdMaybe, StdEnv
 import HttpClient
 import TaskRep, Monad
 import Map, Agent, AgentController
-
+import WebServiceInterface
 import SystemTypes
+import Time
+import Token
 
 :: CoordinatorState = { favoriteDate :: Date }
 
@@ -45,8 +47,21 @@ dateChooserActivity dt = task "chooseDate"
 
 :: Test = E. a: Test a
 
-Start world = [Test 1, Test "fop"]
+testAgent = { id = "testAgent", activity = testAgentActivity, initial = Void }
 
-response = "HTTP/1.1 200 OK\r\nFoobar: Hax\r\n\r\ntestttt"
+testAgentActivity :: AgentActivity Void
+testAgentActivity = (task "enterString1"
+					-&&-
+					task "done"
+					==> \(enterString1, done) s. (s, [edit enterString1 "foobar1", act done]) )
+					<|>
+					task "enterString2"
+					-&&-
+					task "done"
+					==> \(enterString1, done) s. (s, [edit enterString1 "foobar2", act done]) 
+
+Start world = runAgents
+	
+	
 //Start :: *World -> *World
 //Start world = startEngine [publish "/" WebApp (\_-> mainTask)] world

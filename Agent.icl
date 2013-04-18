@@ -42,10 +42,16 @@ task tag = Pattern (\s ts. case (filter (\at. at.AgentTask.tag == tag) ts) of
 						x		= x
 
 value :: AgentTask -> a | JSONDecode{|*|} a
-value t = (fromJust o fromJSON) t.AgentTask.value
+value t = (fromJust o fromJSON o fromJust) t.AgentTask.value
 
 edit :: AgentTask a -> AgentAction | JSONEncode{|*|} a
 edit t x = EditAction t.AgentTask.taskId (toJSON x)
 
 act :: AgentTask -> AgentAction
 act t = ActAction t.AgentTask.taskId t.AgentTask.tag
+
+enabled :: AgentTask -> Bool
+enabled t = t.AgentTask.enabled
+
+wait :: Int Int -> AgentAction
+wait min max = WaitAction min max

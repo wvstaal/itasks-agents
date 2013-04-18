@@ -1,10 +1,22 @@
 .comp 920 000111010
 .start __Test_Start
-.depend "AgentController" "20130417210645"
+.depend "Token" "20130418155732"
+.depend "WebServiceInterface" "20130418102410"
+.depend "AgentController" "20130418114446"
 .depend "Shared" "20130225161816"
 .depend "OS" "20130225161913"
 .depend "OSError" "20130225161913"
 .depend "File" "20130225161913"
+.depend "TCPStringChannelsInternal" "20130222144316"
+.depend "TCPStringChannels" "20130222144316"
+.depend "TCPEvent" "20130222144316"
+.depend "tcp_bytestreams" "20130222144316"
+.depend "TCPDef" "20130222144316"
+.depend "TCPChannels" "20130225161829"
+.depend "tcp" "20130222144316"
+.depend "TCPChannelClass" "20130222144316"
+.depend "TCPIP" "20130222144316"
+.depend "HttpServer" "20130418143907"
 .depend "_SharedDataSourceTypes" "20130225161916"
 .depend "Error" "20130225161916"
 .depend "SharedDataSource" "20130225161916"
@@ -22,18 +34,18 @@
 .depend "UIDefinition" "20130412160814"
 .depend "Void" "20130225161916"
 .depend "FilePath" "20130319171155"
-.depend "IWorld" "20130311130302"
+.depend "IWorld" "20130418143908"
 .depend "Time" "20130225161913"
 .depend "Store" "20130311130302"
 .depend "JSON" "20130311130303"
 .depend "StdGeneric" "20130311130302"
 .depend "GenEq" "20130311130302"
 .depend "SystemTypes" "20130412155741"
-.depend "Agent" "20130417153207"
+.depend "Agent" "20130418154205"
 .depend "Monad" "20130225161825"
 .depend "TaskRep" "20130417142850"
 .depend "Map" "20130225161916"
-.depend "HttpClient" "20130417113235"
+.depend "HttpClient" "20130418134120"
 .depend "_SystemEnum" "20130222144314"
 .depend "StdEnum" "20130222144313"
 .depend "StdMisc" "20130222144313"
@@ -57,7 +69,7 @@
 .depend "StdMaybe" "20130225161819"
 .depend "StdOverloaded" "20130222144313"
 .depend "_SystemDynamic" "20130311130303"
-.module m_Test "Test" "20130417141450"
+.module m_Test "Test" "20130418155720"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -92,15 +104,16 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
-.record r22 a 1 0 "CoordinatorState"
-.desc d163 _hnf _add_arg 1 0 "Test"
-.record r25 a 1 0 "JSONEncode_s;"
-.record r31 a 1 0 "JSONDecode_s;"
+.impdesc e_Token_drunAgents
+.record r25 a 1 0 "CoordinatorState"
+.desc d166 _hnf _add_arg 1 0 "Test"
+.record r28 a 1 0 "JSONEncode_s;"
+.record r34 a 1 0 "JSONDecode_s;"
 .export __Test_Start
 .o 0 0
 __Test_Start
 	buildI 65536
-	build _ 1 n6
+	build _ 1 n8
 .d 1 0
 	jmp _driver
 .export e_Test_sTD;Test
@@ -123,7 +136,7 @@ e_Test_eaTD;Test
 .o 2 0
 e_Test_sTD;Test
 .o 2 0
-s13
+s16
 	fillh _Nil 0 1
 	pop_a 1
 .d 1 0
@@ -148,27 +161,20 @@ e_Test_eaTD;CoordinatorState
 .o 2 0
 e_Test_sTD;CoordinatorState
 .o 2 0
-s12
+s15
 	fillh _Nil 0 1
 	pop_a 1
 .d 1 0
 	rtn
-.n 1 _ ea6
+.n 1 _ ea8
 .o 1 0
-n6
+n8
 	push_node _cycle_in_spine 1
 .o 2 0
-ea6
+ea8
 .o 2 0
-s6
-	buildh _Nil 0
-	buildAC "fop"
-	buildh ARRAY 1
-	buildh d163 1
-	buildh _Cons 2
-	buildI 1
-	buildh d163 1
-	fillh _Cons 2 3
+s8
+	fillh e_Token_drunAgents 0 1
 	pop_a 1
 .d 1 0
 	rtn

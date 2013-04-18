@@ -40,8 +40,8 @@
 .depend "StdMaybe" "20130225161819"
 .depend "StdOverloaded" "20130222144313"
 .depend "_SystemDynamic" "20130311130303"
-.depend "HttpClient" "20130417113235"
-.module m_HttpClient "HttpClient" "20130417120220"
+.depend "HttpClient" "20130418134120"
+.module m_HttpClient "HttpClient" "20130418085707"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -281,7 +281,7 @@ e_HttpClient_eaTD;SimpleHttpResponse
 .o 2 0
 e_HttpClient_sTD;SimpleHttpResponse
 .o 2 0
-s3
+s4
 	fillh _Nil 0 1
 	pop_a 1
 .d 1 0
@@ -306,7 +306,7 @@ e_HttpClient_eaTD;SimpleHttpRequest
 .o 2 0
 e_HttpClient_sTD;SimpleHttpRequest
 .o 2 0
-s2
+s3
 	fillh _Nil 0 1
 	pop_a 1
 .d 1 0
@@ -381,7 +381,7 @@ s1
 else.1
 	push_a 0
 	build e_Maybe_dfromJust 1 e_Maybe_nfromJust
-	build _ 1 n6
+	build _ 1 n7
 	push_a 2
 	push_a 1
 	update_a 1 2
@@ -391,8 +391,39 @@ else.1
 	updatepop_a 0 2
 .d 2 0
 	rtn
+.export e_HttpClient_stoString;1
+.descexp e_HttpClient_dtoString;1 e_HttpClient_ntoString;1 e_HttpClient_ltoString;1 1 0 "toString;1"
+.o 2 0
+e_HttpClient_ltoString;1
+	pop_a 1
+.d 1 0
+	jsr ea2
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_HttpClient_dtoString;1
+.o 1 0
+e_HttpClient_ntoString;1
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea2
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.o 1 0
+ea2
+	jsr_eval 0
+	repl_r_args 5 0
 .o 5 0
-s15
+e_HttpClient_stoString;1
+.o 5 0
+s2
 	push_a 3
 	jsr_eval 0
 	push_array 0
@@ -432,7 +463,7 @@ s15
 	update_a 0 1
 	pop_a 1
 .d 2 0
-	jsr s13
+	jsr s14
 .o 1 0
 	buildAC ""
 .d 2 0
@@ -499,7 +530,7 @@ case.3
 	update_a 1 2
 	updatepop_a 0 1
 .d 2 0
-	jsr s14
+	jsr s15
 .o 1 0
 	create
 	buildAC "; "
@@ -597,15 +628,15 @@ case.7
 	updatepop_a 0 4
 .d 2 0
 	jmp s27
-.n 1 _ ea14
+.n 1 _ ea15
 .o 1 0
-n14
+n15
 	push_node _cycle_in_spine 1
 .o 2 0
-ea14
+ea15
 	jsr_eval 0
 .o 2 0
-s14
+s15
 	push_a 0
 	updatepop_a 0 1
 .d 2 0
@@ -640,10 +671,10 @@ case.9
 s33
 case.10
 	push_a 2
-	build _ 1 n14
+	build _ 1 n15
 	push_a 2
 	push_a 2
-	build _ 2 n86
+	build _ 2 n76
 	fillh _Cons 2 5
 	pop_a 3
 .d 1 0
@@ -653,15 +684,15 @@ case.11
 	jsr_eval 0
 	updatepop_a 0 3
 .d 2 0
-	jmp s14
-.n 2 _ ea86
+	jmp s15
+.n 2 _ ea76
 .o 1 0
-n86
+n76
 	push_node _cycle_in_spine 2
 .o 3 0
-ea86
+ea76
 .o 3 0
-s86
+s76
 	push_a 1
 	jsr_eval 0
 	push_array 0
@@ -687,15 +718,15 @@ s86
 	pop_a 1
 .d 1 0
 	rtn
-.n 1 _ ea13
+.n 1 _ ea14
 .o 1 0
-n13
+n14
 	push_node _cycle_in_spine 1
 .o 2 0
-ea13
+ea14
 	jsr_eval 0
 .o 2 0
-s13
+s14
 	push_a 0
 	updatepop_a 0 1
 .d 2 0
@@ -730,10 +761,10 @@ case.13
 s31
 case.14
 	push_a 2
-	build _ 1 n13
+	build _ 1 n14
 	push_a 2
 	push_a 2
-	build _ 2 n85
+	build _ 2 n75
 	fillh _Cons 2 5
 	pop_a 3
 .d 1 0
@@ -743,15 +774,15 @@ case.15
 	jsr_eval 0
 	updatepop_a 0 3
 .d 2 0
-	jmp s13
-.n 2 _ ea85
+	jmp s14
+.n 2 _ ea75
 .o 1 0
-n85
+n75
 	push_node _cycle_in_spine 2
 .o 3 0
-ea85
+ea75
 .o 3 0
-s85
+s75
 	push_a 1
 	jsr_eval 0
 	push_array 0
@@ -785,14 +816,14 @@ s85
 	pop_a 1
 .d 1 0
 	rtn
-.n 1 _ ea6
+.n 1 _ ea7
 .o 1 0
-n6
+n7
 	push_node _cycle_in_spine 1
 .o 2 0
-ea6
+ea7
 .o 2 0
-s6
+s7
 	buildh e_StdChar_disSpace 0
 	build e_ParsersKernel_dsatisfy 1 e_ParsersKernel_nsatisfy
 	build e_ParsersDerived_d<!*> 1 e_ParsersDerived_n<!*>
@@ -801,11 +832,11 @@ s6
 	buildh _Cons 2
 	buildC '\r'
 	buildh _Cons 2
-	build _ 0 n75
+	build _ 0 n77
 	build e_system_dAP 2 e_system_nAP
 	push_a 2
 	build e_StdList_dfromString;78 1 e_StdList_nfromString;78
-	buildh d12 0
+	buildh d13 0
 	build e_ParsersKernel_dsatisfy 1 e_ParsersKernel_nsatisfy
 	build e_ParsersDerived_d<!*> 1 e_ParsersDerived_n<!*>
 	push_a 3
@@ -849,7 +880,7 @@ s6
 	buildh _Cons 2
 	buildC 'H'
 	buildh _Cons 2
-	build _ 0 n76
+	build _ 0 n78
 	build e_system_dAP 2 e_system_nAP
 	build e_ParsersKernel_d<&> 2 e_ParsersKernel_n<&>
 	create
@@ -888,26 +919,26 @@ s6
 .o 1 0
 .d 2 0
 	jmp s30
-.n 0 _ ea76
+.n 0 _ ea78
 .o 1 0
-n76
+n78
 	push_node _cycle_in_spine 0
 .o 1 0
-ea76
+ea78
 .o 1 0
-s76
+s78
 	buildh e_StdChar_dtoChar;20 0
 	buildh e_StdChar_d==;18 0
 .d 3 0
 	jmp e_ParsersAccessories_stokenH
-.n 0 _ ea75
+.n 0 _ ea77
 .o 1 0
-n75
+n77
 	push_node _cycle_in_spine 0
 .o 1 0
-ea75
+ea77
 .o 1 0
-s75
+s77
 	buildh e_StdChar_dtoChar;20 0
 	buildh e_StdChar_d==;18 0
 .d 3 0
@@ -964,7 +995,7 @@ s21
 	push_a 1
 	push_a 3
 	buildh d24 2
-	build _ 0 n77
+	build _ 0 n79
 	push_a 5
 	push_a 1
 	update_a 1 2
@@ -979,14 +1010,14 @@ s21
 	updatepop_a 0 4
 .d 3 0
 	jmp e_ParsersKernel_s<&>
-.n 0 _ ea77
+.n 0 _ ea79
 .o 1 0
-n77
+n79
 	push_node _cycle_in_spine 0
 .o 1 0
-ea77
+ea79
 .o 1 0
-s77
+s79
 	buildh e_StdChar_d==;18 0
 	buildC ':'
 	push_a 1
@@ -1045,24 +1076,24 @@ ea25
 	updatepop_a 0 2
 .d 1 0
 	rtn
-.desc d12 _hnf l12 1 0 "<lambda>[line:60];34;11"
+.desc d13 _hnf l13 1 0 "<lambda>[line:60];34;12"
 .o 2 0
-l12
+l13
 	pop_a 1
 .d 1 0
-	jsr ea12
+	jsr ea13
 .o 0 1 b
 	buildB_b 0
 	pop_b 1
 .d 1 0
 	rtn
 .o 1 0
-ea12
+ea13
 	jsr_eval 0
 	pushC_a 0
 	pop_a 1
 .o 0 1 c
-s12
+s13
 	pushC ':'
 	push_b 1
 	eqC
@@ -1117,7 +1148,7 @@ ea20
 	push_a 2
 	build e_StdList_dtoString;79 1 e_StdList_ntoString;79
 	push_a 2
-	build _ 1 n78
+	build _ 1 n80
 	push_a 2
 	push_a 1
 	update_a 1 2
@@ -1130,14 +1161,14 @@ ea20
 	updatepop_a 0 3
 .d 1 0
 	rtn
-.n 1 _ ea78
+.n 1 _ ea80
 .o 1 0
-n78
+n80
 	push_node _cycle_in_spine 1
 .o 2 0
-ea78
+ea80
 .o 2 0
-s78
+s80
 	push_a 0
 	jsr_eval 0
 	buildh e_StdString_d<;3 0
@@ -1148,7 +1179,7 @@ s78
 .d 4 0
 	jmp e_Map_sfromList
 .o 0 0
-s4
+s5
 	pushI 10000000
 .d 0 1 i
 	rtn
@@ -1204,7 +1235,7 @@ else.20
 .d 1 0
 	jsr e_Maybe_sfromJust
 .o 1 0
-	build _ 0 n79
+	build _ 0 n81
 	buildh e_Maybe_dJust 1
 	buildh e_TCPChannelClass_dmb_close_inet_receiver_without_id;10 0
 	buildh e_TCPChannelClass_dchannel_env_get_current_tick;9 0
@@ -1261,7 +1292,7 @@ else.21
 	update_a 0 9
 	pop_a 1
 .d 5 0
-	jsr s15
+	jsr s2
 .o 1 0
 	push_a 0
 	buildh ARRAY 1
@@ -1321,7 +1352,7 @@ else.21
 .o 2 0
 	push_r_args_a 2 2 0 2 1
 	jsr_eval 0
-	build _ 0 n80
+	build _ 0 n82
 	buildh e_Maybe_dJust 1
 	buildh e_TCPChannelClass_dmb_close_inet_receiver_without_id;10 0
 	buildh e_TCPChannelClass_dchannel_env_get_current_tick;9 0
@@ -1357,16 +1388,16 @@ else.21
 	updatepop_a 0 5
 .d 5 0
 	jmp s74
-.n 0 _ ea80
+.n 0 _ ea82
 .o 1 0
-n80
+n82
 	push_node _cycle_in_spine 0
 .o 1 0
-ea80
+ea82
 .o 1 0
-s80
+s82
 .d 0 0
-	jsr s4
+	jsr s5
 .o 0 1 i
 	pushI 20
 	mulI
@@ -1374,16 +1405,16 @@ s80
 	pop_b 1
 .d 1 0
 	rtn
-.n 0 _ ea79
+.n 0 _ ea81
 .o 1 0
-n79
+n81
 	push_node _cycle_in_spine 0
 .o 1 0
-ea79
+ea81
 .o 1 0
-s79
+s81
 .d 0 0
-	jsr s4
+	jsr s5
 .o 0 1 i
 	pushI 15
 	mulI
@@ -1399,9 +1430,9 @@ s74
 case.22
 	push_a 4
 	push_a 4
-	build _ 2 n82
+	build _ 2 n84
 	push_a 3
-	build _ 2 n81
+	build _ 2 n83
 	push_a 2
 	build e_Maybe_dfromJust 1 e_Maybe_nfromJust
 	build e_TCPDef_dtoString;2 1 e_TCPDef_ntoString;2
@@ -1413,13 +1444,81 @@ case.22
 case.23
 	push_a 4
 	push_a 4
-	build _ 2 n84
+	build _ 2 n86
 	push_a 3
-	build _ 2 n83
+	build _ 2 n85
 	buildh e_Maybe_dNothing 0
 	update_a 1 6
 	updatepop_a 0 5
 .d 2 0
+	rtn
+.n 2 _ ea86
+.o 1 0
+n86
+	push_node _cycle_in_spine 2
+.o 3 0
+ea86
+.o 3 0
+s86
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	buildh e_TCPChannelClass_dmb_close_inet_receiver_without_id;10 0
+	buildh e_TCPChannelClass_dchannel_env_get_current_tick;9 0
+	buildh e_TCPChannelClass_dchannelEnvKind;8 0
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 5 0
+	jsr e_TCPChannels_scloseRChannel;23
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 2 _ ea85
+.o 1 0
+n85
+	push_node _cycle_in_spine 2
+.o 3 0
+ea85
+.o 3 0
+s85
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	buildh e_TCPChannels_dsend_MT;18 0
+	buildh e_TCPChannels_dnsend_MT;17 0
+	buildh e_TCPChannels_dflushBuffer_MT;16 0
+	buildh e_TCPChannels_ddisconnected;15 0
+	buildh e_TCPChannels_dcloseChannel_MT;14 0
+	buildh e_TCPChannels_dbufferSize;13 0
+	buildh e_TCPChannels_dabortConnection;12 0
+	buildh e_TCPChannelClass_dmb_close_inet_receiver_without_id;10 0
+	buildh e_TCPChannelClass_dchannel_env_get_current_tick;9 0
+	buildh e_TCPChannelClass_dchannelEnvKind;8 0
+	update_a 11 13
+	update_a 10 12
+	update_a 9 11
+	update_a 8 10
+	update_a 7 9
+	update_a 6 8
+	update_a 5 7
+	update_a 4 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 12 0
+	jsr e_TCPChannelClass_scloseChannel
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
 	rtn
 .n 2 _ ea84
 .o 1 0
@@ -1456,74 +1555,6 @@ n83
 ea83
 .o 3 0
 s83
-	push_a 1
-	jsr_eval 0
-	push_a 1
-	jsr_eval 0
-	buildh e_TCPChannels_dsend_MT;18 0
-	buildh e_TCPChannels_dnsend_MT;17 0
-	buildh e_TCPChannels_dflushBuffer_MT;16 0
-	buildh e_TCPChannels_ddisconnected;15 0
-	buildh e_TCPChannels_dcloseChannel_MT;14 0
-	buildh e_TCPChannels_dbufferSize;13 0
-	buildh e_TCPChannels_dabortConnection;12 0
-	buildh e_TCPChannelClass_dmb_close_inet_receiver_without_id;10 0
-	buildh e_TCPChannelClass_dchannel_env_get_current_tick;9 0
-	buildh e_TCPChannelClass_dchannelEnvKind;8 0
-	update_a 11 13
-	update_a 10 12
-	update_a 9 11
-	update_a 8 10
-	update_a 7 9
-	update_a 6 8
-	update_a 5 7
-	update_a 4 6
-	update_a 3 5
-	update_a 2 4
-	update_a 1 3
-	updatepop_a 0 2
-.d 12 0
-	jsr e_TCPChannelClass_scloseChannel
-.o 1 0
-	fill_a 0 1
-	pop_a 1
-.d 1 0
-	rtn
-.n 2 _ ea82
-.o 1 0
-n82
-	push_node _cycle_in_spine 2
-.o 3 0
-ea82
-.o 3 0
-s82
-	push_a 1
-	jsr_eval 0
-	push_a 1
-	jsr_eval 0
-	buildh e_TCPChannelClass_dmb_close_inet_receiver_without_id;10 0
-	buildh e_TCPChannelClass_dchannel_env_get_current_tick;9 0
-	buildh e_TCPChannelClass_dchannelEnvKind;8 0
-	update_a 4 6
-	update_a 3 5
-	update_a 2 4
-	update_a 1 3
-	updatepop_a 0 2
-.d 5 0
-	jsr e_TCPChannels_scloseRChannel;23
-.o 1 0
-	fill_a 0 1
-	pop_a 1
-.d 1 0
-	rtn
-.n 2 _ ea81
-.o 1 0
-n81
-	push_node _cycle_in_spine 2
-.o 3 0
-ea81
-.o 3 0
-s81
 	push_a 1
 	jsr_eval 0
 	push_a 1

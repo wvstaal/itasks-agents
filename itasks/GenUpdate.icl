@@ -38,11 +38,11 @@ defaultValue :: a | gDefault{|*|} a
 defaultValue = gDefault{|*|} []
 
 updateValueAndMask :: !DataPath !JSONNode !(!a,!InteractionMask) -> (!a,!InteractionMask) | gUpdate{|*|} a & JSONDecode{|*|} a
-updateValueAndMask [] update (a, oldMask) 
+/*updateValueAndMask [] update (a, oldMask) 
 	#newa = fromJSON update
 	= case newa of
 	  Just a  = (a, oldMask)
-	  Nothing = abort "failed to update structure" 
+	  Nothing = abort "failed to update structure" */
 updateValueAndMask path update (a,oldMask)
 	# (a,[newMask:_]) = gUpdate{|*|} path update (a,[oldMask])
 	= (a,newMask)

@@ -1,0 +1,11778 @@
+.comp 920 000111010
+.start _nostart_
+.depend "sapldebug" "20130225161819"
+.depend "Util" "20130311130302"
+.depend "Text" "20130301110941"
+.depend "Shared" "20130225161816"
+.depend "OS" "20130225161913"
+.depend "OSError" "20130225161913"
+.depend "File" "20130225161913"
+.depend "TCPStringChannelsInternal" "20130222144316"
+.depend "TCPStringChannels" "20130222144316"
+.depend "TCPEvent" "20130222144316"
+.depend "tcp_bytestreams" "20130222144316"
+.depend "TCPDef" "20130222144316"
+.depend "TCPChannels" "20130225161829"
+.depend "tcp" "20130222144316"
+.depend "TCPChannelClass" "20130222144316"
+.depend "TCPIP" "20130222144316"
+.depend "HttpServer" "20130418143907"
+.depend "_SharedDataSourceTypes" "20130225161916"
+.depend "Error" "20130225161916"
+.depend "SharedDataSource" "20130225161916"
+.depend "GenRecord" "20130225161816"
+.depend "iTaskClass" "20130225161816"
+.depend "TaskState" "20130411121712"
+.depend "LayoutCombinators" "20130311153144"
+.depend "GenVerify" "20130225161816"
+.depend "GenUpdate" "20130416101727"
+.depend "Either" "20130225161916"
+.depend "HTML" "20130225161915"
+.depend "GenVisualize" "20130412160727"
+.depend "HTTP" "20130225161915"
+.depend "Task" "20130417153220"
+.depend "UIDefinition" "20130412160814"
+.depend "Void" "20130225161916"
+.depend "FilePath" "20130319171155"
+.depend "IWorld" "20130418143908"
+.depend "Time" "20130225161913"
+.depend "Store" "20130311130302"
+.depend "JSON" "20130311130303"
+.depend "StdGeneric" "20130311130302"
+.depend "GenEq" "20130311130302"
+.depend "SystemTypes" "20130412155741"
+.depend "Map" "20130225161916"
+.depend "_SystemEnum" "20130222144314"
+.depend "StdEnum" "20130222144313"
+.depend "StdMisc" "20130222144313"
+.depend "StdTuple" "20130222144314"
+.depend "StdList" "20130222144313"
+.depend "StdClass" "20130222144313"
+.depend "StdFile" "20130222144313"
+.depend "StdString" "20130222144314"
+.depend "StdChar" "20130222144313"
+.depend "StdReal" "20130222144314"
+.depend "StdInt" "20130222144313"
+.depend "StdBool" "20130222144313"
+.depend "Functor" "20130308112748"
+.depend "Maybe" "20130225161916"
+.depend "StdMaybe" "20130225161819"
+.depend "StdOverloaded" "20130222144313"
+.depend "_SystemDynamic" "20130311130303"
+.depend "UIDiff" "20130301110939"
+.module m_UIDiff "UIDiff" "20130405090259"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.implab e_UIDefinition_suiDefControls
+.impdesc e_UIDefinition_dencodeUIControl
+.implab e_UIDefinition_nencodeUIControl e_UIDefinition_eaencodeUIControl
+.impdesc e_UIDefinition_dencodeUIWindow
+.implab e_UIDefinition_nencodeUIWindow e_UIDefinition_eaencodeUIWindow
+.impdesc e_UIDefinition_dencodeUIValue;17
+.impdesc e_UIDefinition_dencodeUIValue;18
+.impdesc e_UIDefinition_dencodeUIValue;19
+.impdesc e_UIDefinition_dencodeUIValue;20
+.impdesc e_UIDefinition_dencodeUIValue;21
+.impdesc e_UIDefinition_dencodeUIValue;22
+.impdesc e_UIDefinition_dencodeUIValue;23
+.impdesc e_UIDefinition_dencodeUIValue;24
+.impdesc e_UIDefinition_dencodeUIValue;25
+.impdesc e_UIDefinition_dencodeUIValue;26
+.implab e_UIDefinition_sencodeUIValue;27
+.impdesc e_UIDefinition_dUIViewportOpts.hotkeys
+.implab e_UIDefinition_nUIViewportOpts.hotkeys e_UIDefinition_eaUIViewportOpts.hotkeys
+.impdesc e_UIDefinition_dUIViewportOpts.windows
+.implab e_UIDefinition_nUIViewportOpts.windows e_UIDefinition_eaUIViewportOpts.windows
+.impdesc e_UIDefinition_dUIWindowOpts.title
+.implab e_UIDefinition_nUIWindowOpts.title e_UIDefinition_eaUIWindowOpts.title
+.impdesc e_UIDefinition_dUIWindowOpts.tbar
+.implab e_UIDefinition_nUIWindowOpts.tbar e_UIDefinition_eaUIWindowOpts.tbar
+.impdesc e_UIDefinition_dUIWindowOpts.focusTaskId
+.implab e_UIDefinition_nUIWindowOpts.focusTaskId e_UIDefinition_eaUIWindowOpts.focusTaskId
+.impdesc e_UIDefinition_dUIWindowOpts.closeTaskId
+.implab e_UIDefinition_nUIWindowOpts.closeTaskId e_UIDefinition_eaUIWindowOpts.closeTaskId
+.impdesc e_UIDefinition_dUIWindowOpts.hotkeys
+.implab e_UIDefinition_nUIWindowOpts.hotkeys e_UIDefinition_eaUIWindowOpts.hotkeys
+.impdesc e_UIDefinition_dUIWindowOpts.iconCls
+.implab e_UIDefinition_nUIWindowOpts.iconCls e_UIDefinition_eaUIWindowOpts.iconCls
+.impdesc e_UIDefinition_dUIWindowOpts.baseCls
+.implab e_UIDefinition_nUIWindowOpts.baseCls e_UIDefinition_eaUIWindowOpts.baseCls
+.impdesc e_UIDefinition_dUIWindowOpts.bodyCls
+.implab e_UIDefinition_nUIWindowOpts.bodyCls e_UIDefinition_eaUIWindowOpts.bodyCls
+.impdesc e_UIDefinition_dUIItemsOpts.items
+.implab e_UIDefinition_nUIItemsOpts.items e_UIDefinition_eaUIItemsOpts.items
+.impdesc e_UIDefinition_dUIItemsOpts.direction
+.implab e_UIDefinition_nUIItemsOpts.direction e_UIDefinition_eaUIItemsOpts.direction
+.impdesc e_UIDefinition_dUIItemsOpts.halign
+.implab e_UIDefinition_nUIItemsOpts.halign e_UIDefinition_eaUIItemsOpts.halign
+.impdesc e_UIDefinition_dUIItemsOpts.valign
+.implab e_UIDefinition_nUIItemsOpts.valign e_UIDefinition_eaUIItemsOpts.valign
+.impdesc e_UIDefinition_dUIItemsOpts.padding
+.implab e_UIDefinition_nUIItemsOpts.padding e_UIDefinition_eaUIItemsOpts.padding
+.impdesc e_UIDefinition_dUIViewOpts.value
+.implab e_UIDefinition_nUIViewOpts.value e_UIDefinition_eaUIViewOpts.value
+.impdesc e_UIDefinition_dUIEditOpts.taskId
+.implab e_UIDefinition_nUIEditOpts.taskId
+.impdesc e_UIDefinition_dUIEditOpts.editorId
+.implab e_UIDefinition_nUIEditOpts.editorId
+.impdesc e_UIDefinition_dUIEditOpts.value
+.implab e_UIDefinition_nUIEditOpts.value e_UIDefinition_eaUIEditOpts.value
+.impdesc e_UIDefinition_dUIActionOpts.taskId
+.implab e_UIDefinition_nUIActionOpts.taskId
+.impdesc e_UIDefinition_dUIActionOpts.actionId
+.implab e_UIDefinition_nUIActionOpts.actionId
+.impdesc e_UIDefinition_dUIChoiceOpts.value
+.implab e_UIDefinition_nUIChoiceOpts.value e_UIDefinition_eaUIChoiceOpts.value
+.impdesc e_UIDefinition_dUIChoiceOpts.options
+.implab e_UIDefinition_nUIChoiceOpts.options e_UIDefinition_eaUIChoiceOpts.options
+.impdesc e_UIDefinition_dUIButtonOpts.text
+.implab e_UIDefinition_nUIButtonOpts.text e_UIDefinition_eaUIButtonOpts.text
+.impdesc e_UIDefinition_dUIButtonOpts.iconCls
+.implab e_UIDefinition_nUIButtonOpts.iconCls e_UIDefinition_eaUIButtonOpts.iconCls
+.impdesc e_UIDefinition_dUIButtonOpts.disabled
+.implab e_UIDefinition_nUIButtonOpts.disabled
+.impdesc e_UIDefinition_dUIIconOpts.iconCls
+.implab e_UIDefinition_nUIIconOpts.iconCls
+.impdesc e_UIDefinition_dUIIconOpts.tooltip
+.implab e_UIDefinition_nUIIconOpts.tooltip e_UIDefinition_eaUIIconOpts.tooltip
+.impdesc e_UIDefinition_dUITabOpts.text
+.implab e_UIDefinition_nUITabOpts.text
+.impdesc e_UIDefinition_dUITabOpts.active
+.implab e_UIDefinition_nUITabOpts.active
+.impdesc e_UIDefinition_dUITabOpts.focusTaskId
+.implab e_UIDefinition_nUITabOpts.focusTaskId e_UIDefinition_eaUITabOpts.focusTaskId
+.impdesc e_UIDefinition_dUITabOpts.closeTaskId
+.implab e_UIDefinition_nUITabOpts.closeTaskId e_UIDefinition_eaUITabOpts.closeTaskId
+.impdesc e_UIDefinition_dUITabOpts.iconCls
+.implab e_UIDefinition_nUITabOpts.iconCls e_UIDefinition_eaUITabOpts.iconCls
+.impdesc e_UIDefinition_dUITaskletOpts.taskId
+.implab e_UIDefinition_nUITaskletOpts.taskId
+.impdesc e_UIDefinition_dUITaskletOpts.iid
+.implab e_UIDefinition_nUITaskletOpts.iid
+.impdesc e_UIDefinition_rUITaskletPHOpts
+.impdesc e_UIDefinition_tUITaskletPHOpts
+.implab e_UIDefinition_cUITaskletPHOpts
+.impdesc e_UIDefinition_dUIPanelOpts.title
+.implab e_UIDefinition_nUIPanelOpts.title e_UIDefinition_eaUIPanelOpts.title
+.impdesc e_UIDefinition_dUIPanelOpts.tbar
+.implab e_UIDefinition_nUIPanelOpts.tbar e_UIDefinition_eaUIPanelOpts.tbar
+.impdesc e_UIDefinition_dUIPanelOpts.hotkeys
+.implab e_UIDefinition_nUIPanelOpts.hotkeys e_UIDefinition_eaUIPanelOpts.hotkeys
+.impdesc e_UIDefinition_rencodeUIValue;
+.impdesc e_UIDefinition_kUITaskletPH
+.impdesc e_UIDefinition_dUITaskletPH
+.implab e_UIDefinition_nUITaskletPH e_UIDefinition_eaUITaskletPH
+.implab e_JSON_stoJSON
+.impdesc e_JSON_dJSONEncode_Int;9
+.impdesc e_JSON_dJSONEncode_Bool;12
+.impdesc e_JSON_dJSONEncode__String;13
+.impdesc e_JSON_dJSONEncode_PAIR;15
+.implab e_JSON_sJSONEncode_RECORD;17
+.impdesc e_JSON_dJSONEncode_FIELD;18
+.impdesc e_JSON_dJSONEncode__List;21
+.implab e_JSON_sJSONEncode__List;21
+.implab e_JSON_sJSONEncode__Tuple2;22
+.impdesc e_JSON_dJSONEncode_Maybe;28
+.implab e_JSON_sJSONEncode_Maybe;28
+.impdesc e_JSON_kJSONInt
+.impdesc e_JSON_kJSONString
+.impdesc e_JSON_dJSONString
+.implab e_JSON_nJSONString e_JSON_eaJSONString
+.impdesc e_JSON_kJSONArray
+.impdesc e_JSON_dJSONArray
+.implab e_JSON_nJSONArray e_JSON_eaJSONArray
+.impdesc e_JSON_kJSONObject
+.implab e_GenEq_s===
+.implab e_GenEq_s=!=
+.impdesc e_GenEq_dgEq_Int;2
+.impdesc e_GenEq_dgEq_Bool;4
+.impdesc e_GenEq_dgEq_Real;5
+.impdesc e_GenEq_dgEq__String;6
+.impdesc e_GenEq_dgEq_UNIT;7
+.impdesc e_GenEq_dgEq_PAIR;8
+.impdesc e_GenEq_dgEq_EITHER;9
+.impdesc e_GenEq_dgEq_CONS;10
+.implab e_GenEq_sgEq_RECORD;11
+.impdesc e_GenEq_dgEq_FIELD;12
+.implab e_GenEq_sgEq_OBJECT;13
+.impdesc e_GenEq_dgEq__List;16
+.implab e_GenEq_sgEq__List;16
+.impdesc e_GenEq_dgEq__Tuple2;17
+.implab e_GenEq_sgEq__Tuple2;17
+.implab e_SystemTypes_stoString;110
+.impdesc e_SystemTypes_dgEq_Date;186
+.impdesc e_SystemTypes_dgEq_Time;187
+.impdesc e_SystemTypes_dgEq_Document;189
+.impdesc e_SystemTypes_dgEq_GoogleMapIcon;484
+.impdesc e_SystemTypes_dgEq_ProgressAmount;563
+.impdesc e_SystemTypes_dJSONEncode_Hotkey;785
+.impdesc e_SystemTypes_dgEq_Hotkey;815
+.impdesc e_SystemTypes_dgEq_HtmlTag;916
+.impdesc e_SystemTypes_dgEq_Maybe;921
+.implab e_SystemTypes_sgEq_Maybe;921
+.impdesc e_SystemTypes_dgEq_JSONNode;922
+.implab e__SystemEnum_s_from_to;6
+.impdesc e_StdList_d++
+.implab e_StdList_s++
+.implab e_StdList_n++ e_StdList_ea++
+.impdesc e_StdList_dflatten
+.implab e_StdList_sflatten
+.implab e_StdList_nflatten e_StdList_eaflatten
+.implab e_StdList_sisEmpty
+.implab e_StdList_sreverse
+.implab e_StdList_smap
+.implab e_StdList_slength;47
+.impdesc e_StdString_d==;2
+.implab e_StdString_s==;2
+.impdesc e_StdInt_d+;6
+.implab e_StdInt_s+;6
+.implab e_StdInt_n+;6
+.implab e_StdInt_s-;7
+.implab e_StdInt_sone;11
+.implab e_StdBool_snot
+.implab e_StdBool_s==;3
+.impdesc e_Maybe_dfromMaybe
+.implab e_Maybe_nfromMaybe _
+.implab e_Maybe_sisNothing
+.implab e_Maybe_sisJust
+.implab e_Maybe_s==;10
+.impdesc e_StdOverloaded_r==;
+.export e_UIDiff_kUIUpdate
+.record e_UIDiff_kUIUpdate daa 2 0 "UIUpdate"
+.export e_UIDiff_eaUIUpdate
+.descexp e_UIDiff_dUIUpdate e_UIDiff_nUIUpdate e_UIDiff_lUIUpdate 2 0 "UIUpdate"
+.a 2 e_UIDiff_eaUIUpdate
+.o 2 0
+e_UIDiff_lUIUpdate
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_UIDiff_eaUIUpdate
+.n 2 e_UIDiff_dUIUpdate e_UIDiff_eaUIUpdate
+.o 1 0
+e_UIDiff_nUIUpdate
+	push_node _cycle_in_spine 2
+.o 3 0
+e_UIDiff_eaUIUpdate
+	jsr_eval 1
+	jsr_eval 0
+	fill_r e_UIDiff_kUIUpdate 2 0 2 0 0
+	pop_a 2
+.d 1 0
+	rtn
+.export e_UIDiff_kItemStep
+.record e_UIDiff_kItemStep di 0 1 "ItemStep"
+.export e_UIDiff_eaItemStep
+.descexp e_UIDiff_dItemStep e_UIDiff_nItemStep e_UIDiff_lItemStep 1 0 "ItemStep"
+.o 2 0
+e_UIDiff_lItemStep
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_UIDiff_eaItemStep
+.n 1 e_UIDiff_dItemStep e_UIDiff_eaItemStep
+.o 1 0
+e_UIDiff_nItemStep
+	push_node _cycle_in_spine 1
+.o 2 0
+e_UIDiff_eaItemStep
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	fill_r e_UIDiff_kItemStep 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.export e_UIDiff_dMenuStep
+.desc e_UIDiff_dMenuStep _hnf _hnf 0 0 "MenuStep"
+.export e_UIDiff_kWindowStep
+.record e_UIDiff_kWindowStep di 0 1 "WindowStep"
+.export e_UIDiff_eaWindowStep
+.descexp e_UIDiff_dWindowStep e_UIDiff_nWindowStep e_UIDiff_lWindowStep 1 0 "WindowStep"
+.o 2 0
+e_UIDiff_lWindowStep
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_UIDiff_eaWindowStep
+.n 1 e_UIDiff_dWindowStep e_UIDiff_eaWindowStep
+.o 1 0
+e_UIDiff_nWindowStep
+	push_node _cycle_in_spine 1
+.o 2 0
+e_UIDiff_eaWindowStep
+	jsr_eval 0
+	pushI_a 0
+	pop_a 1
+	fill_r e_UIDiff_kWindowStep 0 1 0 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.desc d478 _hnf _hnf 0 0 "DiffImpossible"
+.desc d479 _hnf _add_arg 1 0 "DiffPossible"
+.record r336 a 1 0 "JSONEncode_s;"
+.record r354 a 1 0 "gEq_s;"
+.export e_UIDiff_sTD;DiffResult
+.export e_UIDiff_eaTD;DiffResult
+.descexp e_UIDiff_dTD;DiffResult e_UIDiff_nTD;DiffResult e_UIDiff_lTD;DiffResult 1 0 "TD;DiffResult"
+.o 2 0
+e_UIDiff_lTD;DiffResult
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_UIDiff_eaTD;DiffResult
+.n 1 e_UIDiff_dTD;DiffResult e_UIDiff_eaTD;DiffResult
+.o 1 0
+e_UIDiff_nTD;DiffResult
+	push_node _cycle_in_spine 1
+.o 2 0
+e_UIDiff_eaTD;DiffResult
+.o 2 0
+e_UIDiff_sTD;DiffResult
+.o 2 0
+s98
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_UIDiff_sTD;UIStep
+.export e_UIDiff_eaTD;UIStep
+.descexp e_UIDiff_dTD;UIStep e_UIDiff_nTD;UIStep e_UIDiff_lTD;UIStep 1 0 "TD;UIStep"
+.o 2 0
+e_UIDiff_lTD;UIStep
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_UIDiff_eaTD;UIStep
+.n 1 e_UIDiff_dTD;UIStep e_UIDiff_eaTD;UIStep
+.o 1 0
+e_UIDiff_nTD;UIStep
+	push_node _cycle_in_spine 1
+.o 2 0
+e_UIDiff_eaTD;UIStep
+.o 2 0
+e_UIDiff_sTD;UIStep
+.o 2 0
+s6
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_UIDiff_sTD;UIPath
+.export e_UIDiff_eaTD;UIPath
+.descexp e_UIDiff_dTD;UIPath e_UIDiff_nTD;UIPath e_UIDiff_lTD;UIPath 1 0 "TD;UIPath"
+.o 2 0
+e_UIDiff_lTD;UIPath
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_UIDiff_eaTD;UIPath
+.n 1 e_UIDiff_dTD;UIPath e_UIDiff_eaTD;UIPath
+.o 1 0
+e_UIDiff_nTD;UIPath
+	push_node _cycle_in_spine 1
+.o 2 0
+e_UIDiff_eaTD;UIPath
+.o 2 0
+e_UIDiff_sTD;UIPath
+.o 2 0
+s5
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_UIDiff_sTD;UIUpdateOperation
+.export e_UIDiff_eaTD;UIUpdateOperation
+.descexp e_UIDiff_dTD;UIUpdateOperation e_UIDiff_nTD;UIUpdateOperation e_UIDiff_lTD;UIUpdateOperation 1 0 "TD;UIUpdateOperation"
+.o 2 0
+e_UIDiff_lTD;UIUpdateOperation
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_UIDiff_eaTD;UIUpdateOperation
+.n 1 e_UIDiff_dTD;UIUpdateOperation e_UIDiff_eaTD;UIUpdateOperation
+.o 1 0
+e_UIDiff_nTD;UIUpdateOperation
+	push_node _cycle_in_spine 1
+.o 2 0
+e_UIDiff_eaTD;UIUpdateOperation
+.o 2 0
+e_UIDiff_sTD;UIUpdateOperation
+.o 2 0
+s4
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_UIDiff_sTD;UIUpdate
+.export e_UIDiff_eaTD;UIUpdate
+.descexp e_UIDiff_dTD;UIUpdate e_UIDiff_nTD;UIUpdate e_UIDiff_lTD;UIUpdate 1 0 "TD;UIUpdate"
+.o 2 0
+e_UIDiff_lTD;UIUpdate
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_UIDiff_eaTD;UIUpdate
+.n 1 e_UIDiff_dTD;UIUpdate e_UIDiff_eaTD;UIUpdate
+.o 1 0
+e_UIDiff_nTD;UIUpdate
+	push_node _cycle_in_spine 1
+.o 2 0
+e_UIDiff_eaTD;UIUpdate
+.o 2 0
+e_UIDiff_sTD;UIUpdate
+.o 2 0
+s3
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_UIDiff_sencodeUIUpdates
+.export e_UIDiff_eaencodeUIUpdates
+.descexp e_UIDiff_dencodeUIUpdates e_UIDiff_nencodeUIUpdates e_UIDiff_lencodeUIUpdates 1 0 "encodeUIUpdates"
+.o 2 0
+e_UIDiff_lencodeUIUpdates
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_UIDiff_eaencodeUIUpdates
+.n 1 e_UIDiff_dencodeUIUpdates e_UIDiff_eaencodeUIUpdates
+.o 1 0
+e_UIDiff_nencodeUIUpdates
+	push_node _cycle_in_spine 1
+.o 2 0
+e_UIDiff_eaencodeUIUpdates
+	jsr_eval 0
+.o 2 0
+e_UIDiff_sencodeUIUpdates
+.o 2 0
+s2
+	buildh d29 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_StdList_smap
+.o 1 0
+	fill_r e_JSON_kJSONArray 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.desc d29 _hnf l29 1 0 "encodeUIUpdate"
+.o 2 0
+l29
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea29
+	jsr_eval 0
+.o 2 0
+s29
+	repl_args 2 2
+	buildh _Nil 0
+	push_a 2
+	build _ 1 n42
+	build e_JSON_dJSONArray 1 e_JSON_nJSONArray
+	buildAC "operations"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 1
+	build _ 1 n30
+	buildAC "path"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	fill_r e_JSON_kJSONObject 1 0 3 0 0
+	pop_a 3
+.d 1 0
+	rtn
+.n 1 _ ea30
+.o 1 0
+n30
+	push_node _cycle_in_spine 1
+.o 2 0
+ea30
+.o 2 0
+s30
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdList_sreverse
+.o 1 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr s43
+.o 1 0
+	fill_r e_JSON_kJSONArray 1 0 1 0 0
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea43
+.o 1 0
+n43
+	push_node _cycle_in_spine 1
+.o 2 0
+ea43
+	jsr_eval 0
+.o 2 0
+s43
+	eq_desc _Nil 0 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.2
+	repl_args 2 2
+	jsr_eval 0
+	pushD_a 0
+	eqD_b e_UIDiff_kItemStep 0
+	jmp_true case.3
+	eqD_b e_UIDiff_dMenuStep 0
+	jmp_true case.4
+	jmp case.5
+case.3
+	pop_b 1
+	repl_r_args 0 1
+	push_a 0
+	build _ 1 n43
+	push_b 0
+	build_r e_JSON_kJSONInt 0 1 0 0
+	pop_b 1
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.4
+	pop_b 1
+	push_a 1
+	build _ 1 n43
+	buildAC "m"
+	build_r e_JSON_kJSONString 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+case.5
+	pop_b 1
+	repl_r_args 0 1
+	push_a 0
+	build _ 1 n43
+	push_b 0
+	build_r e_JSON_kJSONInt 0 1 0 0
+	pop_b 1
+	buildh _Cons 2
+	buildAC "w"
+	build_r e_JSON_kJSONString 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea42
+.o 1 0
+n42
+	push_node _cycle_in_spine 1
+.o 2 0
+ea42
+	jsr_eval 0
+.o 2 0
+s42
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s330
+.o 2 0
+s330
+	eq_desc _Cons 2 0
+	jmp_true case.6
+	jmp case.7
+case.6
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	repl_args 2 2
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s329
+case.7
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 4 0
+s329
+case.8
+	push_a 2
+	build _ 1 n42
+	buildh _Nil 0
+	push_a 3
+	build e_JSON_dJSONArray 1 e_JSON_nJSONArray
+	buildAC "arguments"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_JSON_dJSONString 1 e_JSON_nJSONString
+	buildAC "method"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	build_r e_JSON_kJSONObject 1 0 0 0
+	update_a 0 1
+	pop_a 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.9
+	push_a 2
+	jsr_eval 0
+	updatepop_a 0 3
+.d 2 0
+	jmp s42
+.export e_UIDiff_sdiffUIDefinitions
+.export e_UIDiff_eadiffUIDefinitions
+.descexp e_UIDiff_ddiffUIDefinitions e_UIDiff_ndiffUIDefinitions e_UIDiff_ldiffUIDefinitions 3 0 "diffUIDefinitions"
+.a 3 e_UIDiff_eadiffUIDefinitions
+.o 2 0
+e_UIDiff_ldiffUIDefinitions
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_UIDiff_eadiffUIDefinitions
+.n 3 e_UIDiff_ddiffUIDefinitions e_UIDiff_eadiffUIDefinitions
+.o 1 0
+e_UIDiff_ndiffUIDefinitions
+	push_node _cycle_in_spine 3
+.o 4 0
+e_UIDiff_eadiffUIDefinitions
+	jsr_eval 2
+	jsr_eval 1
+	jsr_eval 0
+.o 4 0
+e_UIDiff_sdiffUIDefinitions
+.o 4 0
+s1
+	eq_desc e_UIDefinition_kUIFinal 0 0
+	jmp_true case.10
+	jmp case.11
+case.10
+	push_args 0 1 1
+	repl_args 2 2
+	eq_desc e_UIDefinition_kUIFinal 0 3
+	jmp_true case.12
+	pop_a 2
+	jmp case.11
+case.12
+	push_args 3 1 1
+	repl_args 2 2
+	push_r_args_a 1 3 0 2 1
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_r_args_a 4 3 0 2 1
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	build _ 2 n25
+	build _ 1 n328
+	push_r_args_a 2 3 0 3 1
+	push_r_args_a 5 3 0 3 1
+	push_a 9
+	build _ 3 n23
+	build e_StdList_d++ 2 e_StdList_n++
+	push_r_args_a 1 5 0 1 1
+	push_r_args_a 4 5 0 1 1
+	buildh _Nil 0
+	create
+	push_a 11
+	push_a 4
+	update_a 2 5
+	update_a 1 2
+	update_a 3 1
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 9
+	update_a 0 7
+	update_a 0 10
+	update_a 0 8
+	pop_a 1
+.d 5 0
+	jsr s22
+.o 1 0
+	update_a 1 8
+	updatepop_a 0 7
+.d 3 0
+	jmp e_StdList_s++
+case.11
+	create
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_UIDefinition_suiDefControls
+.o 1 0
+	create
+	push_a 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+.d 2 0
+	jsr e_UIDefinition_suiDefControls
+.o 1 0
+	buildh _Nil 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 5 0
+	jmp s22
+.n 1 _ ea328
+.o 1 0
+n328
+	push_node _cycle_in_spine 1
+.o 2 0
+ea328
+	jsr_eval 0
+.o 2 0
+s328
+	eq_desc _Nil 0 0
+	jmp_true case.13
+	jmp case.14
+case.13
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.14
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build_r e_UIDiff_kUIUpdate 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	fillh _Cons 2 3
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea23
+.o 1 0
+n23
+	push_node _cycle_in_spine 3
+.o 4 0
+ea23
+.o 4 0
+s23
+	push_a 2
+	push_a 2
+	buildI 0
+	push_a 3
+	push_a 6
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 6 0
+	jmp s39
+.n 5 _ ea39
+.o 1 0
+n39
+	push_node _cycle_in_spine 5
+.o 6 0
+ea39
+	jsr_eval 4
+	jsr_eval 3
+.o 6 0
+s39
+	eq_desc _Nil 0 3
+	jmp_true case.15
+	jmp case.16
+case.15
+	eq_desc _Nil 0 4
+	jmp_true case.17
+	jmp case.16
+case.17
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+case.16
+	eq_desc _Nil 0 4
+	jmp_true case.18
+	jmp case.19
+case.18
+	push_a 3
+	update_a 3 5
+	updatepop_a 0 4
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	addI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	create
+	pushI_a 1
+	updatepop_a 0 1
+.d 1 2 ii
+	jsr e__SystemEnum_s_from_to;6
+.o 1 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr e_StdList_sreverse
+.o 1 0
+.d 2 0
+	jmp s252
+case.19
+	eq_desc _Nil 0 3
+	jmp_true case.20
+	jmp case.21
+case.20
+	push_a 0
+	jsr_eval 0
+	push_a 3
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jmp s255
+case.21
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	eq_desc _Cons 2 6
+	jmp_true case.22
+	pop_a 2
+	jmp s39.1
+case.22
+	push_args 6 2 2
+	buildh _Nil 0
+	update_a 0 9
+	pop_a 1
+	buildI 1
+	push_a 7
+	build _ 2 e_StdInt_n+;6
+	push_a 2
+	push_a 5
+	push_a 8
+	push_a 8
+	push_a 4
+	update_a 4 5
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	build _ 5 n39
+	buildI 1
+	push_a 8
+	build _ 2 e_StdInt_n+;6
+	push_a 3
+	push_a 6
+	push_a 9
+	push_a 9
+	push_a 4
+	update_a 4 5
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	build _ 5 n39
+	build e_StdList_d++ 2 e_StdList_n++
+	push_a 1
+	jsr_eval 0
+	push_a 4
+	jsr_eval 0
+	buildh _Nil 0
+	push_a 10
+	build e_UIDiff_dWindowStep 1 e_UIDiff_nWindowStep
+	buildh _Cons 2
+	create
+	push_a 10
+	push_a 4
+	update_a 2 5
+	update_a 1 2
+	update_a 3 1
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 12
+	update_a 0 13
+	update_a 0 9
+	update_a 0 7
+	update_a 0 11
+	update_a 0 10
+	update_a 0 8
+	pop_a 1
+.d 5 0
+	jsr s24
+.o 1 0
+	update_a 1 10
+	updatepop_a 0 9
+.d 3 0
+	jmp e_StdList_s++
+s39.1
+	pop_a 6
+	pushD m_UIDiff
+	pushD x_39
+.d 0 2 ii
+	jmp _match_error
+.string x_39 "diff;38"
+.n 2 _ ea255
+.o 1 0
+n255
+	push_node _cycle_in_spine 2
+.o 3 0
+ea255
+	jsr_eval 1
+.o 3 0
+s255
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s327
+.o 3 0
+s327
+	eq_desc _Cons 2 0
+	jmp_true case.23
+	jmp case.24
+case.23
+	repl_args 2 2
+	push_a 2
+	build _ 1 n486
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 2 n255
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	build e_UIDefinition_dencodeUIWindow 1 e_UIDefinition_nencodeUIWindow
+	buildh _Cons 2
+	push_a 5
+	build _ 1 n485
+	buildh _Cons 2
+	buildAC "addWindow"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildh _Nil 0
+	build_r e_UIDiff_kUIUpdate 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.24
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea486
+.o 1 0
+n486
+	push_node _cycle_in_spine 1
+.o 2 0
+ea486
+.o 2 0
+s486
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea485
+.o 1 0
+n485
+	push_node _cycle_in_spine 1
+.o 2 0
+ea485
+.o 2 0
+s485
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 1 _ ea252
+.o 1 0
+n252
+	push_node _cycle_in_spine 1
+.o 2 0
+ea252
+	jsr_eval 0
+.o 2 0
+s252
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s324
+.o 2 0
+s324
+	eq_desc _Cons 2 0
+	jmp_true case.25
+	jmp case.26
+case.25
+	repl_args 2 2
+	push_a 1
+	build _ 1 n252
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	build _ 1 n487
+	buildh _Cons 2
+	buildAC "removeWindow"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildh _Nil 0
+	build_r e_UIDiff_kUIUpdate 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+case.26
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea487
+.o 1 0
+n487
+	push_node _cycle_in_spine 1
+.o 2 0
+ea487
+.o 2 0
+s487
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 5 0
+s24
+	push_args 2 3 3
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	push_args 6 3 3
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	push_a 10
+	push_a 10
+	build _ 4 n18
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	push_a 10
+	push_a 10
+	build _ 4 n13
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 9
+	build _ 3 n8
+	buildh _Cons 2
+	push_a 10
+	push_a 8
+	update_a 2 12
+	update_a 1 11
+	updatepop_a 0 10
+.d 4 0
+	jmp s27
+.o 4 0
+s27
+	push_a 2
+.d 1 0
+	jsr s28
+.o 0 1 b
+	jmp_false else.27
+	create
+	push_a 3
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr s41
+.o 1 0
+.d 2 0
+	jmp e_StdList_sflatten
+else.27
+	push_a 0
+	build _ 1 n575
+	build d_S.1 -1 n_S.1
+	build _ 1 n576
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 5
+	build e_UIDefinition_dencodeUIWindow 1 e_UIDefinition_nencodeUIWindow
+	buildh _Cons 2
+	push_a 3
+	build _ 1 n484
+	buildh _Cons 2
+	buildAC "addWindow"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 3
+	build _ 1 n483
+	buildh _Cons 2
+	buildAC "removeWindow"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildh _Nil 0
+	build_r e_UIDiff_kUIUpdate 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+.n 1 _ ea575
+.o 1 0
+n575
+	push_node _cycle_in_spine 1
+.o 2 0
+ea575
+	jsr_eval 0
+.o 2 0
+s575
+	eq_desc _Cons 2 0
+	jmp_true case.28
+	jmp s575.1
+case.28
+	push_args 0 2 2
+	pop_a 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s575.1
+	pop_a 2
+	pushD m_UIDiff
+	pushD x_575
+.d 0 2 ii
+	jmp _match_error
+.string x_575 "_match0"
+.n 1 _
+.o 1 0
+n576
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea576
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea576
+	jsr_eval 0
+.o 1 0
+s576
+	eq_desc e_UIDiff_kWindowStep 0 0
+	jmp_true case.29
+	jmp s576.1
+case.29
+	repl_r_args 0 1
+.d 0 1 i
+	rtn
+s576.1
+	pop_a 1
+	pushD m_UIDiff
+	pushD x_576
+.d 0 2 ii
+	jmp _match_error
+.string x_576 "_match1"
+.n 1 _ ea484
+.o 1 0
+n484
+	push_node _cycle_in_spine 1
+.o 2 0
+ea484
+.o 2 0
+s484
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 1 _ ea483
+.o 1 0
+n483
+	push_node _cycle_in_spine 1
+.o 2 0
+ea483
+.o 2 0
+s483
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 1 _ ea41
+.o 1 0
+n41
+	push_node _cycle_in_spine 1
+.o 2 0
+ea41
+	jsr_eval 0
+.o 2 0
+s41
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s323
+.o 2 0
+s323
+	eq_desc _Cons 2 0
+	jmp_true case.30
+	jmp case.31
+case.30
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s322
+case.31
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 3 0
+s322
+	eq_desc d479 1 0
+	jmp_true case.32
+	jmp case.33
+case.32
+	repl_args 1 1
+	push_a 1
+	build _ 1 n41
+	push_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+case.33
+	push_a 1
+	jsr_eval 0
+	updatepop_a 0 2
+.d 2 0
+	jmp s41
+.n 4 _ ea18
+.o 1 0
+n18
+	push_node _cycle_in_spine 4
+.o 5 0
+ea18
+.o 5 0
+s18
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.focusTaskId -4 e_UIDefinition_nUIWindowOpts.focusTaskId
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.focusTaskId -4 e_UIDefinition_nUIWindowOpts.focusTaskId
+	buildh d165 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_true then.34
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.closeTaskId -4 e_UIDefinition_nUIWindowOpts.closeTaskId
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.closeTaskId -4 e_UIDefinition_nUIWindowOpts.closeTaskId
+	buildh d165 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_true then.34
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.iconCls -4 e_UIDefinition_nUIWindowOpts.iconCls
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.iconCls -4 e_UIDefinition_nUIWindowOpts.iconCls
+	buildh d165 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_true then.34
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.baseCls -4 e_UIDefinition_nUIWindowOpts.baseCls
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.baseCls -4 e_UIDefinition_nUIWindowOpts.baseCls
+	buildh d165 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_true then.34
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.bodyCls -4 e_UIDefinition_nUIWindowOpts.bodyCls
+	push_a 3
+	build e_UIDefinition_dUIWindowOpts.bodyCls -4 e_UIDefinition_nUIWindowOpts.bodyCls
+	buildh d165 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_false else.34
+then.34
+	fillh d478 0 4
+	pop_a 4
+.d 1 0
+	rtn
+else.34
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIWindowOpts.hotkeys -4 e_UIDefinition_nUIWindowOpts.hotkeys
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_a 4
+	build e_UIDefinition_dUIWindowOpts.hotkeys -4 e_UIDefinition_nUIWindowOpts.hotkeys
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	build _ 2 n25
+	buildh _Cons 2
+	push_a 4
+	build e_UIDefinition_dUIWindowOpts.title -4 e_UIDefinition_nUIWindowOpts.title
+	push_a 4
+	build e_UIDefinition_dUIWindowOpts.title -4 e_UIDefinition_nUIWindowOpts.title
+	push_a 6
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n481
+	buildh _Cons 2
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr e_StdList_sflatten
+.o 1 0
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	push_a 4
+	update_a 4 5
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 6 0
+	jmp s321
+.n 3 _ ea481
+.o 1 0
+n481
+	push_node _cycle_in_spine 3
+.o 4 0
+ea481
+.o 4 0
+s481
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	buildh e_StdString_d==;2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_Maybe_s==;10
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s320
+.o 6 0
+s321
+	eq_desc _Nil 0 0
+	jmp_true case.39
+	jmp case.40
+case.39
+	push_a 4
+	build e_UIDefinition_dUIWindowOpts.tbar -4 e_UIDefinition_nUIWindowOpts.tbar
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_a 4
+	build e_UIDefinition_dUIWindowOpts.tbar -4 e_UIDefinition_nUIWindowOpts.tbar
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_a 3
+	buildh e_UIDiff_dMenuStep 0
+	buildh _Cons 2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 4 n22
+	fillh d479 1 6
+	pop_a 5
+.d 1 0
+	rtn
+case.40
+	push_a 4
+	build e_UIDefinition_dUIWindowOpts.tbar -4 e_UIDefinition_nUIWindowOpts.tbar
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_a 4
+	build e_UIDefinition_dUIWindowOpts.tbar -4 e_UIDefinition_nUIWindowOpts.tbar
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_a 3
+	buildh e_UIDiff_dMenuStep 0
+	buildh _Cons 2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 4 n22
+	push_a 1
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 6
+	pop_a 5
+.d 1 0
+	rtn
+.o 2 1 b
+s320
+	eqB_b TRUE 0
+	jmp_true case.41
+	jmp case.42
+case.41
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.42
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUIWindowOpts.title -4 e_UIDefinition_nUIWindowOpts.title
+	build _ 1 n482
+	buildh _Cons 2
+	buildAC "setTitle"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea482
+.o 1 0
+n482
+	push_node _cycle_in_spine 1
+.o 2 0
+ea482
+.o 2 0
+s482
+	push_a 0
+	jsr_eval 0
+	buildh d166 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea17
+.o 1 0
+n17
+	push_node _cycle_in_spine 4
+.o 5 0
+ea17
+	push_r_args 3 6 1
+	push_r_args 8 6 1
+	update_a 11 15
+	update_a 7 11
+	update_a 3 7
+	update_a 13 3
+	update_a 9 13
+	update_a 5 9
+	update_a 1 5
+	update_a 10 14
+	update_a 6 10
+	update_a 2 6
+	update_a 12 2
+	update_a 8 12
+	update_a 4 8
+	update_a 0 4
+	pop_a 2
+.o 15 2 bb
+s17
+	push_b 1
+	push_b 1
+	eqB
+	notB
+	jmp_true then.43
+	push_a 11
+	push_a 6
+	buildh e_StdString_d==;2 0
+.d 3 0
+	jsr e_Maybe_s==;10
+.o 0 1 b
+	notB
+	jmp_true then.43
+	push_a 12
+	push_a 7
+	buildh e_StdString_d==;2 0
+.d 3 0
+	jsr e_Maybe_s==;10
+.o 0 1 b
+	notB
+	jmp_true then.43
+	push_a 13
+	push_a 8
+	buildh e_StdString_d==;2 0
+.d 3 0
+	jsr e_Maybe_s==;10
+.o 0 1 b
+	notB
+	jmp_true then.43
+	push_a 3
+.d 1 0
+	jsr e_Maybe_sisJust
+.o 0 1 b
+	jmp_false else.48
+	push_a 9
+.d 1 0
+	jsr e_Maybe_sisNothing
+.o 0 1 b
+	jmp_true then.43
+else.48
+	push_a 3
+.d 1 0
+	jsr e_Maybe_sisNothing
+.o 0 1 b
+	jmp_false else.43
+	push_a 9
+.d 1 0
+	jsr e_Maybe_sisJust
+.o 0 1 b
+	jmp_false else.43
+then.43
+	fillh d478 0 14
+	pop_a 14
+	pop_b 2
+.d 1 0
+	rtn
+else.43
+	build_r e_UIDefinition_rUIPanelOpts 6 1 8 1
+	build_r e_UIDefinition_rUIPanelOpts 6 1 3 0
+	buildh _Nil 0
+	push_a 13
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_a 8
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	build _ 2 n25
+	buildh _Cons 2
+	build_r e_UIDefinition_rUIPanelOpts 6 1 11 1
+	push_a 12
+	push_a 7
+	build _ 3 n498
+	buildh _Cons 2
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	pop_b 2
+	buildh _Nil 0
+	update_a 0 7
+	update_a 0 8
+	update_a 0 9
+	update_a 0 10
+	update_a 0 11
+	update_a 0 12
+	update_a 0 13
+	update_a 0 14
+	update_a 0 15
+	update_a 0 16
+	update_a 0 17
+	update_a 0 18
+	pop_a 1
+.d 2 0
+	jsr e_StdList_sflatten
+.o 1 0
+	push_a 4
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 4 18
+	update_a 3 17
+	update_a 2 16
+	update_a 1 15
+	updatepop_a 0 14
+.d 6 0
+	jmp s319
+.n 3 _ ea498
+.o 1 0
+n498
+	push_node _cycle_in_spine 3
+.o 4 0
+ea498
+.o 4 0
+s498
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	buildh e_StdString_d==;2 0
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_Maybe_s==;10
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s318
+.n 4 _ ea13
+.o 1 0
+n13
+	push_node _cycle_in_spine 4
+.o 5 0
+ea13
+	jsr_eval 1
+.o 5 0
+s13
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.direction -4 e_UIDefinition_nUIItemsOpts.direction
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.direction -4 e_UIDefinition_nUIItemsOpts.direction
+	buildh d80 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_false else.51
+	fillh d478 0 4
+	pop_a 4
+.d 1 0
+	rtn
+else.51
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.halign -4 e_UIDefinition_nUIItemsOpts.halign
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.halign -4 e_UIDefinition_nUIItemsOpts.halign
+	buildh d79 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_false else.52
+	fillh d478 0 4
+	pop_a 4
+.d 1 0
+	rtn
+else.52
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.valign -4 e_UIDefinition_nUIItemsOpts.valign
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.valign -4 e_UIDefinition_nUIItemsOpts.valign
+	buildh d78 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_false else.53
+	fillh d478 0 4
+	pop_a 4
+.d 1 0
+	rtn
+else.53
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.padding -4 e_UIDefinition_nUIItemsOpts.padding
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.padding -4 e_UIDefinition_nUIItemsOpts.padding
+	buildh d227 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_false else.54
+	fillh d478 0 4
+	pop_a 4
+.d 1 0
+	rtn
+else.54
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.items -4 e_UIDefinition_nUIItemsOpts.items
+	push_a 3
+	build e_UIDefinition_dUIItemsOpts.items -4 e_UIDefinition_nUIItemsOpts.items
+	push_a 3
+	push_a 3
+	build _ 4 n22
+	fillh d479 1 5
+	pop_a 4
+.d 1 0
+	rtn
+.n 4 _ ea7
+.o 1 0
+n7
+	push_node _cycle_in_spine 4
+.o 5 0
+ea7
+	jsr_eval 3
+	jsr_eval 2
+	jsr_eval 1
+.o 5 0
+s7
+	push_a 1
+	push_a 1
+	push_a 5
+	push_a 5
+	build _ 4 n488
+	push_a 4
+	push_a 2
+	build _ 3 n26
+	fillh d479 1 5
+	pop_a 4
+.d 1 0
+	rtn
+.n 4 _ ea488
+.o 1 0
+n488
+	push_node _cycle_in_spine 4
+.o 5 0
+ea488
+.o 5 0
+s488
+	push_a 1
+	push_a 1
+	push_a 5
+	push_a 5
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 5 0
+	jmp s317
+.n 5 _ ea36
+.o 1 0
+n36
+	push_node _cycle_in_spine 5
+.o 6 0
+ea36
+	jsr_eval 4
+	jsr_eval 3
+.o 6 0
+s36
+	eq_desc _Nil 0 3
+	jmp_true case.55
+	jmp case.56
+case.55
+	eq_desc _Nil 0 4
+	jmp_true case.57
+	jmp case.56
+case.57
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+case.56
+	eq_desc _Nil 0 4
+	jmp_true case.58
+	jmp case.59
+case.58
+	push_a 3
+	update_a 3 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	addI
+	pushI 1
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	subI
+	create
+	pushI_a 2
+	update_a 1 2
+	updatepop_a 0 1
+.d 1 2 ii
+	jsr e__SystemEnum_s_from_to;6
+.o 1 0
+	create
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+.d 2 0
+	jsr e_StdList_sreverse
+.o 1 0
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s169
+case.59
+	eq_desc _Nil 0 3
+	jmp_true case.60
+	jmp case.61
+case.60
+	push_a 4
+	push_a 3
+	push_a 2
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 4 0
+	jmp s251
+case.61
+	push_args 3 2 2
+	buildh _Nil 0
+	update_a 0 6
+	pop_a 1
+	eq_desc _Cons 2 6
+	jmp_true case.62
+	pop_a 2
+	jmp s36.1
+case.62
+	push_args 6 2 2
+	buildh _Nil 0
+	update_a 0 9
+	pop_a 1
+	buildI 1
+	push_a 7
+	build _ 2 e_StdInt_n+;6
+	push_a 2
+	push_a 5
+	push_a 8
+	push_a 8
+	push_a 4
+	update_a 4 5
+	update_a 3 4
+	update_a 0 3
+	pop_a 1
+	build _ 5 n36
+	buildh _Nil 0
+	push_a 6
+	push_a 9
+	build e_UIDiff_dItemStep 1 e_UIDiff_nItemStep
+	buildh _Cons 2
+	push_a 3
+	push_a 6
+	push_a 10
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 4 n7
+	buildh _Cons 2
+	push_a 6
+	push_a 9
+	build e_UIDiff_dItemStep 1 e_UIDiff_nItemStep
+	buildh _Cons 2
+	create
+	push_a 4
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 12
+	update_a 0 10
+	update_a 0 11
+	update_a 0 8
+	update_a 0 9
+	update_a 0 7
+	pop_a 1
+.d 4 0
+	jsr s26
+.o 1 0
+	update_a 1 10
+	updatepop_a 0 9
+.d 3 0
+	jmp e_StdList_s++
+s36.1
+	pop_a 6
+	pushD m_UIDiff
+	pushD x_36
+.d 0 2 ii
+	jmp _match_error
+.string x_36 "diff;35"
+.n 4 _ ea22
+.o 1 0
+n22
+	push_node _cycle_in_spine 4
+.o 5 0
+ea22
+	jsr_eval 3
+	jsr_eval 2
+.o 5 0
+s22
+	push_a 3
+	push_a 3
+	buildI 0
+	push_a 4
+	push_a 4
+	update_a 4 8
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 6 0
+	jmp s36
+.o 6 0
+s319
+	eq_desc _Nil 0 0
+	jmp_true case.63
+	jmp case.64
+case.63
+	push_r_args_a 4 6 1 2 1
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_r_args_a 4 6 1 2 1
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_a 3
+	buildh e_UIDiff_dMenuStep 0
+	buildh _Cons 2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 4 n22
+	fillh d479 1 6
+	pop_a 5
+.d 1 0
+	rtn
+case.64
+	push_r_args_a 4 6 1 2 1
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_r_args_a 4 6 1 2 1
+	buildh _Nil 0
+	build e_Maybe_dfromMaybe 2 e_Maybe_nfromMaybe
+	push_a 3
+	buildh e_UIDiff_dMenuStep 0
+	buildh _Cons 2
+	push_a 5
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build _ 4 n22
+	push_a 1
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 6
+	pop_a 5
+.d 1 0
+	rtn
+.o 2 1 b
+s318
+	eqB_b TRUE 0
+	jmp_true case.65
+	jmp case.66
+case.65
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.66
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 2 6 1 1 1
+	build _ 1 n499
+	buildh _Cons 2
+	buildAC "setTitle"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea499
+.o 1 0
+n499
+	push_node _cycle_in_spine 1
+.o 2 0
+ea499
+.o 2 0
+s499
+	push_a 0
+	jsr_eval 0
+	buildh d166 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 5 0
+s317
+	pushD_a 0
+	eqD_b e_UIDefinition_kUIViewString 0
+	jmp_true case.67
+	eqD_b e_UIDefinition_kUIViewHtml 0
+	jmp_true case.68
+	eqD_b e_UIDefinition_kUIViewDocument 0
+	jmp_true case.69
+	eqD_b e_UIDefinition_kUIViewCheckbox 0
+	jmp_true case.70
+	eqD_b e_UIDefinition_kUIViewSlider 0
+	jmp_true case.71
+	eqD_b e_UIDefinition_kUIViewProgress 0
+	jmp_true case.72
+	eqD_b e_UIDefinition_kUIEditString 0
+	jmp_true case.73
+	eqD_b e_UIDefinition_kUIEditNote 0
+	jmp_true case.74
+	eqD_b e_UIDefinition_kUIEditPassword 0
+	jmp_true case.75
+	eqD_b e_UIDefinition_kUIEditInt 0
+	jmp_true case.76
+	eqD_b e_UIDefinition_kUIEditDecimal 0
+	jmp_true case.77
+	eqD_b e_UIDefinition_kUIEditCheckbox 0
+	jmp_true case.78
+	eqD_b e_UIDefinition_kUIEditSlider 0
+	jmp_true case.79
+	eqD_b e_UIDefinition_kUIEditDate 0
+	jmp_true case.80
+	eqD_b e_UIDefinition_kUIEditTime 0
+	jmp_true case.81
+	eqD_b e_UIDefinition_kUIEditDocument 0
+	jmp_true case.82
+	eqD_b e_UIDefinition_kUIEditButton 0
+	jmp_true case.83
+	eqD_b e_UIDefinition_kUIEditGoogleMap 0
+	jmp_true case.84
+	eqD_b e_UIDefinition_kUIEditCode 0
+	jmp_true case.85
+	eqD_b e_UIDefinition_kUIDropdown 0
+	jmp_true case.86
+	eqD_b e_UIDefinition_kUIGrid 0
+	jmp_true case.87
+	eqD_b e_UIDefinition_kUITree 0
+	jmp_true case.88
+	eqD_b e_UIDefinition_kUIActionButton 0
+	jmp_true case.89
+	eqD_b e_UIDefinition_kUIMenuButton 0
+	jmp_true case.90
+	eqD_b e_UIDefinition_kUILabel 0
+	jmp_true case.91
+	eqD_b e_UIDefinition_kUIIcon 0
+	jmp_true case.92
+	eqD_b e_UIDefinition_kUITab 0
+	jmp_true case.93
+	eqD_b e_UIDefinition_kUITasklet 0
+	jmp_true case.94
+	eqD_b e_UIDefinition_kUITaskletPH 0
+	jmp_true case.95
+	eqD_b e_UIDefinition_kUIContainer 0
+	jmp_true case.96
+	eqD_b e_UIDefinition_kUIPanel 0
+	jmp_true case.97
+	eqD_b e_UIDefinition_kUIFieldSet 0
+	jmp_true case.98
+	eqD_b e_UIDefinition_kUIEditImage 0
+	jmp_true case.99
+	eqD_b e_UIDefinition_kUIViewChart 0
+	jmp_true case.100
+	pop_b 1
+	jmp case.101
+case.67
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIViewString 0 2
+	jmp_true case.102
+	pop_a 1
+	jmp case.101
+case.102
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 2 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 5 0
+	push_a 8
+	build _ 3 n229
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.68
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIViewHtml 0 2
+	jmp_true case.103
+	pop_a 1
+	jmp case.101
+case.103
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 2 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 5 0
+	push_a 8
+	build _ 3 n230
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.69
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIViewDocument 0 2
+	jmp_true case.104
+	pop_a 1
+	jmp case.101
+case.104
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 2 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 5 0
+	push_a 8
+	build _ 3 n231
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.70
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIViewCheckbox 0 2
+	jmp_true case.105
+	pop_a 1
+	jmp case.101
+case.105
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 2 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 5 0
+	push_a 8
+	build _ 3 n232
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.71
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIViewSlider 0 3
+	jmp_true case.106
+	pop_a 2
+	jmp case.101
+case.106
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	build _ 2 n181
+	buildh _Cons 2
+	build_r e_UIDefinition_rUIViewOpts 1 0 2 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 6 0
+	push_a 10
+	build _ 3 n233
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.72
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIViewProgress 0 3
+	jmp_true case.107
+	pop_a 2
+	jmp case.101
+case.107
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIProgressOpts 1 0 3 0
+	build_r e_UIDefinition_rUIProgressOpts 1 0 7 0
+	build _ 2 n184
+	buildh _Cons 2
+	build_r e_UIDefinition_rUIViewOpts 1 0 2 0
+	build_r e_UIDefinition_rUIViewOpts 1 0 6 0
+	push_a 10
+	build _ 3 n234
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.73
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditString 0 2
+	jmp_true case.108
+	pop_a 1
+	jmp case.101
+case.108
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n235
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.74
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditNote 0 2
+	jmp_true case.109
+	pop_a 1
+	jmp case.101
+case.109
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n235
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.75
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditPassword 0 2
+	jmp_true case.110
+	pop_a 1
+	jmp case.101
+case.110
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n235
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.76
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditInt 0 2
+	jmp_true case.111
+	pop_a 1
+	jmp case.101
+case.111
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n237
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.77
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditDecimal 0 2
+	jmp_true case.112
+	pop_a 1
+	jmp case.101
+case.112
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n239
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.78
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditCheckbox 0 2
+	jmp_true case.113
+	pop_a 1
+	jmp case.101
+case.113
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n241
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.79
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIEditSlider 0 3
+	jmp_true case.114
+	pop_a 2
+	jmp case.101
+case.114
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	build _ 2 n181
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	push_a 11
+	push_a 11
+	build _ 4 n237
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.80
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditDate 0 2
+	jmp_true case.115
+	pop_a 1
+	jmp case.101
+case.115
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n243
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.81
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditTime 0 2
+	jmp_true case.116
+	pop_a 1
+	jmp case.101
+case.116
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n245
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.82
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditDocument 0 2
+	jmp_true case.117
+	pop_a 1
+	jmp case.101
+case.117
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n247
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.83
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIEditButton 0 3
+	jmp_true case.118
+	pop_a 2
+	jmp case.101
+case.118
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	build _ 2 n208
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	push_a 11
+	push_a 11
+	build _ 4 n249
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.84
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIEditGoogleMap 0 3
+	jmp_true case.119
+	pop_a 2
+	jmp case.101
+case.119
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	build _ 2 n211
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	build _ 2 n210
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.85
+	pop_b 1
+	repl_r_args 2 1
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIEditCode 0 2
+	jmp_true case.120
+	pop_a 1
+	pop_b 1
+	jmp case.101
+case.120
+	push_r_args 2 2 1
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUICodeOpts 0 1 0 0
+	build_r e_UIDefinition_rUICodeOpts 0 1 0 1
+	build _ 2 n212
+	buildh _Cons 2
+	push_a 2
+	push_a 5
+	push_a 9
+	push_a 9
+	build _ 4 n249
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+	pop_b 2
+.d 1 0
+	rtn
+case.86
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIDropdown 0 2
+	jmp_true case.121
+	pop_a 1
+	jmp case.101
+case.121
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 8
+	build _ 3 n489
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.87
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIGrid 0 3
+	jmp_true case.122
+	pop_a 2
+	jmp case.101
+case.122
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIGridOpts 1 0 3 0
+	build_r e_UIDefinition_rUIGridOpts 1 0 7 0
+	build _ 2 n218
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	push_a 10
+	build _ 3 n490
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.88
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUITree 0 2
+	jmp_true case.123
+	pop_a 1
+	jmp case.101
+case.123
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 8
+	build _ 3 n491
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.89
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIActionButton 0 3
+	jmp_true case.124
+	pop_a 2
+	jmp case.101
+case.124
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	push_a 10
+	build _ 3 n19
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	push_a 10
+	build _ 3 n12
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.90
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIMenuButton 0 2
+	jmp_true case.125
+	pop_a 1
+	jmp case.101
+case.125
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	build _ 2 n221
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.91
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUILabel 0 2
+	jmp_true case.126
+	pop_a 1
+	jmp case.101
+case.126
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUILabelOpts 1 0 2 0
+	build_r e_UIDefinition_rUILabelOpts 1 0 5 0
+	build _ 2 n222
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.92
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIIcon 0 2
+	jmp_true case.127
+	pop_a 1
+	jmp case.101
+case.127
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 8
+	build _ 3 n20
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.93
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUITab 0 2
+	jmp_true case.128
+	pop_a 1
+	jmp case.101
+case.128
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	push_a 8
+	build _ 3 n21
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.94
+	pop_b 1
+	repl_args 2 2
+	pop_a 1
+	jsr_eval 1
+	pushD_a 1
+	eqD_b e_UIDefinition_kUITasklet 0
+	jmp_true case.129
+	eqD_b e_UIDefinition_kUITaskletPH 0
+	jmp_true case.130
+	pop_b 1
+	jmp case.101
+case.129
+	pop_b 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_r_args_a 1 11 0 2 1
+	push_r_args_a 3 11 0 2 1
+	update_a 6 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.131
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 5 11 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_r_args_a 6 11 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build e_UIDefinition_tUITaskletPHOpts 2 e_UIDefinition_cUITaskletPHOpts
+	push_a 5
+	build e_UIDefinition_dUITaskletPH 2 e_UIDefinition_nUITaskletPH
+	build e_UIDefinition_dencodeUIControl 1 e_UIDefinition_nencodeUIControl
+	buildh _Cons 2
+	buildAC "selfUpdate"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 5
+	build_r e_UIDiff_kUIUpdate 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Cons 2
+	buildh d479 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+else.131
+	buildh _Nil 0
+	buildh d478 0
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.130
+	pop_b 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_r_args_a 1 2 0 2 1
+	push_r_args_a 3 11 0 2 1
+	update_a 6 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.132
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 5
+	push_a 5
+	build_r e_UIDefinition_kUITaskletPH 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	build e_UIDefinition_dencodeUIControl 1 e_UIDefinition_nencodeUIControl
+	buildh _Cons 2
+	buildAC "selfUpdate"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 5
+	build_r e_UIDiff_kUIUpdate 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Cons 2
+	buildh d479 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+else.132
+	buildh _Nil 0
+	buildh d478 0
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.95
+	pop_b 1
+	repl_args 2 2
+	pop_a 1
+	jsr_eval 1
+	pushD_a 1
+	eqD_b e_UIDefinition_kUITasklet 0
+	jmp_true case.133
+	eqD_b e_UIDefinition_kUITaskletPH 0
+	jmp_true case.134
+	pop_b 1
+	jmp case.101
+case.133
+	pop_b 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_r_args_a 1 11 0 2 1
+	push_r_args_a 3 2 0 2 1
+	update_a 6 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.135
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 5 11 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	push_r_args_a 6 11 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build e_UIDefinition_tUITaskletPHOpts 2 e_UIDefinition_cUITaskletPHOpts
+	push_a 5
+	build e_UIDefinition_dUITaskletPH 2 e_UIDefinition_nUITaskletPH
+	build e_UIDefinition_dencodeUIControl 1 e_UIDefinition_nencodeUIControl
+	buildh _Cons 2
+	buildAC "selfUpdate"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 5
+	build_r e_UIDiff_kUIUpdate 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Cons 2
+	buildh d479 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+else.135
+	buildh _Nil 0
+	buildh d478 0
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.134
+	pop_b 1
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_r_args_a 1 2 0 2 1
+	push_r_args_a 3 2 0 2 1
+	update_a 6 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.136
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 5
+	push_a 5
+	build_r e_UIDefinition_kUITaskletPH 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	build e_UIDefinition_dencodeUIControl 1 e_UIDefinition_nencodeUIControl
+	buildh _Cons 2
+	buildAC "selfUpdate"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 5
+	build_r e_UIDiff_kUIUpdate 2 0 0 0
+	update_a 0 2
+	pop_a 2
+	buildh _Cons 2
+	buildh d479 1
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+else.136
+	buildh _Nil 0
+	buildh d478 0
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.96
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIContainer 0 3
+	jmp_true case.137
+	pop_a 2
+	jmp case.101
+case.137
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	build _ 2 n223
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	push_a 11
+	push_a 11
+	build _ 4 n13
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.97
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIPanel 0 3
+	jmp_true case.138
+	pop_a 2
+	jmp case.101
+case.138
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	push_a 11
+	push_a 11
+	build _ 4 n17
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	push_a 11
+	push_a 11
+	build _ 4 n13
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.98
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIFieldSet 0 3
+	jmp_true case.139
+	pop_a 2
+	jmp case.101
+case.139
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIFieldSetOpts 1 0 3 0
+	build_r e_UIDefinition_rUIFieldSetOpts 1 0 7 0
+	build _ 2 n224
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	push_a 11
+	push_a 11
+	build _ 4 n13
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.99
+	pop_b 1
+	repl_args 3 3
+	jsr_eval 3
+	eq_desc e_UIDefinition_kUIEditImage 0 3
+	jmp_true case.140
+	pop_a 2
+	jmp case.101
+case.140
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	buildh _Nil 0
+	push_a 3
+	push_a 7
+	build _ 2 n225
+	buildh _Cons 2
+	push_a 2
+	push_a 6
+	build _ 2 n210
+	buildh _Cons 2
+	push_a 1
+	push_a 5
+	push_a 10
+	build _ 3 n8
+	fillh _Cons 2 11
+	pop_a 9
+.d 1 0
+	rtn
+case.100
+	pop_b 1
+	repl_args 2 2
+	jsr_eval 2
+	eq_desc e_UIDefinition_kUIViewChart 0 2
+	jmp_true case.141
+	pop_a 1
+	jmp case.101
+case.141
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	buildh _Nil 0
+	push_a 2
+	push_a 5
+	build _ 2 n226
+	buildh _Cons 2
+	push_a 1
+	push_a 4
+	push_a 8
+	build _ 3 n8
+	fillh _Cons 2 9
+	pop_a 7
+.d 1 0
+	rtn
+case.101
+	buildh _Nil 0
+	buildh d478 0
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+.n 3 _ ea491
+.o 1 0
+n491
+	push_node _cycle_in_spine 3
+.o 4 0
+ea491
+.o 4 0
+s491
+	push_r_args 2 4 0
+	push_r_args 5 4 0
+	buildh d92 0
+	push_a 9
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 9 12
+	update_a 8 11
+	update_a 7 10
+	update_a 6 9
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 11 0
+	jmp s219
+.n 3 _ ea490
+.o 1 0
+n490
+	push_node _cycle_in_spine 3
+.o 4 0
+ea490
+.o 4 0
+s490
+	push_r_args 2 4 0
+	push_r_args 5 4 0
+	buildh d215 0
+	push_a 9
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 9 12
+	update_a 8 11
+	update_a 7 10
+	update_a 6 9
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 11 0
+	jmp s216
+.n 3 _ ea489
+.o 1 0
+n489
+	push_node _cycle_in_spine 3
+.o 4 0
+ea489
+.o 4 0
+s489
+	push_r_args 2 4 0
+	push_r_args 5 4 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	push_a 9
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 9 12
+	update_a 8 11
+	update_a 7 10
+	update_a 6 9
+	update_a 5 8
+	update_a 4 7
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 11 0
+	jmp s213
+.n 3 _ ea251
+.o 1 0
+n251
+	push_node _cycle_in_spine 3
+.o 4 0
+ea251
+	jsr_eval 2
+.o 4 0
+s251
+	push_a 1
+	push_a 1
+	push_a 4
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 4 0
+	jmp s316
+.o 4 0
+s316
+	eq_desc _Cons 2 0
+	jmp_true case.142
+	jmp case.143
+case.142
+	repl_args 2 2
+	push_a 3
+	build _ 1 n573
+	push_a 2
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	build _ 3 n251
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	build e_UIDefinition_dencodeUIControl 1 e_UIDefinition_nencodeUIControl
+	buildh _Cons 2
+	push_a 6
+	build _ 1 n572
+	buildh _Cons 2
+	buildAC "add"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 4
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 6
+	pop_a 4
+.d 1 0
+	rtn
+case.143
+	fillh _Nil 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.n 1 _ ea573
+.o 1 0
+n573
+	push_node _cycle_in_spine 1
+.o 2 0
+ea573
+.o 2 0
+s573
+	pushI 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	pop_a 1
+	addI
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea572
+.o 1 0
+n572
+	push_node _cycle_in_spine 1
+.o 2 0
+ea572
+.o 2 0
+s572
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 3 _ ea229
+.o 1 0
+n229
+	push_node _cycle_in_spine 3
+.o 4 0
+ea229
+.o 4 0
+s229
+	buildh d172 0
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.144
+	buildh _Nil 0
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+else.144
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIViewOpts.value -4 e_UIDefinition_nUIViewOpts.value
+	build _ 1 n569
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea569
+.o 1 0
+n569
+	push_node _cycle_in_spine 1
+.o 2 0
+ea569
+.o 2 0
+s569
+	buildh e_UIDefinition_dencodeUIValue;17 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 3 _ ea230
+.o 1 0
+n230
+	push_node _cycle_in_spine 3
+.o 4 0
+ea230
+.o 4 0
+s230
+	buildh d174 0
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.145
+	buildh _Nil 0
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+else.145
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIViewOpts.value -4 e_UIDefinition_nUIViewOpts.value
+	build _ 1 n568
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea568
+.o 1 0
+n568
+	push_node _cycle_in_spine 1
+.o 2 0
+ea568
+.o 2 0
+s568
+	buildh e_UIDefinition_dencodeUIValue;24 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 3 _ ea231
+.o 1 0
+n231
+	push_node _cycle_in_spine 3
+.o 4 0
+ea231
+.o 4 0
+s231
+	buildh d176 0
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.146
+	buildh _Nil 0
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+else.146
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIViewOpts.value -4 e_UIDefinition_nUIViewOpts.value
+	build _ 1 n567
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea567
+.o 1 0
+n567
+	push_node _cycle_in_spine 1
+.o 2 0
+ea567
+.o 2 0
+s567
+	buildh e_UIDefinition_dencodeUIValue;21 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 3 _ ea232
+.o 1 0
+n232
+	push_node _cycle_in_spine 3
+.o 4 0
+ea232
+.o 4 0
+s232
+	buildh d178 0
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.147
+	buildh _Nil 0
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+else.147
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIViewOpts.value -4 e_UIDefinition_nUIViewOpts.value
+	build _ 1 n566
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea566
+.o 1 0
+n566
+	push_node _cycle_in_spine 1
+.o 2 0
+ea566
+.o 2 0
+s566
+	buildh e_UIDefinition_dencodeUIValue;20 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 3 _ ea233
+.o 1 0
+n233
+	push_node _cycle_in_spine 3
+.o 4 0
+ea233
+.o 4 0
+s233
+	buildh d180 0
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.148
+	buildh _Nil 0
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+else.148
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIViewOpts.value -4 e_UIDefinition_nUIViewOpts.value
+	build _ 1 n565
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea565
+.o 1 0
+n565
+	push_node _cycle_in_spine 1
+.o 2 0
+ea565
+.o 2 0
+s565
+	buildh e_UIDefinition_dencodeUIValue;18 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 3 _ ea234
+.o 1 0
+n234
+	push_node _cycle_in_spine 3
+.o 4 0
+ea234
+.o 4 0
+s234
+	buildh d183 0
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.149
+	buildh _Nil 0
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+else.149
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIViewOpts.value -4 e_UIDefinition_nUIViewOpts.value
+	build _ 1 n564
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea564
+.o 1 0
+n564
+	push_node _cycle_in_spine 1
+.o 2 0
+ea564
+.o 2 0
+s564
+	buildh e_UIDefinition_dencodeUIValue;25 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 4 _ ea235
+.o 1 0
+n235
+	push_node _cycle_in_spine 4
+.o 5 0
+ea235
+	jsr_eval 3
+	jsr_eval 2
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.o 9 0
+s235
+	build_r e_UIDefinition_rUIEditOpts 3 0 5 0
+	push_a 6
+	push_a 4
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 1 b
+	jsr s314
+.o 1 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 8
+	buildh ARRAY 1
+	push_a 6
+	buildh ARRAY 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n559
+	push_a 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.150
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.150
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 8 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	build _ 4 n236
+	buildh _Cons 2
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 11
+	pop_a 10
+.d 1 0
+	rtn
+else.150
+	fillh d478 0 10
+	pop_a 10
+.d 1 0
+	rtn
+.n 4 _ ea559
+.o 1 0
+n559
+	push_node _cycle_in_spine 4
+.o 5 0
+ea559
+.o 5 0
+s559
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s313
+.o 3 1 b
+s314
+	eqB_b TRUE 0
+	jmp_true case.152
+	jmp case.153
+case.152
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.153
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n563
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea563
+.o 1 0
+n563
+	push_node _cycle_in_spine 1
+.o 2 0
+ea563
+.o 2 0
+s563
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s313
+	eqB_b TRUE 0
+	jmp_true case.154
+	jmp case.155
+case.154
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.155
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n560
+	buildh _Cons 2
+	buildAC "setEditorId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea560
+.o 1 0
+n560
+	push_node _cycle_in_spine 1
+.o 2 0
+ea560
+.o 2 0
+s560
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea236
+.o 1 0
+n236
+	push_node _cycle_in_spine 4
+.o 5 0
+ea236
+	jsr_eval 3
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s236
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 4 0
+	jsr s32
+.o 0 1 b
+	jmp_false else.156
+	push_a 4
+	build _ 1 n561
+	push_a 6
+	build _ 1 n33
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.157
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.157
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.156
+	push_a 4
+	push_a 1
+	build e_UIDefinition_dUIEditOpts.value -4 e_UIDefinition_nUIEditOpts.value
+	buildh d165 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.158
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+else.158
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build _ 1 n562
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea562
+.o 1 0
+n562
+	push_node _cycle_in_spine 1
+.o 2 0
+ea562
+.o 2 0
+s562
+	buildh e_UIDefinition_dencodeUIValue;17 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 1 _ ea561
+.o 1 0
+n561
+	push_node _cycle_in_spine 1
+.o 2 0
+ea561
+.o 2 0
+s561
+	buildh e_UIDefinition_dencodeUIValue;17 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 4 _ ea239
+.o 1 0
+n239
+	push_node _cycle_in_spine 4
+.o 5 0
+ea239
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.o 9 0
+s239
+	build_r e_UIDefinition_rUIEditOpts 3 0 5 0
+	push_a 6
+	push_a 4
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 1 b
+	jsr s312
+.o 1 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 8
+	buildh ARRAY 1
+	push_a 6
+	buildh ARRAY 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n549
+	push_a 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.159
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.159
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 8 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	build _ 4 n240
+	buildh _Cons 2
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 11
+	pop_a 10
+.d 1 0
+	rtn
+else.159
+	fillh d478 0 10
+	pop_a 10
+.d 1 0
+	rtn
+.n 4 _ ea549
+.o 1 0
+n549
+	push_node _cycle_in_spine 4
+.o 5 0
+ea549
+.o 5 0
+s549
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s311
+.o 3 1 b
+s312
+	eqB_b TRUE 0
+	jmp_true case.161
+	jmp case.162
+case.161
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.162
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n553
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea553
+.o 1 0
+n553
+	push_node _cycle_in_spine 1
+.o 2 0
+ea553
+.o 2 0
+s553
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s311
+	eqB_b TRUE 0
+	jmp_true case.163
+	jmp case.164
+case.163
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.164
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n550
+	buildh _Cons 2
+	buildAC "setEditorId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea550
+.o 1 0
+n550
+	push_node _cycle_in_spine 1
+.o 2 0
+ea550
+.o 2 0
+s550
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea240
+.o 1 0
+n240
+	push_node _cycle_in_spine 4
+.o 5 0
+ea240
+	jsr_eval 3
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s240
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 4 0
+	jsr s32
+.o 0 1 b
+	jmp_false else.165
+	push_a 4
+	build _ 1 n551
+	push_a 6
+	build _ 1 n33
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.166
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.166
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.165
+	push_a 4
+	push_a 1
+	build e_UIDefinition_dUIEditOpts.value -4 e_UIDefinition_nUIEditOpts.value
+	buildh d192 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.167
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+else.167
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build _ 1 n552
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea552
+.o 1 0
+n552
+	push_node _cycle_in_spine 1
+.o 2 0
+ea552
+.o 2 0
+s552
+	buildh e_UIDefinition_dencodeUIValue;19 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 1 _ ea551
+.o 1 0
+n551
+	push_node _cycle_in_spine 1
+.o 2 0
+ea551
+.o 2 0
+s551
+	buildh e_UIDefinition_dencodeUIValue;19 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 4 _ ea241
+.o 1 0
+n241
+	push_node _cycle_in_spine 4
+.o 5 0
+ea241
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.o 9 0
+s241
+	build_r e_UIDefinition_rUIEditOpts 3 0 5 0
+	push_a 6
+	push_a 4
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 1 b
+	jsr s310
+.o 1 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 8
+	buildh ARRAY 1
+	push_a 6
+	buildh ARRAY 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n544
+	push_a 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.168
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.168
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 8 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	build _ 4 n242
+	buildh _Cons 2
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 11
+	pop_a 10
+.d 1 0
+	rtn
+else.168
+	fillh d478 0 10
+	pop_a 10
+.d 1 0
+	rtn
+.n 4 _ ea544
+.o 1 0
+n544
+	push_node _cycle_in_spine 4
+.o 5 0
+ea544
+.o 5 0
+s544
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s309
+.o 3 1 b
+s310
+	eqB_b TRUE 0
+	jmp_true case.170
+	jmp case.171
+case.170
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.171
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n548
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea548
+.o 1 0
+n548
+	push_node _cycle_in_spine 1
+.o 2 0
+ea548
+.o 2 0
+s548
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s309
+	eqB_b TRUE 0
+	jmp_true case.172
+	jmp case.173
+case.172
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.173
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n545
+	buildh _Cons 2
+	buildAC "setEditorId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea545
+.o 1 0
+n545
+	push_node _cycle_in_spine 1
+.o 2 0
+ea545
+.o 2 0
+s545
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea242
+.o 1 0
+n242
+	push_node _cycle_in_spine 4
+.o 5 0
+ea242
+	jsr_eval 3
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s242
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 4 0
+	jsr s32
+.o 0 1 b
+	jmp_false else.174
+	push_a 4
+	build _ 1 n546
+	push_a 6
+	build _ 1 n33
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.175
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.175
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.174
+	push_a 4
+	push_a 1
+	build e_UIDefinition_dUIEditOpts.value -4 e_UIDefinition_nUIEditOpts.value
+	buildh d195 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.176
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+else.176
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build _ 1 n547
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea547
+.o 1 0
+n547
+	push_node _cycle_in_spine 1
+.o 2 0
+ea547
+.o 2 0
+s547
+	buildh e_UIDefinition_dencodeUIValue;20 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 1 _ ea546
+.o 1 0
+n546
+	push_node _cycle_in_spine 1
+.o 2 0
+ea546
+.o 2 0
+s546
+	buildh e_UIDefinition_dencodeUIValue;20 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 4 _ ea237
+.o 1 0
+n237
+	push_node _cycle_in_spine 4
+.o 5 0
+ea237
+	jsr_eval 3
+	jsr_eval 2
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.o 9 0
+s237
+	build_r e_UIDefinition_rUIEditOpts 3 0 5 0
+	push_a 6
+	push_a 4
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 1 b
+	jsr s308
+.o 1 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 8
+	buildh ARRAY 1
+	push_a 6
+	buildh ARRAY 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n554
+	push_a 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.177
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.177
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 8 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	build _ 4 n238
+	buildh _Cons 2
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 11
+	pop_a 10
+.d 1 0
+	rtn
+else.177
+	fillh d478 0 10
+	pop_a 10
+.d 1 0
+	rtn
+.n 4 _ ea554
+.o 1 0
+n554
+	push_node _cycle_in_spine 4
+.o 5 0
+ea554
+.o 5 0
+s554
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s307
+.o 3 1 b
+s308
+	eqB_b TRUE 0
+	jmp_true case.179
+	jmp case.180
+case.179
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.180
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n558
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea558
+.o 1 0
+n558
+	push_node _cycle_in_spine 1
+.o 2 0
+ea558
+.o 2 0
+s558
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s307
+	eqB_b TRUE 0
+	jmp_true case.181
+	jmp case.182
+case.181
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.182
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n555
+	buildh _Cons 2
+	buildAC "setEditorId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea555
+.o 1 0
+n555
+	push_node _cycle_in_spine 1
+.o 2 0
+ea555
+.o 2 0
+s555
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea238
+.o 1 0
+n238
+	push_node _cycle_in_spine 4
+.o 5 0
+ea238
+	jsr_eval 3
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s238
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 4 0
+	jsr s32
+.o 0 1 b
+	jmp_false else.183
+	push_a 4
+	build _ 1 n556
+	push_a 6
+	build _ 1 n33
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.184
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.184
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.183
+	push_a 4
+	push_a 1
+	build e_UIDefinition_dUIEditOpts.value -4 e_UIDefinition_nUIEditOpts.value
+	buildh d189 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.185
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+else.185
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build _ 1 n557
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea557
+.o 1 0
+n557
+	push_node _cycle_in_spine 1
+.o 2 0
+ea557
+.o 2 0
+s557
+	buildh e_UIDefinition_dencodeUIValue;18 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 1 _ ea556
+.o 1 0
+n556
+	push_node _cycle_in_spine 1
+.o 2 0
+ea556
+.o 2 0
+s556
+	buildh e_UIDefinition_dencodeUIValue;18 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 4 _ ea243
+.o 1 0
+n243
+	push_node _cycle_in_spine 4
+.o 5 0
+ea243
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.o 9 0
+s243
+	build_r e_UIDefinition_rUIEditOpts 3 0 5 0
+	push_a 6
+	push_a 4
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 1 b
+	jsr s306
+.o 1 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 8
+	buildh ARRAY 1
+	push_a 6
+	buildh ARRAY 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n539
+	push_a 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.186
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.186
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 8 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	build _ 4 n244
+	buildh _Cons 2
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 11
+	pop_a 10
+.d 1 0
+	rtn
+else.186
+	fillh d478 0 10
+	pop_a 10
+.d 1 0
+	rtn
+.n 4 _ ea539
+.o 1 0
+n539
+	push_node _cycle_in_spine 4
+.o 5 0
+ea539
+.o 5 0
+s539
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s305
+.o 3 1 b
+s306
+	eqB_b TRUE 0
+	jmp_true case.188
+	jmp case.189
+case.188
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.189
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n543
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea543
+.o 1 0
+n543
+	push_node _cycle_in_spine 1
+.o 2 0
+ea543
+.o 2 0
+s543
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s305
+	eqB_b TRUE 0
+	jmp_true case.190
+	jmp case.191
+case.190
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.191
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n540
+	buildh _Cons 2
+	buildAC "setEditorId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea540
+.o 1 0
+n540
+	push_node _cycle_in_spine 1
+.o 2 0
+ea540
+.o 2 0
+s540
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea244
+.o 1 0
+n244
+	push_node _cycle_in_spine 4
+.o 5 0
+ea244
+	jsr_eval 3
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s244
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 4 0
+	jsr s32
+.o 0 1 b
+	jmp_false else.192
+	push_a 4
+	build _ 1 n541
+	push_a 6
+	build _ 1 n33
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.193
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.193
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.192
+	push_a 4
+	push_a 1
+	build e_UIDefinition_dUIEditOpts.value -4 e_UIDefinition_nUIEditOpts.value
+	buildh d198 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.194
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+else.194
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build _ 1 n542
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea542
+.o 1 0
+n542
+	push_node _cycle_in_spine 1
+.o 2 0
+ea542
+.o 2 0
+s542
+	buildh e_UIDefinition_dencodeUIValue;22 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 1 _ ea541
+.o 1 0
+n541
+	push_node _cycle_in_spine 1
+.o 2 0
+ea541
+.o 2 0
+s541
+	buildh e_UIDefinition_dencodeUIValue;22 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 4 _ ea245
+.o 1 0
+n245
+	push_node _cycle_in_spine 4
+.o 5 0
+ea245
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.o 9 0
+s245
+	build_r e_UIDefinition_rUIEditOpts 3 0 5 0
+	push_a 6
+	push_a 4
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 1 b
+	jsr s304
+.o 1 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 8
+	buildh ARRAY 1
+	push_a 6
+	buildh ARRAY 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n534
+	push_a 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.195
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.195
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 8 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	build _ 4 n246
+	buildh _Cons 2
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 11
+	pop_a 10
+.d 1 0
+	rtn
+else.195
+	fillh d478 0 10
+	pop_a 10
+.d 1 0
+	rtn
+.n 4 _ ea534
+.o 1 0
+n534
+	push_node _cycle_in_spine 4
+.o 5 0
+ea534
+.o 5 0
+s534
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s303
+.o 3 1 b
+s304
+	eqB_b TRUE 0
+	jmp_true case.197
+	jmp case.198
+case.197
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.198
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n538
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea538
+.o 1 0
+n538
+	push_node _cycle_in_spine 1
+.o 2 0
+ea538
+.o 2 0
+s538
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s303
+	eqB_b TRUE 0
+	jmp_true case.199
+	jmp case.200
+case.199
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.200
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n535
+	buildh _Cons 2
+	buildAC "setEditorId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea535
+.o 1 0
+n535
+	push_node _cycle_in_spine 1
+.o 2 0
+ea535
+.o 2 0
+s535
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea246
+.o 1 0
+n246
+	push_node _cycle_in_spine 4
+.o 5 0
+ea246
+	jsr_eval 3
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s246
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 4 0
+	jsr s32
+.o 0 1 b
+	jmp_false else.201
+	push_a 4
+	build _ 1 n536
+	push_a 6
+	build _ 1 n33
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.202
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.202
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.201
+	push_a 4
+	push_a 1
+	build e_UIDefinition_dUIEditOpts.value -4 e_UIDefinition_nUIEditOpts.value
+	buildh d201 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.203
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+else.203
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build _ 1 n537
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea537
+.o 1 0
+n537
+	push_node _cycle_in_spine 1
+.o 2 0
+ea537
+.o 2 0
+s537
+	buildh e_UIDefinition_dencodeUIValue;23 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 1 _ ea536
+.o 1 0
+n536
+	push_node _cycle_in_spine 1
+.o 2 0
+ea536
+.o 2 0
+s536
+	buildh e_UIDefinition_dencodeUIValue;23 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 4 _ ea247
+.o 1 0
+n247
+	push_node _cycle_in_spine 4
+.o 5 0
+ea247
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.o 9 0
+s247
+	build_r e_UIDefinition_rUIEditOpts 3 0 5 0
+	push_a 6
+	push_a 4
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 1 b
+	jsr s302
+.o 1 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 8
+	buildh ARRAY 1
+	push_a 6
+	buildh ARRAY 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n529
+	push_a 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.204
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.204
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 8 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	build _ 4 n248
+	buildh _Cons 2
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 11
+	pop_a 10
+.d 1 0
+	rtn
+else.204
+	fillh d478 0 10
+	pop_a 10
+.d 1 0
+	rtn
+.n 4 _ ea529
+.o 1 0
+n529
+	push_node _cycle_in_spine 4
+.o 5 0
+ea529
+.o 5 0
+s529
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s301
+.o 3 1 b
+s302
+	eqB_b TRUE 0
+	jmp_true case.206
+	jmp case.207
+case.206
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.207
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n533
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea533
+.o 1 0
+n533
+	push_node _cycle_in_spine 1
+.o 2 0
+ea533
+.o 2 0
+s533
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s301
+	eqB_b TRUE 0
+	jmp_true case.208
+	jmp case.209
+case.208
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.209
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n530
+	buildh _Cons 2
+	buildAC "setEditorId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea530
+.o 1 0
+n530
+	push_node _cycle_in_spine 1
+.o 2 0
+ea530
+.o 2 0
+s530
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea248
+.o 1 0
+n248
+	push_node _cycle_in_spine 4
+.o 5 0
+ea248
+	jsr_eval 3
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s248
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 4 0
+	jsr s32
+.o 0 1 b
+	jmp_false else.210
+	push_a 4
+	build _ 1 n531
+	push_a 6
+	build _ 1 n33
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.211
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.211
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.210
+	push_a 4
+	push_a 1
+	build e_UIDefinition_dUIEditOpts.value -4 e_UIDefinition_nUIEditOpts.value
+	buildh d204 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.212
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+else.212
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build _ 1 n532
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea532
+.o 1 0
+n532
+	push_node _cycle_in_spine 1
+.o 2 0
+ea532
+.o 2 0
+s532
+	buildh e_UIDefinition_dencodeUIValue;21 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 1 _ ea531
+.o 1 0
+n531
+	push_node _cycle_in_spine 1
+.o 2 0
+ea531
+.o 2 0
+s531
+	buildh e_UIDefinition_dencodeUIValue;21 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 4 _ ea249
+.o 1 0
+n249
+	push_node _cycle_in_spine 4
+.o 5 0
+ea249
+	jsr_eval 3
+	jsr_eval 2
+	push_r_args 3 3 0
+	push_r_args 5 3 0
+	update_a 5 9
+	update_a 1 5
+	update_a 4 8
+	update_a 0 4
+	push_a 7
+	update_a 4 8
+	update_a 0 4
+	update_a 7 0
+	update_a 3 7
+	update_a 0 3
+	pop_a 3
+.o 9 0
+s249
+	build_r e_UIDefinition_rUIEditOpts 3 0 5 0
+	push_a 6
+	push_a 4
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+.d 3 1 b
+	jsr s300
+.o 1 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 8
+	buildh ARRAY 1
+	push_a 6
+	buildh ARRAY 1
+	push_a 4
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n524
+	push_a 1
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.213
+	push_a 0
+	jsr_eval 0
+.d 1 0
+	jsr e_StdList_sisEmpty
+.o 0 1 b
+	jmp_false else.213
+	buildh _Nil 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 8 0
+	build_r e_UIDefinition_rUIEditOpts 3 0 6 0
+	push_a 6
+	push_a 6
+	push_a 3
+	update_a 2 4
+	update_a 1 2
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+	build _ 4 n250
+	buildh _Cons 2
+	push_a 1
+	buildh _Cons 2
+	push_a 2
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 11
+	pop_a 10
+.d 1 0
+	rtn
+else.213
+	fillh d478 0 10
+	pop_a 10
+.d 1 0
+	rtn
+.n 4 _ ea524
+.o 1 0
+n524
+	push_node _cycle_in_spine 4
+.o 5 0
+ea524
+.o 5 0
+s524
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s299
+.o 3 1 b
+s300
+	eqB_b TRUE 0
+	jmp_true case.215
+	jmp case.216
+case.215
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.216
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 1 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n528
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea528
+.o 1 0
+n528
+	push_node _cycle_in_spine 1
+.o 2 0
+ea528
+.o 2 0
+s528
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s299
+	eqB_b TRUE 0
+	jmp_true case.217
+	jmp case.218
+case.217
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.218
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 3 0 2 1
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+	build _ 1 n525
+	buildh _Cons 2
+	buildAC "setEditorId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea525
+.o 1 0
+n525
+	push_node _cycle_in_spine 1
+.o 2 0
+ea525
+.o 2 0
+s525
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 4 _ ea250
+.o 1 0
+n250
+	push_node _cycle_in_spine 4
+.o 5 0
+ea250
+	jsr_eval 3
+	push_r_args 2 3 0
+	update_a 2 5
+	update_a 4 2
+	update_a 1 4
+	update_a 3 1
+	update_a 0 3
+	pop_a 1
+.o 7 0
+s250
+	push_a 5
+	push_a 5
+	push_a 5
+	push_a 5
+.d 4 0
+	jsr s32
+.o 0 1 b
+	jmp_false else.219
+	push_a 4
+	build _ 1 n526
+	push_a 6
+	build _ 1 n33
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	update_a 5 9
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.220
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+else.220
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+else.219
+	push_a 4
+	push_a 1
+	build e_UIDefinition_dUIEditOpts.value -4 e_UIDefinition_nUIEditOpts.value
+	buildh d207 0
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.221
+	fillh _Nil 0 5
+	pop_a 5
+.d 1 0
+	rtn
+else.221
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build _ 1 n527
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea527
+.o 1 0
+n527
+	push_node _cycle_in_spine 1
+.o 2 0
+ea527
+.o 2 0
+s527
+	buildh e_UIDefinition_dencodeUIValue;26 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.n 1 _ ea526
+.o 1 0
+n526
+	push_node _cycle_in_spine 1
+.o 2 0
+ea526
+.o 2 0
+s526
+	buildh e_UIDefinition_dencodeUIValue;26 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_UIDefinition_sencodeUIValue;27
+.desc d172 _hnf l172 2 0 "gEq_s;1197"
+.a 0 a172
+.o 2 0
+l172
+	repl_args 1 1
+.o 2 0
+a172
+.d 2 0
+	jsr ea172
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea172
+.o 2 0
+s172
+	buildh e_GenEq_dgEq__String;6 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s49
+.desc d174 _hnf l174 2 0 "gEq_s;1199"
+.a 0 a174
+.o 2 0
+l174
+	repl_args 1 1
+.o 2 0
+a174
+.d 2 0
+	jsr ea174
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea174
+.o 2 0
+s174
+	buildh e_SystemTypes_dgEq_HtmlTag;916 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s49
+.desc d176 _hnf l176 2 0 "gEq_s;1201"
+.a 0 a176
+.o 2 0
+l176
+	repl_args 1 1
+.o 2 0
+a176
+.d 2 0
+	jsr ea176
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea176
+.o 2 0
+s176
+	buildh e_SystemTypes_dgEq_Document;189 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s49
+.desc d178 _hnf l178 2 0 "gEq_s;1203"
+.a 0 a178
+.o 2 0
+l178
+	repl_args 1 1
+.o 2 0
+a178
+.d 2 0
+	jsr ea178
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea178
+.o 2 0
+s178
+	buildh e_GenEq_dgEq_Bool;4 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s49
+.desc d180 _hnf l180 2 0 "gEq_s;1205"
+.a 0 a180
+.o 2 0
+l180
+	repl_args 1 1
+.o 2 0
+a180
+.d 2 0
+	jsr ea180
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea180
+.o 2 0
+s180
+	buildh e_GenEq_dgEq_Int;2 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s49
+.desc d183 _hnf l183 2 0 "gEq_s;1208"
+.a 0 a183
+.o 2 0
+l183
+	repl_args 1 1
+.o 2 0
+a183
+.d 2 0
+	jsr ea183
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea183
+.o 2 0
+s183
+	buildh e_SystemTypes_dgEq_ProgressAmount;563 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s49
+.n 2 _ ea184
+.o 1 0
+n184
+	push_node _cycle_in_spine 2
+.o 3 0
+ea184
+.o 3 0
+s184
+	buildh d51 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.222
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.222
+	fillh d478 0 0
+.d 1 0
+	rtn
+.desc d192 _hnf l192 2 0 "gEq_s;1217"
+.a 0 a192
+.o 2 0
+l192
+	repl_args 1 1
+.o 2 0
+a192
+.d 2 0
+	jsr ea192
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea192
+.o 2 0
+s192
+	buildh e_GenEq_dgEq_Real;5 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.desc d195 _hnf l195 2 0 "gEq_s;1220"
+.a 0 a195
+.o 2 0
+l195
+	repl_args 1 1
+.o 2 0
+a195
+.d 2 0
+	jsr ea195
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea195
+.o 2 0
+s195
+	buildh e_GenEq_dgEq_Bool;4 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.desc d189 _hnf l189 2 0 "gEq_s;1214"
+.a 0 a189
+.o 2 0
+l189
+	repl_args 1 1
+.o 2 0
+a189
+.d 2 0
+	jsr ea189
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea189
+.o 2 0
+s189
+	buildh e_GenEq_dgEq_Int;2 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.n 2 _ ea181
+.o 1 0
+n181
+	push_node _cycle_in_spine 2
+.o 3 0
+ea181
+.o 3 0
+s181
+	buildh d50 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.223
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.223
+	fillh d478 0 0
+.d 1 0
+	rtn
+.desc d198 _hnf l198 2 0 "gEq_s;1223"
+.a 0 a198
+.o 2 0
+l198
+	repl_args 1 1
+.o 2 0
+a198
+.d 2 0
+	jsr ea198
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea198
+.o 2 0
+s198
+	buildh e_SystemTypes_dgEq_Date;186 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.desc d201 _hnf l201 2 0 "gEq_s;1226"
+.a 0 a201
+.o 2 0
+l201
+	repl_args 1 1
+.o 2 0
+a201
+.d 2 0
+	jsr ea201
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea201
+.o 2 0
+s201
+	buildh e_SystemTypes_dgEq_Time;187 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.desc d204 _hnf l204 2 0 "gEq_s;1229"
+.a 0 a204
+.o 2 0
+l204
+	repl_args 1 1
+.o 2 0
+a204
+.d 2 0
+	jsr ea204
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea204
+.o 2 0
+s204
+	buildh e_SystemTypes_dgEq_Document;189 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.n 2 _ ea208
+.o 1 0
+n208
+	push_node _cycle_in_spine 2
+.o 3 0
+ea208
+.o 3 0
+s208
+	buildh d52 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.224
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.224
+	fillh d478 0 0
+.d 1 0
+	rtn
+.n 2 _ ea211
+.o 1 0
+n211
+	push_node _cycle_in_spine 2
+.o 3 0
+ea211
+.o 3 0
+s211
+	buildh d53 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.225
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.225
+	fillh d478 0 0
+.d 1 0
+	rtn
+.desc d207 _hnf l207 2 0 "gEq_s;1232"
+.a 0 a207
+.o 2 0
+l207
+	repl_args 1 1
+.o 2 0
+a207
+.d 2 0
+	jsr ea207
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea207
+.o 2 0
+s207
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.n 2 _ ea212
+.o 1 0
+n212
+	push_node _cycle_in_spine 2
+.o 3 0
+ea212
+.o 3 0
+s212
+	buildh d56 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.226
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.226
+	fillh d478 0 0
+.d 1 0
+	rtn
+.o 11 0
+s213
+	push_a 6
+	push_a 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	notB
+	jmp_false else.227
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.227
+	push_a 6
+	push_a 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	notB
+	jmp_false else.228
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.228
+	push_a 8
+	push_a 5
+	buildh d214 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_false else.229
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.229
+	build_r e_UIDefinition_rUIChoiceOpts 4 0 5 0
+	push_a 8
+	push_a 5
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n492
+	fillh d479 1 10
+	pop_a 9
+.d 1 0
+	rtn
+.n 4 _ ea492
+.o 1 0
+n492
+	push_node _cycle_in_spine 4
+.o 5 0
+ea492
+.o 5 0
+s492
+	buildh d167 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s281
+.o 3 1 b
+s281
+	eqB_b TRUE 0
+	jmp_true case.230
+	jmp case.231
+case.230
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.231
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 4 0 3 1
+	build _ 1 n493
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea493
+.o 1 0
+n493
+	push_node _cycle_in_spine 1
+.o 2 0
+ea493
+.o 2 0
+s493
+	push_a 0
+	jsr_eval 0
+	buildh d168 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 11 0
+s216
+	push_a 6
+	push_a 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	notB
+	jmp_false else.232
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.232
+	push_a 6
+	push_a 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	notB
+	jmp_false else.233
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.233
+	push_a 8
+	push_a 5
+	buildh d217 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_false else.234
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.234
+	build_r e_UIDefinition_rUIChoiceOpts 4 0 5 0
+	push_a 8
+	push_a 5
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n494
+	fillh d479 1 10
+	pop_a 9
+.d 1 0
+	rtn
+.n 4 _ ea494
+.o 1 0
+n494
+	push_node _cycle_in_spine 4
+.o 5 0
+ea494
+.o 5 0
+s494
+	buildh d167 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s280
+.o 3 1 b
+s280
+	eqB_b TRUE 0
+	jmp_true case.235
+	jmp case.236
+case.235
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.236
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 4 0 3 1
+	build _ 1 n495
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea495
+.o 1 0
+n495
+	push_node _cycle_in_spine 1
+.o 2 0
+ea495
+.o 2 0
+s495
+	push_a 0
+	jsr_eval 0
+	buildh d168 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.desc d217 _hnf l217 2 0 "gEq_s;1242"
+.a 0 a217
+.o 2 0
+l217
+	repl_args 1 1
+.o 2 0
+a217
+.d 2 0
+	jsr ea217
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea217
+.o 2 0
+s217
+	buildh d214 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq__List;16
+.desc d214 _hnf l214 2 0 "gEq_s;1239"
+.a 0 a214
+.o 2 0
+l214
+	repl_args 1 1
+.o 2 0
+a214
+.d 2 0
+	jsr ea214
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea214
+.o 2 0
+s214
+	buildh e_GenEq_dgEq__String;6 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq__List;16
+.desc d215 _hnf l215 1 0 "JSONEncode_s;1240"
+.o 2 0
+l215
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea215
+	jsr_eval 0
+.o 2 0
+s215
+	buildh e_JSON_dJSONEncode__String;13 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_sJSONEncode__List;21
+.n 2 _ ea218
+.o 1 0
+n218
+	push_node _cycle_in_spine 2
+.o 3 0
+ea218
+.o 3 0
+s218
+	buildh d57 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.237
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.237
+	fillh d478 0 0
+.d 1 0
+	rtn
+.o 11 0
+s219
+	push_a 6
+	push_a 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	notB
+	jmp_false else.238
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.238
+	push_a 6
+	push_a 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	notB
+	jmp_false else.239
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.239
+	push_a 8
+	push_a 5
+	buildh d220 0
+.d 3 0
+	jsr e_GenEq_s=!=
+.o 0 1 b
+	jmp_false else.240
+	fillh d478 0 9
+	pop_a 9
+.d 1 0
+	rtn
+else.240
+	build_r e_UIDefinition_rUIChoiceOpts 4 0 5 0
+	push_a 8
+	push_a 5
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 4 n496
+	fillh d479 1 10
+	pop_a 9
+.d 1 0
+	rtn
+.n 4 _ ea496
+.o 1 0
+n496
+	push_node _cycle_in_spine 4
+.o 5 0
+ea496
+.o 5 0
+s496
+	buildh d167 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s279
+.o 3 1 b
+s279
+	eqB_b TRUE 0
+	jmp_true case.241
+	jmp case.242
+case.241
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.242
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_r_args_a 4 4 0 3 1
+	build _ 1 n497
+	buildh _Cons 2
+	buildAC "setValue"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea497
+.o 1 0
+n497
+	push_node _cycle_in_spine 1
+.o 2 0
+ea497
+.o 2 0
+s497
+	push_a 0
+	jsr_eval 0
+	buildh d168 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.desc d220 _hnf l220 2 0 "gEq_s;1245"
+.a 0 a220
+.o 2 0
+l220
+	repl_args 1 1
+.o 2 0
+a220
+.d 2 0
+	jsr ea220
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea220
+.o 2 0
+s220
+	buildh d58 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq__List;16
+.n 2 _ ea221
+.o 1 0
+n221
+	push_node _cycle_in_spine 2
+.o 3 0
+ea221
+.o 3 0
+s221
+	buildh d59 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.243
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.243
+	fillh d478 0 0
+.d 1 0
+	rtn
+.n 2 _ ea222
+.o 1 0
+n222
+	push_node _cycle_in_spine 2
+.o 3 0
+ea222
+.o 3 0
+s222
+	buildh d62 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.244
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.244
+	fillh d478 0 0
+.d 1 0
+	rtn
+.n 2 _ ea223
+.o 1 0
+n223
+	push_node _cycle_in_spine 2
+.o 3 0
+ea223
+.o 3 0
+s223
+	buildh d74 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.245
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.245
+	fillh d478 0 0
+.d 1 0
+	rtn
+.desc d227 _hnf l227 2 0 "gEq_s;1252"
+.a 0 a227
+.o 2 0
+l227
+	repl_args 1 1
+.o 2 0
+a227
+.d 2 0
+	jsr ea227
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea227
+.o 2 0
+s227
+	buildh d48 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.n 2 _ ea224
+.o 1 0
+n224
+	push_node _cycle_in_spine 2
+.o 3 0
+ea224
+.o 3 0
+s224
+	buildh d72 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.246
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.246
+	fillh d478 0 0
+.d 1 0
+	rtn
+.n 2 _ ea210
+.o 1 0
+n210
+	push_node _cycle_in_spine 2
+.o 3 0
+ea210
+.o 3 0
+s210
+	buildh d209 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.247
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.247
+	fillh d478 0 0
+.d 1 0
+	rtn
+.desc d209 _hnf l209 2 0 "gEq_s;1234"
+.a 0 a209
+.o 2 0
+l209
+	repl_args 1 1
+.o 2 0
+a209
+.d 2 0
+	jsr ea209
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea209
+.o 2 0
+s209
+	buildh e_SystemTypes_dgEq_JSONNode;922 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s77
+.n 2 _ ea225
+.o 1 0
+n225
+	push_node _cycle_in_spine 2
+.o 3 0
+ea225
+.o 3 0
+s225
+	buildh d87 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.248
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.248
+	fillh d478 0 0
+.d 1 0
+	rtn
+.n 2 _ ea226
+.o 1 0
+n226
+	push_node _cycle_in_spine 2
+.o 3 0
+ea226
+.o 3 0
+s226
+	buildh d89 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.249
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.249
+	fillh d478 0 0
+.d 1 0
+	rtn
+.n 2 _ ea169
+.o 1 0
+n169
+	push_node _cycle_in_spine 2
+.o 3 0
+ea169
+	jsr_eval 1
+.o 3 0
+s169
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s278
+.o 3 0
+s278
+	eq_desc _Cons 2 0
+	jmp_true case.250
+	jmp case.251
+case.250
+	repl_args 2 2
+	push_a 1
+	push_a 3
+	build _ 2 n169
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 3
+	build _ 1 n574
+	buildh _Cons 2
+	buildAC "remove"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 4
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 5
+	pop_a 3
+.d 1 0
+	rtn
+case.251
+	fillh _Nil 0 2
+	pop_a 2
+.d 1 0
+	rtn
+.n 1 _ ea574
+.o 1 0
+n574
+	push_node _cycle_in_spine 1
+.o 2 0
+ea574
+.o 2 0
+s574
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 0
+s77
+	push_a 2
+	build _ 1 n136
+	push_a 2
+	build _ 1 n136
+	push_a 2
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea136
+.o 1 0
+n136
+	push_node _cycle_in_spine 1
+.o 2 0
+ea136
+	jsr_eval 0
+	repl_r_args 3 0
+.o 4 0
+s136
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 1
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 4
+	pop_a 3
+.d 1 0
+	rtn
+.desc d92 _hnf l92 1 0 "JSONEncode_UITreeNode;91"
+.o 2 0
+l92
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea92
+	jsr_eval 0
+	repl_r_args 2 3
+.o 3 3 bbi
+s92
+	create
+	push_b 2
+	push_b 2
+	push_b 2
+	push_a 2
+	push_a 2
+	update_b 2 5
+	update_b 1 4
+	updatepop_b 0 3
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 3 bbi
+	jsr s116
+.o 1 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_Bool;12 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_Bool;12 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh d92 0
+	buildh e_JSON_dJSONEncode__List;21 1
+	buildh e_JSON_dJSONEncode_Maybe;28 1
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode__String;13 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	build _ 0 n115
+.d 4 0
+	jmp e_JSON_sJSONEncode_RECORD;17
+.n 0 _ ea115
+.o 1 0
+n115
+	push_node _cycle_in_spine 0
+.o 1 0
+ea115
+.o 1 0
+s115
+	buildh _Nil 0
+	buildAC "value"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "expanded"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "leaf"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "children"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "text"
+	buildh ARRAY 1
+	fillh _Cons 2 2
+.d 1 0
+	rtn
+.desc d89 _hnf l89 2 0 "gEq_UIChartOpts;88"
+.a 0 a89
+.o 2 0
+l89
+	repl_args 1 1
+.o 2 0
+a89
+.d 2 0
+	jsr ea89
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea89
+.o 2 0
+s89
+	push_a 1
+	build _ 1 n148
+	push_a 1
+	build _ 1 n148
+	buildh d91 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq__Tuple2;17 2
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh d90 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.desc d91 _hnf l91 2 0 "gEq_UIChartSeries;90"
+.a 0 a91
+.o 2 0
+l91
+	repl_args 1 1
+.o 2 0
+a91
+.d 2 0
+	jsr ea91
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea91
+.o 2 0
+s91
+	push_a 1
+	build _ 1 n150
+	push_a 1
+	build _ 1 n150
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea150
+.o 1 0
+n150
+	push_node _cycle_in_spine 1
+.o 2 0
+ea150
+	jsr_eval 0
+	repl_r_args 3 0
+.o 4 0
+s150
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 4
+	pop_a 3
+.d 1 0
+	rtn
+.desc d90 _hnf l90 2 0 "gEq_UIChartAxis;89"
+.a 0 a90
+.o 2 0
+l90
+	repl_args 1 1
+.o 2 0
+a90
+.d 2 0
+	jsr ea90
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea90
+.o 2 0
+s90
+	push_a 1
+	build _ 1 n149
+	push_a 1
+	build _ 1 n149
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea149
+.o 1 0
+n149
+	push_node _cycle_in_spine 1
+.o 2 0
+ea149
+	jsr_eval 0
+	repl_r_args 6 0
+.o 7 0
+s149
+	push_a 5
+	buildh e_StdGeneric_dFIELD 1
+	push_a 5
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 4
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 7
+	pop_a 6
+.d 1 0
+	rtn
+.n 1 _ ea148
+.o 1 0
+n148
+	push_node _cycle_in_spine 1
+.o 2 0
+ea148
+	jsr_eval 0
+	repl_r_args 4 0
+.o 5 0
+s148
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 5
+	pop_a 4
+.d 1 0
+	rtn
+.desc d87 _hnf l87 2 0 "gEq_UIImageOpts;86"
+.a 0 a87
+.o 2 0
+l87
+	repl_args 1 1
+.o 2 0
+a87
+.d 2 0
+	jsr ea87
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea87
+.o 2 0
+s87
+	push_a 1
+	build _ 1 n146
+	push_a 1
+	build _ 1 n146
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh d88 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.desc d88 _hnf l88 2 0 "gEq_UIImageSprite;87"
+.a 0 a88
+.o 2 0
+l88
+	repl_args 1 1
+.o 2 0
+a88
+.d 2 0
+	jsr ea88
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea88
+.o 2 0
+s88
+	push_a 1
+	build _ 1 n147
+	push_a 1
+	build _ 1 n147
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea147
+.o 1 0
+n147
+	push_node _cycle_in_spine 1
+.o 2 0
+ea147
+	jsr_eval 0
+	repl_r_args 16 0
+.o 17 0
+s147
+	push_a 15
+	buildh e_StdGeneric_dFIELD 1
+	push_a 15
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 14
+	buildh e_StdGeneric_dFIELD 1
+	push_a 14
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	push_a 12
+	buildh e_StdGeneric_dFIELD 1
+	push_a 12
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 11
+	buildh e_StdGeneric_dFIELD 1
+	push_a 11
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	push_a 8
+	buildh e_StdGeneric_dFIELD 1
+	push_a 8
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 7
+	buildh e_StdGeneric_dFIELD 1
+	push_a 7
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	push_a 5
+	buildh e_StdGeneric_dFIELD 1
+	push_a 5
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 4
+	buildh e_StdGeneric_dFIELD 1
+	push_a 4
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 17
+	pop_a 16
+.d 1 0
+	rtn
+.n 1 _ ea146
+.o 1 0
+n146
+	push_node _cycle_in_spine 1
+.o 2 0
+ea146
+	jsr_eval 0
+	repl_r_args 2 0
+.o 3 0
+s146
+	push_a 1
+	buildh e_StdGeneric_dFIELD 1
+	push_a 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.desc d74 _hnf l74 2 0 "gEq_UIContainerOpts;73"
+.a 0 a74
+.o 2 0
+l74
+	repl_args 1 1
+.o 2 0
+a74
+.d 2 0
+	jsr ea74
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea74
+.o 2 0
+s74
+	push_a 1
+	build _ 1 n133
+	push_a 1
+	build _ 1 n133
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea133
+.o 1 0
+n133
+	push_node _cycle_in_spine 1
+.o 2 0
+ea133
+	jsr_eval 0
+	repl_r_args 2 0
+.o 3 0
+s133
+	push_a 1
+	buildh e_StdGeneric_dFIELD 1
+	push_a 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.desc d72 _hnf l72 2 0 "gEq_UIFieldSetOpts;71"
+.a 0 a72
+.o 2 0
+l72
+	repl_args 1 1
+.o 2 0
+a72
+.d 2 0
+	jsr ea72
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea72
+.o 2 0
+s72
+	push_a 1
+	build _ 1 n131
+	push_a 1
+	build _ 1 n131
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea131
+.o 1 0
+n131
+	push_node _cycle_in_spine 1
+.o 2 0
+ea131
+	jsr_eval 0
+	repl_r_args 1 0
+.o 2 0
+s131
+	push_a 0
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	fillh e_StdGeneric_dRECORD 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d62 _hnf l62 2 0 "gEq_UILabelOpts;61"
+.a 0 a62
+.o 2 0
+l62
+	repl_args 1 1
+.o 2 0
+a62
+.d 2 0
+	jsr ea62
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea62
+.o 2 0
+s62
+	push_a 1
+	build _ 1 n121
+	push_a 1
+	build _ 1 n121
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea121
+.o 1 0
+n121
+	push_node _cycle_in_spine 1
+.o 2 0
+ea121
+	jsr_eval 0
+	repl_r_args 1 0
+.o 2 0
+s121
+	push_a 0
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	fillh e_StdGeneric_dRECORD 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d60 _hnf l60 2 0 "gEq_UIMenuItem;59"
+.a 0 a60
+.o 2 0
+l60
+	repl_args 1 1
+.o 2 0
+a60
+.d 2 0
+	jsr ea60
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea60
+.o 2 0
+s60
+	push_a 1
+	build _ 1 n118
+	push_a 1
+	build _ 1 n118
+	buildh d59 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh d52 0
+	buildh d61 0
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_OBJECT;13
+.desc d59 _hnf l59 2 0 "gEq_UIMenuButtonOpts;58"
+.a 0 a59
+.o 2 0
+l59
+	repl_args 1 1
+.o 2 0
+a59
+.d 2 0
+	jsr ea59
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea59
+.o 2 0
+s59
+	push_a 1
+	build _ 1 n117
+	push_a 1
+	build _ 1 n117
+	buildh d60 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea118
+.o 1 0
+n118
+	push_node _cycle_in_spine 1
+.o 2 0
+ea118
+	jsr_eval 0
+.o 2 0
+s118
+	eq_desc e_UIDefinition_kUIActionMenuItem 0 0
+	jmp_true case.252
+	jmp case.253
+case.252
+	repl_args 2 2
+	push_a 1
+	push_a 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 3
+	pop_a 2
+.d 1 0
+	rtn
+case.253
+	repl_r_args 3 1
+	build_r e_UIDefinition_rUIMenuButtonOpts 3 1 0 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 4
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea117
+.o 1 0
+n117
+	push_node _cycle_in_spine 1
+.o 2 0
+ea117
+	jsr_eval 0
+	repl_r_args 3 1
+.o 4 1 b
+s117
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildB_b 0
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 4
+	pop_a 3
+	pop_b 1
+.d 1 0
+	rtn
+.desc d58 _hnf l58 2 0 "gEq_UITreeNode;57"
+.a 0 a58
+.o 2 0
+l58
+	repl_args 1 1
+.o 2 0
+a58
+.d 2 0
+	jsr ea58
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea58
+.o 2 0
+s58
+	push_a 1
+	build _ 1 n116
+	push_a 1
+	build _ 1 n116
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh d58 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea116
+.o 1 0
+n116
+	push_node _cycle_in_spine 1
+.o 2 0
+ea116
+	jsr_eval 0
+	repl_r_args 2 3
+.o 3 3 bbi
+s116
+	buildI_b 2
+	buildh e_StdGeneric_dFIELD 1
+	buildB_b 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildB_b 0
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 3
+	pop_a 2
+	pop_b 3
+.d 1 0
+	rtn
+.desc d57 _hnf l57 2 0 "gEq_UIGridOpts;56"
+.a 0 a57
+.o 2 0
+l57
+	repl_args 1 1
+.o 2 0
+a57
+.d 2 0
+	jsr ea57
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea57
+.o 2 0
+s57
+	push_a 1
+	build _ 1 n114
+	push_a 1
+	build _ 1 n114
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea114
+.o 1 0
+n114
+	push_node _cycle_in_spine 1
+.o 2 0
+ea114
+	jsr_eval 0
+	repl_r_args 1 0
+.o 2 0
+s114
+	push_a 0
+	buildh e_StdGeneric_dFIELD 1
+	fillh e_StdGeneric_dRECORD 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d56 _hnf l56 2 0 "gEq_UICodeOpts;55"
+.a 0 a56
+.o 2 0
+l56
+	repl_args 1 1
+.o 2 0
+a56
+.d 2 0
+	jsr ea56
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea56
+.o 2 0
+s56
+	push_a 1
+	build _ 1 n113
+	push_a 1
+	build _ 1 n113
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea113
+.o 1 0
+n113
+	push_node _cycle_in_spine 1
+.o 2 0
+ea113
+	jsr_eval 0
+	repl_r_args 0 1
+.o 1 1 b
+s113
+	buildB_b 0
+	buildh e_StdGeneric_dFIELD 1
+	fillh e_StdGeneric_dRECORD 1 1
+	pop_b 1
+.d 1 0
+	rtn
+.desc d53 _hnf l53 2 0 "gEq_UIGoogleMapOpts;52"
+.a 0 a53
+.o 2 0
+l53
+	repl_args 1 1
+.o 2 0
+a53
+.d 2 0
+	jsr ea53
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea53
+.o 2 0
+s53
+	push_a 1
+	build _ 1 n110
+	push_a 1
+	build _ 1 n110
+	buildh d55 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh d54 0
+	buildh e_GenEq_dgEq__List;16 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Real;5 0
+	buildh e_GenEq_dgEq_Real;5 0
+	buildh e_GenEq_dgEq__Tuple2;17 2
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.desc d55 _hnf l55 2 0 "gEq_UIGoogleMapOptions;54"
+.a 0 a55
+.o 2 0
+l55
+	repl_args 1 1
+.o 2 0
+a55
+.d 2 0
+	jsr ea55
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea55
+.o 2 0
+s55
+	push_a 1
+	build _ 1 n112
+	push_a 1
+	build _ 1 n112
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea112
+.o 1 0
+n112
+	push_node _cycle_in_spine 1
+.o 2 0
+ea112
+	jsr_eval 0
+	repl_r_args 0 8
+.o 1 8 bbbbbbbi
+s112
+	buildI_b 7
+	buildh e_StdGeneric_dFIELD 1
+	buildB_b 6
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildB_b 5
+	buildh e_StdGeneric_dFIELD 1
+	buildB_b 4
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildB_b 3
+	buildh e_StdGeneric_dFIELD 1
+	buildB_b 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildB_b 1
+	buildh e_StdGeneric_dFIELD 1
+	buildB_b 0
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 1
+	pop_b 8
+.d 1 0
+	rtn
+.desc d54 _hnf l54 2 0 "gEq_UIGoogleMapMarker;53"
+.a 0 a54
+.o 2 0
+l54
+	repl_args 1 1
+.o 2 0
+a54
+.d 2 0
+	jsr ea54
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea54
+.o 2 0
+s54
+	push_a 1
+	build _ 1 n111
+	push_a 1
+	build _ 1 n111
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_SystemTypes_dgEq_GoogleMapIcon;484 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Real;5 0
+	buildh e_GenEq_dgEq_Real;5 0
+	buildh e_GenEq_dgEq__Tuple2;17 2
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea111
+.o 1 0
+n111
+	push_node _cycle_in_spine 1
+.o 2 0
+ea111
+	jsr_eval 0
+	repl_r_args 3 6
+.o 4 6 rrbb
+s111
+	buildB_b 5
+	buildh e_StdGeneric_dFIELD 1
+	buildB_b 4
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildR_b 2
+	buildR_b 0
+	buildh _Tuple 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 4
+	pop_a 3
+	pop_b 6
+.d 1 0
+	rtn
+.n 1 _ ea110
+.o 1 0
+n110
+	push_node _cycle_in_spine 1
+.o 2 0
+ea110
+	jsr_eval 0
+	repl_r_args 3 4
+.o 4 4 rr
+s110
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 1
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	buildR_b 2
+	buildR_b 0
+	buildh _Tuple 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 4
+	pop_a 3
+	pop_b 4
+.d 1 0
+	rtn
+.desc d52 _hnf l52 2 0 "gEq_UIButtonOpts;51"
+.a 0 a52
+.o 2 0
+l52
+	repl_args 1 1
+.o 2 0
+a52
+.d 2 0
+	jsr ea52
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea52
+.o 2 0
+s52
+	push_a 1
+	build _ 1 n109
+	push_a 1
+	build _ 1 n109
+	buildh e_GenEq_dgEq_Bool;4 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea109
+.o 1 0
+n109
+	push_node _cycle_in_spine 1
+.o 2 0
+ea109
+	jsr_eval 0
+	repl_r_args 2 1
+.o 3 1 b
+s109
+	buildB_b 0
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 3
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.desc d51 _hnf l51 2 0 "gEq_UIProgressOpts;50"
+.a 0 a51
+.o 2 0
+l51
+	repl_args 1 1
+.o 2 0
+a51
+.d 2 0
+	jsr ea51
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea51
+.o 2 0
+s51
+	push_a 1
+	build _ 1 n108
+	push_a 1
+	build _ 1 n108
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea108
+.o 1 0
+n108
+	push_node _cycle_in_spine 1
+.o 2 0
+ea108
+	jsr_eval 0
+	repl_r_args 1 0
+.o 2 0
+s108
+	push_a 0
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	fillh e_StdGeneric_dRECORD 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d50 _hnf l50 2 0 "gEq_UISliderOpts;49"
+.a 0 a50
+.o 2 0
+l50
+	repl_args 1 1
+.o 2 0
+a50
+.d 2 0
+	jsr ea50
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea50
+.o 2 0
+s50
+	push_a 1
+	build _ 1 n107
+	push_a 1
+	build _ 1 n107
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea107
+.o 1 0
+n107
+	push_node _cycle_in_spine 1
+.o 2 0
+ea107
+	jsr_eval 0
+	repl_r_args 0 2
+.o 1 2 ii
+s107
+	buildI_b 1
+	buildh e_StdGeneric_dFIELD 1
+	buildI_b 0
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 1
+	pop_b 2
+.d 1 0
+	rtn
+.n 3 _ ea26
+.o 1 0
+n26
+	push_node _cycle_in_spine 3
+.o 4 0
+ea26
+	jsr_eval 2
+.o 4 0
+s26
+	push_a 2
+.d 1 0
+	jsr s28
+.o 0 1 b
+	jmp_false else.254
+	create
+	push_a 3
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr s40
+.o 1 0
+.d 2 0
+	jmp e_StdList_sflatten
+else.254
+	push_a 0
+	build _ 1 n577
+	push_a 0
+	build d_S.1 -1 n_S.1
+	build _ 1 n578
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 6
+	build e_UIDefinition_dencodeUIControl 1 e_UIDefinition_nencodeUIControl
+	buildh _Cons 2
+	push_a 3
+	build _ 1 n571
+	buildh _Cons 2
+	buildAC "add"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	buildh _Nil 0
+	push_a 3
+	build _ 1 n570
+	buildh _Cons 2
+	buildAC "remove"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 3
+	build d_S.2 -1 n_S.2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 7
+	pop_a 5
+.d 1 0
+	rtn
+.n 1 _ ea577
+.o 1 0
+n577
+	push_node _cycle_in_spine 1
+.o 2 0
+ea577
+	jsr_eval 0
+.o 2 0
+s577
+	eq_desc _Cons 2 0
+	jmp_true case.255
+	jmp s577.1
+case.255
+	push_args 0 2 2
+	pop_a 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s577.1
+	pop_a 2
+	pushD m_UIDiff
+	pushD x_577
+.d 0 2 ii
+	jmp _match_error
+.string x_577 "_match2"
+.n 1 _
+.o 1 0
+n578
+	push_node _cycle_in_spine 1
+.d 1 0
+	jsr ea578
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 1 0
+ea578
+	jsr_eval 0
+.o 1 0
+s578
+	eq_desc e_UIDiff_kItemStep 0 0
+	jmp_true case.256
+	jmp s578.1
+case.256
+	repl_r_args 0 1
+.d 0 1 i
+	rtn
+s578.1
+	pop_a 1
+	pushD m_UIDiff
+	pushD x_578
+.d 0 2 ii
+	jmp _match_error
+.string x_578 "_match3"
+.n 1 _ ea571
+.o 1 0
+n571
+	push_node _cycle_in_spine 1
+.o 2 0
+ea571
+.o 2 0
+s571
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 1 _ ea570
+.o 1 0
+n570
+	push_node _cycle_in_spine 1
+.o 2 0
+ea570
+.o 2 0
+s570
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Int;9 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 1 _ ea40
+.o 1 0
+n40
+	push_node _cycle_in_spine 1
+.o 2 0
+ea40
+	jsr_eval 0
+.o 2 0
+s40
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s277
+.o 2 0
+s277
+	eq_desc _Cons 2 0
+	jmp_true case.257
+	jmp case.258
+case.257
+	repl_args 2 2
+	push_a 0
+	jsr_eval 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s276
+case.258
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 3 0
+s276
+	eq_desc d479 1 0
+	jmp_true case.259
+	jmp case.260
+case.259
+	repl_args 1 1
+	push_a 1
+	build _ 1 n40
+	push_a 1
+	fillh _Cons 2 4
+	pop_a 2
+.d 1 0
+	rtn
+case.260
+	push_a 1
+	jsr_eval 0
+	updatepop_a 0 2
+.d 2 0
+	jmp s40
+.o 1 0
+s28
+	eq_desc _Nil 0 0
+	jmp_true case.261
+	jmp case.262
+case.261
+	pop_a 1
+	pushB TRUE
+.d 0 1 b
+	rtn
+case.262
+	repl_args 2 2
+	jsr_eval 0
+	eq_desc d478 0 0
+	jmp_true case.263
+	jmp case.264
+case.263
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+case.264
+	repl_args 1 1
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	updatepop_a 0 1
+.d 1 0
+	jmp s28
+.o 3 0
+s49
+	push_a 2
+	build _ 1 n106
+	push_a 2
+	build _ 1 n106
+	push_a 2
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea106
+.o 1 0
+n106
+	push_node _cycle_in_spine 1
+.o 2 0
+ea106
+	jsr_eval 0
+	repl_r_args 1 0
+.o 2 0
+s106
+	push_a 0
+	buildh e_StdGeneric_dFIELD 1
+	fillh e_StdGeneric_dRECORD 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea33
+.o 1 0
+n33
+	push_node _cycle_in_spine 1
+.o 2 0
+ea33
+	jsr_eval 0
+.o 2 0
+s33
+	eq_desc e_Task_kEditEvent 0 0
+	jmp_true case.265
+	jmp s33.1
+case.265
+	repl_args 3 3
+	pop_a 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+s33.1
+	pop_a 2
+	pushD m_UIDiff
+	pushD x_33
+.d 0 2 ii
+	jmp _match_error
+.string x_33 "eventValue;32"
+.o 4 0
+s32
+	jmp case.266
+case.266
+	eq_desc e_Task_kEditEvent 0 3
+	jmp_true case.268
+	jmp case.267
+case.268
+	push_args 3 3 3
+	buildh _Nil 0
+	update_a 0 7
+	pop_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	push_a 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_SystemTypes_stoString;110
+.o 1 0
+	push_a 2
+	update_a 4 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	jmp_false else.269
+	push_a 0
+	push_a 2
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+.d 0 1 b
+	rtn
+else.269
+	pop_a 2
+	pushB FALSE
+.d 0 1 b
+	rtn
+case.267
+	pop_a 4
+	pushB FALSE
+.d 0 1 b
+	rtn
+.desc d168 _hnf l168 1 0 "JSONEncode_s;1193"
+.o 2 0
+l168
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea168
+	jsr_eval 0
+.o 2 0
+s168
+	buildh e_JSON_dJSONEncode_Int;9 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_sJSONEncode__List;21
+.desc d167 _hnf l167 2 0 "gEq_s;1192"
+.a 0 a167
+.o 2 0
+l167
+	repl_args 1 1
+.o 2 0
+a167
+.d 2 0
+	jsr ea167
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea167
+.o 2 0
+s167
+	buildh e_GenEq_dgEq_Int;2 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq__List;16
+.n 3 _ ea12
+.o 1 0
+n12
+	push_node _cycle_in_spine 3
+.o 4 0
+ea12
+.o 4 0
+s12
+	buildh _Nil 0
+	push_a 3
+	build e_UIDefinition_dUIActionOpts.actionId 1 e_UIDefinition_nUIActionOpts.actionId
+	push_a 3
+	build e_UIDefinition_dUIActionOpts.actionId 1 e_UIDefinition_nUIActionOpts.actionId
+	push_a 5
+	push_a 4
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	build _ 4 n521
+	buildh _Cons 2
+	push_a 3
+	build e_UIDefinition_dUIActionOpts.taskId 1 e_UIDefinition_nUIActionOpts.taskId
+	push_a 3
+	build e_UIDefinition_dUIActionOpts.taskId 1 e_UIDefinition_nUIActionOpts.taskId
+	push_a 5
+	push_a 4
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	build _ 4 n520
+	buildh _Cons 2
+	build e_StdList_dflatten 1 e_StdList_nflatten
+	fillh d479 1 4
+	pop_a 3
+.d 1 0
+	rtn
+.n 4 _ ea521
+.o 1 0
+n521
+	push_node _cycle_in_spine 4
+.o 5 0
+ea521
+.o 5 0
+s521
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s272
+.n 4 _ ea520
+.o 1 0
+n520
+	push_node _cycle_in_spine 4
+.o 5 0
+ea520
+.o 5 0
+s520
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 1 b
+	jmp s271
+.o 3 1 b
+s272
+	eqB_b TRUE 0
+	jmp_true case.270
+	jmp case.271
+case.270
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.271
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIActionOpts.actionId 1 e_UIDefinition_nUIActionOpts.actionId
+	build _ 1 n523
+	buildh _Cons 2
+	buildAC "setActionId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea523
+.o 1 0
+n523
+	push_node _cycle_in_spine 1
+.o 2 0
+ea523
+.o 2 0
+s523
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 3 1 b
+s271
+	eqB_b TRUE 0
+	jmp_true case.272
+	jmp case.273
+case.272
+	fillh _Nil 0 2
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+case.273
+	buildh _Nil 0
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 4
+	build e_UIDefinition_dUIActionOpts.taskId 1 e_UIDefinition_nUIActionOpts.taskId
+	build _ 1 n522
+	buildh _Cons 2
+	buildAC "setTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	buildh _Cons 2
+	push_a 2
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea522
+.o 1 0
+n522
+	push_node _cycle_in_spine 1
+.o 2 0
+ea522
+.o 2 0
+s522
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 3 _ ea19
+.o 1 0
+n19
+	push_node _cycle_in_spine 3
+.o 4 0
+ea19
+.o 4 0
+s19
+	buildh _Nil 0
+	push_a 3
+	build e_UIDefinition_dUIButtonOpts.disabled -3 e_UIDefinition_nUIButtonOpts.disabled
+	push_a 3
+	build e_UIDefinition_dUIButtonOpts.disabled -3 e_UIDefinition_nUIButtonOpts.disabled
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n516
+	buildh _Cons 2
+	push_a 3
+	build e_UIDefinition_dUIButtonOpts.iconCls -4 e_UIDefinition_nUIButtonOpts.iconCls
+	push_a 3
+	build e_UIDefinition_dUIButtonOpts.iconCls -4 e_UIDefinition_nUIButtonOpts.iconCls
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n515
+	buildh _Cons 2
+	push_a 3
+	build e_UIDefinition_dUIButtonOpts.text -4 e_UIDefinition_nUIButtonOpts.text
+	push_a 3
+	build e_UIDefinition_dUIButtonOpts.text -4 e_UIDefinition_nUIButtonOpts.text
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n514
+	buildh _Cons 2
+	push_a 1
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp s16
+.n 3 _ ea516
+.o 1 0
+n516
+	push_node _cycle_in_spine 3
+.o 4 0
+ea516
+.o 4 0
+s516
+	buildh e_GenEq_dgEq_Bool;4 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s270
+.n 3 _ ea515
+.o 1 0
+n515
+	push_node _cycle_in_spine 3
+.o 4 0
+ea515
+.o 4 0
+s515
+	buildh d165 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s269
+.n 3 _ ea514
+.o 1 0
+n514
+	push_node _cycle_in_spine 3
+.o 4 0
+ea514
+.o 4 0
+s514
+	buildh d165 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s268
+.o 2 1 b
+s270
+	eqB_b TRUE 0
+	jmp_true case.274
+	jmp case.275
+case.274
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.275
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUIButtonOpts.disabled -3 e_UIDefinition_nUIButtonOpts.disabled
+	build _ 1 n519
+	buildh _Cons 2
+	buildAC "setDisabled"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea519
+.o 1 0
+n519
+	push_node _cycle_in_spine 1
+.o 2 0
+ea519
+.o 2 0
+s519
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Bool;12 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 2 1 b
+s269
+	eqB_b TRUE 0
+	jmp_true case.276
+	jmp case.277
+case.276
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.277
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUIButtonOpts.iconCls -4 e_UIDefinition_nUIButtonOpts.iconCls
+	build _ 1 n518
+	buildh _Cons 2
+	buildAC "setIconCls"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea518
+.o 1 0
+n518
+	push_node _cycle_in_spine 1
+.o 2 0
+ea518
+.o 2 0
+s518
+	push_a 0
+	jsr_eval 0
+	buildh d166 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 2 1 b
+s268
+	eqB_b TRUE 0
+	jmp_true case.278
+	jmp case.279
+case.278
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.279
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUIButtonOpts.text -4 e_UIDefinition_nUIButtonOpts.text
+	build _ 1 n517
+	buildh _Cons 2
+	buildAC "setText"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea517
+.o 1 0
+n517
+	push_node _cycle_in_spine 1
+.o 2 0
+ea517
+.o 2 0
+s517
+	push_a 0
+	jsr_eval 0
+	buildh d166 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 3 _ ea20
+.o 1 0
+n20
+	push_node _cycle_in_spine 3
+.o 4 0
+ea20
+.o 4 0
+s20
+	buildh _Nil 0
+	push_a 3
+	build e_UIDefinition_dUIIconOpts.tooltip -4 e_UIDefinition_nUIIconOpts.tooltip
+	push_a 3
+	build e_UIDefinition_dUIIconOpts.tooltip -4 e_UIDefinition_nUIIconOpts.tooltip
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n511
+	buildh _Cons 2
+	push_a 3
+	build e_UIDefinition_dUIIconOpts.iconCls 1 e_UIDefinition_nUIIconOpts.iconCls
+	push_a 3
+	build e_UIDefinition_dUIIconOpts.iconCls 1 e_UIDefinition_nUIIconOpts.iconCls
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n510
+	buildh _Cons 2
+	push_a 1
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp s16
+.n 3 _ ea511
+.o 1 0
+n511
+	push_node _cycle_in_spine 3
+.o 4 0
+ea511
+.o 4 0
+s511
+	buildh d165 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s267
+.n 3 _ ea510
+.o 1 0
+n510
+	push_node _cycle_in_spine 3
+.o 4 0
+ea510
+.o 4 0
+s510
+	buildh e_GenEq_dgEq__String;6 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s266
+.o 2 1 b
+s267
+	eqB_b TRUE 0
+	jmp_true case.280
+	jmp case.281
+case.280
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.281
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUIIconOpts.tooltip -4 e_UIDefinition_nUIIconOpts.tooltip
+	build _ 1 n513
+	buildh _Cons 2
+	buildAC "setTooltip"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea513
+.o 1 0
+n513
+	push_node _cycle_in_spine 1
+.o 2 0
+ea513
+.o 2 0
+s513
+	push_a 0
+	jsr_eval 0
+	buildh d166 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 2 1 b
+s266
+	eqB_b TRUE 0
+	jmp_true case.282
+	jmp case.283
+case.282
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.283
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUIIconOpts.iconCls 1 e_UIDefinition_nUIIconOpts.iconCls
+	build _ 1 n512
+	buildh _Cons 2
+	buildAC "setIconCls"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea512
+.o 1 0
+n512
+	push_node _cycle_in_spine 1
+.o 2 0
+ea512
+.o 2 0
+s512
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.n 3 _ ea21
+.o 1 0
+n21
+	push_node _cycle_in_spine 3
+.o 4 0
+ea21
+.o 4 0
+s21
+	buildh _Nil 0
+	push_a 3
+	build e_UIDefinition_dUITabOpts.iconCls -4 e_UIDefinition_nUITabOpts.iconCls
+	push_a 3
+	build e_UIDefinition_dUITabOpts.iconCls -4 e_UIDefinition_nUITabOpts.iconCls
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n504
+	buildh _Cons 2
+	push_a 3
+	build e_UIDefinition_dUITabOpts.closeTaskId -4 e_UIDefinition_nUITabOpts.closeTaskId
+	push_a 3
+	build e_UIDefinition_dUITabOpts.closeTaskId -4 e_UIDefinition_nUITabOpts.closeTaskId
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n503
+	buildh _Cons 2
+	push_a 3
+	build e_UIDefinition_dUITabOpts.focusTaskId -4 e_UIDefinition_nUITabOpts.focusTaskId
+	push_a 3
+	build e_UIDefinition_dUITabOpts.focusTaskId -4 e_UIDefinition_nUITabOpts.focusTaskId
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n502
+	buildh _Cons 2
+	push_a 3
+	build e_UIDefinition_dUITabOpts.active -3 e_UIDefinition_nUITabOpts.active
+	push_a 3
+	build e_UIDefinition_dUITabOpts.active -3 e_UIDefinition_nUITabOpts.active
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n501
+	buildh _Cons 2
+	push_a 3
+	build e_UIDefinition_dUITabOpts.text 1 e_UIDefinition_nUITabOpts.text
+	push_a 3
+	build e_UIDefinition_dUITabOpts.text 1 e_UIDefinition_nUITabOpts.text
+	push_a 5
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+	build _ 3 n500
+	buildh _Cons 2
+	push_a 1
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jmp s16
+.n 3 _ ea504
+.o 1 0
+n504
+	push_node _cycle_in_spine 3
+.o 4 0
+ea504
+.o 4 0
+s504
+	buildh d165 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s265
+.n 3 _ ea503
+.o 1 0
+n503
+	push_node _cycle_in_spine 3
+.o 4 0
+ea503
+.o 4 0
+s503
+	buildh d165 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s264
+.n 3 _ ea502
+.o 1 0
+n502
+	push_node _cycle_in_spine 3
+.o 4 0
+ea502
+.o 4 0
+s502
+	buildh d165 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s263
+.n 3 _ ea501
+.o 1 0
+n501
+	push_node _cycle_in_spine 3
+.o 4 0
+ea501
+.o 4 0
+s501
+	push_a 1
+	jsr_eval 0
+	pushB_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	pushB_a 1
+	pop_a 1
+	eqB
+	push_a 2
+	updatepop_a 0 3
+.d 2 1 b
+	jmp s262
+.n 3 _ ea500
+.o 1 0
+n500
+	push_node _cycle_in_spine 3
+.o 4 0
+ea500
+.o 4 0
+s500
+	buildh e_GenEq_dgEq__String;6 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	push_a 0
+	updatepop_a 0 1
+.d 2 1 b
+	jmp s261
+.o 2 1 b
+s265
+	eqB_b TRUE 0
+	jmp_true case.284
+	jmp case.285
+case.284
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.285
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUITabOpts.iconCls -4 e_UIDefinition_nUITabOpts.iconCls
+	build _ 1 n509
+	buildh _Cons 2
+	buildAC "setIconCls"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea509
+.o 1 0
+n509
+	push_node _cycle_in_spine 1
+.o 2 0
+ea509
+.o 2 0
+s509
+	push_a 0
+	jsr_eval 0
+	buildh d166 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 2 1 b
+s264
+	eqB_b TRUE 0
+	jmp_true case.286
+	jmp case.287
+case.286
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.287
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUITabOpts.closeTaskId -4 e_UIDefinition_nUITabOpts.closeTaskId
+	build _ 1 n508
+	buildh _Cons 2
+	buildAC "setCloseTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea508
+.o 1 0
+n508
+	push_node _cycle_in_spine 1
+.o 2 0
+ea508
+.o 2 0
+s508
+	push_a 0
+	jsr_eval 0
+	buildh d166 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 2 1 b
+s263
+	eqB_b TRUE 0
+	jmp_true case.288
+	jmp case.289
+case.288
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.289
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUITabOpts.focusTaskId -4 e_UIDefinition_nUITabOpts.focusTaskId
+	build _ 1 n507
+	buildh _Cons 2
+	buildAC "setFocusTaskId"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea507
+.o 1 0
+n507
+	push_node _cycle_in_spine 1
+.o 2 0
+ea507
+.o 2 0
+s507
+	push_a 0
+	jsr_eval 0
+	buildh d166 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 2 1 b
+s262
+	eqB_b TRUE 0
+	jmp_true case.290
+	jmp case.291
+case.290
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.291
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUITabOpts.active -3 e_UIDefinition_nUITabOpts.active
+	build _ 1 n506
+	buildh _Cons 2
+	buildAC "setActive"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea506
+.o 1 0
+n506
+	push_node _cycle_in_spine 1
+.o 2 0
+ea506
+.o 2 0
+s506
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode_Bool;12 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.o 2 1 b
+s261
+	eqB_b TRUE 0
+	jmp_true case.292
+	jmp case.293
+case.292
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+case.293
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build e_UIDefinition_dUITabOpts.text 1 e_UIDefinition_nUITabOpts.text
+	build _ 1 n505
+	buildh _Cons 2
+	buildAC "setText"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+	pop_b 1
+.d 1 0
+	rtn
+.n 1 _ ea505
+.o 1 0
+n505
+	push_node _cycle_in_spine 1
+.o 2 0
+ea505
+.o 2 0
+s505
+	push_a 0
+	jsr_eval 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.desc d166 _hnf l166 1 0 "JSONEncode_s;1191"
+.o 2 0
+l166
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea166
+	jsr_eval 0
+.o 2 0
+s166
+	buildh e_JSON_dJSONEncode__String;13 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_sJSONEncode_Maybe;28
+.desc d165 _hnf l165 2 0 "gEq_s;1190"
+.a 0 a165
+.o 2 0
+l165
+	repl_args 1 1
+.o 2 0
+a165
+.d 2 0
+	jsr ea165
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea165
+.o 2 0
+s165
+	buildh e_GenEq_dgEq__String;6 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_SystemTypes_sgEq_Maybe;921
+.o 3 0
+s16
+	create
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_StdList_sflatten
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp s260
+.o 3 0
+s260
+	eq_desc _Nil 0 0
+	jmp_true case.294
+	jmp case.295
+case.294
+	buildh _Nil 0
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+case.295
+	buildh _Nil 0
+	push_a 1
+	push_a 3
+	build e_UIDiff_dUIUpdate 2 e_UIDiff_nUIUpdate
+	buildh _Cons 2
+	fillh d479 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.desc d80 _hnf l80 2 0 "gEq_UIDirection;79"
+.a 0 a80
+.o 2 0
+l80
+	repl_args 1 1
+.o 2 0
+a80
+.d 2 0
+	jsr ea80
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea80
+.o 2 0
+s80
+	push_a 1
+	build _ 1 n139
+	push_a 1
+	build _ 1 n139
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_OBJECT;13
+.n 1 _ ea139
+.o 1 0
+n139
+	push_node _cycle_in_spine 1
+.o 2 0
+ea139
+	jsr_eval 0
+.o 2 0
+s139
+	eq_desc e_UIDefinition_dHorizontal 0 0
+	jmp_true case.296
+	jmp case.297
+case.296
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.297
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d79 _hnf l79 2 0 "gEq_UIHAlign;78"
+.a 0 a79
+.o 2 0
+l79
+	repl_args 1 1
+.o 2 0
+a79
+.d 2 0
+	jsr ea79
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea79
+.o 2 0
+s79
+	push_a 1
+	build _ 1 n138
+	push_a 1
+	build _ 1 n138
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_OBJECT;13
+.n 1 _ ea138
+.o 1 0
+n138
+	push_node _cycle_in_spine 1
+.o 2 0
+ea138
+	jsr_eval 0
+.o 2 0
+s138
+	pushD_a 0
+	eqD_b e_UIDefinition_dAlignLeft 0
+	jmp_true case.298
+	eqD_b e_UIDefinition_dAlignCenter 0
+	jmp_true case.299
+	jmp case.300
+case.298
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.299
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.300
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d78 _hnf l78 2 0 "gEq_UIVAlign;77"
+.a 0 a78
+.o 2 0
+l78
+	repl_args 1 1
+.o 2 0
+a78
+.d 2 0
+	jsr ea78
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea78
+.o 2 0
+s78
+	push_a 1
+	build _ 1 n137
+	push_a 1
+	build _ 1 n137
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_OBJECT;13
+.n 1 _ ea137
+.o 1 0
+n137
+	push_node _cycle_in_spine 1
+.o 2 0
+ea137
+	jsr_eval 0
+.o 2 0
+s137
+	pushD_a 0
+	eqD_b e_UIDefinition_dAlignTop 0
+	jmp_true case.301
+	eqD_b e_UIDefinition_dAlignMiddle 0
+	jmp_true case.302
+	jmp case.303
+case.301
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.302
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.303
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 3 _ ea8
+.o 1 0
+n8
+	push_node _cycle_in_spine 3
+.o 4 0
+ea8
+.o 4 0
+s8
+	buildh d44 0
+	push_a 3
+	push_a 3
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.304
+	buildh _Nil 0
+	fillh d479 1 1
+.d 1 0
+	rtn
+else.304
+	fillh d478 0 0
+.d 1 0
+	rtn
+.desc d44 _hnf l44 2 0 "gEq_UISizeOpts;43"
+.a 0 a44
+.o 2 0
+l44
+	repl_args 1 1
+.o 2 0
+a44
+.d 2 0
+	jsr ea44
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea44
+.o 2 0
+s44
+	push_a 1
+	build _ 1 n100
+	push_a 1
+	build _ 1 n100
+	buildh d48 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh d47 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh d46 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh d47 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh d46 0
+	buildh e_SystemTypes_dgEq_Maybe;921 1
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.desc d48 _hnf l48 2 0 "gEq_UISideSizes;47"
+.a 0 a48
+.o 2 0
+l48
+	repl_args 1 1
+.o 2 0
+a48
+.d 2 0
+	jsr ea48
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea48
+.o 2 0
+s48
+	push_a 1
+	build _ 1 n105
+	push_a 1
+	build _ 1 n105
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea105
+.o 1 0
+n105
+	push_node _cycle_in_spine 1
+.o 2 0
+ea105
+	jsr_eval 0
+	repl_r_args 0 4
+.o 1 4 iiii
+s105
+	buildI_b 3
+	buildh e_StdGeneric_dFIELD 1
+	buildI_b 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildI_b 1
+	buildh e_StdGeneric_dFIELD 1
+	buildI_b 0
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 1
+	pop_b 4
+.d 1 0
+	rtn
+.desc d47 _hnf l47 2 0 "gEq_UIMinSize;46"
+.a 0 a47
+.o 2 0
+l47
+	repl_args 1 1
+.o 2 0
+a47
+.d 2 0
+	jsr ea47
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea47
+.o 2 0
+s47
+	push_a 1
+	build _ 1 n103
+	push_a 1
+	build _ 1 n103
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_OBJECT;13
+.n 1 _ ea103
+.o 1 0
+n103
+	push_node _cycle_in_spine 1
+.o 2 0
+ea103
+	jsr_eval 0
+.o 2 0
+s103
+	eq_desc e_UIDefinition_kExactMin 0 0
+	jmp_true case.305
+	jmp case.306
+case.305
+	repl_r_args 0 1
+	buildI_b 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 1
+	pop_b 1
+.d 1 0
+	rtn
+case.306
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d46 _hnf l46 2 0 "gEq_UISize;45"
+.a 0 a46
+.o 2 0
+l46
+	repl_args 1 1
+.o 2 0
+a46
+.d 2 0
+	jsr ea46
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea46
+.o 2 0
+s46
+	push_a 1
+	build _ 1 n102
+	push_a 1
+	build _ 1 n102
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_UNIT;7 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	buildh e_GenEq_dgEq_Int;2 0
+	buildh e_GenEq_dgEq_CONS;10 1
+	buildh e_GenEq_dgEq_EITHER;9 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_OBJECT;13
+.n 1 _ ea102
+.o 1 0
+n102
+	push_node _cycle_in_spine 1
+.o 2 0
+ea102
+	jsr_eval 0
+.o 2 0
+s102
+	pushD_a 0
+	eqD_b e_UIDefinition_kExactSize 0
+	jmp_true case.307
+	eqD_b e_UIDefinition_dWrapSize 0
+	jmp_true case.308
+	jmp case.309
+case.307
+	pop_b 1
+	repl_r_args 0 1
+	buildI_b 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	fillh e_StdGeneric_dOBJECT 1 1
+	pop_b 1
+.d 1 0
+	rtn
+case.308
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dLEFT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+case.309
+	pop_b 1
+	buildh e_StdGeneric_dUNIT 0
+	buildh e_StdGeneric_dCONS 1
+	buildh e_StdGeneric_dRIGHT 1
+	buildh e_StdGeneric_dRIGHT 1
+	fillh e_StdGeneric_dOBJECT 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea100
+.o 1 0
+n100
+	push_node _cycle_in_spine 1
+.o 2 0
+ea100
+	jsr_eval 0
+	repl_r_args 5 0
+.o 6 0
+s100
+	push_a 4
+	buildh e_StdGeneric_dFIELD 1
+	push_a 4
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 3
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	push_a 2
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 6
+	pop_a 5
+.d 1 0
+	rtn
+.n 2 _ ea25
+.o 1 0
+n25
+	push_node _cycle_in_spine 2
+.o 3 0
+ea25
+.o 3 0
+s25
+	buildh d160 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_GenEq_s===
+.o 0 1 b
+	jmp_false else.310
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+else.310
+	buildh _Nil 0
+	buildh _Nil 0
+	push_a 2
+	build _ 1 n480
+	buildh _Cons 2
+	buildAC "setHotkeys"
+	buildh ARRAY 1
+	buildh _Tuple 2
+	fillh _Cons 2 3
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea480
+.o 1 0
+n480
+	push_node _cycle_in_spine 1
+.o 2 0
+ea480
+.o 2 0
+s480
+	push_a 0
+	jsr_eval 0
+	buildh d162 0
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_stoJSON
+.desc d162 _hnf l162 1 0 "JSONEncode_s;1187"
+.o 2 0
+l162
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea162
+	jsr_eval 0
+.o 2 0
+s162
+	buildh d164 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jmp e_JSON_sJSONEncode__List;21
+.desc d164 _hnf l164 1 0 "JSONEncode_s;1189"
+.o 2 0
+l164
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea164
+	jsr_eval 0
+	repl_args 2 2
+.o 3 0
+s164
+	buildh d93 0
+	buildh e_SystemTypes_dJSONEncode_Hotkey;785 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 5 0
+	jmp e_JSON_sJSONEncode__Tuple2;22
+.desc d160 _hnf l160 2 0 "gEq_s;1185"
+.a 0 a160
+.o 2 0
+l160
+	repl_args 1 1
+.o 2 0
+a160
+.d 2 0
+	jsr ea160
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea160
+.o 2 0
+s160
+	buildh d163 0
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq__List;16
+.desc d163 _hnf l163 2 0 "gEq_s;1188"
+.a 0 a163
+.o 2 0
+l163
+	repl_args 1 1
+.o 2 0
+a163
+.d 2 0
+	jsr ea163
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea163
+.o 2 0
+s163
+	buildh d61 0
+	buildh e_SystemTypes_dgEq_Hotkey;815 0
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 0 2
+	update_a 3 0
+	update_a 1 3
+	update_a 0 1
+	pop_a 1
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp e_GenEq_sgEq__Tuple2;17
+.desc d93 _hnf l93 1 0 "JSONEncode_UIActionOpts;92"
+.o 2 0
+l93
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.o 2 0
+ea93
+	jsr_eval 0
+	repl_r_args 2 0
+.o 3 0
+s93
+	create
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr s120
+.o 1 0
+	buildh e_JSON_dJSONEncode__String;13 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode__String;13 0
+	buildh e_JSON_dJSONEncode_FIELD;18 1
+	buildh e_JSON_dJSONEncode_PAIR;15 2
+	build _ 0 n119
+.d 4 0
+	jmp e_JSON_sJSONEncode_RECORD;17
+.n 0 _ ea119
+.o 1 0
+n119
+	push_node _cycle_in_spine 0
+.o 1 0
+ea119
+.o 1 0
+s119
+	buildh _Nil 0
+	buildAC "actionId"
+	buildh ARRAY 1
+	buildh _Cons 2
+	buildAC "taskId"
+	buildh ARRAY 1
+	fillh _Cons 2 2
+.d 1 0
+	rtn
+.desc d61 _hnf l61 2 0 "gEq_UIActionOpts;60"
+.a 0 a61
+.o 2 0
+l61
+	repl_args 1 1
+.o 2 0
+a61
+.d 2 0
+	jsr ea61
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea61
+.o 2 0
+s61
+	push_a 1
+	build _ 1 n120
+	push_a 1
+	build _ 1 n120
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq__String;6 0
+	buildh e_GenEq_dgEq_FIELD;12 1
+	buildh e_GenEq_dgEq_PAIR;8 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp e_GenEq_sgEq_RECORD;11
+.n 1 _ ea120
+.o 1 0
+n120
+	push_node _cycle_in_spine 1
+.o 2 0
+ea120
+	jsr_eval 0
+	repl_r_args 2 0
+.o 3 0
+s120
+	push_a 1
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	push_a 1
+	buildh ARRAY 1
+	buildh e_StdGeneric_dFIELD 1
+	buildh e_StdGeneric_dPAIR 2
+	fillh e_StdGeneric_dRECORD 1 3
+	pop_a 2
+.d 1 0
+	rtn

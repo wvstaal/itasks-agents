@@ -6,45 +6,56 @@ MainModule
 	Icl
 		WindowPosition
 			X:	273
-			Y:	111
-			SizeX:	916
+			Y:	64
+			SizeX:	988
 			SizeY:	640
-	IclOpen:	False
+	IclOpen:	True
 OtherModules
 	Module
 		Name:	Agent
 		Dir:	{Project}
 		Dcl
 			WindowPosition
-				X:	-8
-				Y:	-30
-				SizeX:	1649
-				SizeY:	876
-		DclOpen:	False
+				X:	0
+				Y:	92
+				SizeX:	1262
+				SizeY:	784
+		DclOpen:	True
 		Icl
 			WindowPosition
-				X:	611
-				Y:	218
+				X:	801
+				Y:	545
 				SizeX:	783
 				SizeY:	472
-		IclOpen:	False
+		IclOpen:	True
 	Module
 		Name:	AgentController
 		Dir:	{Project}
 		Dcl
 			WindowPosition
-				X:	84
-				Y:	103
+				X:	78
+				Y:	71
 				SizeX:	1011
 				SizeY:	646
 		DclOpen:	True
 		Icl
 			WindowPosition
-				X:	408
+				X:	808
 				Y:	63
 				SizeX:	1066
 				SizeY:	640
 		IclOpen:	True
+	Module
+		Name:	Sleep
+		Dir:	{Project}
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
 	Module
 		Name:	TaskRep
 		Dir:	{Project}
@@ -62,6 +73,40 @@ OtherModules
 				SizeX:	800
 				SizeY:	640
 		IclOpen:	False
+	Module
+		Name:	Threading
+		Dir:	{Project}
+		Dcl
+			WindowPosition
+				X:	760
+				Y:	340
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	476
+				Y:	352
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	True
+	Module
+		Name:	WebServiceInterface
+		Dir:	{Project}
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	160
+				Y:	907
+				SizeX:	0
+				SizeY:	0
+		IclOpen:	True
 	Module
 		Name:	Parsers
 		Dir:	{Application}\Libraries\Parsers
@@ -168,75 +213,15 @@ OtherModules
 		DclOpen:	False
 		IclOpen:	False
 	Module
-		Name:	GenUpdate
-		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
-		DclOpen:	False
-		Icl
-			WindowPosition
-				X:	0
-				Y:	0
-				SizeX:	1346
-				SizeY:	635
-		IclOpen:	False
-	Module
-		Name:	SystemTypes
-		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Name:	MersenneTwister
+		Dir:	{Application}\Libraries\MersenneTwister
 		Dcl
 			WindowPosition
-				X:	0
-				Y:	937
-				SizeX:	0
-				SizeY:	0
-		DclOpen:	True
-		Icl
-			WindowPosition
-				X:	476
-				Y:	70
-				SizeX:	800
-				SizeY:	592
-		IclOpen:	False
-	Module
-		Name:	Task
-		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
-		Dcl
-			WindowPosition
-				X:	282
-				Y:	80
+				X:	10
+				Y:	10
 				SizeX:	800
 				SizeY:	640
 		DclOpen:	True
-		Icl
-			WindowPosition
-				X:	491
-				Y:	33
-				SizeX:	946
-				SizeY:	592
-		IclOpen:	False
-	Module
-		Name:	TaskState
-		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
-		Dcl
-			WindowPosition
-				X:	136
-				Y:	112
-				SizeX:	800
-				SizeY:	640
-		DclOpen:	False
-		IclOpen:	False
-	Module
-		Name:	TaskStore
-		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
-		DclOpen:	False
-		IclOpen:	False
-	Module
-		Name:	UIDefinition
-		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
-		DclOpen:	False
-		IclOpen:	False
-	Module
-		Name:	UIDiff
-		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
-		DclOpen:	False
 		IclOpen:	False
 	Module
 		Name:	StdDynamic
@@ -354,7 +339,13 @@ OtherModules
 	Module
 		Name:	StdDebug
 		Dir:	{Application}\Libraries\StdEnv
-		DclOpen:	False
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
 		IclOpen:	False
 	Module
 		Name:	StdEnum
@@ -380,6 +371,12 @@ OtherModules
 	Module
 		Name:	StdFunc
 		Dir:	{Application}\Libraries\StdEnv
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
 		DclOpen:	False
 		IclOpen:	False
 	Module
@@ -410,7 +407,19 @@ OtherModules
 	Module
 		Name:	StdOverloadedList
 		Dir:	{Application}\Libraries\StdEnv
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
 		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
 		IclOpen:	False
 	Module
 		Name:	StdReal
@@ -420,7 +429,19 @@ OtherModules
 	Module
 		Name:	StdStrictLists
 		Dir:	{Application}\Libraries\StdEnv
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
 		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
 		IclOpen:	False
 	Module
 		Name:	StdString
@@ -481,7 +502,7 @@ OtherModules
 				Y:	10
 				SizeX:	800
 				SizeY:	640
-		DclOpen:	False
+		DclOpen:	True
 		IclOpen:	False
 	Module
 		Name:	StdGeneric
@@ -496,7 +517,13 @@ OtherModules
 	Module
 		Name:	CommonCombinators
 		Dir:	{Application}\iTasks-SDK\Server\API\Common
-		DclOpen:	False
+		Dcl
+			WindowPosition
+				X:	128
+				Y:	62
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
 		IclOpen:	False
 	Module
 		Name:	DBTasks
@@ -534,17 +561,17 @@ OtherModules
 				Y:	10
 				SizeX:	1280
 				SizeY:	592
-		IclOpen:	True
+		IclOpen:	False
 	Module
 		Name:	CoreTasks
 		Dir:	{Application}\iTasks-SDK\Server\API\Core
 		Dcl
 			WindowPosition
-				X:	10
-				Y:	10
+				X:	99
+				Y:	196
 				SizeX:	800
 				SizeY:	640
-		DclOpen:	False
+		DclOpen:	True
 		Icl
 			WindowPosition
 				X:	10
@@ -583,7 +610,7 @@ OtherModules
 				Y:	10
 				SizeX:	800
 				SizeY:	640
-		DclOpen:	False
+		DclOpen:	True
 		IclOpen:	False
 	Module
 		Name:	UserAdmin
@@ -627,6 +654,12 @@ OtherModules
 		Name:	GenRecord
 		Dir:	{Application}\iTasks-SDK\Server\Framework
 		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
 		IclOpen:	False
 	Module
 		Name:	GenVerify
@@ -641,14 +674,20 @@ OtherModules
 	Module
 		Name:	HtmlUtil
 		Dir:	{Application}\iTasks-SDK\Server\Framework
-		DclOpen:	False
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
 		Icl
 			WindowPosition
 				X:	10
 				Y:	10
 				SizeX:	800
 				SizeY:	640
-		IclOpen:	False
+		IclOpen:	True
 	Module
 		Name:	IWorld
 		Dir:	{Application}\iTasks-SDK\Server\Framework
@@ -678,6 +717,12 @@ OtherModules
 	Module
 		Name:	TaskEval
 		Dir:	{Application}\iTasks-SDK\Server\Framework
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	1196
+				SizeY:	640
 		DclOpen:	False
 		Icl
 			WindowPosition
@@ -703,11 +748,11 @@ OtherModules
 		DclOpen:	False
 		Icl
 			WindowPosition
-				X:	10
-				Y:	10
-				SizeX:	1203
-				SizeY:	640
-		IclOpen:	False
+				X:	0
+				Y:	907
+				SizeX:	0
+				SizeY:	0
+		IclOpen:	True
 	Module
 		Name:	iTaskClass
 		Dir:	{Application}\iTasks-SDK\Server\Framework
@@ -866,6 +911,23 @@ OtherModules
 		DclOpen:	False
 		IclOpen:	False
 	Module
+		Name:	_Unsafe
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\System
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
 		Name:	CSV
 		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Text
 		DclOpen:	False
@@ -938,6 +1000,23 @@ OtherModules
 		DclOpen:	False
 		IclOpen:	False
 	Module
+		Name:	Threads
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		Dcl
+			WindowPosition
+				X:	90
+				Y:	214
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	785
+				Y:	111
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
 		Name:	Time
 		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
 		Dcl
@@ -959,11 +1038,11 @@ OtherModules
 		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
 		Dcl
 			WindowPosition
-				X:	10
-				Y:	10
+				X:	402
+				Y:	63
 				SizeX:	800
 				SizeY:	640
-		DclOpen:	True
+		DclOpen:	False
 		Icl
 			WindowPosition
 				X:	140
@@ -996,6 +1075,12 @@ OtherModules
 		Name:	graph_to_sapl_string
 		Dir:	{Application}\iTasks-SDK\Server\lib\graph_copy
 		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
 		IclOpen:	False
 	Module
 		Name:	graph_to_string_with_descriptors
@@ -1012,15 +1097,109 @@ OtherModules
 		Dir:	{Project}\http
 		Dcl
 			WindowPosition
-				X:	711
-				Y:	116
+				X:	202
+				Y:	31
 				SizeX:	800
 				SizeY:	640
-		DclOpen:	False
+		DclOpen:	True
 		Icl
 			WindowPosition
-				X:	507
-				Y:	257
+				X:	284
+				Y:	144
 				SizeX:	961
 				SizeY:	640
 		IclOpen:	False
+	Module
+		Name:	GenUpdate
+		Dir:	{Project}\itasks
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	True
+	Module
+		Name:	SystemTypes
+		Dir:	{Project}\itasks
+		Dcl
+			WindowPosition
+				X:	0
+				Y:	937
+				SizeX:	0
+				SizeY:	0
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	476
+				Y:	70
+				SizeX:	800
+				SizeY:	592
+		IclOpen:	False
+	Module
+		Name:	Task
+		Dir:	{Project}\itasks
+		Dcl
+			WindowPosition
+				X:	965
+				Y:	98
+				SizeX:	971
+				SizeY:	640
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	491
+				Y:	33
+				SizeX:	946
+				SizeY:	592
+		IclOpen:	False
+	Module
+		Name:	TaskState
+		Dir:	{Project}\itasks
+		Dcl
+			WindowPosition
+				X:	136
+				Y:	112
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TaskStore
+		Dir:	{Project}\itasks
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	UIDefinition
+		Dir:	{Project}\itasks
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	UIDiff
+		Dir:	{Project}\itasks
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Token
+		Dir:	{Project}\tests
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	154
+				Y:	109
+				SizeX:	783
+				SizeY:	640
+		IclOpen:	True
