@@ -1,0 +1,63 @@
+\section{Grammar}
+
+\begin{grammar}
+<agent> ::= `Agent' <id> <beliefs> <activities>
+
+<beliefs> ::= `Beliefs' <belief>*
+
+<belief> ::= <id> `:=' <expr>
+
+<activities>  ::= `Activities' <activity>+
+
+<activity> ::= <patterns> \{ `|' <expr> \} `=>' <actions>
+
+<patterns> ::= <pattern> \{ `,' <pattern> \}*
+
+<pattern> ::= <id> `<-' `task' `(' <id> `)' | <id> `<-' `action' `(' <id> `)'
+
+<actions> ::= <action> \{ `,' <action> \}*
+
+<action> ::= `act' `(' <id> `)'
+\alt `edit' `(' <id> `,' <expr> `)'
+\alt `updateBelief' `(' <var> `,' <expr> `)'
+
+<id> ::= (`a'..`z')+
+
+<expr> ::= (`0'..`9')+
+\alt `"' (`a'..`z')* `"'
+\alt <expr> = <expr> | <expr> + <expr> | <expr> - <expr> | <expr> * <expr>
+\alt <expr> . <expr> | <expr> `[' <expr> `]' | `[' \{ <expr> \{ `,' <expr> \}* \} `]'
+\alt <id>
+\alt \lit{$\lnot$} <expr> | \lit{$\exists$} <id> \lit{$\in$} <expr>. <expr> | \lit{$\forall$} <id> \lit{$\in$} <expr>. <expr>
+\alt `value' `(' <id> `)'
+\alt `hasValue' `(' <id> `)' 
+\end{grammar}
+
+\section{Examples}
+
+This example shows agents suitable for the 'planning dates' example in Bas Lijnse's thesis. The goal of participants is to select a date for a meeting. The coordinator proposes a few initial dates and other participants select one date. The coordinator makes the final decision.
+
+\begin{alltt}
+Agent Coordinator
+Beliefs
+    favoriteDate := "10-04-2013"
+Activities
+    enterDateTimes <- task(enterDateTimes), done <- action(enterDateTimesDone)
+    => edit(enterDateTimes, ["10-04-2013", "11-04-2013"]), act(done)
+	
+    monitorDateTimes <- task(monitorDateTimes), decide <- action(makeDecision)
+    | \(\exists v \in\) value(monitorDateTimes). v = favoriteDate
+    => act(decide)
+    
+Agent DateChooser1
+Activities
+    chooseDate <- task(chooseDate), done <- chooseDateDone
+    => edit(chooseDate, value(chooseDate)[0]), act(done)
+    
+Agent DateChooser2
+Activities
+    chooseDate <- task(chooseDate), done <- chooseDateDone
+    => edit(chooseDate, value(chooseDate)[1]), act(done)
+\end{alltt}
+
+The agent \textit{Coordinator} is responsible for entering a few initial dates. When some other participant selects the coordinators favourite date, the agent makes the decision to pick that date. Agents \textit{DateChooser1} and \textit{DateChooser2} pick the first and second proposed date respectively. 

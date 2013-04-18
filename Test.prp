@@ -1,0 +1,1026 @@
+Version: 1.4
+MainModule
+	Name:	Test
+	Dir:	{Project}
+	DclOpen:	False
+	Icl
+		WindowPosition
+			X:	273
+			Y:	111
+			SizeX:	916
+			SizeY:	640
+	IclOpen:	False
+OtherModules
+	Module
+		Name:	Agent
+		Dir:	{Project}
+		Dcl
+			WindowPosition
+				X:	-8
+				Y:	-30
+				SizeX:	1649
+				SizeY:	876
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	611
+				Y:	218
+				SizeX:	783
+				SizeY:	472
+		IclOpen:	False
+	Module
+		Name:	AgentController
+		Dir:	{Project}
+		Dcl
+			WindowPosition
+				X:	84
+				Y:	103
+				SizeX:	1011
+				SizeY:	646
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	408
+				Y:	63
+				SizeX:	1066
+				SizeY:	640
+		IclOpen:	True
+	Module
+		Name:	TaskRep
+		Dir:	{Project}
+		Dcl
+			WindowPosition
+				X:	812
+				Y:	162
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	321
+				Y:	185
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	Parsers
+		Dir:	{Application}\Libraries\Parsers
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	ParsersAccessories
+		Dir:	{Application}\Libraries\Parsers
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	480
+				Y:	907
+				SizeX:	0
+				SizeY:	0
+		IclOpen:	False
+	Module
+		Name:	ParsersDerived
+		Dir:	{Application}\Libraries\Parsers
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	ParsersKernel
+		Dir:	{Application}\Libraries\Parsers
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	ParserLanguage
+		Dir:	{Application}\Libraries\Parsers\LanguageDependent\English
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TCPChannelClass
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TCPChannels
+		Dir:	{Application}\Libraries\TCPIP
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TCPDef
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TCPEvent
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TCPIP
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TCPStringChannels
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TCPStringChannelsInternal
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	ostcp
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	tcp
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	tcp_bytestreams
+		Dir:	{Application}\Libraries\TCPIP
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	GenUpdate
+		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	0
+				Y:	0
+				SizeX:	1346
+				SizeY:	635
+		IclOpen:	False
+	Module
+		Name:	SystemTypes
+		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dcl
+			WindowPosition
+				X:	0
+				Y:	937
+				SizeX:	0
+				SizeY:	0
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	476
+				Y:	70
+				SizeX:	800
+				SizeY:	592
+		IclOpen:	False
+	Module
+		Name:	Task
+		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dcl
+			WindowPosition
+				X:	282
+				Y:	80
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	491
+				Y:	33
+				SizeX:	946
+				SizeY:	592
+		IclOpen:	False
+	Module
+		Name:	TaskState
+		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dcl
+			WindowPosition
+				X:	136
+				Y:	112
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TaskStore
+		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	UIDefinition
+		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	UIDiff
+		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdDynamic
+		Dir:	{Application}\Libraries\Dynamics
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	BitSet
+		Dir:	{Application}\Libraries\Dynamics\general
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	DefaultElem
+		Dir:	{Application}\Libraries\Dynamics\general
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	EnDecode
+		Dir:	{Application}\Libraries\Dynamics\general
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	DynIDMacros
+		Dir:	{Application}\Libraries\Dynamics\implementation
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	DynamicUtilities
+		Dir:	{Application}\Libraries\Dynamics\implementation
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdDynamicLowLevelInterface
+		Dir:	{Application}\Libraries\Dynamics\implementation
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdDynamicTypes
+		Dir:	{Application}\Libraries\Dynamics\implementation
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdDynamicVersion
+		Dir:	{Application}\Libraries\Dynamics\implementation
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	DynamicGraphConversion
+		Dir:	{Application}\Libraries\Dynamics\implementation\windows
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	DynamicLinkerInterface
+		Dir:	{Application}\Libraries\Dynamics\implementation\windows
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	memory
+		Dir:	{Application}\Libraries\Dynamics\implementation\windows
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	memory_mapped_files
+		Dir:	{Application}\Libraries\Dynamics\implementation\windows
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	shared_buffer
+		Dir:	{Application}\Libraries\Dynamics\implementation\windows
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdArray
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdBool
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdChar
+		Dir:	{Application}\Libraries\StdEnv
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	160
+				Y:	907
+				SizeX:	0
+				SizeY:	0
+		IclOpen:	False
+	Module
+		Name:	StdCharList
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	StdClass
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdDebug
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdEnum
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdEnv
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdFile
+		Dir:	{Application}\Libraries\StdEnv
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdFunc
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdInt
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdList
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdMisc
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdOrdList
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdOverloaded
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdOverloadedList
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdReal
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdStrictLists
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdString
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdTuple
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_SystemArray
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_SystemEnum
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_SystemEnumStrict
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_SystemStrictLists
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_SystemDynamic
+		Dir:	{Application}\iTasks-SDK\Patches\Dynamics
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	GenEq
+		Dir:	{Application}\iTasks-SDK\Patches\Generics
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Generic
+		Dir:	{Application}\iTasks-SDK\Patches\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	List
+		Dir:	{Application}\iTasks-SDK\Patches\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	JSON
+		Dir:	{Application}\iTasks-SDK\Patches\Platform\OS-Independent\Text
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdGeneric
+		Dir:	{Application}\iTasks-SDK\Patches\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	iTasks
+		Dir:	{Application}\iTasks-SDK\Server
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	CommonCombinators
+		Dir:	{Application}\iTasks-SDK\Server\API\Common
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	DBTasks
+		Dir:	{Application}\iTasks-SDK\Server\API\Common
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	ExportTasks
+		Dir:	{Application}\iTasks-SDK\Server\API\Common
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	ImportTasks
+		Dir:	{Application}\iTasks-SDK\Server\API\Common
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	InteractionTasks
+		Dir:	{Application}\iTasks-SDK\Server\API\Common
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	CoreCombinators
+		Dir:	{Application}\iTasks-SDK\Server\API\Core
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	1280
+				SizeY:	592
+		IclOpen:	True
+	Module
+		Name:	CoreTasks
+		Dir:	{Application}\iTasks-SDK\Server\API\Core
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	1349
+				SizeY:	635
+		IclOpen:	False
+	Module
+		Name:	IntegrationTasks
+		Dir:	{Application}\iTasks-SDK\Server\API\Core
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	LayoutCombinators
+		Dir:	{Application}\iTasks-SDK\Server\API\Core
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	592
+		IclOpen:	False
+	Module
+		Name:	SystemData
+		Dir:	{Application}\iTasks-SDK\Server\API\Core
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	UserAdmin
+		Dir:	{Application}\iTasks-SDK\Server\API\Extensions\Admin
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	WorkflowAdmin
+		Dir:	{Application}\iTasks-SDK\Server\API\Extensions\Admin
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Engine
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	1282
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	EngineWrapperStandalone
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	1174
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	GenRecord
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	GenVerify
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	GenVisualize
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	HtmlUtil
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	IWorld
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		Dcl
+			WindowPosition
+				X:	767
+				Y:	360
+				SizeX:	681
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	SerializationGraphCopy
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Shared
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Store
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	TaskEval
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	1173
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	Util
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	WebService
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	1203
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	iTaskClass
+		Dir:	{Application}\iTasks-SDK\Server\Framework
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	ClientOverride
+		Dir:	{Application}\iTasks-SDK\Server\Framework\ClientSupport
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Monad
+		Dir:	{Application}\iTasks-SDK\Server\Gin
+		Dcl
+			WindowPosition
+				X:	642
+				Y:	50
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
+		IclOpen:	False
+	Module
+		Name:	Email
+		Dir:	{Application}\iTasks-SDK\Server\lib
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdMaybe
+		Dir:	{Application}\iTasks-SDK\Server\lib
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	HttpServer
+		Dir:	{Application}\iTasks-SDK\Server\lib\Http
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	1261
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	HttpUtil
+		Dir:	{Application}\iTasks-SDK\Server\lib\Http
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	Text
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	Either
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Error
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Func
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Functor
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Map
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		Dcl
+			WindowPosition
+				X:	800
+				Y:	907
+				SizeX:	0
+				SizeY:	0
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Maybe
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	SharedDataSource
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Tuple
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Void
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_SharedDataSourceTypes
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	HTTP
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Internet
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	Random
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Math
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	CommandLine
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	FilePath
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_Pointer
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	CSV
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Text
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	HTML
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Text
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	PPrint
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Text
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Base64
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Text\Encodings
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	MIME
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Text\Encodings
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	UrlEncoding
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Independent\Text\Encodings
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	OS
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows-32\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Directory
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Environment
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	File
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	OSError
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Process
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Time
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		Dcl
+			WindowPosition
+				X:	160
+				Y:	937
+				SizeX:	0
+				SizeY:	0
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	-10
+				Y:	59
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	False
+	Module
+		Name:	_WinBase
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	True
+		Icl
+			WindowPosition
+				X:	140
+				Y:	78
+				SizeX:	800
+				SizeY:	640
+		IclOpen:	True
+	Module
+		Name:	_WinDef
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_Windows
+		Dir:	{Application}\iTasks-SDK\Server\lib\Platform\OS-Windows\System
+		Dcl
+			WindowPosition
+				X:	10
+				Y:	10
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	dynamic_string
+		Dir:	{Application}\iTasks-SDK\Server\lib\graph_copy
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	graph_to_sapl_string
+		Dir:	{Application}\iTasks-SDK\Server\lib\graph_copy
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	graph_to_string_with_descriptors
+		Dir:	{Application}\iTasks-SDK\Server\lib\graph_copy
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	sapldebug
+		Dir:	{Application}\iTasks-SDK\Server\lib\graph_copy
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	HttpClient
+		Dir:	{Project}\http
+		Dcl
+			WindowPosition
+				X:	711
+				Y:	116
+				SizeX:	800
+				SizeY:	640
+		DclOpen:	False
+		Icl
+			WindowPosition
+				X:	507
+				Y:	257
+				SizeX:	961
+				SizeY:	640
+		IclOpen:	False
