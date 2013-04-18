@@ -316,7 +316,7 @@ OtherModules
 			Fusion:	False
 	Module
 		Name:	GenUpdate
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Compiler
 			NeverMemoryProfile:	False
 			NeverTimeProfile:	False
@@ -330,7 +330,7 @@ OtherModules
 			Fusion:	False
 	Module
 		Name:	SystemTypes
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Compiler
 			NeverMemoryProfile:	False
 			NeverTimeProfile:	False
@@ -344,7 +344,7 @@ OtherModules
 			Fusion:	False
 	Module
 		Name:	Task
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Compiler
 			NeverMemoryProfile:	False
 			NeverTimeProfile:	False
@@ -358,7 +358,7 @@ OtherModules
 			Fusion:	False
 	Module
 		Name:	TaskState
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Compiler
 			NeverMemoryProfile:	False
 			NeverTimeProfile:	False
@@ -372,7 +372,7 @@ OtherModules
 			Fusion:	False
 	Module
 		Name:	TaskStore
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Compiler
 			NeverMemoryProfile:	False
 			NeverTimeProfile:	False
@@ -386,7 +386,7 @@ OtherModules
 			Fusion:	False
 	Module
 		Name:	UIDefinition
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Compiler
 			NeverMemoryProfile:	False
 			NeverTimeProfile:	False
@@ -400,7 +400,7 @@ OtherModules
 			Fusion:	False
 	Module
 		Name:	UIDiff
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Compiler
 			NeverMemoryProfile:	False
 			NeverTimeProfile:	False

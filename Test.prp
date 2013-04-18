@@ -169,7 +169,7 @@ OtherModules
 		IclOpen:	False
 	Module
 		Name:	GenUpdate
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		DclOpen:	False
 		Icl
 			WindowPosition
@@ -180,7 +180,7 @@ OtherModules
 		IclOpen:	False
 	Module
 		Name:	SystemTypes
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Dcl
 			WindowPosition
 				X:	0
@@ -197,7 +197,7 @@ OtherModules
 		IclOpen:	False
 	Module
 		Name:	Task
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Dcl
 			WindowPosition
 				X:	282
@@ -214,7 +214,7 @@ OtherModules
 		IclOpen:	False
 	Module
 		Name:	TaskState
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		Dcl
 			WindowPosition
 				X:	136
@@ -225,17 +225,17 @@ OtherModules
 		IclOpen:	False
 	Module
 		Name:	TaskStore
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		DclOpen:	False
 		IclOpen:	False
 	Module
 		Name:	UIDefinition
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		DclOpen:	False
 		IclOpen:	False
 	Module
 		Name:	UIDiff
-		Dir:	G:\dropbox\Dropbox\afstuderen\prototype\itasks
+		Dir:	E:\dropbox\Dropbox\afstuderen\prototype\itasks
 		DclOpen:	False
 		IclOpen:	False
 	Module

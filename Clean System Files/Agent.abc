@@ -1,0 +1,1274 @@
+.comp 920 000111010
+.start _nostart_
+.depend "Shared" "20130225161816"
+.depend "OS" "20130225161913"
+.depend "OSError" "20130225161913"
+.depend "File" "20130225161913"
+.depend "_SharedDataSourceTypes" "20130225161916"
+.depend "Error" "20130225161916"
+.depend "SharedDataSource" "20130225161916"
+.depend "GenRecord" "20130225161816"
+.depend "iTaskClass" "20130225161816"
+.depend "TaskState" "20130411121712"
+.depend "LayoutCombinators" "20130311153144"
+.depend "GenVerify" "20130225161816"
+.depend "GenUpdate" "20130416101727"
+.depend "Either" "20130225161916"
+.depend "HTML" "20130225161915"
+.depend "GenVisualize" "20130412160727"
+.depend "HTTP" "20130225161915"
+.depend "Task" "20130417153220"
+.depend "UIDefinition" "20130412160814"
+.depend "Void" "20130225161916"
+.depend "FilePath" "20130319171155"
+.depend "IWorld" "20130311130302"
+.depend "Time" "20130225161913"
+.depend "Store" "20130311130302"
+.depend "JSON" "20130311130303"
+.depend "StdGeneric" "20130311130302"
+.depend "GenEq" "20130311130302"
+.depend "SystemTypes" "20130412155741"
+.depend "Monad" "20130225161825"
+.depend "TaskRep" "20130417142850"
+.depend "Map" "20130225161916"
+.depend "_SystemEnum" "20130222144314"
+.depend "StdEnum" "20130222144313"
+.depend "StdMisc" "20130222144313"
+.depend "StdFunc" "20130222144313"
+.depend "StdCharList" "20130222144313"
+.depend "StdTuple" "20130222144314"
+.depend "StdOrdList" "20130222144313"
+.depend "StdList" "20130222144313"
+.depend "StdClass" "20130222144313"
+.depend "StdFile" "20130222144313"
+.depend "StdString" "20130222144314"
+.depend "_SystemArray" "20130222144314"
+.depend "StdArray" "20130222144313"
+.depend "StdChar" "20130222144313"
+.depend "StdReal" "20130222144314"
+.depend "StdInt" "20130222144313"
+.depend "StdBool" "20130222144313"
+.depend "StdEnv" "20130222144313"
+.depend "Functor" "20130308112748"
+.depend "Maybe" "20130225161916"
+.depend "StdMaybe" "20130225161819"
+.depend "StdOverloaded" "20130222144313"
+.depend "_SystemDynamic" "20130311130303"
+.depend "Agent" "20130417153207"
+.module m_Agent "Agent" "20130417143113"
+.endinfo
+.implab _cycle_in_spine
+.implab _type_error
+.implab _hnf
+.impdesc _ind
+.implab _indirection _eaind
+.impdesc e_system_dif
+.implab e_system_nif e_system_eaif
+.implab e_system_sif
+.impdesc e_system_dAP
+.implab e_system_nAP e_system_eaAP
+.implab e_system_sAP
+.impdesc _Nil
+.impdesc _Cons
+.impdesc _Conss
+.implab n_Conss ea_Conss
+.impdesc _Consts
+.implab n_Consts ea_Consts
+.impdesc _Conssts
+.implab n_Conssts ea_Conssts
+.impdesc _Tuple
+.impdesc d_S.1
+.implab n_S.1 ea_S.1
+.impdesc d_S.2
+.implab n_S.2 ea_S.2
+.impdesc d_S.3
+.implab n_S.3 ea_S.3
+.impdesc d_S.4
+.implab n_S.4 ea_S.4
+.impdesc d_S.5
+.implab n_S.5 ea_S.5
+.impdesc d_S.6
+.implab n_S.6 ea_S.6
+.implab _driver
+.impdesc e_JSON_dtoJSON
+.implab e_JSON_ntoJSON e_JSON_eatoJSON
+.implab e_JSON_sfromJSON
+.implab e_StdList_sfilter
+.implab e_StdString_s==;2
+.implab e_Maybe_sfromJust
+.export e_Agent_rAgent
+.record e_Agent_rAgent aaa 3 0 "Agent"
+.export e_Agent_dAgent.id
+.export e_Agent_nAgent.id
+.descs e_Agent_dAgent.id e_Agent_nAgent.id _ 1 0 "Agent.id"
+.n -4 e_Agent_dAgent.id
+.o 1 0
+e_Agent_nAgent.id
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 3 0 1 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_dAgent.activity
+.export e_Agent_nAgent.activity
+.export e_Agent_eaAgent.activity
+.descs e_Agent_dAgent.activity e_Agent_nAgent.activity _ 3 0 "Agent.activity"
+.n -4 e_Agent_dAgent.activity e_Agent_eaAgent.activity
+.o 1 0
+e_Agent_nAgent.activity
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaAgent.activity
+	jsr_eval 0
+	repl_r_args_a 3 0 2 1
+	jmp_eval_upd
+.export e_Agent_dAgent.initial
+.export e_Agent_nAgent.initial
+.descs e_Agent_dAgent.initial e_Agent_nAgent.initial _ 4 0 "Agent.initial"
+.n -4 e_Agent_dAgent.initial _
+.o 1 0
+e_Agent_nAgent.initial
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 3 0 3 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_rAgentTask
+.record e_Agent_rAgentTask aaaaa 5 0 "AgentTask"
+.export e_Agent_dAgentTask.taskId
+.export e_Agent_nAgentTask.taskId
+.export e_Agent_eaAgentTask.taskId
+.descs e_Agent_dAgentTask.taskId e_Agent_nAgentTask.taskId _ 1 0 "AgentTask.taskId"
+.n -4 e_Agent_dAgentTask.taskId e_Agent_eaAgentTask.taskId
+.o 1 0
+e_Agent_nAgentTask.taskId
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaAgentTask.taskId
+	jsr_eval 0
+	repl_r_args_a 5 0 1 1
+	jmp_eval_upd
+.export e_Agent_dAgentTask.tag
+.export e_Agent_nAgentTask.tag
+.descs e_Agent_dAgentTask.tag e_Agent_nAgentTask.tag _ 3 0 "AgentTask.tag"
+.n -4 e_Agent_dAgentTask.tag
+.o 1 0
+e_Agent_nAgentTask.tag
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 5 0 2 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_dAgentTask.value
+.export e_Agent_nAgentTask.value
+.export e_Agent_eaAgentTask.value
+.descs e_Agent_dAgentTask.value e_Agent_nAgentTask.value _ 4 0 "AgentTask.value"
+.n -4 e_Agent_dAgentTask.value e_Agent_eaAgentTask.value
+.o 1 0
+e_Agent_nAgentTask.value
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaAgentTask.value
+	jsr_eval 0
+	repl_r_args_a 5 0 3 1
+	jmp_eval_upd
+.export e_Agent_dAgentTask.repValue
+.export e_Agent_nAgentTask.repValue
+.export e_Agent_eaAgentTask.repValue
+.descs e_Agent_dAgentTask.repValue e_Agent_nAgentTask.repValue _ 5 0 "AgentTask.repValue"
+.n -4 e_Agent_dAgentTask.repValue e_Agent_eaAgentTask.repValue
+.o 1 0
+e_Agent_nAgentTask.repValue
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaAgentTask.repValue
+	jsr_eval 0
+	repl_r_args_a 5 0 4 1
+	jmp_eval_upd
+.export e_Agent_dAgentTask.enabled
+.export e_Agent_nAgentTask.enabled
+.descs e_Agent_dAgentTask.enabled e_Agent_nAgentTask.enabled _ 6 0 "AgentTask.enabled"
+.n -4 e_Agent_dAgentTask.enabled
+.o 1 0
+e_Agent_nAgentTask.enabled
+	push_node _cycle_in_spine 1
+	jsr_eval 0
+	repl_r_args_a 5 0 5 1
+	jsr_eval 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_dEditAction
+.desc e_Agent_dEditAction _hnf _add_arg 2 0 "EditAction"
+.export e_Agent_dActAction
+.desc e_Agent_dActAction _hnf _add_arg 2 0 "ActAction"
+.export e_Agent_dPattern
+.desc e_Agent_dPattern _hnf _add_arg 1 0 "Pattern"
+.export e_Agent_sTD;Pattern
+.export e_Agent_eaTD;Pattern
+.descexp e_Agent_dTD;Pattern e_Agent_nTD;Pattern e_Agent_lTD;Pattern 1 0 "TD;Pattern"
+.o 2 0
+e_Agent_lTD;Pattern
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Agent_eaTD;Pattern
+.n 1 e_Agent_dTD;Pattern e_Agent_eaTD;Pattern
+.o 1 0
+e_Agent_nTD;Pattern
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaTD;Pattern
+.o 2 0
+e_Agent_sTD;Pattern
+.o 2 0
+s17
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_sTD;AgentAction
+.export e_Agent_eaTD;AgentAction
+.descexp e_Agent_dTD;AgentAction e_Agent_nTD;AgentAction e_Agent_lTD;AgentAction 1 0 "TD;AgentAction"
+.o 2 0
+e_Agent_lTD;AgentAction
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Agent_eaTD;AgentAction
+.n 1 e_Agent_dTD;AgentAction e_Agent_eaTD;AgentAction
+.o 1 0
+e_Agent_nTD;AgentAction
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaTD;AgentAction
+.o 2 0
+e_Agent_sTD;AgentAction
+.o 2 0
+s16
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_sTD;AgentTask
+.export e_Agent_eaTD;AgentTask
+.descexp e_Agent_dTD;AgentTask e_Agent_nTD;AgentTask e_Agent_lTD;AgentTask 1 0 "TD;AgentTask"
+.o 2 0
+e_Agent_lTD;AgentTask
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Agent_eaTD;AgentTask
+.n 1 e_Agent_dTD;AgentTask e_Agent_eaTD;AgentTask
+.o 1 0
+e_Agent_nTD;AgentTask
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaTD;AgentTask
+.o 2 0
+e_Agent_sTD;AgentTask
+.o 2 0
+s15
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_sTD;AgentActivity
+.export e_Agent_eaTD;AgentActivity
+.descexp e_Agent_dTD;AgentActivity e_Agent_nTD;AgentActivity e_Agent_lTD;AgentActivity 1 0 "TD;AgentActivity"
+.o 2 0
+e_Agent_lTD;AgentActivity
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Agent_eaTD;AgentActivity
+.n 1 e_Agent_dTD;AgentActivity e_Agent_eaTD;AgentActivity
+.o 1 0
+e_Agent_nTD;AgentActivity
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaTD;AgentActivity
+.o 2 0
+e_Agent_sTD;AgentActivity
+.o 2 0
+s14
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_sTD;Agent
+.export e_Agent_eaTD;Agent
+.descexp e_Agent_dTD;Agent e_Agent_nTD;Agent e_Agent_lTD;Agent 1 0 "TD;Agent"
+.o 2 0
+e_Agent_lTD;Agent
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Agent_eaTD;Agent
+.n 1 e_Agent_dTD;Agent e_Agent_eaTD;Agent
+.o 1 0
+e_Agent_nTD;Agent
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaTD;Agent
+.o 2 0
+e_Agent_sTD;Agent
+.o 2 0
+s13
+	fillh _Nil 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_sact
+.export e_Agent_eaact
+.descexp e_Agent_dact e_Agent_nact e_Agent_lact 1 0 "act"
+.o 2 0
+e_Agent_lact
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Agent_eaact
+.n 1 e_Agent_dact e_Agent_eaact
+.o 1 0
+e_Agent_nact
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eaact
+.o 2 0
+e_Agent_sact
+.o 2 0
+s10
+	push_a 0
+	build e_Agent_dAgentTask.tag -4 e_Agent_nAgentTask.tag
+	push_a 1
+	build e_Agent_dAgentTask.taskId -4 e_Agent_nAgentTask.taskId
+	fillh e_Agent_dActAction 2 3
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_sedit
+.export e_Agent_eaedit
+.descexp e_Agent_dedit e_Agent_nedit e_Agent_ledit 3 0 "edit"
+.a 3 e_Agent_eaedit
+.o 2 0
+e_Agent_ledit
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.d 4 0
+	jmp e_Agent_eaedit
+.n 3 e_Agent_dedit e_Agent_eaedit
+.o 1 0
+e_Agent_nedit
+	push_node _cycle_in_spine 3
+.o 4 0
+e_Agent_eaedit
+	jsr_eval 0
+	repl_r_args 1 0
+.o 4 0
+e_Agent_sedit
+.o 4 0
+s9
+	build_r e_StdGeneric_rGenericDict 1 0 0 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	build e_JSON_dtoJSON 2 e_JSON_ntoJSON
+	push_a 2
+	build e_Agent_dAgentTask.taskId -4 e_Agent_nAgentTask.taskId
+	fillh e_Agent_dEditAction 2 5
+	pop_a 3
+.d 1 0
+	rtn
+.export e_Agent_svalue
+.descexp e_Agent_dvalue e_Agent_nvalue e_Agent_lvalue 2 0 "value"
+.a 0 ea8
+.o 2 0
+e_Agent_lvalue
+	repl_args 1 1
+.d 2 0
+	jmp ea8
+.n 2 e_Agent_dvalue _
+.o 1 0
+e_Agent_nvalue
+	push_node _cycle_in_spine 2
+.d 2 0
+	jsr ea8
+.o 1 0
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.o 2 0
+e_Agent_svalue
+	jsr_eval 1
+	push_r_args 1 5 0
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	push_a 5
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.d 6 0
+	jmp s8
+.o 2 0
+ea8
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 5 0
+	push_r_args 5 1 0
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 6 0
+s8
+	push_a 3
+	jsr_eval 0
+	push_a 1
+	update_a 1 7
+	updatepop_a 0 6
+.d 2 0
+	jmp s34
+.o 2 0
+s34
+	create
+	push_a 2
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jsr e_JSON_sfromJSON
+.o 1 0
+.d 1 0
+	jmp e_Maybe_sfromJust
+.export e_Agent_s<|>
+.export e_Agent_ea<|>
+.descexp e_Agent_d<|> e_Agent_n<|> e_Agent_l<|> 2 0 "<|>"
+.a 2 e_Agent_ea<|>
+.o 2 0
+e_Agent_l<|>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Agent_ea<|>
+.n 2 e_Agent_d<|> e_Agent_ea<|>
+.o 1 0
+e_Agent_n<|>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Agent_ea<|>
+.o 3 0
+e_Agent_s<|>
+.o 3 0
+s7
+	push_a 0
+	push_a 2
+	fillh d27 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d27 _hnf l27 4 0 "<lambda>[line:40];17;26"
+.a 4 ea27
+.o 2 0
+l27
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea27
+	jsr_eval 1
+.o 5 0
+s27
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	jsr_ap 2
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 5 0
+	jmp s39
+.o 5 0
+s39
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.1
+	jmp case.2
+case.1
+	push_a 3
+	push_a 2
+	jsr_eval 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.2
+	fill_a 0 4
+	pop_a 4
+.d 1 0
+	rtn
+.export e_Agent_s==>
+.export e_Agent_ea==>
+.descexp e_Agent_d==> e_Agent_n==> e_Agent_l==> 2 0 "==>"
+.a 2 e_Agent_ea==>
+.o 2 0
+e_Agent_l==>
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Agent_ea==>
+.n 2 e_Agent_d==> e_Agent_ea==>
+.o 1 0
+e_Agent_n==>
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Agent_s==>
+.o 3 0
+e_Agent_ea==>
+	jsr_eval 0
+.o 3 0
+s6
+	repl_args 1 1
+	push_a 0
+	push_a 2
+	fillh d26 2 4
+	pop_a 2
+.d 1 0
+	rtn
+.desc d26 _hnf l26 4 0 "<lambda>[line:35];24;25"
+.a 4 ea26
+.o 2 0
+l26
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea26
+	jsr_eval 1
+.o 5 0
+s26
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 5 6
+	update_a 3 5
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 2
+	push_a 2
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s38
+.o 4 0
+s38
+	eq_desc e_Maybe_dJust 1 0
+	jmp_true case.3
+	jmp case.4
+case.3
+	repl_args 1 1
+	push_a 2
+	push_a 1
+	push_a 3
+	build _ 3 n195
+	fillh e_Maybe_dJust 1 4
+	pop_a 3
+.d 1 0
+	rtn
+case.4
+	fillh e_Maybe_dNothing 0 3
+	pop_a 3
+.d 1 0
+	rtn
+.n 3 _ ea195
+.o 1 0
+n195
+	push_node _cycle_in_spine 3
+.o 4 0
+ea195
+.o 4 0
+s195
+	push_a 2
+	push_a 1
+	jsr_eval 0
+	push_a 3
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.export e_Agent_stask
+.export e_Agent_eatask
+.descexp e_Agent_dtask e_Agent_ntask e_Agent_ltask 1 0 "task"
+.o 2 0
+e_Agent_ltask
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Agent_eatask
+.n 1 e_Agent_dtask e_Agent_eatask
+.o 1 0
+e_Agent_ntask
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_eatask
+.o 2 0
+e_Agent_stask
+.o 2 0
+s5
+	push_a 0
+	buildh d25 1
+	fillh e_Agent_dPattern 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d25 _hnf l25 3 0 "<lambda>[line:30];21;24"
+.a 3 ea25
+.o 2 0
+l25
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea25
+	jsr_eval 2
+.o 4 0
+s25
+	push_a 0
+	buildh d24 1
+	create
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 3 0
+	jsr e_StdList_sfilter
+.o 1 0
+.d 2 0
+	jmp s37
+.o 2 0
+s37
+	eq_desc _Nil 0 0
+	jmp_true case.5
+	jmp case.6
+case.5
+	fillh e_Maybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.6
+	repl_args 2 2
+	update_a 0 1
+	pop_a 1
+	push_a 0
+	fillh e_Maybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d24 _hnf l24 2 0 "<lambda>[line:30];42;23"
+.a 0 a24
+.o 2 0
+l24
+	repl_args 1 1
+.o 2 0
+a24
+.d 2 0
+	jsr ea24
+.o 0 1 b
+	buildB_b 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 2 0
+ea24
+	jsr_eval 1
+	jsr_eval 0
+	push_r_args 1 5 0
+	push_array 5
+	update_a 5 7
+	update_a 3 5
+	update_a 1 3
+	update_a 4 6
+	update_a 2 4
+	update_a 0 2
+	pop_a 2
+.o 6 0
+s24
+	push_a 2
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 7
+	updatepop_a 0 6
+.d 2 0
+	jsr eqAC
+.o 0 1 b	
+.d 0 1 b
+	rtn
+.export e_Agent_s-|-
+.export e_Agent_ea-|-
+.descexp e_Agent_d-|- e_Agent_n-|- e_Agent_l-|- 2 0 "-|-"
+.a 2 e_Agent_ea-|-
+.o 2 0
+e_Agent_l-|-
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Agent_ea-|-
+.n 2 e_Agent_d-|- e_Agent_ea-|-
+.o 1 0
+e_Agent_n-|-
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Agent_ea-|-
+.o 3 0
+e_Agent_s-|-
+.o 3 0
+s4
+	push_a 0
+	push_a 2
+	buildh d23 2
+	fillh e_Agent_dPattern 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.desc d23 _hnf l23 4 0 "<lambda>[line:27];23;22"
+.a 4 ea23
+.o 2 0
+l23
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea23
+	jsr_eval 1
+.o 5 0
+s23
+	push_a 3
+	push_a 3
+	push_a 2
+	buildh d22 2
+	create
+	push_a 4
+	push_a 2
+	update_a 2 3
+	update_a 0 2
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 5
+	update_a 0 8
+	pop_a 1
+.d 3 0
+	jsr s11
+.o 1 0
+	repl_args 1 1
+	jsr_eval 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+.desc d22 _hnf l22 3 0 "<lambda>[line:27];56;21"
+.a 3 ea22
+.o 2 0
+l22
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea22
+	jsr_eval 0
+.o 4 0
+s22
+	push_a 1
+	push_a 3
+	push_a 2
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+	jsr_ap 2
+	pushB_a 0
+	pop_a 1
+	jmp_false else.7
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s12
+else.7
+	pop_a 1
+.d 1 0
+	jmp s1
+.export e_Agent_s-||-
+.export e_Agent_ea-||-
+.descexp e_Agent_d-||- e_Agent_n-||- e_Agent_l-||- 2 0 "-||-"
+.a 2 e_Agent_ea-||-
+.o 2 0
+e_Agent_l-||-
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Agent_ea-||-
+.n 2 e_Agent_d-||- e_Agent_ea-||-
+.o 1 0
+e_Agent_n-||-
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Agent_s-||-
+.o 3 0
+e_Agent_ea-||-
+	jsr_eval 1
+	jsr_eval 0
+.o 3 0
+s3
+	repl_args 1 1
+	push_args 1 1 1
+	buildh _Nil 0
+	update_a 0 3
+	pop_a 1
+	push_a 1
+	push_a 1
+	buildh d21 2
+	fillh e_Agent_dPattern 1 4
+	pop_a 3
+.d 1 0
+	rtn
+.desc d21 _hnf l21 4 0 "<lambda>[line:22];45;20"
+.a 4 ea21
+.o 2 0
+l21
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea21
+	jsr_eval 1
+.o 5 0
+s21
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	jsr_ap 2
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 5 0
+	jmp s36
+.o 5 0
+s36
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.8
+	jmp case.9
+case.8
+	push_a 3
+	push_a 2
+	jsr_eval 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.9
+	fill_a 0 4
+	pop_a 4
+.d 1 0
+	rtn
+.export e_Agent_s-&&-
+.export e_Agent_ea-&&-
+.descexp e_Agent_d-&&- e_Agent_n-&&- e_Agent_l-&&- 2 0 "-&&-"
+.a 2 e_Agent_ea-&&-
+.o 2 0
+e_Agent_l-&&-
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Agent_ea-&&-
+.n 2 e_Agent_d-&&- e_Agent_ea-&&-
+.o 1 0
+e_Agent_n-&&-
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Agent_s-&&-
+.o 3 0
+e_Agent_ea-&&-
+	jsr_eval 0
+.o 3 0
+s2
+	push_a 1
+	buildh d31 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s11
+.desc d31 _hnf l31 2 0 "<lambda>[line:19];23;562"
+.a 2 ea31
+.o 2 0
+l31
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea31
+	jsr_eval 0
+.o 3 0
+s31
+	push_a 1
+	buildh d32 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s11
+.desc d32 _hnf l32 2 0 "<lambda>[line:19];34;563"
+.a 2 ea32
+.o 2 0
+l32
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea32
+.o 3 0
+s32
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 2 0
+	jmp s12
+.export e_Agent_sret;11
+.export e_Agent_earet;11
+.descexp e_Agent_dret;11 e_Agent_nret;11 e_Agent_lret;11 1 0 "ret;11"
+.o 2 0
+e_Agent_lret;11
+	update_a 1 0
+	create
+	update_a 0 2
+	pop_a 1
+.d 2 0
+	jmp e_Agent_earet;11
+.n 1 e_Agent_dret;11 e_Agent_earet;11
+.o 1 0
+e_Agent_nret;11
+	push_node _cycle_in_spine 1
+.o 2 0
+e_Agent_earet;11
+.o 2 0
+e_Agent_sret;11
+.o 2 0
+s12
+	push_a 0
+	buildh d28 1
+	fillh e_Agent_dPattern 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.desc d28 _hnf l28 3 0 "<lambda>[line:8];22;27"
+.a 3 ea28
+.o 2 0
+l28
+	push_args 0 2 2
+	update_a 3 2
+	create
+	update_a 0 4
+	pop_a 1
+.o 4 0
+ea28
+.o 4 0
+s28
+	push_a 0
+	fillh e_Maybe_dJust 1 4
+	pop_a 3
+.d 1 0
+	rtn
+.export e_Agent_s>>>;10
+.export e_Agent_ea>>>;10
+.descexp e_Agent_d>>>;10 e_Agent_n>>>;10 e_Agent_l>>>;10 2 0 ">>>;10"
+.a 2 e_Agent_ea>>>;10
+.o 2 0
+e_Agent_l>>>;10
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Agent_ea>>>;10
+.n 2 e_Agent_d>>>;10 e_Agent_ea>>>;10
+.o 1 0
+e_Agent_n>>>;10
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Agent_s>>>;10
+.o 3 0
+e_Agent_ea>>>;10
+	jsr_eval 0
+.o 3 0
+s11
+	repl_args 1 1
+	push_a 0
+	push_a 2
+	buildh d29 2
+	fillh e_Agent_dPattern 1 3
+	pop_a 2
+.d 1 0
+	rtn
+.desc d29 _hnf l29 4 0 "<lambda>[line:11];37;28"
+.a 4 ea29
+.o 2 0
+l29
+	push_args 0 3 3
+	update_a 4 3
+	create
+	update_a 0 5
+	pop_a 1
+.o 5 0
+ea29
+	jsr_eval 1
+.o 5 0
+s29
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+	jsr_ap 2
+	push_a 3
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 3 4
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 3 6
+	update_a 2 5
+	update_a 1 4
+	updatepop_a 0 3
+.d 5 0
+	jmp s35
+.o 5 0
+s35
+	eq_desc e_Maybe_dJust 1 0
+	jmp_true case.10
+	jmp case.11
+case.10
+	repl_args 1 1
+	push_a 3
+	push_a 2
+	jsr_eval 0
+	push_a 2
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 4
+	update_a 0 5
+	update_a 0 7
+	pop_a 1
+	jsr_ap 1
+	repl_args 1 1
+	jsr_eval 0
+	push_a 4
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+	jsr_ap 2
+	fill_a 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.11
+	fillh e_Maybe_dNothing 0 4
+	pop_a 4
+.d 1 0
+	rtn
+.export e_Agent_snil
+.export e_Agent_eanil
+.descexp e_Agent_dnil e_Agent_nnil e_Agent_lnil 0 0 "nil"
+.o 1 0
+e_Agent_lnil
+	halt
+.n 0 e_Agent_dnil e_Agent_eanil
+.o 1 0
+e_Agent_nnil
+	push_node _cycle_in_spine 0
+.o 1 0
+e_Agent_eanil
+.o 1 0
+e_Agent_snil
+.o 1 0
+s1
+	buildh d18 0
+	fillh e_Agent_dPattern 1 1
+.d 1 0
+	rtn
+.desc d18 _hnf l18 2 0 "<lambda>[line:16];16;17"
+.a 2 ea18
+.o 2 0
+l18
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.o 3 0
+ea18
+.o 3 0
+s18
+	fillh e_Maybe_dNothing 0 2
+	pop_a 2
+.d 1 0
+	rtn
