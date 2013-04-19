@@ -10,12 +10,21 @@ import Map
 import StdEnv
 import StdDebug
 
+:: TaskServiceRep = 
+	{ taskId   :: Maybe TaskId
+	, parts	   :: [TaskServiceRep]
+	, tag      :: Maybe String
+	, value	   :: Maybe JSONNode
+	, repValue :: Maybe JSONNode
+	, actions  :: [(TaskId, Bool, String)]
+	}	
+	
 :: ServiceResponse = 
 	{ sessionId :: String
 	, task		:: TaskServiceRep
 	}
 
-derive JSONDecode ServiceResponse, TaskServiceRep
+derive JSONDecode ServiceResponse, TaskServiceRep, TaskId
 
 iTasksRequest :: SimpleHttpRequest
 iTasksRequest = {SimpleHttpRequest
@@ -43,37 +52,43 @@ where
 	actions    		= map actionToTask task.TaskServiceRep.actions
 	otherTasks 		= actions ++ foldr ((++) o taskRepToAgentTasks) [] task.parts						
 
-webServiceTaskReceiver :: String Int -> TaskReceiver (Maybe [AgentTask])
-webServiceTaskReceiver server port = TaskReceiver recv
+webServiceTaskReceiver :: String Int -> TaskProducer
+webServiceTaskReceiver server port = recv
 where
-	request recvState
-		#mbSessionId = recvState.TaskReceiverState.sessionId
-		| isNothing mbSessionId = (iTasksRequest, recvState)
+	request prodState
+		#mbSessionId = prodState.TaskProducerState.sessionId
+		| isNothing mbSessionId = (iTasksRequest, prodState)
 		= ({SimpleHttpRequest|iTasksRequest & req_path = iTasksRequest.SimpleHttpRequest.req_path +++ "&session=" +++ (fromJust mbSessionId) +++ "&"},
-			 {TaskReceiverState|recvState&sessionId = mbSessionId}) //? type checker fails if this is not done
-	recv recvState
-	#(req, recvState) 		= request recvState
-	#(mbResp, world)   		= executeHttpRequest server port req recvState.TaskReceiverState.world
-	| isNothing mbResp 		= (Nothing, {TaskReceiverState|recvState & world = world})
+			 {TaskProducerState|prodState&sessionId = mbSessionId}) //? type checker fails if this is not done
+	recv prodState
+	#(req, prodState) 		= request prodState
+	#(mbResp, world)   		= executeHttpRequest server port req prodState.TaskProducerState.world
+	| isNothing mbResp 		= trace_n "no response" (Nothing, {TaskProducerState|prodState & world = world})
 	#resp 					= fromJust mbResp
 	#mbServResp 			= fromJSON (trace_n (resp.SimpleHttpResponse.rsp_data) (fromString resp.SimpleHttpResponse.rsp_data) )
-	| isNothing mbServResp 	= (Nothing, {TaskReceiverState|recvState & world = world})
+	| isNothing mbServResp 	= trace_n "no json" (Nothing, {TaskProducerState|prodState & world = world})
 	#servResp				= fromJust mbServResp
 	#tasks 					= taskRepToAgentTasks (servResp.task) 
-	= (Just tasks, {TaskReceiverState|recvState & world=world, sessionId = Just servResp.ServiceResponse.sessionId})
+	= (Just tasks, {TaskProducerState|prodState & world=world, sessionId = Just servResp.ServiceResponse.sessionId})
 	
-webServiceActionHandler :: String Int -> ActionHandler Bool
-webServiceActionHandler server port = ActionHandler act
+urlEncode :: String -> String
+urlEncode s = foldl (+++) "" (map (replace o toString) [c \\ c <-: s])
 where
-	act actions actState 
-		#!(success, world) = foldl (doAction actState.ActionHandlerState.sessionId) (True, actState.ActionHandlerState.world) actions
-		= (success, {ActionHandlerState|actState&world=world})
+	replace " " = "%20"
+	replace s = s
+	
+webServiceActionHandler :: String Int -> ActionConsumer
+webServiceActionHandler server port = act
+where
+	act actState 
+		#!(success, world) = foldl (doAction actState.ActionConsumerState.sessionId) (True, actState.ActionConsumerState.world) actState.ActionConsumerState.actions
+		= {ActionConsumerState|actState&world=world}
 	doAction sessionId (success, world) act
 		#(mbPath, world) 	= handleAction act world
 		| isNothing mbPath 	= (success, world)
 		#req =	{SimpleHttpRequest
 				|iTasksRequest&
-				req_path = (fromJust mbPath) +++ "&session=" +++ sessionId
+				req_path = urlEncode ((fromJust mbPath) +++ "&session=" +++ sessionId)
 				}
 		#!(resp, world) = (executeHttpRequest server port req world)
 		= (if success (isJust resp) False, world)

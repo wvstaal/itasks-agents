@@ -1,0 +1,194 @@
+Version: 1.4
+MainModule
+	Name:	foobar
+	Dir:	{Project}
+	Dcl
+		WindowPosition
+			X:	738
+			Y:	188
+			SizeX:	800
+			SizeY:	640
+	DclOpen:	False
+	Icl
+		WindowPosition
+			X:	738
+			Y:	188
+			SizeX:	800
+			SizeY:	640
+	IclOpen:	True
+OtherModules
+	Module
+		Name:	StdArray
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdBool
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdChar
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdClass
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdEnum
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdFile
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdFunc
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdInt
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdList
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdMisc
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdOrdList
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdOverloaded
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdReal
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdString
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	StdTuple
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_SystemArray
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_SystemEnum
+		Dir:	{Application}\Libraries\StdEnv
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Text
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Monad
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Control
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	State
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Control\Monad
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Trans
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Control\Monad
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Error
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Func
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Functor
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	List
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Maybe
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Void
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Data
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Identity
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\Data\Functor
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_Pointer
+		Dir:	{Application}\clean-platform\src\libraries\OS-Independent\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	File
+		Dir:	{Application}\clean-platform\src\libraries\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	OSError
+		Dir:	{Application}\clean-platform\src\libraries\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	Time
+		Dir:	{Application}\clean-platform\src\libraries\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_WinBase
+		Dir:	{Application}\clean-platform\src\libraries\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_WinDef
+		Dir:	{Application}\clean-platform\src\libraries\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False
+	Module
+		Name:	_Windows
+		Dir:	{Application}\clean-platform\src\libraries\OS-Windows\System
+		DclOpen:	False
+		IclOpen:	False

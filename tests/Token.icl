@@ -1,9 +1,10 @@
 implementation module Token
-import Threading
 
 import JSON
 import StdEnv
 import Agent, AgentController, WebServiceInterface
+import StdDebug
+import Void
 
 tokenAgentActivity :: Int Int -> AgentActivity Void
 tokenAgentActivity id target = login <|> passToken <|> enterTarget
@@ -23,17 +24,13 @@ where
 			task "done"
 			==> \(inputReceiver, done) s. (s, [edit inputReceiver target, act done])
 			
-mkAgent :: Int Int -> Agent Void
-mkAgent id target = { id = "tokenAgent", activity = tokenAgentActivity id target, initial = Void }
+mkAgent id target = { id = "foobar", activity = tokenAgentActivity id target, initial = Void }
 
-agents :: [Agent Void]
-agents = map (\(n1, n2). mkAgent n1 n2) (zip2 [1..10] ([2..10]++[1]))
-
-runAgents :: *World -> *World
-runAgents world = forkAndWait (map (\a. run a receiver actionHandler) agents) world
+runAgent :: Int Int *World -> *World
+runAgent id target world = run (mkAgent id target) receiver actionHandler world
 where
 	actionHandler 	= webServiceActionHandler server port
-	receiver 		= delayTaskReceiver 5 >>>| webServiceTaskReceiver server port
+	receiver 		= webServiceTaskReceiver server port
 	server 			= "localhost"
 	port   			= 80
 			

@@ -1,60 +1,22 @@
 .comp 920 000111010
 .start _nostart_
-.depend "Threading" "20130418152927"
-.depend "WebServiceInterface" "20130418102410"
-.depend "AgentController" "20130418114446"
-.depend "Shared" "20130225161816"
-.depend "OS" "20130225161913"
-.depend "OSError" "20130225161913"
-.depend "File" "20130225161913"
-.depend "TCPStringChannelsInternal" "20130222144316"
-.depend "TCPStringChannels" "20130222144316"
-.depend "TCPEvent" "20130222144316"
-.depend "tcp_bytestreams" "20130222144316"
-.depend "TCPDef" "20130222144316"
-.depend "TCPChannels" "20130225161829"
-.depend "tcp" "20130222144316"
-.depend "TCPChannelClass" "20130222144316"
-.depend "TCPIP" "20130222144316"
-.depend "HttpServer" "20130418143907"
-.depend "_SharedDataSourceTypes" "20130225161916"
-.depend "Error" "20130225161916"
-.depend "SharedDataSource" "20130225161916"
-.depend "GenRecord" "20130225161816"
-.depend "iTaskClass" "20130225161816"
-.depend "TaskState" "20130411121712"
-.depend "LayoutCombinators" "20130311153144"
-.depend "GenVerify" "20130225161816"
-.depend "GenUpdate" "20130416101727"
-.depend "Either" "20130225161916"
-.depend "HTML" "20130225161915"
-.depend "GenVisualize" "20130412160727"
-.depend "HTTP" "20130225161915"
-.depend "Task" "20130417153220"
-.depend "UIDefinition" "20130412160814"
-.depend "Void" "20130225161916"
-.depend "FilePath" "20130319171155"
-.depend "IWorld" "20130418143908"
-.depend "Time" "20130225161913"
-.depend "Store" "20130311130302"
-.depend "JSON" "20130311130303"
-.depend "StdGeneric" "20130311130302"
-.depend "GenEq" "20130311130302"
-.depend "SystemTypes" "20130412155741"
-.depend "Agent" "20130418154205"
-.depend "Monad" "20130225161825"
-.depend "Map" "20130225161916"
+.depend "StdDebug" "20130222144313"
+.depend "WebServiceInterface" "20130419132430"
+.depend "Time" "20130419101438"
+.depend "AgentController" "20130419132944"
+.depend "Void" "20130419101442"
+.depend "Monad" "20130419102451"
+.depend "Agent" "20130419133330"
 .depend "_SystemEnum" "20130222144314"
 .depend "StdEnum" "20130222144313"
 .depend "StdMisc" "20130222144313"
-.depend "StdFunc" "20130222144313"
+.depend "StdFunc" "20130419102602"
 .depend "StdCharList" "20130222144313"
 .depend "StdTuple" "20130222144314"
 .depend "StdOrdList" "20130222144313"
 .depend "StdList" "20130222144313"
 .depend "StdClass" "20130222144313"
 .depend "StdFile" "20130222144313"
-.depend "StdString" "20130222144314"
 .depend "_SystemArray" "20130222144314"
 .depend "StdArray" "20130222144313"
 .depend "StdChar" "20130222144313"
@@ -62,13 +24,14 @@
 .depend "StdInt" "20130222144313"
 .depend "StdBool" "20130222144313"
 .depend "StdEnv" "20130222144313"
-.depend "Functor" "20130308112748"
-.depend "Maybe" "20130225161916"
-.depend "StdMaybe" "20130225161819"
+.depend "StdString" "20130222144314"
+.depend "Functor" "20130419101441"
 .depend "StdOverloaded" "20130222144313"
-.depend "_SystemDynamic" "20130311130303"
-.depend "Token" "20130418155732"
-.module m_Token "Token" "20130418155726"
+.depend "Maybe" "20130419101442"
+.depend "StdGeneric" "20130311130302"
+.depend "JSON" "20130311130303"
+.depend "Token" "20130418201053"
+.module m_Token "Token" "20130419133926"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -103,17 +66,11 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
-.implab e_Threading_sforkAndWait
 .impdesc e_WebServiceInterface_dwebServiceTaskReceiver
 .implab e_WebServiceInterface_nwebServiceTaskReceiver e_WebServiceInterface_eawebServiceTaskReceiver
 .impdesc e_WebServiceInterface_dwebServiceActionHandler
 .implab e_WebServiceInterface_nwebServiceActionHandler e_WebServiceInterface_eawebServiceActionHandler
-.impdesc e_AgentController_drun
-.impdesc e_AgentController_ddelayTaskReceiver
-.implab e_AgentController_ndelayTaskReceiver e_AgentController_eadelayTaskReceiver
-.impdesc e_AgentController_d>>>;2
-.impdesc e_AgentController_dret;3
-.impdesc e_JSON_dJSONEncode_Int;9
+.implab e_AgentController_srun
 .impdesc e_Agent_d-&&-
 .implab e_Agent_n-&&- e_Agent_ea-&&-
 .impdesc e_Agent_d-|-
@@ -130,181 +87,74 @@
 .impdesc e_Agent_dact
 .implab e_Agent_nact e_Agent_eaact
 .impdesc e_Agent_rAgent
-.implab e_Monad_s>>>|
-.impdesc e_Monad_rMonad;
-.impdesc e__SystemEnum_d_from_to;6
-.implab e__SystemEnum_s_from_to;6
-.implab e__SystemEnum_n_from_to;6 e__SystemEnum_ea_from_to;6
-.impdesc e_StdList_d++
-.implab e_StdList_n++ e_StdList_ea++
-.impdesc e_StdList_dmap
-.implab e_StdList_smap
-.implab e_StdList_nmap e_StdList_eamap
-.implab e_StdList_szip2
-.record r15 a 1 0 "JSONEncode_s;"
-.export e_Token_srunAgents
-.export e_Token_earunAgents
-.descexp e_Token_drunAgents e_Token_nrunAgents e_Token_lrunAgents 1 0 "runAgents"
+.impdesc e_JSON_dJSONEncode_Int;9
+.record r12 a 1 0 "JSONEncode_s;"
+.export e_Token_srunAgent
+.export e_Token_earunAgent
+.descexp e_Token_drunAgent e_Token_nrunAgent e_Token_lrunAgent 3 0 "runAgent"
+.a 3 e_Token_earunAgent
 .o 2 0
-e_Token_lrunAgents
-	update_a 1 0
-	create
-	update_a 0 2
-	pop_a 1
-.d 2 0
-	jmp e_Token_earunAgents
-.n 1 e_Token_drunAgents e_Token_earunAgents
-.o 1 0
-e_Token_nrunAgents
-	push_node _cycle_in_spine 1
-.o 2 0
-e_Token_earunAgents
-.o 2 0
-e_Token_srunAgents
-.o 2 0
-s1
-	buildAC "localhost"
-	buildh ARRAY 1
-	buildI 80
-	build _ 0 n4
-	push_a 1
-	push_a 3
-	build e_WebServiceInterface_dwebServiceActionHandler 2 e_WebServiceInterface_nwebServiceActionHandler
-	push_a 2
-	push_a 4
-	build e_WebServiceInterface_dwebServiceTaskReceiver 2 e_WebServiceInterface_nwebServiceTaskReceiver
-	buildI 5
-	build e_AgentController_ddelayTaskReceiver 1 e_AgentController_ndelayTaskReceiver
-	build _ 2 n153
-	buildh d10 2
-	build e_StdList_dmap 2 e_StdList_nmap
-	push_a 3
-	push_a 1
-	update_a 1 2
-	update_a 0 1
-	pop_a 1
-	update_a 1 4
-	updatepop_a 0 3
-.d 3 0
-	jmp e_Threading_sforkAndWait
-.n 2 _ ea153
-.o 1 0
-n153
-	push_node _cycle_in_spine 2
-.o 3 0
-ea153
-.o 3 0
-s153
-	buildh e_AgentController_dret;3 0
-	buildh e_AgentController_d>>>;2 0
-	push_a 3
-	push_a 3
-	push_a 3
-	update_a 2 4
-	update_a 0 2
-	update_a 3 0
-	update_a 1 3
-	update_a 0 1
-	pop_a 1
-	update_a 3 5
-	update_a 2 4
-	update_a 1 3
-	updatepop_a 0 2
-.d 4 0
-	jsr e_Monad_s>>>|
-.o 1 0
-	fill_a 0 1
-	pop_a 1
-.d 1 0
-	rtn
-.desc d10 _hnf l10 3 0 "<lambda>[line:33];37;9"
-.a 3 ea10
-.o 2 0
-l10
+e_Token_lrunAgent
 	push_args 0 2 2
 	update_a 3 2
 	create
 	update_a 0 4
 	pop_a 1
+.d 4 0
+	jmp e_Token_earunAgent
+.n 3 e_Token_drunAgent e_Token_earunAgent
+.o 1 0
+e_Token_nrunAgent
+	push_node _cycle_in_spine 3
 .o 4 0
-ea10
+e_Token_earunAgent
 .o 4 0
-s10
-	push_a 1
-	push_a 1
-	push_a 4
-	fillh e_AgentController_drun 3 6
-	pop_a 3
-.d 1 0
-	rtn
-.n 0 _ ea4
-.o 1 0
-n4
-	push_node _cycle_in_spine 0
-.o 1 0
-ea4
-.o 1 0
-s4
-	buildh _Nil 0
-	buildI 1
-	buildh _Cons 2
-	buildI 10
-	buildI 2
-	build e__SystemEnum_d_from_to;6 2 e__SystemEnum_n_from_to;6
-	build e_StdList_d++ 2 e_StdList_n++
-	create
-	pushI 10
-	pushI 1
-.d 1 2 ii
-	jsr e__SystemEnum_s_from_to;6
-.o 1 0
-	create
+e_Token_srunAgent
+.o 4 0
+s1
+	buildAC "localhost"
+	buildh ARRAY 1
+	buildI 80
+	push_a 0
 	push_a 2
-	update_a 1 3
+	build e_WebServiceInterface_dwebServiceActionHandler 2 e_WebServiceInterface_nwebServiceActionHandler
+	push_a 1
+	push_a 3
+	build e_WebServiceInterface_dwebServiceTaskReceiver 2 e_WebServiceInterface_nwebServiceTaskReceiver
+	push_a 5
+	push_a 5
+	build _ 2 n3
+	push_a 7
+	push_a 3
+	update_a 1 4
 	update_a 2 1
-	update_a 0 2
+	update_a 3 2
+	update_a 0 3
 	pop_a 1
-.d 3 0
-	jsr e_StdList_szip2
+	update_a 3 8
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 5 0
+	jmp e_AgentController_srun
+.n 2 _
 .o 1 0
-	buildh d9 0
-.d 3 0
-	jmp e_StdList_smap
-.desc d9 _hnf l9 1 0 "<lambda>[line:30];15;8"
+n3
+	push_node _cycle_in_spine 2
 .o 2 0
-l9
-	pop_a 1
-.d 1 0
-	jsr ea9
-.o 3 0
-	build_r e_Agent_rAgent 3 0 0 0
-	updatepop_a 0 3
-.d 1 0
-	rtn
-.o 1 0
-ea9
-	jsr_eval 0
-	repl_args 2 2
-.o 2 0
-s9
-	push_a 1
-	push_a 1
-	update_a 1 3
-	updatepop_a 0 2
-.d 2 0
-	jmp s3
-.o 2 0
-s3
+ea3
 	buildh e_Void_dVoid 0
 	push_a 2
 	push_a 2
 	build _ 2 n2
-	buildAC "tokenAgent"
+	buildAC "foobar"
 	buildh ARRAY 1
 	update_a 2 4
 	update_a 1 3
 	updatepop_a 0 2
-.d 3 0
+	fill_r e_Agent_rAgent 3 0 3 0 0
+	pop_a 3
+.d 1 0
 	rtn
 .n 2 _ ea2
 .o 1 0
@@ -315,7 +165,7 @@ ea2
 .o 3 0
 s2
 	push_a 1
-	buildh d12 1
+	buildh d9 1
 	buildAC "done"
 	buildh ARRAY 1
 	build e_Agent_dtask 1 e_Agent_ntask
@@ -324,16 +174,15 @@ s2
 	build e_Agent_dtask 1 e_Agent_ntask
 	build e_Agent_d-&&- 2 e_Agent_n-&&-
 	build e_Agent_d==> 2 e_Agent_n==>
-	buildh d7 0
 	buildh d6 0
+	buildh d5 0
 	buildAC "Pass token"
 	buildh ARRAY 1
 	build e_Agent_dtask 1 e_Agent_ntask
 	build e_Agent_d-|- 2 e_Agent_n-|-
 	build e_Agent_d==> 2 e_Agent_n==>
-	build e_Agent_d<|> 2 e_Agent_n<|>
-	push_a 1
-	buildh d11 1
+	push_a 2
+	buildh d8 1
 	buildAC "login"
 	buildh ARRAY 1
 	build e_Agent_dtask 1 e_Agent_ntask
@@ -342,19 +191,20 @@ s2
 	build e_Agent_dtask 1 e_Agent_ntask
 	build e_Agent_d-&&- 2 e_Agent_n-&&-
 	build e_Agent_d==> 2 e_Agent_n==>
+	build e_Agent_d<|> 2 e_Agent_n<|>
 	update_a 1 3
 	updatepop_a 0 2
 .d 3 0
 	jmp e_Agent_s<|>
-.desc d11 _hnf l11 3 0 "<lambda>[line:15];17;542"
-.a 0 a11
+.desc d8 _hnf l8 3 0 "<lambda>[line:16];17;47"
+.a 0 a8
 .o 2 0
-l11
+l8
 	repl_args 2 2
 .o 3 0
-a11
+a8
 .o 3 0
-ea11
+ea8
 	push_a 1
 	jsr_eval 0
 	repl_args 2 2
@@ -368,7 +218,7 @@ ea11
 	buildh _Cons 2
 	push_a 1
 	push_a 3
-	build _ 2 n155
+	build _ 2 n43
 	buildh _Cons 2
 	push_a 4
 	update_a 1 5
@@ -379,14 +229,14 @@ ea11
 	updatepop_a 0 2
 .d 1 0
 	rtn
-.n 2 _ ea155
+.n 2 _ ea43
 .o 1 0
-n155
+n43
 	push_node _cycle_in_spine 2
 .o 3 0
-ea155
+ea43
 .o 3 0
-s155
+s43
 	buildh e_JSON_dJSONEncode_Int;9 0
 	push_a 2
 	push_a 2
@@ -400,15 +250,15 @@ s155
 	updatepop_a 0 2
 .d 4 0
 	jmp e_Agent_sedit
-.desc d12 _hnf l12 3 0 "<lambda>[line:24];17;543"
-.a 0 a12
+.desc d9 _hnf l9 3 0 "<lambda>[line:25];17;48"
+.a 0 a9
 .o 2 0
-l12
+l9
 	repl_args 2 2
 .o 3 0
-a12
+a9
 .o 3 0
-ea12
+ea9
 	push_a 1
 	jsr_eval 0
 	repl_args 2 2
@@ -422,7 +272,7 @@ ea12
 	buildh _Cons 2
 	push_a 1
 	push_a 3
-	build _ 2 n154
+	build _ 2 n42
 	buildh _Cons 2
 	push_a 4
 	update_a 1 5
@@ -433,14 +283,14 @@ ea12
 	updatepop_a 0 2
 .d 1 0
 	rtn
-.n 2 _ ea154
+.n 2 _ ea42
 .o 1 0
-n154
+n42
 	push_node _cycle_in_spine 2
 .o 3 0
-ea154
+ea42
 .o 3 0
-s154
+s42
 	buildh e_JSON_dJSONEncode_Int;9 0
 	push_a 2
 	push_a 2
@@ -454,37 +304,37 @@ s154
 	updatepop_a 0 2
 .d 4 0
 	jmp e_Agent_sedit
-.desc d6 _hnf l6 2 0 "<lambda>[line:18];18;5"
-.a 0 a6
+.desc d5 _hnf l5 2 0 "<lambda>[line:19];18;4"
+.a 0 a5
 .o 2 0
-l6
+l5
 	repl_args 1 1
 .o 2 0
-a6
+a5
 .d 2 0
-	jsr ea6
+	jsr ea5
 .o 0 1 b
 	buildB_b 0
 	pop_b 1
 .d 1 0
 	rtn
 .o 2 0
-ea6
+ea5
 .o 2 0
-s6
+s5
 	push_a 0
 	updatepop_a 0 2
 .d 1 0
 	jmp e_Agent_senabled
-.desc d7 _hnf l7 2 0 "<lambda>[line:19];17;6"
-.a 0 a7
+.desc d6 _hnf l6 2 0 "<lambda>[line:20];17;5"
+.a 0 a6
 .o 2 0
-l7
+l6
 	repl_args 1 1
 .o 2 0
-a7
+a6
 .o 2 0
-ea7
+ea6
 	buildh _Nil 0
 	push_a 1
 	build e_Agent_dact 1 e_Agent_nact

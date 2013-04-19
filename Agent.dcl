@@ -1,17 +1,24 @@
 definition module Agent
 
-import SystemTypes, Task, Monad, JSON
+import Monad, JSON
+
+:: TaskId		= TaskId !InstanceNo !TaskNo
+:: InstanceNo	:== Int
+:: TaskNo		:== Int
+:: SessionId	:== String
 
 :: Agent s = 
 	{ id       :: String
 	, activity :: AgentActivity s
 	, initial  :: s
 	}
-		    
-:: AgentActivity s :== s [AgentTask] -> Maybe (s, [AgentAction])
-
-:: AgentTask = 
-	{ taskId 	:: TaskId 
+		
+:: Pattern s a = Pattern (s [AgentTask] -> Maybe a)
+    
+:: AgentActivity s :== Pattern s (s, [AgentAction])
+ 
+:: AgentTask =  
+	{ taskId 	:: TaskId  
 	, tag    	:: String
 	, value  	:: Maybe JSONNode
 	, repValue 	:: Maybe JSONNode
@@ -19,9 +26,9 @@ import SystemTypes, Task, Monad, JSON
 	}
 
 :: AgentAction = EditAction TaskId JSONNode | ActAction TaskId String | WaitAction Int Int
-
-:: Pattern s a = Pattern (s [AgentTask] -> Maybe a)
  
+instance toString	TaskId
+
 instance Monad (Pattern s)
 				  				 			
 nil :: Pattern s a
@@ -36,7 +43,7 @@ task :: String -> Pattern s AgentTask
 	
 (==>) infixr 2 :: (Pattern s a) (a s -> (s, [AgentAction])) -> AgentActivity s
                    
-(<|>) infixr 1 :: (AgentActivity s) (AgentActivity s) -> AgentActivity s
+(<|>) infixl 1 :: (AgentActivity s) (AgentActivity s) -> AgentActivity s
 
 value :: AgentTask -> a | JSONDecode{|*|} a
 

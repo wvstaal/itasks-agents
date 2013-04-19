@@ -1,6 +1,6 @@
 implementation module HttpClient
 
-import List, StdEnv, Map, Parsers, TCPIP, StdMaybe
+import List, StdEnv, Map, ParserCombinators, TCPIP, Maybe, StdDebug, Text
 
 ticksPerSecond = 10000000
 
@@ -16,13 +16,29 @@ getResponse server port req world
 		= (Nothing, world)
 	#{ sChannel=sc, rChannel=rc } = fromJust mbDuplexChan
 	#(sc, world)				= send (toByteSeq (toString req)) sc world
-	#(tReport, mbBs, rc, world)	= receive_MT (Just (20*ticksPerSecond)) rc world
+	#(tReport,data,rc,world)	= recv rc "" world
 	#world						= closeRChannel rc world
 	#world						= closeChannel sc world
 	= case tReport of
-		TR_Success 	= (Just (toString (fromJust mbBs)), world)
+		TR_Success 	= (Just (toString data), world)
 		_			= (Nothing, world)
-		
+where
+	finished data  
+	#firstIndex = indexOf "Content-Length:" data
+	| firstIndex == -1 = False
+	#secondIndex = indexOfAfter firstIndex "\r\n" data
+	| secondIndex == -1 = False
+	#length = ((toInt o trim) (data % (firstIndex+16, secondIndex)))
+	#beginDataIndex = indexOf "\r\n\r\n" data
+	| beginDataIndex == -1 = False
+	= (textSize data - beginDataIndex - 4 == length)
+	
+	recv rc data world 
+	#(tReport, mbBs, rc, world)	= receive_MT (Just (20*ticksPerSecond)) rc world
+	| finished (data+++toString (fromJust mbBs)) = (tReport,data +++ toString (fromJust mbBs) , rc, world) 
+	= recv rc (data+++toString (fromJust mbBs)) world
+	
+	
 executeHttpRequest :: String Int SimpleHttpRequest *World -> (Maybe SimpleHttpResponse, *World)
 executeHttpRequest server port req world
 	#(mbResp, world) 	= getResponse server port req world
@@ -45,17 +61,16 @@ where
 				 
 
 parseResponse :: String -> Maybe SimpleHttpResponse
-parseResponse s = case (parse parser (fromString s) "line" "character") of
-				  (Succ [r:rs])	= Just r
-				  (Err symbolTypes hypotheses position)
-							= Nothing
+parseResponse s = case (begin1 parser (fromString s)) of
+				  [(_, r):_]	= Just r
+				  []			= Nothing
 where
-	parser = (tokenH ['HTTP/1.'] &> digit &> ws &> number <& ws <& skipTo endl <& endl)
+	parser = (token ['HTTP/1.'] &> digit &> ws &> nat <& ws <& skipTo '\r' <& endl)
 				  <&> \nr. 
-				  		(<!*> ((headerText <& symbol ':' <& ws) <&> \k. headerText <& skipTo endl <& endl <@ \v. (toString k, toString v)))
-				  		<&> \hdrs. ws &> (<!*> anySymbol)
-				  				   <@ \data. {rsp_headers = fromList hdrs, rsp_responseCode = nr, rsp_data = toString data}
-	ws 		= (<!*> (satisfy isSpace))
-	endl 	= tokenH ['\r\n']
-	headerText = (<!*> (satisfy (\c. c <> ':' && c <> '\r')))
+				  		(<*?> ((headerText <& symbol ':' <& ws) <&> \k. headerText <& skipTo '\r' <& endl <@ \v. (toString k, toString v)))
+				  		<&> \hdrs. ws &> (<+?> (satisfy (\_. True)))  <@ \data. {rsp_headers = fromList hdrs, rsp_responseCode = nr, rsp_data = toString data}
+	ws 		= (<+?> (satisfy isSpace))
+	skipTo t = (<*?> (satisfy ((<>)t)))
+	endl 	= token ['\r\n']
+	headerText = (<*?> (satisfy (\c. c <> ':' && c <> '\r')))
 	defaultResponse = { rsp_headers = newMap, rsp_responseCode = 0, rsp_data = "" }

@@ -1,3 +1,3 @@
 definition module Token
 
-runAgents :: *World -> *World
+runAgent :: Int Int *World -> *World

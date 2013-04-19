@@ -1,57 +1,15 @@
 .comp 920 000111010
 .start _nostart_
-.depend "Shared" "20130225161816"
-.depend "OS" "20130225161913"
-.depend "OSError" "20130225161913"
-.depend "File" "20130225161913"
-.depend "TCPStringChannelsInternal" "20130222144316"
-.depend "TCPStringChannels" "20130222144316"
-.depend "TCPEvent" "20130222144316"
-.depend "tcp_bytestreams" "20130222144316"
-.depend "TCPDef" "20130222144316"
-.depend "TCPChannels" "20130225161829"
-.depend "tcp" "20130222144316"
-.depend "TCPChannelClass" "20130222144316"
-.depend "TCPIP" "20130222144316"
-.depend "HttpServer" "20130418143907"
-.depend "_SharedDataSourceTypes" "20130225161916"
-.depend "Error" "20130225161916"
-.depend "SharedDataSource" "20130225161916"
-.depend "GenRecord" "20130225161816"
-.depend "iTaskClass" "20130225161816"
-.depend "TaskState" "20130411121712"
-.depend "LayoutCombinators" "20130311153144"
-.depend "GenVerify" "20130225161816"
-.depend "GenUpdate" "20130416101727"
-.depend "Either" "20130225161916"
-.depend "HTML" "20130225161915"
-.depend "GenVisualize" "20130412160727"
-.depend "HTTP" "20130225161915"
-.depend "Task" "20130417153220"
-.depend "UIDefinition" "20130412160814"
-.depend "Void" "20130225161916"
-.depend "FilePath" "20130319171155"
-.depend "IWorld" "20130418143908"
-.depend "Time" "20130225161913"
-.depend "Store" "20130311130302"
-.depend "JSON" "20130311130303"
-.depend "StdGeneric" "20130311130302"
-.depend "GenEq" "20130311130302"
-.depend "SystemTypes" "20130412155741"
-.depend "Monad" "20130225161825"
-.depend "TaskRep" "20130417142850"
-.depend "Map" "20130225161916"
 .depend "_SystemEnum" "20130222144314"
 .depend "StdEnum" "20130222144313"
 .depend "StdMisc" "20130222144313"
-.depend "StdFunc" "20130222144313"
+.depend "StdFunc" "20130419102602"
 .depend "StdCharList" "20130222144313"
 .depend "StdTuple" "20130222144314"
 .depend "StdOrdList" "20130222144313"
 .depend "StdList" "20130222144313"
 .depend "StdClass" "20130222144313"
 .depend "StdFile" "20130222144313"
-.depend "StdString" "20130222144314"
 .depend "_SystemArray" "20130222144314"
 .depend "StdArray" "20130222144313"
 .depend "StdChar" "20130222144313"
@@ -59,13 +17,17 @@
 .depend "StdInt" "20130222144313"
 .depend "StdBool" "20130222144313"
 .depend "StdEnv" "20130222144313"
-.depend "Functor" "20130308112748"
-.depend "Maybe" "20130225161916"
-.depend "StdMaybe" "20130225161819"
+.depend "TaskRep" "20130417142850"
+.depend "StdString" "20130222144314"
+.depend "StdGeneric" "20130311130302"
+.depend "JSON" "20130311130303"
+.depend "Void" "20130419101442"
+.depend "Functor" "20130419101441"
 .depend "StdOverloaded" "20130222144313"
-.depend "_SystemDynamic" "20130311130303"
-.depend "Agent" "20130418154205"
-.module m_Agent "Agent" "20130418154250"
+.depend "Maybe" "20130419101442"
+.depend "Monad" "20130419102451"
+.depend "Agent" "20130419133330"
+.module m_Agent "Agent" "20130419133640"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -100,12 +62,43 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
+.implab e_StdList_sfilter
+.implab e_StdString_s==;2
+.implab e_StdString_stoString;5
+.implab e_StdString_s+++;11
 .impdesc e_JSON_dtoJSON
 .implab e_JSON_ntoJSON e_JSON_eatoJSON
 .implab e_JSON_sfromJSON
-.implab e_StdList_sfilter
-.implab e_StdString_s==;2
 .implab e_Maybe_sfromJust
+.export e_Agent_kTaskId
+.record e_Agent_kTaskId dii 0 2 "TaskId"
+.export e_Agent_eaTaskId
+.descexp e_Agent_dTaskId e_Agent_nTaskId e_Agent_lTaskId 2 0 "TaskId"
+.a 2 e_Agent_eaTaskId
+.o 2 0
+e_Agent_lTaskId
+	push_args 0 1 1
+	update_a 2 1
+	create
+	update_a 0 3
+	pop_a 1
+.d 3 0
+	jmp e_Agent_eaTaskId
+.n 2 e_Agent_dTaskId e_Agent_eaTaskId
+.o 1 0
+e_Agent_nTaskId
+	push_node _cycle_in_spine 2
+.o 3 0
+e_Agent_eaTaskId
+	jsr_eval 1
+	jsr_eval 0
+	pushI_a 1
+	pushI_a 0
+	pop_a 2
+	fill_r e_Agent_kTaskId 0 2 0 0 0
+	pop_b 2
+.d 1 0
+	rtn
 .export e_Agent_rAgent
 .record e_Agent_rAgent aaa 3 0 "Agent"
 .export e_Agent_dAgent.id
@@ -149,6 +142,8 @@ e_Agent_nAgent.initial
 	pop_a 1
 .d 1 0
 	rtn
+.export e_Agent_dPattern
+.desc e_Agent_dPattern _hnf _add_arg 1 0 "Pattern"
 .export e_Agent_rAgentTask
 .record e_Agent_rAgentTask aaaaa 5 0 "AgentTask"
 .export e_Agent_dAgentTask.taskId
@@ -224,131 +219,55 @@ e_Agent_nAgentTask.enabled
 .desc e_Agent_dActAction _hnf _add_arg 2 0 "ActAction"
 .export e_Agent_dWaitAction
 .desc e_Agent_dWaitAction _hnf _add_arg 2 0 "WaitAction"
-.export e_Agent_dPattern
-.desc e_Agent_dPattern _hnf _add_arg 1 0 "Pattern"
-.export e_Agent_sTD;Pattern
-.export e_Agent_eaTD;Pattern
-.descexp e_Agent_dTD;Pattern e_Agent_nTD;Pattern e_Agent_lTD;Pattern 1 0 "TD;Pattern"
+.export e_Agent_stoString;12
+.descexp e_Agent_dtoString;12 e_Agent_ntoString;12 e_Agent_ltoString;12 1 0 "toString;12"
 .o 2 0
-e_Agent_lTD;Pattern
-	update_a 1 0
-	create
-	update_a 0 2
+e_Agent_ltoString;12
 	pop_a 1
-.d 2 0
-	jmp e_Agent_eaTD;Pattern
-.n 1 e_Agent_dTD;Pattern e_Agent_eaTD;Pattern
+.d 1 0
+	jsr ea13
 .o 1 0
-e_Agent_nTD;Pattern
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.n 1 e_Agent_dtoString;12
+.o 1 0
+e_Agent_ntoString;12
 	push_node _cycle_in_spine 1
-.o 2 0
-e_Agent_eaTD;Pattern
-.o 2 0
-e_Agent_sTD;Pattern
-.o 2 0
-s19
-	fillh _Nil 0 1
+.d 1 0
+	jsr ea13
+.o 1 0
+	push_a 0
+	fillh ARRAY 1 2
 	pop_a 1
 .d 1 0
 	rtn
-.export e_Agent_sTD;AgentAction
-.export e_Agent_eaTD;AgentAction
-.descexp e_Agent_dTD;AgentAction e_Agent_nTD;AgentAction e_Agent_lTD;AgentAction 1 0 "TD;AgentAction"
-.o 2 0
-e_Agent_lTD;AgentAction
-	update_a 1 0
-	create
-	update_a 0 2
-	pop_a 1
-.d 2 0
-	jmp e_Agent_eaTD;AgentAction
-.n 1 e_Agent_dTD;AgentAction e_Agent_eaTD;AgentAction
 .o 1 0
-e_Agent_nTD;AgentAction
-	push_node _cycle_in_spine 1
-.o 2 0
-e_Agent_eaTD;AgentAction
-.o 2 0
-e_Agent_sTD;AgentAction
-.o 2 0
-s18
-	fillh _Nil 0 1
-	pop_a 1
-.d 1 0
-	rtn
-.export e_Agent_sTD;AgentTask
-.export e_Agent_eaTD;AgentTask
-.descexp e_Agent_dTD;AgentTask e_Agent_nTD;AgentTask e_Agent_lTD;AgentTask 1 0 "TD;AgentTask"
-.o 2 0
-e_Agent_lTD;AgentTask
-	update_a 1 0
-	create
-	update_a 0 2
-	pop_a 1
-.d 2 0
-	jmp e_Agent_eaTD;AgentTask
-.n 1 e_Agent_dTD;AgentTask e_Agent_eaTD;AgentTask
+ea13
+	jsr_eval 0
 .o 1 0
-e_Agent_nTD;AgentTask
-	push_node _cycle_in_spine 1
-.o 2 0
-e_Agent_eaTD;AgentTask
-.o 2 0
-e_Agent_sTD;AgentTask
-.o 2 0
-s17
-	fillh _Nil 0 1
-	pop_a 1
-.d 1 0
-	rtn
-.export e_Agent_sTD;AgentActivity
-.export e_Agent_eaTD;AgentActivity
-.descexp e_Agent_dTD;AgentActivity e_Agent_nTD;AgentActivity e_Agent_lTD;AgentActivity 1 0 "TD;AgentActivity"
-.o 2 0
-e_Agent_lTD;AgentActivity
-	update_a 1 0
-	create
-	update_a 0 2
-	pop_a 1
-.d 2 0
-	jmp e_Agent_eaTD;AgentActivity
-.n 1 e_Agent_dTD;AgentActivity e_Agent_eaTD;AgentActivity
+e_Agent_stoString;12
 .o 1 0
-e_Agent_nTD;AgentActivity
-	push_node _cycle_in_spine 1
-.o 2 0
-e_Agent_eaTD;AgentActivity
-.o 2 0
-e_Agent_sTD;AgentActivity
-.o 2 0
-s16
-	fillh _Nil 0 1
-	pop_a 1
-.d 1 0
-	rtn
-.export e_Agent_sTD;Agent
-.export e_Agent_eaTD;Agent
-.descexp e_Agent_dTD;Agent e_Agent_nTD;Agent e_Agent_lTD;Agent 1 0 "TD;Agent"
-.o 2 0
-e_Agent_lTD;Agent
-	update_a 1 0
-	create
-	update_a 0 2
-	pop_a 1
-.d 2 0
-	jmp e_Agent_eaTD;Agent
-.n 1 e_Agent_dTD;Agent e_Agent_eaTD;Agent
+s13
+	repl_r_args 0 2
+	push_b 1
+.d 0 1 i
+	jsr ItoAC
 .o 1 0
-e_Agent_nTD;Agent
-	push_node _cycle_in_spine 1
-.o 2 0
-e_Agent_eaTD;Agent
-.o 2 0
-e_Agent_sTD;Agent
-.o 2 0
-s15
-	fillh _Nil 0 1
-	pop_a 1
+	buildAC "-"
+.d 2 0
+	jsr catAC
+.o 1 0
+	push_b 0
+	updatepop_b 0 2
+.d 0 1 i
+	jsr ItoAC
+.o 1 0
+.d 2 0
+	jsr catAC
+.o 1 0
 .d 1 0
 	rtn
 .export e_Agent_swait
@@ -538,9 +457,9 @@ s8
 	update_a 1 7
 	updatepop_a 0 6
 .d 2 0
-	jmp s39
+	jmp s34
 .o 2 0
-s39
+s34
 	create
 	push_a 2
 	push_a 2
@@ -548,12 +467,12 @@ s39
 	update_a 1 3
 	updatepop_a 0 2
 .d 3 0
-	jsr s38
+	jsr s33
 .o 1 0
 .d 1 0
 	jmp e_Maybe_sfromJust
 .o 3 0
-s38
+s33
 	push_a 1
 	update_a 1 2
 	updatepop_a 0 1
@@ -583,81 +502,19 @@ e_Agent_l<|>
 e_Agent_n<|>
 	push_node _cycle_in_spine 2
 .o 3 0
-e_Agent_ea<|>
-.o 3 0
 e_Agent_s<|>
 .o 3 0
-s7
-	push_a 0
-	push_a 2
-	fillh d29 2 4
-	pop_a 2
-.d 1 0
-	rtn
-.desc d29 _hnf l29 4 0 "<lambda>[line:40];17;28"
-.a 4 ea29
-.o 2 0
-l29
-	push_args 0 3 3
-	update_a 4 3
-	create
-	update_a 0 5
-	pop_a 1
-.o 5 0
-ea29
+e_Agent_ea<|>
 	jsr_eval 1
-.o 5 0
-s29
-	push_a 3
-	push_a 3
-	push_a 3
-	update_a 3 4
-	update_a 2 3
-	update_a 1 2
-	updatepop_a 0 1
-	jsr_ap 2
-	push_a 3
-	push_a 3
-	push_a 3
-	push_a 3
-	update_a 3 4
-	update_a 2 3
-	update_a 1 2
-	update_a 0 1
-	pop_a 1
-	update_a 3 6
-	update_a 2 5
-	update_a 1 4
-	updatepop_a 0 3
-.d 5 0
-	jmp s44
-.o 5 0
-s44
-	eq_desc e_Maybe_dNothing 0 0
-	jmp_true case.1
-	jmp case.2
-case.1
-	push_a 3
-	push_a 2
 	jsr_eval 0
-	push_a 4
+.o 3 0
+s7
 	push_a 1
-	update_a 1 2
-	update_a 0 1
-	pop_a 1
-	update_a 2 6
-	update_a 1 5
-	updatepop_a 0 4
-	jsr_ap 2
-	fill_a 0 1
-	pop_a 1
-.d 1 0
-	rtn
-case.2
-	fill_a 0 4
-	pop_a 4
-.d 1 0
-	rtn
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 3 0
+	jmp s3
 .export e_Agent_s==>
 .export e_Agent_ea==>
 .descexp e_Agent_d==> e_Agent_n==> e_Agent_l==> 2 0 "==>"
@@ -685,24 +542,25 @@ s6
 	repl_args 1 1
 	push_a 0
 	push_a 2
-	fillh d28 2 4
+	buildh d24 2
+	fillh e_Agent_dPattern 1 3
 	pop_a 2
 .d 1 0
 	rtn
-.desc d28 _hnf l28 4 0 "<lambda>[line:35];24;27"
-.a 4 ea28
+.desc d24 _hnf l24 4 0 "<lambda>[line:35];33;23"
+.a 4 ea24
 .o 2 0
-l28
+l24
 	push_args 0 3 3
 	update_a 4 3
 	create
 	update_a 0 5
 	pop_a 1
 .o 5 0
-ea28
+ea24
 	jsr_eval 1
 .o 5 0
-s28
+s24
 	push_a 3
 	push_a 3
 	push_a 3
@@ -723,35 +581,35 @@ s28
 	update_a 1 3
 	updatepop_a 0 2
 .d 4 0
-	jmp s43
+	jmp s38
 .o 4 0
-s43
+s38
 	eq_desc e_Maybe_dJust 1 0
-	jmp_true case.3
-	jmp case.4
-case.3
+	jmp_true case.1
+	jmp case.2
+case.1
 	repl_args 1 1
 	push_a 2
 	push_a 1
 	push_a 3
-	build _ 3 n201
+	build _ 3 n89
 	fillh e_Maybe_dJust 1 4
 	pop_a 3
 .d 1 0
 	rtn
-case.4
+case.2
 	fillh e_Maybe_dNothing 0 3
 	pop_a 3
 .d 1 0
 	rtn
-.n 3 _ ea201
+.n 3 _ ea89
 .o 1 0
-n201
+n89
 	push_node _cycle_in_spine 3
 .o 4 0
-ea201
+ea89
 .o 4 0
-s201
+s89
 	push_a 2
 	push_a 1
 	jsr_eval 0
@@ -790,27 +648,27 @@ e_Agent_stask
 .o 2 0
 s5
 	push_a 0
-	buildh d27 1
+	buildh d23 1
 	fillh e_Agent_dPattern 1 2
 	pop_a 1
 .d 1 0
 	rtn
-.desc d27 _hnf l27 3 0 "<lambda>[line:30];21;26"
-.a 3 ea27
+.desc d23 _hnf l23 3 0 "<lambda>[line:30];21;22"
+.a 3 ea23
 .o 2 0
-l27
+l23
 	push_args 0 2 2
 	update_a 3 2
 	create
 	update_a 0 4
 	pop_a 1
 .o 4 0
-ea27
+ea23
 	jsr_eval 2
 .o 4 0
-s27
+s23
 	push_a 0
-	buildh d26 1
+	buildh d22 1
 	create
 	push_a 4
 	push_a 2
@@ -825,18 +683,18 @@ s27
 	jsr e_StdList_sfilter
 .o 1 0
 .d 2 0
-	jmp s42
+	jmp s37
 .o 2 0
-s42
+s37
 	eq_desc _Nil 0 0
-	jmp_true case.5
-	jmp case.6
-case.5
+	jmp_true case.3
+	jmp case.4
+case.3
 	fillh e_Maybe_dNothing 0 1
 	pop_a 1
 .d 1 0
 	rtn
-case.6
+case.4
 	repl_args 2 2
 	update_a 0 1
 	pop_a 1
@@ -845,22 +703,22 @@ case.6
 	pop_a 1
 .d 1 0
 	rtn
-.desc d26 _hnf l26 2 0 "<lambda>[line:30];42;25"
-.a 0 a26
+.desc d22 _hnf l22 2 0 "<lambda>[line:30];42;21"
+.a 0 a22
 .o 2 0
-l26
+l22
 	repl_args 1 1
 .o 2 0
-a26
+a22
 .d 2 0
-	jsr ea26
+	jsr ea22
 .o 0 1 b
 	buildB_b 0
 	pop_b 1
 .d 1 0
 	rtn
 .o 2 0
-ea26
+ea22
 	jsr_eval 1
 	jsr_eval 0
 	push_r_args 1 5 0
@@ -873,7 +731,7 @@ ea26
 	update_a 0 2
 	pop_a 2
 .o 6 0
-s26
+s22
 	push_a 2
 	jsr_eval 0
 	push_array 0
@@ -915,29 +773,29 @@ e_Agent_s-|-
 s4
 	push_a 0
 	push_a 2
-	buildh d25 2
+	buildh d21 2
 	fillh e_Agent_dPattern 1 3
 	pop_a 2
 .d 1 0
 	rtn
-.desc d25 _hnf l25 4 0 "<lambda>[line:27];23;24"
-.a 4 ea25
+.desc d21 _hnf l21 4 0 "<lambda>[line:27];23;20"
+.a 4 ea21
 .o 2 0
-l25
+l21
 	push_args 0 3 3
 	update_a 4 3
 	create
 	update_a 0 5
 	pop_a 1
 .o 5 0
-ea25
+ea21
 	jsr_eval 1
 .o 5 0
-s25
+s21
 	push_a 3
 	push_a 3
 	push_a 2
-	buildh d24 2
+	buildh d20 2
 	create
 	push_a 4
 	push_a 2
@@ -950,7 +808,7 @@ s25
 	update_a 0 8
 	pop_a 1
 .d 3 0
-	jsr s13
+	jsr s14
 .o 1 0
 	repl_args 1 1
 	jsr_eval 0
@@ -967,20 +825,20 @@ s25
 	pop_a 1
 .d 1 0
 	rtn
-.desc d24 _hnf l24 3 0 "<lambda>[line:27];56;23"
-.a 3 ea24
+.desc d20 _hnf l20 3 0 "<lambda>[line:27];56;19"
+.a 3 ea20
 .o 2 0
-l24
+l20
 	push_args 0 2 2
 	update_a 3 2
 	create
 	update_a 0 4
 	pop_a 1
 .o 4 0
-ea24
+ea20
 	jsr_eval 0
 .o 4 0
-s24
+s20
 	push_a 1
 	push_a 3
 	push_a 2
@@ -990,12 +848,12 @@ s24
 	jsr_ap 2
 	pushB_a 0
 	pop_a 1
-	jmp_false else.7
+	jmp_false else.5
 	push_a 0
 	updatepop_a 0 1
 .d 2 0
-	jmp s14
-else.7
+	jmp s15
+else.5
 	pop_a 1
 .d 1 0
 	jmp s1
@@ -1031,25 +889,25 @@ s3
 	pop_a 1
 	push_a 1
 	push_a 1
-	buildh d23 2
+	buildh d19 2
 	fillh e_Agent_dPattern 1 4
 	pop_a 3
 .d 1 0
 	rtn
-.desc d23 _hnf l23 4 0 "<lambda>[line:22];45;22"
-.a 4 ea23
+.desc d19 _hnf l19 4 0 "<lambda>[line:22];45;18"
+.a 4 ea19
 .o 2 0
-l23
+l19
 	push_args 0 3 3
 	update_a 4 3
 	create
 	update_a 0 5
 	pop_a 1
 .o 5 0
-ea23
+ea19
 	jsr_eval 1
 .o 5 0
-s23
+s19
 	push_a 3
 	push_a 3
 	push_a 3
@@ -1072,13 +930,13 @@ s23
 	update_a 1 4
 	updatepop_a 0 3
 .d 5 0
-	jmp s41
+	jmp s36
 .o 5 0
-s41
+s36
 	eq_desc e_Maybe_dNothing 0 0
-	jmp_true case.8
-	jmp case.9
-case.8
+	jmp_true case.6
+	jmp case.7
+case.6
 	push_a 3
 	push_a 2
 	jsr_eval 0
@@ -1095,7 +953,7 @@ case.8
 	pop_a 1
 .d 1 0
 	rtn
-case.9
+case.7
 	fill_a 0 4
 	pop_a 4
 .d 1 0
@@ -1125,143 +983,143 @@ e_Agent_ea-&&-
 .o 3 0
 s2
 	push_a 1
-	buildh d34 1
+	buildh d29 1
 	push_a 1
 	update_a 1 3
 	updatepop_a 0 2
 .d 3 0
-	jmp s13
-.desc d34 _hnf l34 2 0 "<lambda>[line:19];23;565"
-.a 2 ea34
+	jmp s14
+.desc d29 _hnf l29 2 0 "<lambda>[line:19];23;68"
+.a 2 ea29
 .o 2 0
-l34
+l29
 	push_args 0 1 1
 	update_a 2 1
 	create
 	update_a 0 3
 	pop_a 1
 .o 3 0
-ea34
+ea29
 	jsr_eval 0
 .o 3 0
-s34
+s29
 	push_a 1
-	buildh d35 1
+	buildh d30 1
 	push_a 1
 	update_a 1 3
 	updatepop_a 0 2
 .d 3 0
-	jmp s13
-.desc d35 _hnf l35 2 0 "<lambda>[line:19];34;566"
-.a 2 ea35
+	jmp s14
+.desc d30 _hnf l30 2 0 "<lambda>[line:19];34;69"
+.a 2 ea30
 .o 2 0
-l35
+l30
 	push_args 0 1 1
 	update_a 2 1
 	create
 	update_a 0 3
 	pop_a 1
 .o 3 0
-ea35
+ea30
 .o 3 0
-s35
+s30
 	push_a 1
 	push_a 1
 	buildh _Tuple 2
 	updatepop_a 0 2
 .d 2 0
-	jmp s14
-.export e_Agent_sret;13
-.export e_Agent_earet;13
-.descexp e_Agent_dret;13 e_Agent_nret;13 e_Agent_lret;13 1 0 "ret;13"
+	jmp s15
+.export e_Agent_sreturn;14
+.export e_Agent_eareturn;14
+.descexp e_Agent_dreturn;14 e_Agent_nreturn;14 e_Agent_lreturn;14 1 0 "return;14"
 .o 2 0
-e_Agent_lret;13
+e_Agent_lreturn;14
 	update_a 1 0
 	create
 	update_a 0 2
 	pop_a 1
 .d 2 0
-	jmp e_Agent_earet;13
-.n 1 e_Agent_dret;13 e_Agent_earet;13
+	jmp e_Agent_eareturn;14
+.n 1 e_Agent_dreturn;14 e_Agent_eareturn;14
 .o 1 0
-e_Agent_nret;13
+e_Agent_nreturn;14
 	push_node _cycle_in_spine 1
 .o 2 0
-e_Agent_earet;13
+e_Agent_eareturn;14
 .o 2 0
-e_Agent_sret;13
+e_Agent_sreturn;14
 .o 2 0
-s14
+s15
 	push_a 0
-	buildh d30 1
+	buildh d25 1
 	fillh e_Agent_dPattern 1 2
 	pop_a 1
 .d 1 0
 	rtn
-.desc d30 _hnf l30 3 0 "<lambda>[line:8];22;29"
-.a 3 ea30
+.desc d25 _hnf l25 3 0 "<lambda>[line:8];25;24"
+.a 3 ea25
 .o 2 0
-l30
+l25
 	push_args 0 2 2
 	update_a 3 2
 	create
 	update_a 0 4
 	pop_a 1
 .o 4 0
-ea30
+ea25
 .o 4 0
-s30
+s25
 	push_a 0
 	fillh e_Maybe_dJust 1 4
 	pop_a 3
 .d 1 0
 	rtn
-.export e_Agent_s>>>;12
-.export e_Agent_ea>>>;12
-.descexp e_Agent_d>>>;12 e_Agent_n>>>;12 e_Agent_l>>>;12 2 0 ">>>;12"
-.a 2 e_Agent_ea>>>;12
+.export e_Agent_s>>=;13
+.export e_Agent_ea>>=;13
+.descexp e_Agent_d>>=;13 e_Agent_n>>=;13 e_Agent_l>>=;13 2 0 ">>=;13"
+.a 2 e_Agent_ea>>=;13
 .o 2 0
-e_Agent_l>>>;12
+e_Agent_l>>=;13
 	push_args 0 1 1
 	update_a 2 1
 	create
 	update_a 0 3
 	pop_a 1
 .d 3 0
-	jmp e_Agent_ea>>>;12
-.n 2 e_Agent_d>>>;12 e_Agent_ea>>>;12
+	jmp e_Agent_ea>>=;13
+.n 2 e_Agent_d>>=;13 e_Agent_ea>>=;13
 .o 1 0
-e_Agent_n>>>;12
+e_Agent_n>>=;13
 	push_node _cycle_in_spine 2
 .o 3 0
-e_Agent_s>>>;12
+e_Agent_s>>=;13
 .o 3 0
-e_Agent_ea>>>;12
+e_Agent_ea>>=;13
 	jsr_eval 0
 .o 3 0
-s13
+s14
 	repl_args 1 1
 	push_a 0
 	push_a 2
-	buildh d31 2
+	buildh d26 2
 	fillh e_Agent_dPattern 1 3
 	pop_a 2
 .d 1 0
 	rtn
-.desc d31 _hnf l31 4 0 "<lambda>[line:11];37;30"
-.a 4 ea31
+.desc d26 _hnf l26 4 0 "<lambda>[line:11];37;25"
+.a 4 ea26
 .o 2 0
-l31
+l26
 	push_args 0 3 3
 	update_a 4 3
 	create
 	update_a 0 5
 	pop_a 1
 .o 5 0
-ea31
+ea26
 	jsr_eval 1
 .o 5 0
-s31
+s26
 	push_a 3
 	push_a 3
 	push_a 3
@@ -1284,13 +1142,13 @@ s31
 	update_a 1 4
 	updatepop_a 0 3
 .d 5 0
-	jmp s40
+	jmp s35
 .o 5 0
-s40
+s35
 	eq_desc e_Maybe_dJust 1 0
-	jmp_true case.10
-	jmp case.11
-case.10
+	jmp_true case.8
+	jmp case.9
+case.8
 	repl_args 1 1
 	push_a 3
 	push_a 2
@@ -1321,7 +1179,7 @@ case.10
 	pop_a 1
 .d 1 0
 	rtn
-case.11
+case.9
 	fillh e_Maybe_dNothing 0 4
 	pop_a 4
 .d 1 0
@@ -1342,23 +1200,23 @@ e_Agent_eanil
 e_Agent_snil
 .o 1 0
 s1
-	buildh d20 0
+	buildh d16 0
 	fillh e_Agent_dPattern 1 1
 .d 1 0
 	rtn
-.desc d20 _hnf l20 2 0 "<lambda>[line:16];16;19"
-.a 2 ea20
+.desc d16 _hnf l16 2 0 "<lambda>[line:16];16;15"
+.a 2 ea16
 .o 2 0
-l20
+l16
 	push_args 0 1 1
 	update_a 2 1
 	create
 	update_a 0 3
 	pop_a 1
 .o 3 0
-ea20
+ea16
 .o 3 0
-s20
+s16
 	fillh e_Maybe_dNothing 0 2
 	pop_a 2
 .d 1 0

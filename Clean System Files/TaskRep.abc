@@ -1,7 +1,5 @@
 .comp 920 000111010
 .start _nostart_
-.depend "StdOverloaded" "20130222144313"
-.depend "_SystemDynamic" "20130311130303"
 .depend "TaskRep" "20130417142850"
 .module m_TaskRep "TaskRep" "20130417143051"
 .endinfo

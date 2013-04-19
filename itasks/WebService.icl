@@ -103,7 +103,7 @@ webService task defaultFormat req iworld=:{IWorld|timestamp,application}
 			# (mbResult,iworld)	= case sessionParam of
 				""	= createSessionTaskInstance (task req) RefreshEvent iworld
 				sessionId
-					= (evalSessionTaskInstance sessionId event iworld)
+					= trace_n (actionEventParam) (evalSessionTaskInstance sessionId event iworld)
 			= case mbResult of
 				Ok (ExceptionResult _ err,_,_)
 					= (errorResponse err, iworld)

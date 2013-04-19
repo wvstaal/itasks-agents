@@ -1,75 +1,46 @@
 .comp 920 000111010
 .start __Test_Start
-.depend "Token" "20130418155732"
-.depend "WebServiceInterface" "20130418102410"
-.depend "AgentController" "20130418114446"
-.depend "Shared" "20130225161816"
-.depend "OS" "20130225161913"
-.depend "OSError" "20130225161913"
-.depend "File" "20130225161913"
-.depend "TCPStringChannelsInternal" "20130222144316"
-.depend "TCPStringChannels" "20130222144316"
-.depend "TCPEvent" "20130222144316"
-.depend "tcp_bytestreams" "20130222144316"
-.depend "TCPDef" "20130222144316"
-.depend "TCPChannels" "20130225161829"
-.depend "tcp" "20130222144316"
-.depend "TCPChannelClass" "20130222144316"
-.depend "TCPIP" "20130222144316"
-.depend "HttpServer" "20130418143907"
-.depend "_SharedDataSourceTypes" "20130225161916"
-.depend "Error" "20130225161916"
-.depend "SharedDataSource" "20130225161916"
-.depend "GenRecord" "20130225161816"
-.depend "iTaskClass" "20130225161816"
-.depend "TaskState" "20130411121712"
-.depend "LayoutCombinators" "20130311153144"
-.depend "GenVerify" "20130225161816"
-.depend "GenUpdate" "20130416101727"
-.depend "Either" "20130225161916"
-.depend "HTML" "20130225161915"
-.depend "GenVisualize" "20130412160727"
-.depend "HTTP" "20130225161915"
-.depend "Task" "20130417153220"
-.depend "UIDefinition" "20130412160814"
-.depend "Void" "20130225161916"
-.depend "FilePath" "20130319171155"
-.depend "IWorld" "20130418143908"
-.depend "Time" "20130225161913"
-.depend "Store" "20130311130302"
-.depend "JSON" "20130311130303"
-.depend "StdGeneric" "20130311130302"
-.depend "GenEq" "20130311130302"
-.depend "SystemTypes" "20130412155741"
-.depend "Agent" "20130418154205"
-.depend "Monad" "20130225161825"
-.depend "TaskRep" "20130417142850"
-.depend "Map" "20130225161916"
-.depend "HttpClient" "20130418134120"
 .depend "_SystemEnum" "20130222144314"
 .depend "StdEnum" "20130222144313"
 .depend "StdMisc" "20130222144313"
-.depend "StdFunc" "20130222144313"
+.depend "StdFunc" "20130419102602"
 .depend "StdCharList" "20130222144313"
 .depend "StdTuple" "20130222144314"
 .depend "StdOrdList" "20130222144313"
 .depend "StdList" "20130222144313"
-.depend "StdClass" "20130222144313"
 .depend "StdFile" "20130222144313"
-.depend "StdString" "20130222144314"
 .depend "_SystemArray" "20130222144314"
 .depend "StdArray" "20130222144313"
 .depend "StdChar" "20130222144313"
 .depend "StdReal" "20130222144314"
 .depend "StdInt" "20130222144313"
-.depend "StdBool" "20130222144313"
 .depend "StdEnv" "20130222144313"
-.depend "Functor" "20130308112748"
-.depend "Maybe" "20130225161916"
-.depend "StdMaybe" "20130225161819"
+.depend "Date" "20130419110418"
+.depend "FilePath" "20130419101440"
+.depend "Error" "20130419101442"
+.depend "OSError" "20130419101438"
+.depend "Either" "20130419101441"
+.depend "Process" "20130419101438"
+.depend "ArgEnv" "20130222144301"
+.depend "Token" "20130418201053"
+.depend "WebServiceInterface" "20130419132430"
+.depend "Time" "20130419101438"
+.depend "AgentController" "20130419132944"
+.depend "StdGeneric" "20130311130302"
+.depend "JSON" "20130311130303"
+.depend "Agent" "20130419133330"
+.depend "Void" "20130419101442"
+.depend "Monad" "20130419102451"
+.depend "TaskRep" "20130417142850"
+.depend "StdString" "20130222144314"
+.depend "StdBool" "20130222144313"
+.depend "StdClass" "20130222144313"
+.depend "Map" "20130419101442"
+.depend "HttpClient" "20130419105112"
+.depend "Functor" "20130419101441"
 .depend "StdOverloaded" "20130222144313"
-.depend "_SystemDynamic" "20130311130303"
-.module m_Test "Test" "20130418155720"
+.depend "Maybe" "20130419101442"
+.module m_Test "Test" "20130419114515"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -104,11 +75,32 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
-.impdesc e_Token_drunAgents
-.record r25 a 1 0 "CoordinatorState"
-.desc d166 _hnf _add_arg 1 0 "Test"
-.record r28 a 1 0 "JSONEncode_s;"
-.record r34 a 1 0 "JSONDecode_s;"
+.impdesc e__SystemEnum_d_from_to;6
+.implab e__SystemEnum_s_from_to;6
+.implab e__SystemEnum_n_from_to;6 e__SystemEnum_ea_from_to;6
+.impdesc e_StdList_d!!
+.implab e_StdList_s!!
+.implab e_StdList_n!! _
+.impdesc e_StdList_d++
+.implab e_StdList_n++ e_StdList_ea++
+.implab e_StdList_szip2
+.implab e_StdList_slength;47
+.implab e_StdInt_s+;6
+.implab e_StdInt_s-;7
+.implab e_StdInt_sone;11
+.implab e_StdInt_s==;16
+.implab e_StdInt_s<;17
+.implab e_StdInt_stoInt;23
+.implab e_Process_srunProcess
+.implab e_ArgEnv_sgetCommandLine
+.implab e_Token_srunAgent
+.impdesc e_StdString_dtoString;5
+.implab e_StdString_ntoString;5
+.implab e_StdBool_snot
+.record r31 a 1 0 "CoordinatorState"
+.desc d64 _hnf _add_arg 1 0 "Test"
+.record r34 a 1 0 "JSONEncode_s;"
+.record r46 a 1 0 "JSONDecode_s;"
 .export __Test_Start
 .o 0 0
 __Test_Start
@@ -116,56 +108,6 @@ __Test_Start
 	build _ 1 n8
 .d 1 0
 	jmp _driver
-.export e_Test_sTD;Test
-.export e_Test_eaTD;Test
-.descexp e_Test_dTD;Test e_Test_nTD;Test e_Test_lTD;Test 1 0 "TD;Test"
-.o 2 0
-e_Test_lTD;Test
-	update_a 1 0
-	create
-	update_a 0 2
-	pop_a 1
-.d 2 0
-	jmp e_Test_eaTD;Test
-.n 1 e_Test_dTD;Test e_Test_eaTD;Test
-.o 1 0
-e_Test_nTD;Test
-	push_node _cycle_in_spine 1
-.o 2 0
-e_Test_eaTD;Test
-.o 2 0
-e_Test_sTD;Test
-.o 2 0
-s16
-	fillh _Nil 0 1
-	pop_a 1
-.d 1 0
-	rtn
-.export e_Test_sTD;CoordinatorState
-.export e_Test_eaTD;CoordinatorState
-.descexp e_Test_dTD;CoordinatorState e_Test_nTD;CoordinatorState e_Test_lTD;CoordinatorState 1 0 "TD;CoordinatorState"
-.o 2 0
-e_Test_lTD;CoordinatorState
-	update_a 1 0
-	create
-	update_a 0 2
-	pop_a 1
-.d 2 0
-	jmp e_Test_eaTD;CoordinatorState
-.n 1 e_Test_dTD;CoordinatorState e_Test_eaTD;CoordinatorState
-.o 1 0
-e_Test_nTD;CoordinatorState
-	push_node _cycle_in_spine 1
-.o 2 0
-e_Test_eaTD;CoordinatorState
-.o 2 0
-e_Test_sTD;CoordinatorState
-.o 2 0
-s15
-	fillh _Nil 0 1
-	pop_a 1
-.d 1 0
-	rtn
 .n 1 _ ea8
 .o 1 0
 n8
@@ -174,7 +116,252 @@ n8
 ea8
 .o 2 0
 s8
-	fillh e_Token_drunAgents 0 1
+.d 0 0
+	jsr e_ArgEnv_sgetCommandLine
+.o 1 0
+	push_a 0
+	push_arraysize _ 1 0
+	pushI 1
+	push_b 1
+	subI
+	create
+	push_a 1
+	buildh ARRAY 1
+	pushI 0
+	update_b 1 2
+	updatepop_b 0 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 2 ii
+	jsr s24
+.o 1 0
+	push_a 0
+.d 1 0
+	jsr e_StdList_slength;47
+.o 0 1 i
+	pushI 3
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	eqI
+	jmp_false else.1
+	push_a 0
+	build _ 1 n66
+	push_a 1
+	build _ 1 n65
+	push_a 3
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
 	pop_a 1
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp e_Token_srunAgent
+else.1
+	buildh _Nil 0
+	buildI 1
+	buildh _Cons 2
+	buildI 10
+	buildI 2
+	build e__SystemEnum_d_from_to;6 2 e__SystemEnum_n_from_to;6
+	build e_StdList_d++ 2 e_StdList_n++
+	create
+	pushI 10
+	pushI 1
+.d 1 2 ii
+	jsr e__SystemEnum_s_from_to;6
+.o 1 0
+	create
+	push_a 2
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
+	pop_a 1
+.d 3 0
+	jsr e_StdList_szip2
+.o 1 0
+	push_a 2
+	jsr_eval 0
+	buildI 0
+	push_a 3
+	build e_StdList_d!! 2 e_StdList_n!!
+	update_a 2 4
+	update_a 1 3
+	updatepop_a 0 2
+.d 4 0
+	jmp s27
+.n 1 _ ea66
+.o 1 0
+n66
+	push_node _cycle_in_spine 1
+.o 2 0
+ea66
+.o 2 0
+s66
+	pushI 2
+	push_a 0
+	updatepop_a 0 1
+.d 1 1 i
+	jsr e_StdList_s!!
+.o 1 0
+	push_array 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdInt_stoInt;23
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
 .d 1 0
 	rtn
+.n 1 _ ea65
+.o 1 0
+n65
+	push_node _cycle_in_spine 1
+.o 2 0
+ea65
+.o 2 0
+s65
+	pushI 1
+	push_a 0
+	updatepop_a 0 1
+.d 1 1 i
+	jsr e_StdList_s!!
+.o 1 0
+	push_array 0
+	updatepop_a 0 1
+.d 1 0
+	jsr e_StdInt_stoInt;23
+.o 0 1 i
+	fillI_b 0 0
+	pop_b 1
+.d 1 0
+	rtn
+.o 4 0
+s27
+	eq_desc _Nil 0 2
+	jmp_true case.2
+	jmp case.3
+case.2
+	fill_a 1 3
+	pop_a 3
+.d 1 0
+	rtn
+case.3
+	push_args 2 2 2
+	buildh _Nil 0
+	update_a 0 5
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 5
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	create
+	push_a 8
+	push_a 4
+	update_a 2 5
+	update_a 1 2
+	update_a 3 1
+	update_a 4 3
+	update_a 0 4
+	pop_a 1
+	buildh _Nil 0
+	update_a 0 10
+	update_a 0 7
+	update_a 0 8
+	pop_a 1
+.d 5 0
+	jsr s28
+.o 1 0
+	push_a 4
+	update_a 2 7
+	update_a 1 6
+	updatepop_a 0 5
+.d 4 0
+	jmp s27
+.o 5 0
+s28
+	buildh e_Maybe_dNothing 0
+	buildh _Nil 0
+	push_a 5
+	build _ 1 e_StdString_ntoString;5
+	buildh _Cons 2
+	push_a 4
+	build _ 1 e_StdString_ntoString;5
+	buildh _Cons 2
+	push_a 3
+	push_a 3
+	push_a 3
+	update_a 2 4
+	update_a 3 2
+	update_a 0 3
+	pop_a 1
+	update_a 3 7
+	update_a 2 6
+	update_a 1 5
+	updatepop_a 0 4
+.d 4 0
+	jsr e_Process_srunProcess
+.o 2 0
+	pop_a 1
+	jmp_eval_upd
+.o 2 2 ii
+s24
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.4
+	push_b 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 0
+	select _ 1 0
+	push_a 1
+	buildh ARRAY 1
+	push_a 0
+	push_b 1
+	push_b 1
+	build_u _ 1 2 n67
+	push_a 2
+	fillh _Cons 2 5
+	pop_a 3
+	pop_b 2
+.d 1 0
+	rtn
+else.4
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 2
+.d 1 0
+	rtn
+.nu 1 2 _ _
+.o 1 0
+n67
+	push_node_u _cycle_in_spine 1 2
+.o 2 2 ii
+ea67
+.o 2 2 ii
+s67
+	pushI 1
+	push_b 1
+	addI
+	push_a 0
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	updatepop_a 0 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 2 ii
+	jmp s24

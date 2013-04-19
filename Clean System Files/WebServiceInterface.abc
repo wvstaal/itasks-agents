@@ -1,76 +1,40 @@
 .comp 920 000111010
 .start _nostart_
-.depend "MersenneTwister" "20130222144303"
 .depend "StdDebug" "20130222144313"
-.depend "Sleep" "20130418095858"
-.depend "AgentController" "20130418114446"
-.depend "Shared" "20130225161816"
-.depend "OS" "20130225161913"
-.depend "OSError" "20130225161913"
-.depend "File" "20130225161913"
-.depend "TCPStringChannelsInternal" "20130222144316"
-.depend "TCPStringChannels" "20130222144316"
-.depend "TCPEvent" "20130222144316"
-.depend "tcp_bytestreams" "20130222144316"
-.depend "TCPDef" "20130222144316"
-.depend "TCPChannels" "20130225161829"
-.depend "tcp" "20130222144316"
-.depend "TCPChannelClass" "20130222144316"
-.depend "TCPIP" "20130222144316"
-.depend "HttpServer" "20130418143907"
-.depend "_SharedDataSourceTypes" "20130225161916"
-.depend "Error" "20130225161916"
-.depend "SharedDataSource" "20130225161916"
-.depend "GenRecord" "20130225161816"
-.depend "iTaskClass" "20130225161816"
-.depend "TaskState" "20130411121712"
-.depend "LayoutCombinators" "20130311153144"
-.depend "GenVerify" "20130225161816"
-.depend "GenUpdate" "20130416101727"
-.depend "Either" "20130225161916"
-.depend "HTML" "20130225161915"
-.depend "GenVisualize" "20130412160727"
-.depend "HTTP" "20130225161915"
-.depend "Task" "20130417153220"
-.depend "UIDefinition" "20130412160814"
-.depend "Void" "20130225161916"
-.depend "FilePath" "20130319171155"
-.depend "IWorld" "20130418143908"
-.depend "Time" "20130225161913"
-.depend "Store" "20130311130302"
-.depend "JSON" "20130311130303"
-.depend "StdGeneric" "20130311130302"
-.depend "GenEq" "20130311130302"
-.depend "SystemTypes" "20130412155741"
-.depend "Agent" "20130418154205"
-.depend "Monad" "20130225161825"
-.depend "Map" "20130225161916"
-.depend "HttpClient" "20130418134120"
 .depend "_SystemEnum" "20130222144314"
 .depend "StdEnum" "20130222144313"
 .depend "StdMisc" "20130222144313"
-.depend "StdFunc" "20130222144313"
+.depend "StdFunc" "20130419102602"
 .depend "StdCharList" "20130222144313"
 .depend "StdTuple" "20130222144314"
 .depend "StdOrdList" "20130222144313"
 .depend "StdList" "20130222144313"
-.depend "StdClass" "20130222144313"
 .depend "StdFile" "20130222144313"
-.depend "StdString" "20130222144314"
 .depend "_SystemArray" "20130222144314"
 .depend "StdArray" "20130222144313"
 .depend "StdChar" "20130222144313"
 .depend "StdReal" "20130222144314"
 .depend "StdInt" "20130222144313"
-.depend "StdBool" "20130222144313"
 .depend "StdEnv" "20130222144313"
-.depend "Functor" "20130308112748"
-.depend "Maybe" "20130225161916"
-.depend "StdMaybe" "20130225161819"
+.depend "StdBool" "20130222144313"
+.depend "StdClass" "20130222144313"
+.depend "Map" "20130419101442"
+.depend "HttpClient" "20130419105112"
+.depend "MersenneTwister" "20130222144303"
+.depend "Sleep" "20130418095858"
+.depend "Time" "20130419101438"
+.depend "StdString" "20130222144314"
+.depend "StdGeneric" "20130311130302"
+.depend "JSON" "20130311130303"
+.depend "Void" "20130419101442"
+.depend "Functor" "20130419101441"
 .depend "StdOverloaded" "20130222144313"
-.depend "_SystemDynamic" "20130311130303"
-.depend "WebServiceInterface" "20130418102410"
-.module m_WebServiceInterface "WebServiceInterface" "20130418142634"
+.depend "Maybe" "20130419101442"
+.depend "Monad" "20130419102451"
+.depend "Agent" "20130419133330"
+.depend "AgentController" "20130419132944"
+.depend "WebServiceInterface" "20130419132430"
+.module m_WebServiceInterface "WebServiceInterface" "20130419133807"
 .endinfo
 .implab _cycle_in_spine
 .implab _type_error
@@ -105,35 +69,38 @@
 .impdesc d_S.6
 .implab n_S.6 ea_S.6
 .implab _driver
+.implab e_StdDebug_strace_n;6
+.impdesc e_StdList_d++
+.implab e_StdList_s++
+.implab e_StdList_n++ e_StdList_ea++
+.implab e_StdList_shd
+.impdesc e_StdList_dmap
+.implab e_StdList_smap
+.implab e_StdList_nmap e_StdList_eamap
+.implab e_StdInt_s+;6
+.implab e_StdInt_s-;7
+.implab e_StdInt_sone;11
+.implab e_StdInt_sabs;13
+.implab e_StdInt_s<;17
+.implab e_StdInt_srem;28
+.implab e_StdBool_snot
+.impdesc e_Map_dnewMap
+.implab e_Map_nnewMap e_Map_eanewMap
+.implab e_HttpClient_sexecuteHttpRequest
+.impdesc e_HttpClient_rSimpleHttpRequest
+.impdesc e_HttpClient_dSimpleHttpResponse.rsp_data
+.implab e_HttpClient_nSimpleHttpResponse.rsp_data
 .impdesc e_MersenneTwister_dgenRandInt
 .implab e_MersenneTwister_ngenRandInt e_MersenneTwister_eagenRandInt
-.implab e_StdDebug_strace_n;6
 .impdesc e_Sleep_dsleep
 .implab e_Sleep_nsleep e_Sleep_easleep
-.impdesc e_AgentController_dTaskReceiverState.world
-.implab e_AgentController_nTaskReceiverState.world e_AgentController_eaTaskReceiverState.world
-.impdesc e_AgentController_dActionHandlerState.world
-.implab e_AgentController_nActionHandlerState.world e_AgentController_eaActionHandlerState.world
-.impdesc e_AgentController_dActionHandlerState.sessionId
-.implab e_AgentController_nActionHandlerState.sessionId
-.impdesc e_Task_rTaskServiceRep
-.impdesc e_Task_dTaskServiceRep.taskId
-.implab e_Task_nTaskServiceRep.taskId e_Task_eaTaskServiceRep.taskId
-.impdesc e_Task_dTaskServiceRep.parts
-.implab e_Task_nTaskServiceRep.parts e_Task_eaTaskServiceRep.parts
-.impdesc e_Task_dTaskServiceRep.tag
-.implab e_Task_nTaskServiceRep.tag e_Task_eaTaskServiceRep.tag
-.impdesc e_Task_dTaskServiceRep.value
-.implab e_Task_nTaskServiceRep.value e_Task_eaTaskServiceRep.value
-.impdesc e_Task_dTaskServiceRep.repValue
-.implab e_Task_nTaskServiceRep.repValue e_Task_eaTaskServiceRep.repValue
-.impdesc e_Task_dTaskServiceRep.actions
-.implab e_Task_nTaskServiceRep.actions e_Task_eaTaskServiceRep.actions
 .impdesc e_Time_dtime
 .implab e_Time_ntime
 .impdesc e_Time_kTimestamp
 .impdesc e_Time_dTimestamp
 .implab e_Time_nTimestamp e_Time_eaTimestamp
+.implab e_StdString_stoString;6
+.implab e_StdString_s+++;11
 .implab e_JSON_stoJSON
 .implab e_JSON_sfromJSON
 .implab e_JSON_stoString;6
@@ -142,47 +109,99 @@
 .impdesc e_JSON_dJSONEncode__String;13
 .implab e_JSON_sJSONEncode__List;21
 .impdesc e_JSON_dJSONEncode_JSONNode;29
+.impdesc e_JSON_dJSONDecode_Int;30
 .impdesc e_JSON_dJSONDecode_Bool;33
 .impdesc e_JSON_dJSONDecode__String;34
 .impdesc e_JSON_dJSONDecode_PAIR;36
 .implab e_JSON_sJSONDecode_RECORD;38
 .impdesc e_JSON_dJSONDecode_FIELD;39
+.impdesc e_JSON_dJSONDecode_CONS;40
+.implab e_JSON_sJSONDecode_OBJECT;41
 .impdesc e_JSON_dJSONDecode__List;42
 .impdesc e_JSON_dJSONDecode__Tuple3;44
 .impdesc e_JSON_dJSONDecode_Maybe;49
 .impdesc e_JSON_dJSONDecode_JSONNode;50
-.impdesc e_SystemTypes_dtoString;110
-.implab e_SystemTypes_ntoString;110
-.impdesc e_SystemTypes_dJSONDecode_TaskId;884
-.impdesc e_Agent_rAgentTask
-.impdesc e_Map_dnewMap
-.implab e_Map_nnewMap e_Map_eanewMap
-.implab e_HttpClient_sexecuteHttpRequest
-.impdesc e_HttpClient_rSimpleHttpRequest
-.impdesc e_HttpClient_dSimpleHttpResponse.rsp_data
-.implab e_HttpClient_nSimpleHttpResponse.rsp_data
-.impdesc e_StdList_d++
-.implab e_StdList_s++
-.implab e_StdList_n++ e_StdList_ea++
-.implab e_StdList_shd
-.impdesc e_StdList_dmap
-.implab e_StdList_smap
-.implab e_StdList_nmap e_StdList_eamap
-.implab e_StdString_s+++;11
-.implab e_StdInt_s+;6
-.implab e_StdInt_s-;7
-.implab e_StdInt_sabs;13
-.implab e_StdInt_srem;28
 .implab e_Maybe_sisNothing
 .implab e_Maybe_sisJust
 .impdesc e_Maybe_dfromJust
 .implab e_Maybe_sfromJust
 .implab e_Maybe_nfromJust _
-.record r45 aa 2 0 "ServiceResponse"
-.descs d46 n46 _ 1 0 "ServiceResponse.sessionId"
-.n -4 d46
+.impdesc e_Agent_dtoString;12
+.implab e_Agent_ntoString;12
+.impdesc e_Agent_rAgentTask
+.impdesc e_Agent_kTaskId
+.impdesc e_AgentController_dTaskProducerState.world
+.implab e_AgentController_nTaskProducerState.world e_AgentController_eaTaskProducerState.world
+.impdesc e_AgentController_dActionConsumerState.world
+.implab e_AgentController_nActionConsumerState.world e_AgentController_eaActionConsumerState.world
+.impdesc e_AgentController_dActionConsumerState.sessionId
+.implab e_AgentController_nActionConsumerState.sessionId
+.record r59 aaaaaa 6 0 "TaskServiceRep"
+.descs d60 n60 _ 1 0 "TaskServiceRep.taskId"
+.n -4 d60 ea60
 .o 1 0
-n46
+n60
+	push_node _cycle_in_spine 1
+.o 2 0
+ea60
+	jsr_eval 0
+	repl_r_args_a 6 0 1 1
+	jmp_eval_upd
+.descs d61 n61 _ 3 0 "TaskServiceRep.parts"
+.n -4 d61 ea61
+.o 1 0
+n61
+	push_node _cycle_in_spine 1
+.o 2 0
+ea61
+	jsr_eval 0
+	repl_r_args_a 6 0 2 1
+	jmp_eval_upd
+.descs d62 n62 _ 4 0 "TaskServiceRep.tag"
+.n -4 d62 ea62
+.o 1 0
+n62
+	push_node _cycle_in_spine 1
+.o 2 0
+ea62
+	jsr_eval 0
+	repl_r_args_a 6 0 3 1
+	jmp_eval_upd
+.descs d63 n63 _ 5 0 "TaskServiceRep.value"
+.n -4 d63 ea63
+.o 1 0
+n63
+	push_node _cycle_in_spine 1
+.o 2 0
+ea63
+	jsr_eval 0
+	repl_r_args_a 6 0 4 1
+	jmp_eval_upd
+.descs d64 n64 _ 6 0 "TaskServiceRep.repValue"
+.n -4 d64 ea64
+.o 1 0
+n64
+	push_node _cycle_in_spine 1
+.o 2 0
+ea64
+	jsr_eval 0
+	repl_r_args_a 6 0 5 1
+	jmp_eval_upd
+.descs d65 n65 _ 7 0 "TaskServiceRep.actions"
+.n -4 d65 ea65
+.o 1 0
+n65
+	push_node _cycle_in_spine 1
+.o 2 0
+ea65
+	jsr_eval 0
+	repl_r_args_a 6 0 6 1
+	jmp_eval_upd
+.record r66 aa 2 0 "ServiceResponse"
+.descs d67 n67 _ 1 0 "ServiceResponse.sessionId"
+.n -4 d67
+.o 1 0
+n67
 	push_node _cycle_in_spine 1
 	jsr_eval 0
 	repl_r_args_a 2 0 1 1
@@ -191,10 +210,10 @@ n46
 	pop_a 1
 .d 1 0
 	rtn
-.descs d47 n47 _ 2 0 "ServiceResponse.task"
-.n -4 d47
+.descs d68 n68 _ 2 0 "ServiceResponse.task"
+.n -4 d68
 .o 1 0
-n47
+n68
 	push_node _cycle_in_spine 1
 	jsr_eval 0
 	repl_r_args_a 2 0 2 1
@@ -203,33 +222,8 @@ n47
 	pop_a 1
 .d 1 0
 	rtn
-.record r48 a 1 0 "JSONEncode_s;"
-.record r54 a 1 0 "JSONDecode_s;"
-.export e_WebServiceInterface_sTD;ServiceResponse
-.export e_WebServiceInterface_eaTD;ServiceResponse
-.descexp e_WebServiceInterface_dTD;ServiceResponse e_WebServiceInterface_nTD;ServiceResponse e_WebServiceInterface_lTD;ServiceResponse 1 0 "TD;ServiceResponse"
-.o 2 0
-e_WebServiceInterface_lTD;ServiceResponse
-	update_a 1 0
-	create
-	update_a 0 2
-	pop_a 1
-.d 2 0
-	jmp e_WebServiceInterface_eaTD;ServiceResponse
-.n 1 e_WebServiceInterface_dTD;ServiceResponse e_WebServiceInterface_eaTD;ServiceResponse
-.o 1 0
-e_WebServiceInterface_nTD;ServiceResponse
-	push_node _cycle_in_spine 1
-.o 2 0
-e_WebServiceInterface_eaTD;ServiceResponse
-.o 2 0
-e_WebServiceInterface_sTD;ServiceResponse
-.o 2 0
-s13
-	fillh _Nil 0 1
-	pop_a 1
-.d 1 0
-	rtn
+.record r69 a 1 0 "JSONDecode_s;"
+.record r75 a 1 0 "JSONEncode_s;"
 .export e_WebServiceInterface_swebServiceActionHandler
 .export e_WebServiceInterface_eawebServiceActionHandler
 .descexp e_WebServiceInterface_dwebServiceActionHandler e_WebServiceInterface_nwebServiceActionHandler e_WebServiceInterface_lwebServiceActionHandler 2 0 "webServiceActionHandler"
@@ -255,82 +249,69 @@ e_WebServiceInterface_swebServiceActionHandler
 s2
 	push_a 1
 	push_a 1
-	buildh d8 2
-	fillh e_AgentController_dActionHandler 1 3
+	fillh d11 2 4
 	pop_a 2
 .d 1 0
 	rtn
-.desc d8 _hnf l8 4 0 "act;7"
-.a 0 a8
+.desc d11 _hnf l11 3 0 "act;10"
+.a 0 a11
 .o 2 0
-l8
-	repl_args 3 3
-.o 4 0
-a8
-.o 4 0
-ea8
+l11
+	repl_args 2 2
+.o 3 0
+a11
+.o 3 0
+ea11
 	jsr_eval 2
-	push_a 3
-	build e_AgentController_dActionHandlerState.world -4 e_AgentController_nActionHandlerState.world
-	buildB TRUE
-	push_a 5
-	build e_AgentController_dActionHandlerState.sessionId -4 e_AgentController_nActionHandlerState.sessionId
-	push_a 5
-	push_a 5
-	push_a 5
-	push_a 5
-	update_a 3 6
-	update_a 4 3
-	update_a 5 4
-	update_a 0 5
-	pop_a 1
-	update_a 5 8
+	push_r_args 2 5 0
 	update_a 4 7
-	update_a 3 6
+	update_a 1 4
+	update_a 5 1
 	update_a 2 5
-	update_a 1 4
-	updatepop_a 0 3
-.d 6 0
-	jsr s37
-.o 2 0
-	push_a 1
-	push_a 3
-	build _ 2 n203
-	push_a 1
-	update_a 1 4
-	updatepop_a 0 3
-	push_a 1
-	push_a 1
-	buildh _Tuple 2
-	updatepop_a 0 2
-.d 1 0
-	rtn
-.n 2 _
-.o 1 0
-n203
-	push_node _cycle_in_spine 2
-.o 2 0
-ea203
-	push_a 1
-	push_a 1
+	update_a 6 2
+	update_a 3 6
+	update_a 0 3
+	pop_a 1
+	push_a 6
 	jsr_eval 0
-	repl_r_args 4 0
+	push_a 3
+	buildB TRUE
+	push_a 6
+	push_a 5
+	push_a 5
+	update_a 5 7
 	update_a 4 6
 	update_a 3 5
 	update_a 2 4
 	update_a 1 3
 	updatepop_a 0 2
-	update_a 4 0
+.d 6 0
+	jsr s49
+.o 2 0
+	push_a 1
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	push_a 7
+	update_a 5 12
+	update_a 4 11
+	update_a 3 10
+	update_a 2 9
+	update_a 1 8
+	updatepop_a 0 7
+	update_a 5 0
+	update_a 4 5
 	update_a 3 4
 	update_a 2 3
 	update_a 1 2
 	updatepop_a 0 1
-	fill_r e_AgentController_rActionHandlerState 4 0 4 0 0
-	pop_a 4
+	build_r e_AgentController_rActionConsumerState 5 0 0 0
+	updatepop_a 0 5
 .d 1 0
 	rtn
 .o 6 0
-s37
+s49
 	eq_desc _Nil 0 5
 	jmp_true case.1
 	jmp case.2
@@ -360,7 +341,7 @@ case.2
 	update_a 0 9
 	pop_a 1
 .d 6 0
-	jsr s9
+	jsr s12
 .o 2 0
 	push_a 7
 	push_a 7
@@ -372,9 +353,9 @@ case.2
 	update_a 1 9
 	updatepop_a 0 8
 .d 6 0
-	jmp s37
+	jmp s49
 .o 6 0
-s9
+s12
 	push_a 4
 	push_a 6
 	buildh _Nil 0
@@ -382,7 +363,7 @@ s9
 	update_a 0 7
 	pop_a 1
 .d 2 0
-	jsr s190
+	jsr s104
 .o 2 0
 	push_a 0
 .d 1 0
@@ -398,9 +379,9 @@ s9
 else.3
 	push_a 4
 	push_a 1
-	build _ 2 n194
+	build _ 2 n109
 	build _ 0 n3
-	build _ 2 n204
+	build _ 2 n119
 	push_a 2
 	push_a 5
 	push_a 5
@@ -421,17 +402,17 @@ else.3
 	push_a 2
 	buildh _Tuple 2
 	push_a 4
-	build _ 2 n42
+	build _ 2 n56
 	update_a 1 4
 	updatepop_a 0 3
 .d 2 0
 	rtn
 .n 2 _
 .o 1 0
-n204
+n119
 	push_node _cycle_in_spine 2
 .o 2 0
-ea204
+ea119
 	push_a 1
 	push_a 1
 	jsr_eval 0
@@ -452,14 +433,14 @@ ea204
 	pop_a 5
 .d 1 0
 	rtn
-.n 2 _ ea194
+.n 2 _ ea109
 .o 1 0
-n194
+n109
 	push_node _cycle_in_spine 2
 .o 3 0
-ea194
+ea109
 .o 3 0
-s194
+s109
 	push_a 1
 	jsr_eval 0
 	push_array 0
@@ -485,6 +466,9 @@ s194
 .d 2 0
 	jsr catAC
 .o 1 0
+.d 1 0
+	jsr s5
+.o 1 0
 	push_a 0
 	fillh ARRAY 1 2
 	pop_a 1
@@ -492,22 +476,22 @@ s194
 	rtn
 .n 2 _
 .o 1 0
-n42
+n56
 	push_node _cycle_in_spine 2
 .d 2 0
-	jsr ea42
+	jsr ea56
 .o 0 1 b
 	fillB_b 0 0
 	pop_b 1
 .d 1 0
 	rtn
 .o 2 0
-ea42
+ea56
 	jsr_eval 0
 	pushB_a 0
 	pop_a 1
 .o 1 1 b
-s42
+s56
 	eqB_b TRUE 0
 	jmp_true case.4
 	jmp case.5
@@ -526,53 +510,209 @@ case.5
 .d 0 1 b
 	rtn
 .o 1 0
-s35
-	buildh d30 0
+s5
+	push_a 0
+	updatepop_a 0 1
+	push_a 0
+	push_arraysize CHAR 0 1
+	pushI 1
+	push_b 1
+	subI
 	create
-	push_a 2
-	push_a 2
-	update_a 2 3
-	update_a 1 2
-	update_a 0 1
-	pop_a 1
-	update_a 2 3
+	push_a 1
+	buildh ARRAY 1
+	pushI 0
+	update_b 1 2
+	updatepop_b 0 1
 	update_a 1 2
 	updatepop_a 0 1
-.d 3 0
-	jsr e_JSON_stoJSON
+.d 2 2 ii
+	jsr s46
 .o 1 0
-.d 1 0
-	jmp e_JSON_stoString;6
-.o 1 0
-s36
-	buildh d30 0
+	buildh d48 0
 	create
 	push_a 2
-	push_a 2
-	update_a 2 3
-	update_a 1 2
-	update_a 0 1
+	update_a 1 3
+	update_a 2 1
+	update_a 0 2
 	pop_a 1
-	update_a 2 3
-	update_a 1 2
-	updatepop_a 0 1
 .d 3 0
-	jsr e_JSON_stoJSON
+	jsr e_StdList_smap
 .o 1 0
-.d 1 0
-	jmp e_JSON_stoString;6
-.desc d30 _hnf l30 1 0 "JSONEncode_s;578"
+	buildAC ""
+.d 2 0
+	jmp s47
+.desc d48 _hnf l48 1 0 "<lambda>[line:15];13;110"
 .o 2 0
-l30
+l48
+	pop_a 1
+.d 1 0
+	jsr ea48
+.o 1 0
+	push_a 0
+	buildh ARRAY 1
+	updatepop_a 0 1
+.d 1 0
+	rtn
+.o 1 0
+ea48
+	jsr_eval 0
+	pushC_a 0
+	pop_a 1
+.o 0 1 c
+s48
+	push_b 0
+	CtoAC
+	pop_b 1
+.d 1 0
+	jmp s10
+.o 2 0
+s47
+	eq_desc _Nil 0 1
+	jmp_true case.6
+	jmp case.7
+case.6
+	updatepop_a 0 1
+.d 1 0
+	rtn
+case.7
+	push_args 1 2 2
+	buildh _Nil 0
+	update_a 0 4
+	pop_a 1
+	push_a 1
+	jsr_eval 0
+	push_a 1
+	jsr_eval 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 4
+	buildh _Nil 0
+	update_a 0 6
+	update_a 0 4
+	update_a 0 5
+	pop_a 1
+.d 2 0
+	jsr catAC
+.o 1 0
+	update_a 1 5
+	updatepop_a 0 4
+.d 2 0
+	jmp s47
+.o 2 2 ii
+s46
+	push_b 0
+	push_b 2
+	ltI
+	notB
+	jmp_false else.8
+	push_b 0
+	push_array 0
+	updatepop_a 0 1
+	push_a 0
+	select CHAR 0 1
+	push_a 0
+	buildh ARRAY 1
+	push_a 0
+	push_b 2
+	push_b 2
+	build_u _ 1 2 n110
+	buildC_b 0
+	fillh _Cons 2 4
+	pop_a 2
+	pop_b 3
+.d 1 0
+	rtn
+else.8
+	fillh _Nil 0 1
+	pop_a 1
+	pop_b 2
+.d 1 0
+	rtn
+.nu 1 2 _ _
+.o 1 0
+n110
+	push_node_u _cycle_in_spine 1 2
+.o 2 2 ii
+ea110
+.o 2 2 ii
+s110
+	pushI 1
+	push_b 1
+	addI
+	push_a 0
+	push_b 2
+	push_b 1
+	update_b 1 2
+	update_b 0 1
+	pop_b 1
+	updatepop_a 0 1
+	update_b 1 3
+	updatepop_b 0 2
+.d 2 2 ii
+	jmp s46
+.o 1 0
+s10
+	push_a 0
+	eqAC_a " "
+	jmp_true case.9
+	jmp case.10
+case.9
+	pop_a 1
+	buildAC "%20"
+.d 1 0
+	rtn
+case.10
+.d 1 0
+	rtn
+.o 1 0
+s43
+	buildh d38 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_JSON_stoJSON
+.o 1 0
+.d 1 0
+	jmp e_JSON_stoString;6
+.o 1 0
+s44
+	buildh d38 0
+	create
+	push_a 2
+	push_a 2
+	update_a 2 3
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 2 3
+	update_a 1 2
+	updatepop_a 0 1
+.d 3 0
+	jsr e_JSON_stoJSON
+.o 1 0
+.d 1 0
+	jmp e_JSON_stoString;6
+.desc d38 _hnf l38 1 0 "JSONEncode_s;100"
+.o 2 0
+l38
 	update_a 1 0
 	create
 	update_a 0 2
 	pop_a 1
 .o 2 0
-ea30
+ea38
 	jsr_eval 0
 .o 2 0
-s30
+s38
 	buildh e_JSON_dJSONEncode_JSONNode;29 0
 	push_a 1
 	push_a 1
@@ -608,20 +748,19 @@ e_WebServiceInterface_swebServiceTaskReceiver
 s1
 	push_a 1
 	push_a 1
-	buildh d7 2
-	fillh e_AgentController_dTaskReceiver 1 3
+	fillh d8 2 4
 	pop_a 2
 .d 1 0
 	rtn
-.desc d7 _hnf l7 3 0 "recv;6"
-.a 0 a7
+.desc d8 _hnf l8 3 0 "recv;7"
+.a 0 a8
 .o 2 0
-l7
+l8
 	repl_args 2 2
 .o 3 0
-a7
+a8
 .d 3 0
-	jsr ea7
+	jsr ea8
 .o 2 0
 	push_a 1
 	push_a 1
@@ -630,15 +769,15 @@ a7
 .d 1 0
 	rtn
 .o 3 0
-ea7
+ea8
 .o 3 0
-s7
+s8
 	push_a 2
-	build _ 1 n6
+	build _ 1 n7
 	push_a 0
 	build d_S.2 -1 n_S.2
 	push_a 0
-	build e_AgentController_dTaskReceiverState.world -4 e_AgentController_nTaskReceiverState.world
+	build e_AgentController_dTaskProducerState.world -4 e_AgentController_nTaskProducerState.world
 	push_a 2
 	build d_S.1 -1 n_S.1
 	push_a 5
@@ -659,16 +798,22 @@ s7
 .d 1 0
 	jsr e_Maybe_sisNothing
 .o 0 1 b
-	jmp_false else.6
+	jmp_false else.11
 	push_a 1
 	push_a 3
-	build _ 2 n205
+	build _ 2 n120
 	buildh e_Maybe_dNothing 0
+	buildh _Tuple 2
+	buildAC "no response"
 	update_a 1 4
 	updatepop_a 0 3
 .d 2 0
+	jsr e_StdDebug_strace_n;6
+.o 1 0
+	repl_args 2 2
+.d 2 0
 	rtn
-else.6
+else.11
 	push_a 0
 	updatepop_a 0 1
 .d 1 0
@@ -685,7 +830,7 @@ else.6
 .d 2 0
 	jsr e_StdDebug_strace_n;6
 .o 1 0
-	buildh d11 0
+	buildh d14 0
 	create
 	push_a 2
 	update_a 1 3
@@ -699,26 +844,32 @@ else.6
 .d 1 0
 	jsr e_Maybe_sisNothing
 .o 0 1 b
-	jmp_false else.7
+	jmp_false else.12
 	push_a 1
 	push_a 3
-	build _ 2 n206
+	build _ 2 n121
 	buildh e_Maybe_dNothing 0
+	buildh _Tuple 2
+	buildAC "no json"
 	update_a 1 4
 	updatepop_a 0 3
 .d 2 0
+	jsr e_StdDebug_strace_n;6
+.o 1 0
+	repl_args 2 2
+.d 2 0
 	rtn
-else.7
+else.12
 	push_a 0
 	build e_Maybe_dfromJust 1 e_Maybe_nfromJust
 	push_a 0
-	build d46 -4 n46
+	build d67 -4 n67
 	buildh e_Maybe_dJust 1
 	push_a 3
 	push_a 5
-	build _ 3 n207
+	build _ 3 n122
 	push_a 1
-	build d47 -4 n47
+	build d68 -4 n68
 	build _ 1 n4
 	buildh e_Maybe_dJust 1
 	update_a 1 5
@@ -727,10 +878,10 @@ else.7
 	rtn
 .n 2 _
 .o 1 0
-n205
+n120
 	push_node _cycle_in_spine 2
 .o 2 0
-ea205
+ea120
 	push_a 1
 	push_a 1
 	jsr_eval 0
@@ -745,16 +896,16 @@ ea205
 	update_a 2 3
 	update_a 1 2
 	updatepop_a 0 1
-	fill_r e_AgentController_rTaskReceiverState 4 0 4 0 0
+	fill_r e_AgentController_rTaskProducerState 4 0 4 0 0
 	pop_a 4
 .d 1 0
 	rtn
 .n 2 _
 .o 1 0
-n206
+n121
 	push_node _cycle_in_spine 2
 .o 2 0
-ea206
+ea121
 	push_a 1
 	push_a 1
 	jsr_eval 0
@@ -769,16 +920,16 @@ ea206
 	update_a 2 3
 	update_a 1 2
 	updatepop_a 0 1
-	fill_r e_AgentController_rTaskReceiverState 4 0 4 0 0
+	fill_r e_AgentController_rTaskProducerState 4 0 4 0 0
 	pop_a 4
 .d 1 0
 	rtn
 .n 3 _
 .o 1 0
-n207
+n122
 	push_node _cycle_in_spine 3
 .o 3 0
-ea207
+ea122
 	push_a 2
 	push_a 2
 	push_a 2
@@ -796,16 +947,16 @@ ea207
 	update_a 2 4
 	update_a 1 3
 	updatepop_a 0 2
-	fill_r e_AgentController_rTaskReceiverState 4 0 4 0 0
+	fill_r e_AgentController_rTaskProducerState 4 0 4 0 0
 	pop_a 4
 .d 1 0
 	rtn
-.desc d11 _hnf l11 1 0 "JSONDecode_ServiceResponse;10"
+.desc d14 _hnf l14 1 0 "JSONDecode_ServiceResponse;13"
 .o 2 0
-l11
+l14
 	pop_a 1
 .d 1 0
-	jsr ea11
+	jsr ea14
 .o 2 0
 	push_a 1
 	push_a 1
@@ -814,11 +965,11 @@ l11
 .d 1 0
 	rtn
 .o 1 0
-ea11
+ea14
 	jsr_eval 0
 .o 1 0
-s11
-	buildh d12 0
+s14
+	buildh d15 0
 	buildAC "task"
 	buildh ARRAY 1
 	buildh e_JSON_dJSONDecode_FIELD;39 2
@@ -838,13 +989,13 @@ s11
 	jsr e_JSON_sJSONDecode_RECORD;38
 .o 2 0
 .d 2 0
-	jmp s189
-.desc d12 _hnf l12 1 0 "JSONDecode_TaskServiceRep;11"
+	jmp s103
+.desc d15 _hnf l15 1 0 "JSONDecode_TaskServiceRep;14"
 .o 2 0
-l12
+l15
 	pop_a 1
 .d 1 0
-	jsr ea12
+	jsr ea15
 .o 2 0
 	push_a 1
 	push_a 1
@@ -853,13 +1004,13 @@ l12
 .d 1 0
 	rtn
 .o 1 0
-ea12
+ea15
 	jsr_eval 0
 .o 1 0
-s12
+s15
 	buildh e_JSON_dJSONDecode__String;34 0
 	buildh e_JSON_dJSONDecode_Bool;33 0
-	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh d16 0
 	buildh e_JSON_dJSONDecode__Tuple3;44 3
 	buildh e_JSON_dJSONDecode__List;42 1
 	buildAC "actions"
@@ -882,13 +1033,13 @@ s12
 	buildAC "tag"
 	buildh ARRAY 1
 	buildh e_JSON_dJSONDecode_FIELD;39 2
-	buildh d12 0
+	buildh d15 0
 	buildh e_JSON_dJSONDecode__List;42 1
 	buildAC "parts"
 	buildh ARRAY 1
 	buildh e_JSON_dJSONDecode_FIELD;39 2
 	buildh e_JSON_dJSONDecode_PAIR;36 2
-	buildh e_SystemTypes_dJSONDecode_TaskId;884 0
+	buildh d16 0
 	buildh e_JSON_dJSONDecode_Maybe;49 1
 	buildAC "taskId"
 	buildh ARRAY 1
@@ -906,37 +1057,125 @@ s12
 	jsr e_JSON_sJSONDecode_RECORD;38
 .o 2 0
 .d 2 0
-	jmp s188
+	jmp s102
+.desc d16 _hnf l16 1 0 "JSONDecode_TaskId;15"
 .o 2 0
-s23
+l16
+	pop_a 1
+.d 1 0
+	jsr ea16
+.o 2 0
+	push_a 1
+	push_a 1
+	buildh _Tuple 2
+	updatepop_a 0 2
+.d 1 0
+	rtn
+.o 1 0
+ea16
+	jsr_eval 0
+.o 1 0
+s16
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode_Int;30 0
+	buildh e_JSON_dJSONDecode_PAIR;36 2
+	buildI 2
+	buildAC "TaskId"
+	buildh ARRAY 1
+	buildh e_JSON_dJSONDecode_CONS;40 3
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr e_JSON_sJSONDecode_OBJECT;41
+.o 2 0
+.d 2 0
+	jmp s101
+.o 2 0
+s31
 	push_a 0
 	updatepop_a 0 1
 .d 2 0
-	jmp s40
+	jmp s54
 .o 2 0
-s40
+s54
 	eq_desc e_Maybe_dNothing 0 0
-	jmp_true case.8
-	jmp case.9
-case.8
+	jmp_true case.13
+	jmp case.14
+case.13
 	fillh e_Maybe_dNothing 0 1
 	pop_a 1
 .d 1 0
 	rtn
-case.9
+case.14
 	repl_args 1 1
 	push_a 0
-	build _ 1 n20
+	build _ 1 n26
+	fillh e_Maybe_dJust 1 2
+	pop_a 1
+.d 1 0
+	rtn
+.n 1 _ ea26
+.o 1 0
+n26
+	push_node _cycle_in_spine 1
+.o 2 0
+ea26
+	jsr_eval 0
+.o 2 0
+s26
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 1 1
+	jsr_eval 0
+	repl_args 2 2
+	push_a 1
+	jsr_eval 0
+	pushI_a 2
+	pop_a 1
+	push_a 0
+	jsr_eval 0
+	pushI_a 1
+	pop_a 1
+	fill_r e_Agent_kTaskId 0 2 2 0 0
+	pop_a 2
+	pop_b 2
+.d 1 0
+	rtn
+.o 2 0
+s29
+	push_a 0
+	updatepop_a 0 1
+.d 2 0
+	jmp s52
+.o 2 0
+s52
+	eq_desc e_Maybe_dNothing 0 0
+	jmp_true case.15
+	jmp case.16
+case.15
+	fillh e_Maybe_dNothing 0 1
+	pop_a 1
+.d 1 0
+	rtn
+case.16
+	repl_args 1 1
+	push_a 0
+	build _ 1 n25
 	fillh e_Maybe_dJust 1 2
 	pop_a 1
 .d 1 0
 	rtn
 .n 1 _
 .o 1 0
-n20
+n25
 	push_node _cycle_in_spine 1
 .o 1 0
-ea20
+ea25
 	jsr_eval 0
 	repl_args 1 1
 	jsr_eval 0
@@ -988,40 +1227,40 @@ ea20
 	update_a 2 13
 	update_a 1 12
 	updatepop_a 0 11
-	fill_r e_Task_rTaskServiceRep 6 0 6 0 0
+	fill_r r59 6 0 6 0 0
 	pop_a 6
 .d 1 0
 	rtn
 .o 2 0
-s21
+s27
 	push_a 0
 	updatepop_a 0 1
 .d 2 0
-	jmp s38
+	jmp s50
 .o 2 0
-s38
+s50
 	eq_desc e_Maybe_dNothing 0 0
-	jmp_true case.10
-	jmp case.11
-case.10
+	jmp_true case.17
+	jmp case.18
+case.17
 	fillh e_Maybe_dNothing 0 1
 	pop_a 1
 .d 1 0
 	rtn
-case.11
+case.18
 	repl_args 1 1
 	push_a 0
-	build _ 1 n19
+	build _ 1 n24
 	fillh e_Maybe_dJust 1 2
 	pop_a 1
 .d 1 0
 	rtn
 .n 1 _
 .o 1 0
-n19
+n24
 	push_node _cycle_in_spine 1
 .o 1 0
-ea19
+ea24
 	jsr_eval 0
 	repl_args 1 1
 	jsr_eval 0
@@ -1037,33 +1276,33 @@ ea19
 	push_a 2
 	update_a 1 4
 	updatepop_a 0 3
-	fill_r r45 2 0 2 0 0
+	fill_r r66 2 0 2 0 0
 	pop_a 2
 .d 1 0
 	rtn
-.n 2 _ ea28
+.n 2 _ ea36
 .o 1 0
-n28
+n36
 	push_node _cycle_in_spine 2
 .o 3 0
-ea28
+ea36
 	jsr_eval 1
 .o 3 0
-s28
+s36
 	eq_desc _Nil 0 1
-	jmp_true case.12
-	jmp case.13
-case.12
+	jmp_true case.19
+	jmp case.20
+case.19
 	updatepop_a 0 1
 	jmp_eval_upd
-case.13
+case.20
 	push_args 1 2 2
 	buildh _Nil 0
 	update_a 0 4
 	pop_a 1
 	push_a 1
 	push_a 3
-	build _ 2 n28
+	build _ 2 n36
 	push_a 1
 	jsr_eval 0
 	repl_r_args 6 0
@@ -1075,7 +1314,7 @@ case.13
 	update_a 1 5
 	updatepop_a 0 4
 .d 8 0
-	jmp s186
+	jmp s99
 .n 1 _ ea4
 .o 1 0
 n4
@@ -1091,12 +1330,12 @@ s4
 .d 1 0
 	jsr e_Maybe_sisJust
 .o 0 1 b
-	jmp_false else.14
+	jmp_false else.21
 	push_a 1
 	buildh _Nil 0
-	build _ 2 n28
+	build _ 2 n36
 	push_a 6
-	buildh d5 0
+	buildh d6 0
 	build e_StdList_dmap 2 e_StdList_nmap
 	build e_StdList_d++ 2 e_StdList_n++
 	push_a 5
@@ -1120,13 +1359,13 @@ s4
 	pop_a 6
 .d 1 0
 	rtn
-else.14
+else.21
 	push_a 1
 	buildh _Nil 0
-	build _ 2 n28
+	build _ 2 n36
 	push_a 6
 	jsr_eval 0
-	buildh d5 0
+	buildh d6 0
 	create
 	push_a 2
 	update_a 1 3
@@ -1148,12 +1387,12 @@ else.14
 	updatepop_a 0 6
 .d 3 0
 	jmp e_StdList_s++
-.desc d5 _hnf l5 1 0 "actionToTask;4"
+.desc d6 _hnf l6 1 0 "actionToTask;5"
 .o 2 0
-l5
+l6
 	pop_a 1
 .o 1 0
-ea5
+ea6
 	jsr_eval 0
 	repl_args 3 3
 	buildh e_Maybe_dNothing 0
@@ -1177,10 +1416,10 @@ ea5
 	rtn
 .n 1 _
 .o 1 0
-n6
+n7
 	push_node _cycle_in_spine 1
 .d 1 0
-	jsr ea6
+	jsr ea7
 .o 2 0
 	push_a 1
 	push_a 1
@@ -1189,25 +1428,25 @@ n6
 .d 1 0
 	rtn
 .o 1 0
-ea6
+ea7
 	jsr_eval 0
 	repl_r_args 4 0
 .o 4 0
-s6
+s7
 	push_a 1
 	jsr_eval 0
 	push_a 0
 .d 1 0
 	jsr e_Maybe_sisNothing
 .o 0 1 b
-	jmp_false else.15
-	build_r e_AgentController_rTaskReceiverState 4 0 1 0
+	jmp_false else.22
+	build_r e_AgentController_rTaskProducerState 4 0 1 0
 	build _ 0 n3
 	update_a 1 6
 	updatepop_a 0 5
 .d 2 0
 	rtn
-else.15
+else.22
 	push_a 0
 	push_a 5
 	push_a 5
@@ -1218,23 +1457,23 @@ else.15
 	update_a 2 3
 	update_a 1 2
 	updatepop_a 0 1
-	build_r e_AgentController_rTaskReceiverState 4 0 0 0
+	build_r e_AgentController_rTaskProducerState 4 0 0 0
 	update_a 0 4
 	pop_a 4
 	push_a 1
-	build _ 1 n193
+	build _ 1 n108
 	build _ 0 n3
-	build _ 2 n208
+	build _ 2 n123
 	update_a 1 6
 	updatepop_a 0 5
 .d 2 0
 	rtn
 .n 2 _
 .o 1 0
-n208
+n123
 	push_node _cycle_in_spine 2
 .o 2 0
-ea208
+ea123
 	push_a 1
 	push_a 1
 	jsr_eval 0
@@ -1255,14 +1494,14 @@ ea208
 	pop_a 5
 .d 1 0
 	rtn
-.n 1 _ ea193
+.n 1 _ ea108
 .o 1 0
-n193
+n108
 	push_node _cycle_in_spine 1
 .o 2 0
-ea193
+ea108
 .o 2 0
-s193
+s108
 	push_a 0
 	updatepop_a 0 1
 .d 1 0
@@ -1314,7 +1553,7 @@ ea3
 .d 1 0
 	rtn
 .o 8 0
-s186
+s99
 	create
 	push_a 6
 	push_a 6
@@ -1342,41 +1581,49 @@ s186
 .d 3 0
 	jmp e_StdList_s++
 .o 2 0
-s188
+s101
 	push_a 1
 	push_a 1
 	update_a 1 3
 	updatepop_a 0 2
 .d 2 0
-	jmp s192
+	jmp s107
 .o 2 0
-s189
+s102
 	push_a 1
 	push_a 1
 	update_a 1 3
 	updatepop_a 0 2
 .d 2 0
-	jmp s191
+	jmp s106
 .o 2 0
-s190
+s103
+	push_a 1
+	push_a 1
+	update_a 1 3
+	updatepop_a 0 2
+.d 2 0
+	jmp s105
+.o 2 0
+s104
 	pushD_a 0
 	eqD_b e_Agent_dActAction 2
-	jmp_true case.16
+	jmp_true case.23
 	eqD_b e_Agent_dEditAction 2
-	jmp_true case.17
-	jmp case.18
-case.16
+	jmp_true case.24
+	jmp case.25
+case.23
 	pop_b 1
 	repl_args 2 2
 	buildh _Nil 0
 	push_a 2
-	build _ 1 n197
+	build _ 1 n113
 	buildh _Cons 2
 	push_a 1
-	build e_SystemTypes_dtoString;110 1 e_SystemTypes_ntoString;110
-	build _ 1 n196
+	build e_Agent_dtoString;12 1 e_Agent_ntoString;12
+	build _ 1 n112
 	buildh _Cons 2
-	build _ 1 n195
+	build _ 1 n111
 	buildh e_Maybe_dJust 1
 	push_a 3
 	push_a 1
@@ -1387,20 +1634,20 @@ case.16
 	updatepop_a 0 3
 .d 2 0
 	rtn
-case.17
+case.24
 	pop_b 1
 	repl_args 2 2
 	buildh _Nil 0
 	push_a 2
-	build _ 1 n201
+	build _ 1 n117
 	buildh _Cons 2
-	build _ 0 n200
+	build _ 0 n116
 	buildh _Cons 2
 	push_a 1
-	build e_SystemTypes_dtoString;110 1 e_SystemTypes_ntoString;110
-	build _ 1 n199
+	build e_Agent_dtoString;12 1 e_Agent_ntoString;12
+	build _ 1 n115
 	buildh _Cons 2
-	build _ 1 n198
+	build _ 1 n114
 	buildh e_Maybe_dJust 1
 	push_a 3
 	push_a 1
@@ -1411,7 +1658,7 @@ case.17
 	updatepop_a 0 3
 .d 2 0
 	rtn
-case.18
+case.25
 	pop_b 1
 	repl_args 2 2
 	push_a 2
@@ -1420,7 +1667,7 @@ case.18
 	build d_S.2 -1 n_S.2
 	push_a 1
 	build d_S.1 -1 n_S.1
-	build _ 1 n209
+	build _ 1 n124
 	build e_MersenneTwister_dgenRandInt 1 e_MersenneTwister_ngenRandInt
 	push_a 4
 	push_a 4
@@ -1428,7 +1675,7 @@ case.18
 	update_a 2 3
 	update_a 0 2
 	pop_a 1
-	build _ 3 n202
+	build _ 3 n118
 	build e_Sleep_dsleep 2 e_Sleep_nsleep
 	buildh e_Maybe_dNothing 0
 	update_a 1 5
@@ -1437,31 +1684,31 @@ case.18
 	rtn
 .n 1 _
 .o 1 0
-n209
+n124
 	push_node _cycle_in_spine 1
 .d 1 0
-	jsr ea209
+	jsr ea124
 .o 0 1 i
 	fillI_b 0 0
 	pop_b 1
 .d 1 0
 	rtn
 .o 1 0
-ea209
+ea124
 	jsr_eval 0
 .o 1 0
-s209
+s124
 	repl_r_args 0 1
 .d 0 1 i
 	rtn
-.n 3 _ ea202
+.n 3 _ ea118
 .o 1 0
-n202
+n118
 	push_node _cycle_in_spine 3
 .o 4 0
-ea202
+ea118
 .o 4 0
-s202
+s118
 	push_a 0
 	jsr_eval 0
 	pushI_a 1
@@ -1491,14 +1738,14 @@ s202
 	pop_b 1
 .d 1 0
 	rtn
-.n 1 _ ea201
+.n 1 _ ea117
 .o 1 0
-n201
+n117
 	push_node _cycle_in_spine 1
 .o 2 0
-ea201
+ea117
 .o 2 0
-s201
+s117
 	push_a 0
 	jsr_eval 0
 	buildh e_JSON_dJSONEncode_JSONNode;29 0
@@ -1506,14 +1753,14 @@ s201
 	updatepop_a 0 1
 .d 3 0
 	jmp e_JSON_stoJSON
-.n 0 _ ea200
+.n 0 _ ea116
 .o 1 0
-n200
+n116
 	push_node _cycle_in_spine 0
 .o 1 0
-ea200
+ea116
 .o 1 0
-s200
+s116
 	buildh e_JSON_dJSONEncode__String;13 0
 	buildAC ""
 	push_a 0
@@ -1525,14 +1772,14 @@ s200
 	pop_a 1
 .d 3 0
 	jmp e_JSON_stoJSON
-.n 1 _ ea199
+.n 1 _ ea115
 .o 1 0
-n199
+n115
 	push_node _cycle_in_spine 1
 .o 2 0
-ea199
+ea115
 .o 2 0
-s199
+s115
 	push_a 0
 	jsr_eval 0
 	buildh e_JSON_dJSONEncode__String;13 0
@@ -1540,18 +1787,18 @@ s199
 	updatepop_a 0 1
 .d 3 0
 	jmp e_JSON_stoJSON
-.n 1 _ ea198
+.n 1 _ ea114
 .o 1 0
-n198
+n114
 	push_node _cycle_in_spine 1
 .o 2 0
-ea198
+ea114
 .o 2 0
-s198
+s114
 	push_a 0
 	updatepop_a 0 1
 .d 1 0
-	jsr s36
+	jsr s44
 .o 1 0
 	buildAC "&editEvent="
 .d 2 0
@@ -1566,14 +1813,14 @@ s198
 	pop_a 1
 .d 1 0
 	rtn
-.n 1 _ ea197
+.n 1 _ ea113
 .o 1 0
-n197
+n113
 	push_node _cycle_in_spine 1
 .o 2 0
-ea197
+ea113
 .o 2 0
-s197
+s113
 	push_a 0
 	jsr_eval 0
 	buildh e_JSON_dJSONEncode__String;13 0
@@ -1581,14 +1828,14 @@ s197
 	updatepop_a 0 1
 .d 3 0
 	jmp e_JSON_stoJSON
-.n 1 _ ea196
+.n 1 _ ea112
 .o 1 0
-n196
+n112
 	push_node _cycle_in_spine 1
 .o 2 0
-ea196
+ea112
 .o 2 0
-s196
+s112
 	push_a 0
 	jsr_eval 0
 	buildh e_JSON_dJSONEncode__String;13 0
@@ -1596,18 +1843,18 @@ s196
 	updatepop_a 0 1
 .d 3 0
 	jmp e_JSON_stoJSON
-.n 1 _ ea195
+.n 1 _ ea111
 .o 1 0
-n195
+n111
 	push_node _cycle_in_spine 1
 .o 2 0
-ea195
+ea111
 .o 2 0
-s195
+s111
 	push_a 0
 	updatepop_a 0 1
 .d 1 0
-	jsr s35
+	jsr s43
 .o 1 0
 	buildAC "&actionEvent="
 .d 2 0
@@ -1623,13 +1870,13 @@ s195
 .d 1 0
 	rtn
 .o 2 0
-s191
+s105
 	create
 	push_a 1
 	update_a 1 2
 	updatepop_a 0 1
 .d 2 0
-	jsr s21
+	jsr s27
 .o 1 0
 	push_a 1
 	push_a 1
@@ -1641,13 +1888,31 @@ s191
 .d 2 0
 	rtn
 .o 2 0
-s192
+s106
 	create
 	push_a 1
 	update_a 1 2
 	updatepop_a 0 1
 .d 2 0
-	jsr s23
+	jsr s29
+.o 1 0
+	push_a 1
+	push_a 1
+	update_a 1 2
+	update_a 0 1
+	pop_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	rtn
+.o 2 0
+s107
+	create
+	push_a 1
+	update_a 1 2
+	updatepop_a 0 1
+.d 2 0
+	jsr s31
 .o 1 0
 	push_a 1
 	push_a 1

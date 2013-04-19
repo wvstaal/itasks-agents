@@ -1,7 +1,7 @@
 definition module HttpClient
 
 from Map import :: Map
-import StdMaybe
+import Maybe, StdString
 
 :: SimpleHttpRequest = 
 	{ req_method	:: 	String					// The HTTP request method (eg. GET, POST, HEAD)
